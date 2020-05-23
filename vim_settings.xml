@@ -1,0 +1,110 @@
+<application>
+  <component name="VimEditorSettings">
+    <editor />
+  </component>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry>main</entry>
+        <entry>m</entry>
+        <entry>tests</entry>
+      </history-search>
+      <history-cmd>
+        <entry>?main</entry>
+        <entry>?m</entry>
+        <entry>?tests</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimKeySettings">
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed K</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="/Dummy.txt" timestamp="1590202920242">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1590202381655">
+        <mark key="[" line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/src/applications/PikaCompiler.java" timestamp="1589698465344">
+        <mark key="[" line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/ASMRun.sh" timestamp="1589830655842">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" timestamp="1589580667635">
+        <mark key="'" line="0" column="8" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/hello.asm" timestamp="1589830807714">
+        <mark key="[" line="4" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1590202789597">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/applications/PikaCompiler.java" timestamp="1589580331952">
+        <mark key="[" line="7" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="48" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="47" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="43" column="46" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="40" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="38" column="43" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="35" column="29" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="34" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="33" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="26" column="10" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="25" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="24" column="19" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="23" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="22" column="30" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="16" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="15" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="11" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="8" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="7" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="6" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="5" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="4" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="3" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="2" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="49" column="38" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="0" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+    </jumps>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name=":" type="4">
+        <text>?tests</text>
+      </register>
+      <register name="/" type="4">
+        <text>tests</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-search>tests</last-search>
+      <last-offset />
+      <last-pattern>tests</last-pattern>
+      <last-dir>-1</last-dir>
+      <show-last>false</show-last>
+    </search>
+  </component>
+  <component name="VimSettings">
+    <state version="6" enabled="true" />
+    <notifications>
+      <idea-join enabled="false" />
+      <idea-put enabled="false" />
+    </notifications>
+  </component>
+</application>

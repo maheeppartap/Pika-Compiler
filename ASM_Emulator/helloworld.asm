@@ -1,5 +1,5 @@
-DLabel	Hello
-DataC 	72			// H
+DLabel  Hello
+DataC   72			// H
 DataC	101			// e
 DataC	108			// l
 DataC	108			// l

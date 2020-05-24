@@ -1,6 +1,8 @@
 output/
 .idea/
 _windows/
+colors/
+codestyles/
 vim_settings.xml
 acceptedLanguageLevels.xml
 colors.scheme.xml
@@ -10,5 +12,4 @@ github.xml
 ide.general.xml
 project.default.xml
 studioFlags.xml
-vim_settings.xml
 wsl.distributions.xml

@@ -8,11 +8,17 @@
         <entry>main</entry>
         <entry>m</entry>
         <entry>tests</entry>
+        <entry>Label</entry>
+        <entry>PushD</entry>
+        <entry>Halt</entry>
       </history-search>
       <history-cmd>
         <entry>?main</entry>
         <entry>?m</entry>
         <entry>?tests</entry>
+        <entry>?Label</entry>
+        <entry>?PushD</entry>
+        <entry>?Halt</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -28,8 +34,14 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590203362396">
+      <file name="/Dummy.txt" timestamp="1590277584715">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/hello.asm" timestamp="1590278144530" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld.asm" timestamp="1590278083359">
+        <mark key="[" line="0" column="13" />
+        <mark key="]" line="0" column="13" />
+        <mark key="." line="0" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1590202381655">
         <mark key="[" line="7" column="0" />
@@ -46,10 +58,14 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/hello.asm" timestamp="1589830807714">
         <mark key="[" line="4" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590278635827">
+        <mark key="'" line="92" column="73" />
+        <mark key="n" line="166" column="23" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/tests/TestAbstractSyntaxTree.java" timestamp="1590203355628">
         <mark key="[" line="30" column="5" />
       </file>
-      <file name="/fragment.java" timestamp="1590202789597">
+      <file name="/fragment.java" timestamp="1590277588679">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/applications/PikaCompiler.java" timestamp="1589580331952">
@@ -82,23 +98,55 @@
       <jump line="2" column="1" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
       <jump line="49" column="38" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
       <jump line="0" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
+      <jump line="166" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="163" column="41" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="144" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="143" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="141" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="120" column="5" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="12" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="5" column="63" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="4" column="52" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="128" column="59" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="127" column="55" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="124" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="123" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="122" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="121" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="99" column="88" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="92" column="73" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
+      <register name="1" type="2">
+        <text encoding="base64">RExhYmVsCUhlbGxvIQo=</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>!</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">UHVzaEQgICBIZWxsbwo=</text>
+      </register>
+      <register name="3" type="2">
+        <text>//DataC	33			// !</text>
+      </register>
       <register name=":" type="4">
-        <text>?tests</text>
+        <text>?store</text>
+      </register>
+      <register name="-" type="4">
+        <text>!</text>
       </register>
       <register name="/" type="4">
-        <text>tests</text>
+        <text>store</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>tests</last-search>
+      <last-search>store</last-search>
       <last-offset />
-      <last-pattern>tests</last-pattern>
+      <last-pattern>store</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

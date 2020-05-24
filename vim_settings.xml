@@ -12,6 +12,7 @@
         <entry>PushD</entry>
         <entry>Halt</entry>
         <entry>store</entry>
+        <entry>DataC</entry>
       </history-search>
       <history-cmd>
         <entry>?main</entry>
@@ -21,6 +22,7 @@
         <entry>?PushD</entry>
         <entry>?Halt</entry>
         <entry>?store</entry>
+        <entry>?DataC</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -31,6 +33,9 @@
       <shortcut-conflict owner="vim">
         <text>ctrl pressed K</text>
       </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
     </shortcut-conflicts>
   </component>
   <component name="VimMarksSettings">
@@ -39,16 +44,31 @@
       <file name="/Dummy.txt" timestamp="1590277584715">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/hello.asm" timestamp="1590278144530" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld.asm" timestamp="1590278083359">
-        <mark key="[" line="0" column="13" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld.asm" timestamp="1590289670099">
+        <mark key="[" line="1" column="8" />
         <mark key="]" line="0" column="13" />
         <mark key="." line="0" column="13" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1590202381655">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/src/applications/PikaCompiler.java" timestamp="1589698465344">
         <mark key="[" line="7" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/src/applications/PikaCompiler.java" timestamp="1589698465344">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld_.asm" timestamp="1590289777141">
+        <mark key="[" line="2" column="7" />
+        <mark key="]" line="2" column="8" />
+        <mark key="." line="2" column="8" />
+        <mark key="^" line="2" column="10" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590289431917">
+        <mark key="'" line="126" column="23" />
+        <mark key="[" line="121" column="4" />
+        <mark key="]" line="121" column="4" />
+        <mark key="n" line="166" column="23" />
+        <mark key="." line="121" column="4" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/applications/PikaCompiler.java" timestamp="1589580331952">
+        <mark key="[" line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1590202381655">
         <mark key="[" line="7" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/ASMRun.sh" timestamp="1589830655842">
@@ -60,18 +80,11 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/hello.asm" timestamp="1589830807714">
         <mark key="[" line="4" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590278635827">
-        <mark key="'" line="92" column="73" />
-        <mark key="n" line="166" column="23" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/tests/TestAbstractSyntaxTree.java" timestamp="1590203355628">
         <mark key="[" line="30" column="5" />
       </file>
       <file name="/fragment.java" timestamp="1590277588679">
         <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/applications/PikaCompiler.java" timestamp="1589580331952">
-        <mark key="[" line="7" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -117,38 +130,61 @@
       <jump line="121" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="99" column="88" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="92" column="73" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="160" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="126" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="1" type="2">
-        <text encoding="base64">RExhYmVsCUhlbGxvIQo=</text>
-      </register>
       <register name="&quot;" type="4">
-        <text>!</text>
-      </register>
-      <register name="2" type="2">
-        <text encoding="base64">UHVzaEQgICBIZWxsbwo=</text>
-      </register>
-      <register name="3" type="2">
-        <text>//DataC	33			// !</text>
-      </register>
-      <register name=":" type="4">
-        <text>?store</text>
+        <text>77</text>
       </register>
       <register name="-" type="4">
-        <text>!</text>
+        <text>77</text>
       </register>
       <register name="/" type="4">
-        <text>store</text>
+        <text>DataC</text>
+      </register>
+      <register name="0" type="2">
+        <text encoding="base64">RGF0YUMgICA3Nwo=</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">cHVzaEQgICBteU5hbWVpc01haGVlcAo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">RGF0YUMgNzcK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">RGF0YUMgNzcK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">RGF0YUMgIDc3Cg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">RGF0YUMgNzcK</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">RGF0YUMgMAo=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">RGF0YUMgNzcK</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">RExhYmVsCUhlbGxvIQo=</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">UHVzaEQgICBIZWxsbwo=</text>
+      </register>
+      <register name=":" type="4">
+        <text>?DataC</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>store</last-search>
+      <last-search>DataC</last-search>
       <last-offset />
-      <last-pattern>store</last-pattern>
+      <last-pattern>DataC</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

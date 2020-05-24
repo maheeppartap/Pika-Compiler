@@ -11,6 +11,7 @@
         <entry>Label</entry>
         <entry>PushD</entry>
         <entry>Halt</entry>
+        <entry>store</entry>
       </history-search>
       <history-cmd>
         <entry>?main</entry>
@@ -19,6 +20,7 @@
         <entry>?Label</entry>
         <entry>?PushD</entry>
         <entry>?Halt</entry>
+        <entry>?store</entry>
       </history-cmd>
       <history-expr />
       <history-input />

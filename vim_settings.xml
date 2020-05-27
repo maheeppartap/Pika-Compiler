@@ -66,6 +66,9 @@
         <mark key="." line="2" column="8" />
         <mark key="^" line="2" column="10" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1590607397032">
+        <mark key="[" line="57" column="5" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/.gitignore" timestamp="1590292402919">
         <mark key="[" line="0" column="0" />
       </file>
@@ -87,11 +90,6 @@
       <file name="/Dummy.txt" timestamp="1590292819678">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld.asm" timestamp="1590289670099">
-        <mark key="[" line="1" column="8" />
-        <mark key="]" line="0" column="13" />
-        <mark key="." line="0" column="13" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/NumberedFileLister.java" timestamp="1590599500368" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590289864376">
         <mark key="'" line="126" column="23" />
@@ -112,9 +110,11 @@
       <file name="/fragment.java" timestamp="1590603142301">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590606599109">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590608359639">
         <mark key="'" line="13" column="0" />
-        <mark key="[" line="37" column="23" />
+        <mark key="[" line="75" column="4" />
+        <mark key="]" line="75" column="4" />
+        <mark key="." line="75" column="4" />
       </file>
     </filemarks>
     <jumps>
@@ -170,10 +170,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>r</text>
+        <text encoding="base64">CUxvY2F0ZWRDaGFyIG5leHQgPSBpbnB1dC5wZWVrKCk7CgkJaWYoZmlyc3RDaGFyLmlzTnVtZXJpY1NpZ24oKSAmJiAhbmV4dC5pc0RpZ2l0KCkgJiYgbmV4dC5nZXRDaGFyYWN0ZXIoKSAhPSBERUNJTUFMX1BPSU5UKQ==</text>
       </register>
       <register name="-" type="4">
-        <text>r</text>
+        <text>t</text>
       </register>
       <register name="/" type="4">
         <text>Int</text>
@@ -181,7 +181,10 @@
       <register name="0" type="2">
         <text encoding="base64">RGF0YUMgICA3Nwo=</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text encoding="base64">CUxvY2F0ZWRDaGFyIG5leHQgPSBpbnB1dC5wZWVrKCk7CgkJaWYoZmlyc3RDaGFyLmlzTnVtZXJpY1NpZ24oKSAmJiAhbmV4dC5pc0RpZ2l0KCkgJiYgbmV4dC5nZXRDaGFyYWN0ZXIoKSAhPSBERUNJTUFMX1BPSU5UKQ==</text>
+      </register>
+      <register name="2" type="2">
         <text>package lexicalAnalyzer;
 
 import inputHandler.TextLocation;
@@ -212,7 +215,7 @@ public class FloatingToken extends TokenImp {
     }
 }</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text>public class FloatingToken extends TokenImp {
 	protected int value;
 
@@ -238,26 +241,23 @@ public class FloatingToken extends TokenImp {
 	}
 }</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">cHVzaEQgICBteU5hbWVpc01haGVlcAo=</text>
-      </register>
       <register name="4" type="2">
-        <text encoding="base64">RGF0YUMgNzcK</text>
+        <text encoding="base64">cHVzaEQgICBteU5hbWVpc01haGVlcAo=</text>
       </register>
       <register name="5" type="2">
         <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">RGF0YUMgIDc3Cg==</text>
+        <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">RGF0YUMgNzcK</text>
+        <text encoding="base64">RGF0YUMgIDc3Cg==</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">RGF0YUMgMAo=</text>
+        <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">RGF0YUMgNzcK</text>
+        <text encoding="base64">RGF0YUMgMAo=</text>
       </register>
       <register name=":" type="4">
         <text>?NumberToken</text>

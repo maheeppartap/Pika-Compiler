@@ -15,6 +15,9 @@
         <entry>DataC</entry>
         <entry>Number</entry>
         <entry>findNextToken</entry>
+        <entry>NumberToken</entry>
+        <entry>int</entry>
+        <entry>Int</entry>
       </history-search>
       <history-cmd>
         <entry>?main</entry>
@@ -27,6 +30,9 @@
         <entry>?DataC</entry>
         <entry>?Number</entry>
         <entry>?findNextToken</entry>
+        <entry>?NumberToken</entry>
+        <entry>?int</entry>
+        <entry>?Int</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -48,16 +54,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590292819678">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld.asm" timestamp="1590289670099">
-        <mark key="[" line="1" column="8" />
-        <mark key="]" line="0" column="13" />
-        <mark key="." line="0" column="13" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaAbstractSyntaxTree.java" timestamp="1590600773329" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/NumberedFileLister.java" timestamp="1590599500368" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1590605439949">
         <mark key="[" line="14" column="17" />
         <mark key="]" line="13" column="20" />
@@ -69,6 +66,33 @@
         <mark key="." line="2" column="8" />
         <mark key="^" line="2" column="10" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/.gitignore" timestamp="1590292402919">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590606543446">
+        <mark key="[" line="4" column="13" />
+        <mark key="]" line="18" column="36" />
+        <mark key="." line="18" column="35" />
+        <mark key="^" line="18" column="36" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590603258124">
+        <mark key="[" line="2" column="10" />
+        <mark key="]" line="2" column="11" />
+        <mark key="." line="2" column="11" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaApplication.java" timestamp="1590599551859" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590602267013">
+        <mark key="[" line="16" column="24" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1590292819678">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld.asm" timestamp="1590289670099">
+        <mark key="[" line="1" column="8" />
+        <mark key="]" line="0" column="13" />
+        <mark key="." line="0" column="13" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/NumberedFileLister.java" timestamp="1590599500368" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590289864376">
         <mark key="'" line="126" column="23" />
         <mark key="[" line="121" column="4" />
@@ -76,37 +100,21 @@
         <mark key="n" line="166" column="23" />
         <mark key="." line="121" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/.gitignore" timestamp="1590292402919">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590603258124">
-        <mark key="[" line="2" column="10" />
-        <mark key="]" line="2" column="11" />
-        <mark key="." line="2" column="11" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1590202381655">
-        <mark key="[" line="7" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaApplication.java" timestamp="1590599551859" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/ASMRun.sh" timestamp="1589830655842">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/hello.asm" timestamp="1589830807714">
-        <mark key="[" line="4" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/IntegerToken.java" timestamp="1590606200543">
+        <mark key="[" line="29" column="0" />
+        <mark key="]" line="29" column="0" />
+        <mark key="." line="29" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/PunctuatorScanningAids.java" timestamp="1590605686021" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/tests/TestAbstractSyntaxTree.java" timestamp="1590203355628">
-        <mark key="[" line="30" column="5" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/NumberToken.java" timestamp="1590605863005">
+        <mark key="[" line="4" column="14" />
       </file>
       <file name="/fragment.java" timestamp="1590603142301">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590605415893">
-        <mark key="'" line="51" column="12" />
-        <mark key="[" line="87" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590602267013">
-        <mark key="[" line="16" column="24" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590606599109">
+        <mark key="'" line="13" column="0" />
+        <mark key="[" line="37" column="23" />
       </file>
     </filemarks>
     <jumps>
@@ -155,61 +163,112 @@
       <jump line="160" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="126" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="38" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="13" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="51" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="13" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>;</text>
+        <text>r</text>
       </register>
       <register name="-" type="4">
-        <text>;</text>
+        <text>r</text>
       </register>
       <register name="/" type="4">
-        <text>findNextToken</text>
+        <text>Int</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">RGF0YUMgICA3Nwo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">cHVzaEQgICBteU5hbWVpc01haGVlcAo=</text>
+        <text>package lexicalAnalyzer;
+
+import inputHandler.TextLocation;
+import tokens.TokenImp;
+
+public class FloatingToken extends TokenImp {
+    protected double value;
+
+    protected FloatingToken(TextLocation location, String lexeme) {
+        super(location, lexeme);
+    }
+    protected void setValue(int value) {
+        this.value = value;
+    }
+    public double getValue() {
+        return value;
+    }
+
+    public static tokens.IntegerToken make(TextLocation location, String lexeme) {
+        tokens.IntegerToken result = new tokens.FloatingToken(location, lexeme);
+        result.setValue(Integer.parseInt(lexeme));
+        return result;
+    }
+
+    @Override
+    protected String rawString() {
+        return &quot;number, &quot; + value;
+    }
+}</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">RGF0YUMgNzcK</text>
+        <text>public class FloatingToken extends TokenImp {
+	protected int value;
+
+	protected FloatingToken(TextLocation location, String lexeme) {
+		super(location, lexeme);
+	}
+	protected void setValue(int value) {
+		this.value = value;
+	}
+	public int getValue() {
+		return value;
+	}
+
+	public static IntegerToken make(TextLocation location, String lexeme) {
+		IntegerToken result = new IntegerToken(location, lexeme);
+		result.setValue(Integer.parseInt(lexeme));
+		return result;
+	}
+
+	@Override
+	protected String rawString() {
+		return &quot;number, &quot; + value;
+	}
+}</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">RGF0YUMgNzcK</text>
+        <text encoding="base64">cHVzaEQgICBteU5hbWVpc01haGVlcAo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">RGF0YUMgIDc3Cg==</text>
+        <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name="5" type="2">
         <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">RGF0YUMgMAo=</text>
+        <text encoding="base64">RGF0YUMgIDc3Cg==</text>
       </register>
       <register name="7" type="2">
         <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">RExhYmVsCUhlbGxvIQo=</text>
+        <text encoding="base64">RGF0YUMgMAo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">UHVzaEQgICBIZWxsbwo=</text>
+        <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name=":" type="4">
-        <text>?findNextToken</text>
+        <text>?NumberToken</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>findNextToken</last-search>
+      <last-search>Int</last-search>
       <last-offset />
-      <last-pattern>findNextToken</last-pattern>
+      <last-pattern>Int</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

@@ -56,6 +56,9 @@ public class LocatedChar {
 	public boolean isDigit() {
 		return Character.isDigit(character);
 	}
+	public boolean isNumericSign() {
+		return (character == '+' || character == '-');	//add here if we wanna add += or --
+	}
 	public boolean isWhitespace() {
 		return Character.isWhitespace(character);
 	}

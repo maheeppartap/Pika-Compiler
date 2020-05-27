@@ -13,6 +13,8 @@
         <entry>Halt</entry>
         <entry>store</entry>
         <entry>DataC</entry>
+        <entry>Number</entry>
+        <entry>findNextToken</entry>
       </history-search>
       <history-cmd>
         <entry>?main</entry>
@@ -23,6 +25,8 @@
         <entry>?Halt</entry>
         <entry>?store</entry>
         <entry>?DataC</entry>
+        <entry>?Number</entry>
+        <entry>?findNextToken</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -35,6 +39,9 @@
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed F</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
@@ -54,6 +61,11 @@
         <mark key="[" line="7" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/NumberedFileLister.java" timestamp="1590599500368" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1590603820188">
+        <mark key="[" line="13" column="19" />
+        <mark key="]" line="13" column="20" />
+        <mark key="." line="13" column="20" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/ASM_Emulator/helloworld_.asm" timestamp="1590289777141">
         <mark key="[" line="2" column="7" />
         <mark key="]" line="2" column="8" />
@@ -70,11 +82,10 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/.gitignore" timestamp="1590292402919">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/applications/PikaCompiler.java" timestamp="1589580331952">
-        <mark key="[" line="7" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590290292956">
-        <mark key="[" line="0" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590603258124">
+        <mark key="[" line="2" column="10" />
+        <mark key="]" line="2" column="11" />
+        <mark key="." line="2" column="11" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1590202381655">
         <mark key="[" line="7" column="0" />
@@ -83,17 +94,21 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/ASMRun.sh" timestamp="1589830655842">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" timestamp="1589580667635">
-        <mark key="'" line="0" column="8" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/milestone/ASM_Emulator/hello.asm" timestamp="1589830807714">
         <mark key="[" line="4" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/tests/TestAbstractSyntaxTree.java" timestamp="1590203355628">
         <mark key="[" line="30" column="5" />
       </file>
-      <file name="/fragment.java" timestamp="1590292292211">
+      <file name="/fragment.java" timestamp="1590603142301">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590603710110">
+        <mark key="'" line="51" column="12" />
+        <mark key="[" line="40" column="35" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590602267013">
+        <mark key="[" line="16" column="24" />
       </file>
     </filemarks>
     <jumps>
@@ -141,18 +156,21 @@
       <jump line="92" column="73" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="160" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="126" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="38" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="13" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="51" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>77</text>
+        <text>;</text>
       </register>
       <register name="-" type="4">
-        <text>77</text>
+        <text>;</text>
       </register>
       <register name="/" type="4">
-        <text>DataC</text>
+        <text>findNextToken</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">RGF0YUMgICA3Nwo=</text>
@@ -185,15 +203,15 @@
         <text encoding="base64">UHVzaEQgICBIZWxsbwo=</text>
       </register>
       <register name=":" type="4">
-        <text>?DataC</text>
+        <text>?findNextToken</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>DataC</last-search>
+      <last-search>findNextToken</last-search>
       <last-offset />
-      <last-pattern>DataC</last-pattern>
+      <last-pattern>findNextToken</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

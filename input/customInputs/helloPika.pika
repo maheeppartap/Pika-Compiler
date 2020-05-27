@@ -1,4 +1,4 @@
 exec{
-    const x := 2.
-    print x; x;; x,_n_.
+    const x := 23.
+    print x.
 }

@@ -11,7 +11,7 @@ import inputHandler.TextLocation;
 import tokens.IdentifierToken;
 import tokens.LextantToken;
 import tokens.NullToken;
-import tokens.NumberToken;
+import tokens.IntegerToken;
 import tokens.Token;
 
 import static lexicalAnalyzer.PunctuatorScanningAids.*;
@@ -35,7 +35,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
 		
-		if(ch.isDigit()) {
+		if(ch.isDigit() ) {
 			return scanNumber(ch);
 		}
 		else if(ch.isLowerCase()) {
@@ -70,8 +70,8 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(firstChar.getCharacter());
 		appendSubsequentDigits(buffer);
-		
-		return NumberToken.make(firstChar.getLocation(), buffer.toString());
+
+		return IntegerToken.make(firstChar.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {
 		LocatedChar c = input.next();

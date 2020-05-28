@@ -14,10 +14,11 @@
         <entry>store</entry>
         <entry>DataC</entry>
         <entry>Number</entry>
-        <entry>findNextToken</entry>
         <entry>NumberToken</entry>
         <entry>int</entry>
         <entry>Int</entry>
+        <entry>findNextToken</entry>
+        <entry>punctuator</entry>
       </history-search>
       <history-cmd>
         <entry>?main</entry>
@@ -29,10 +30,11 @@
         <entry>?store</entry>
         <entry>?DataC</entry>
         <entry>?Number</entry>
-        <entry>?findNextToken</entry>
         <entry>?NumberToken</entry>
         <entry>?int</entry>
         <entry>?Int</entry>
+        <entry>?findNextToken</entry>
+        <entry>?punctuator</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -99,11 +101,12 @@
       <file name="/fragment.java" timestamp="1590603142301">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590613626747">
-        <mark key="'" line="13" column="0" />
-        <mark key="[" line="19" column="51" />
-        <mark key="]" line="19" column="51" />
-        <mark key="." line="19" column="51" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590702407768">
+        <mark key="'" line="33" column="20" />
+        <mark key="[" line="71" column="18" />
+        <mark key="]" line="71" column="19" />
+        <mark key="." line="71" column="19" />
+        <mark key="^" line="3" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590614415605">
         <mark key="[" line="17" column="4" />
@@ -155,20 +158,21 @@
       <jump line="160" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="126" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="38" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="51" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="13" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="51" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="34" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text>Updated gitignore to get rid of some annoying random ide files</text>
+      <register name="&quot;" type="4">
+        <text>;</text>
       </register>
       <register name="-" type="4">
-        <text>.</text>
+        <text>;</text>
       </register>
       <register name="/" type="4">
-        <text>Int</text>
+        <text>punctuator</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">RGF0YUMgICA3Nwo=</text>
@@ -252,15 +256,15 @@ public class FloatingToken extends TokenImp {
         <text encoding="base64">RGF0YUMgNzcK</text>
       </register>
       <register name=":" type="4">
-        <text>?NumberToken</text>
+        <text>?findNextToken</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>findNextToken</last-search>
+      <last-search>punctuator</last-search>
       <last-offset />
-      <last-pattern>findNextToken</last-pattern>
+      <last-pattern>punctuator</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

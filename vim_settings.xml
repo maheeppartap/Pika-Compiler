@@ -57,7 +57,11 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaAbstractSyntaxTree.java" timestamp="1590600773329" />
+      <file name="/Dummy.txt" timestamp="1590613452870">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1590605439949">
         <mark key="[" line="14" column="17" />
         <mark key="]" line="13" column="20" />
@@ -66,29 +70,6 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1590607397032">
         <mark key="[" line="57" column="5" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590606543446">
-        <mark key="[" line="4" column="13" />
-        <mark key="]" line="18" column="36" />
-        <mark key="." line="18" column="35" />
-        <mark key="^" line="18" column="36" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590614123471" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590613882128">
-        <mark key="[" line="1" column="17" />
-        <mark key="]" line="2" column="11" />
-        <mark key="." line="2" column="11" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaApplication.java" timestamp="1590599551859" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/PunctuatorScanner.java" timestamp="1590613584054" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/PartiallyScannedPunctuator.java" timestamp="1590613765188" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590614415605">
-        <mark key="[" line="17" column="4" />
-      </file>
-      <file name="/Dummy.txt" timestamp="1590613452870">
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590614389228">
         <mark key="'" line="126" column="23" />
         <mark key="[" line="121" column="4" />
@@ -96,12 +77,22 @@
         <mark key="n" line="166" column="23" />
         <mark key="." line="121" column="4" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590606543446">
+        <mark key="[" line="4" column="13" />
+        <mark key="]" line="18" column="36" />
+        <mark key="." line="18" column="35" />
+        <mark key="^" line="18" column="36" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590613882128">
+        <mark key="[" line="1" column="17" />
+        <mark key="]" line="2" column="11" />
+        <mark key="." line="2" column="11" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/IntegerToken.java" timestamp="1590606200543">
         <mark key="[" line="29" column="0" />
         <mark key="]" line="29" column="0" />
         <mark key="." line="29" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/PunctuatorScanningAids.java" timestamp="1590605686021" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/NumberToken.java" timestamp="1590605863005">
         <mark key="[" line="4" column="14" />
       </file>
@@ -113,6 +104,9 @@
         <mark key="[" line="19" column="51" />
         <mark key="]" line="19" column="51" />
         <mark key="." line="19" column="51" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590614415605">
+        <mark key="[" line="17" column="4" />
       </file>
     </filemarks>
     <jumps>
@@ -264,9 +258,9 @@ public class FloatingToken extends TokenImp {
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Int</last-search>
+      <last-search>findNextToken</last-search>
       <last-offset />
-      <last-pattern>Int</last-pattern>
+      <last-pattern>findNextToken</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

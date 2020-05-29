@@ -86,8 +86,10 @@
         <mark key="]" line="29" column="0" />
         <mark key="." line="29" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1590707643911">
-        <mark key="[" line="56" column="43" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1590733848298">
+        <mark key="[" line="56" column="72" />
+        <mark key="]" line="56" column="72" />
+        <mark key="." line="56" column="72" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590614389228">
         <mark key="'" line="126" column="23" />
@@ -108,15 +110,15 @@
       <file name="/fragment.java" timestamp="1590706823037">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590732544321">
-        <mark key="'" line="153" column="77" />
-        <mark key="[" line="91" column="25" />
-        <mark key="]" line="83" column="46" />
-        <mark key="." line="83" column="0" />
-        <mark key="^" line="83" column="8" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590733879138">
+        <mark key="'" line="154" column="77" />
+        <mark key="[" line="63" column="53" />
+        <mark key="]" line="84" column="0" />
+        <mark key="." line="84" column="0" />
+        <mark key="^" line="84" column="8" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590614415605">
-        <mark key="[" line="17" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590733543469">
+        <mark key="[" line="16" column="24" />
       </file>
     </filemarks>
     <jumps>
@@ -182,11 +184,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
+      <register name="&quot;" type="4">
+        <text>&quot;</text>
       </register>
       <register name="-" type="4">
-        <text>/</text>
+        <text>&quot;</text>
       </register>
       <register name="/" type="4">
         <text>start</text>
@@ -195,59 +197,31 @@
         <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
+        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuXG4gaGVyZSAiICsgYnVmZmVyLnRvU3RyaW5nKCkpOw==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQkJU3lzdGVtLm91dC5wcmludGxuKGJ1ZmZlci50b1N0cmluZygpKTsK</text>
+        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuYyBpczogIisgYy50b1N0cmluZygpKyAiXG4iKTs=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJU3lzdGVtLm91dC5wcmludGxuKG5leHQudG9TdHJpbmcoKSk7Cg==</text>
+        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQkJCVN5c3RlbS5vdXQucHJpbnRsbihidWZmZXIudG9TdHJpbmcoKSk7Cg==</text>
+        <text encoding="base64">CQkJU3lzdGVtLm91dC5wcmludGxuKGJ1ZmZlci50b1N0cmluZygpKTsK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQkJaWYobmV4dF8uZ2V0Q2hhcmFjdGVyKCkgIT0gJy4nKXsgLy8JLy8vIFRISVMgSVMgRElGRkVSRU5UIFRIQU4gVEhFIENPREUgSU4gU0xJREVTCgkJCQlpbnB1dC5wdXNoYmFjayhuZXh0Xyk7CgkJCQlyZXR1cm4gSW50ZWdlclRva2VuLm1ha2UoZmlyc3RDaGFyLmdldExvY2F0aW9uKCksIGJ1ZmZlci50b1N0cmluZygpKTsKCQkJfQo=</text>
+        <text encoding="base64">CQkJU3lzdGVtLm91dC5wcmludGxuKG5leHQudG9TdHJpbmcoKSk7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQlwcGVuZFN1YnNlcXVlbnREaWdpdHMoYnVmZmVyKTsK</text>
+        <text encoding="base64">CQkJCVN5c3RlbS5vdXQucHJpbnRsbihidWZmZXIudG9TdHJpbmcoKSk7Cg==</text>
       </register>
       <register name="7" type="2">
-        <text>Updated gitignore to get rid of some annoying random ide files</text>
+        <text encoding="base64">CQkJaWYobmV4dF8uZ2V0Q2hhcmFjdGVyKCkgIT0gJy4nKXsgLy8JLy8vIFRISVMgSVMgRElGRkVSRU5UIFRIQU4gVEhFIENPREUgSU4gU0xJREVTCgkJCQlpbnB1dC5wdXNoYmFjayhuZXh0Xyk7CgkJCQlyZXR1cm4gSW50ZWdlclRva2VuLm1ha2UoZmlyc3RDaGFyLmdldExvY2F0aW9uKCksIGJ1ZmZlci50b1N0cmluZygpKTsKCQkJfQo=</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CUxvY2F0ZWRDaGFyIG5leHQgPSBpbnB1dC5wZWVrKCk7CgkJaWYoZmlyc3RDaGFyLmlzTnVtZXJpY1NpZ24oKSAmJiAhbmV4dC5pc0RpZ2l0KCkgJiYgbmV4dC5nZXRDaGFyYWN0ZXIoKSAhPSBERUNJTUFMX1BPSU5UKQ==</text>
+      <register name="8" type="2">
+        <text encoding="base64">CQlwcGVuZFN1YnNlcXVlbnREaWdpdHMoYnVmZmVyKTsK</text>
       </register>
       <register name="9" type="2">
-        <text>package lexicalAnalyzer;
-
-import inputHandler.TextLocation;
-import tokens.TokenImp;
-
-public class FloatingToken extends TokenImp {
-    protected double value;
-
-    protected FloatingToken(TextLocation location, String lexeme) {
-        super(location, lexeme);
-    }
-    protected void setValue(int value) {
-        this.value = value;
-    }
-    public double getValue() {
-        return value;
-    }
-
-    public static tokens.IntegerToken make(TextLocation location, String lexeme) {
-        tokens.IntegerToken result = new tokens.FloatingToken(location, lexeme);
-        result.setValue(Integer.parseInt(lexeme));
-        return result;
-    }
-
-    @Override
-    protected String rawString() {
-        return &quot;number, &quot; + value;
-    }
-}</text>
+        <text>Updated gitignore to get rid of some annoying random ide files</text>
       </register>
       <register name=":" type="4">
         <text>?scan</text>

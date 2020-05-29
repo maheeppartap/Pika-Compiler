@@ -1,4 +1,5 @@
 exec{
-    const x := 23.
-    print x.
+    const x :=  -22.3.
+    const y :=  x + 2.
+    print y.
 }

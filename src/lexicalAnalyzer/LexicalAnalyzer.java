@@ -2,17 +2,12 @@ package lexicalAnalyzer;
 
 
 import logging.PikaLogger;
-
 import inputHandler.InputHandler;
 import inputHandler.LocatedChar;
 import inputHandler.LocatedCharStream;
 import inputHandler.PushbackCharStream;
 import inputHandler.TextLocation;
-import tokens.IdentifierToken;
-import tokens.LextantToken;
-import tokens.NullToken;
-import tokens.IntegerToken;
-import tokens.Token;
+import tokens.*;
 
 import static lexicalAnalyzer.PunctuatorScanningAids.*;
 
@@ -35,7 +30,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
 		
-		if(ch.isDigit() ) {
+		if(ch.isDigit() || ch.getCharacter() == '+' || ch.getCharacter() == '-') {
 			return scanNumber(ch);
 		}
 		else if(ch.isLowerCase()) {
@@ -64,25 +59,49 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	
 	
 	//////////////////////////////////////////////////////////////////////////////
-	// Integer lexical analysis	
+	// Integer and number lexical analysis
 
 	private Token scanNumber(LocatedChar firstChar) {
-		StringBuffer buffer = new StringBuffer();
-		buffer.append(firstChar.getCharacter());
-		appendSubsequentDigits(buffer);
 
-		return IntegerToken.make(firstChar.getLocation(), buffer.toString());
+		StringBuffer buffer = new StringBuffer();
+		LocatedChar next = input.peek();
+
+		//case of not being a number and being a punctuation of some kind
+		if(firstChar.isNumericSign() && !next.isDigit() & next.getCharacter() != '.'){
+			return PunctuatorScanner.scan(firstChar, input); //sketchyyyyyyyyy
+		}
+		buffer.append(firstChar.getCharacter());
+		if(firstChar.isDigit() || firstChar.isNumericSign()){
+			appendSubsequentDigits(buffer);
+			next = input.next();
+			LocatedChar secondNext = input.peek();
+
+			if(next.getCharacter() != '.' && !secondNext.isDigit()){ // means int, and we added an extra '.'
+				input.pushback(next);
+				return IntegerToken.make(firstChar.getLocation(), buffer.toString());
+			}
+			//buffer.append(next.getCharacter());
+		}
+		appendSubsequentDigits(buffer);
+		if(buffer.toString().endsWith(".")) {
+			lexicalError(firstChar);
+		}
+		return FloatingToken.make(firstChar.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {
 		LocatedChar c = input.next();
-		while(c.isDigit()) {
+		LocatedChar next_ = input.peek();
+		while(c.isDigit() || (c.getCharacter() == '.' &&  next_.isDigit())) {
 			buffer.append(c.getCharacter());
 			c = input.next();
+			next_ = input.peek();
+		}
+		if(c.getCharacter() == '.' && next_.getCharacter() == '.'){
+			lexicalError(c);
 		}
 		input.pushback(c);
 	}
-	
-	
+
 	//////////////////////////////////////////////////////////////////////////////
 	// Identifier and keyword lexical analysis	
 
@@ -107,7 +126,8 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		}
 		input.pushback(c);
 	}
-	
+
+
 	
 	//////////////////////////////////////////////////////////////////////////////
 	// Punctuator lexical analysis	

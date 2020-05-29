@@ -125,10 +125,10 @@
         <mark key="]" line="295" column="26" />
         <mark key="." line="295" column="26" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590786924622">
-        <mark key="[" line="2" column="3" />
-        <mark key="]" line="2" column="4" />
-        <mark key="." line="2" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590790006498">
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="0" />
+        <mark key="." line="1" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590787839275">
         <mark key="'" line="188" column="26" />
@@ -244,8 +244,8 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>const y :=  x + 2.</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIGNvbnN0IGF2b2dhZHJvICA6PSAgNi4wMjJFKzIzLgogICAgY29uc3QgcGkgICAgOj0gIDMuMTQxNTku</text>
       </register>
       <register name="-" type="4">
         <text>const y :=  x + 2.</text>
@@ -257,31 +257,31 @@
         <text encoding="base64">CXZvaWQgdmlzaXQoRmxvYXRpbmdDb25zdGFudE5vZGUgbm9kZSk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text>Added a float reading functionality</text>
+        <text encoding="base64">ICAgIGNvbnN0IGF2b2dhZHJvICA6PSAgNi4wMjJFKzIzLgogICAgY29uc3QgcGkgICAgOj0gIDMuMTQxNTku</text>
       </register>
       <register name="2" type="2">
+        <text>Added a float reading functionality</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">CQkJCWMgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CWlmKCFuZXh0Xy5pc051bWVyaWNTaWduKCkgfHwgIW5leHRfLmlzRGlnaXQoKSl7CgkJCQkvL2lucHV0LnB1c2hiYWNrKGMpOwoJCQkJcmV0dXJuOwoJCQl9</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">CQkJCX0K</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CQkJCQlicmVhazsK</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQkJCQlsZXhpY2FsRXJyb3IoYyk7Cg==</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CQkJCWlmICghYy5pc0RpZ2l0KCkpIHsK</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">CQlpZihpbnB1dC5uZXh0KCkuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJU3lzdGVtLm91dC5wcmludGxuKCJoZXJlIik7CgkJfQ==</text>
+        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
       </register>
       <register name=":" type="4">
         <text>?ASSIGN</text>

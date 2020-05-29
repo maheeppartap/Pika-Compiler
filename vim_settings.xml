@@ -66,12 +66,12 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590613452870">
+      <file name="/Dummy.txt" timestamp="1590777507875">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590728721235">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590776740943">
         <mark key="[" line="1" column="16" />
         <mark key="]" line="1" column="20" />
         <mark key="." line="1" column="20" />
@@ -107,15 +107,15 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/NumberToken.java" timestamp="1590605863005">
         <mark key="[" line="4" column="14" />
       </file>
-      <file name="/fragment.java" timestamp="1590706823037">
+      <file name="/fragment.java" timestamp="1590779203487">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590733879138">
-        <mark key="'" line="154" column="77" />
-        <mark key="[" line="63" column="53" />
-        <mark key="]" line="84" column="0" />
-        <mark key="." line="84" column="0" />
-        <mark key="^" line="84" column="8" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590779707028">
+        <mark key="'" line="167" column="77" />
+        <mark key="[" line="101" column="12" />
+        <mark key="]" line="99" column="44" />
+        <mark key="." line="99" column="0" />
+        <mark key="^" line="99" column="30" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590733543469">
         <mark key="[" line="16" column="24" />
@@ -184,44 +184,46 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>&quot;</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
       </register>
       <register name="-" type="4">
-        <text>&quot;</text>
+        <text>System.out.println(&quot;HERE&quot;);</text>
       </register>
       <register name="/" type="4">
         <text>start</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
+        <text encoding="base64">CQlMb2NhdGVkQ2hhciBuZXh0XyA9IGlucHV0LnBlZWsoKTsK</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuXG4gaGVyZSAiICsgYnVmZmVyLnRvU3RyaW5nKCkpOw==</text>
+        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuYyBpczogIisgYy50b1N0cmluZygpKyAiXG4iKTs=</text>
+        <text encoding="base64">CQlpZihpbnB1dC5uZXh0KCkuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJU3lzdGVtLm91dC5wcmludGxuKCJoZXJlIik7CgkJfQ==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
+        <text encoding="base64">CQlpZihidWZmZXIudG9TdHJpbmcoKS5lbmRzV2l0aCgiLiIpKSB7CgkJCWxleGljYWxFcnJvcihmaXJzdENoYXIpOwoJCX0=</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">CQkJU3lzdGVtLm91dC5wcmludGxuKGJ1ZmZlci50b1N0cmluZygpKTsK</text>
+      <register name="4" type="4">
+        <text>if(input.peek().getCharacter() == 'E'){
+			System.out.println(&quot;here&quot;);
+		}</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">CQkJU3lzdGVtLm91dC5wcmludGxuKG5leHQudG9TdHJpbmcoKSk7Cg==</text>
+      <register name="5" type="4">
+        <text encoding="base64">CWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJaWYobmV4dF8uZ2V0Q2hhcmFjdGVyKCkgPT0gJy4nKSBsZXhpY2FsRXJyb3IoYyk7CgkJCXBvd2VyQnVmZmVyID0gYzsKCQkJd2hpbGUocG93ZXJCdWZmZXIuZ2V0Q2hhcmFjdGVyKCkgIT0gJy4nKXsKCQkJCXRlbXAuYXBwZW5kKHBvd2VyQnVmZmVyLmdldENoYXJhY3RlcigpKTsKCQkJfQoJCQkKCQl9</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkJCVN5c3RlbS5vdXQucHJpbnRsbihidWZmZXIudG9TdHJpbmcoKSk7Cg==</text>
+        <text>added a float class, and renamed the Number to integers to differentiate</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQkJaWYobmV4dF8uZ2V0Q2hhcmFjdGVyKCkgIT0gJy4nKXsgLy8JLy8vIFRISVMgSVMgRElGRkVSRU5UIFRIQU4gVEhFIENPREUgSU4gU0xJREVTCgkJCQlpbnB1dC5wdXNoYmFjayhuZXh0Xyk7CgkJCQlyZXR1cm4gSW50ZWdlclRva2VuLm1ha2UoZmlyc3RDaGFyLmdldExvY2F0aW9uKCksIGJ1ZmZlci50b1N0cmluZygpKTsKCQkJfQo=</text>
+        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuXG4gaGVyZSAiICsgYnVmZmVyLnRvU3RyaW5nKCkpOw==</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQlwcGVuZFN1YnNlcXVlbnREaWdpdHMoYnVmZmVyKTsK</text>
+        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuYyBpczogIisgYy50b1N0cmluZygpKyAiXG4iKTs=</text>
       </register>
       <register name="9" type="2">
-        <text>Updated gitignore to get rid of some annoying random ide files</text>
+        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>?scan</text>

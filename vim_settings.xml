@@ -110,12 +110,11 @@
       <file name="/fragment.java" timestamp="1590779203487">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590779707028">
-        <mark key="'" line="167" column="77" />
-        <mark key="[" line="101" column="12" />
-        <mark key="]" line="99" column="44" />
-        <mark key="." line="99" column="0" />
-        <mark key="^" line="99" column="30" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590782287192">
+        <mark key="'" line="164" column="77" />
+        <mark key="[" line="103" column="0" />
+        <mark key="]" line="103" column="33" />
+        <mark key="." line="103" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590733543469">
         <mark key="[" line="16" column="24" />
@@ -185,10 +184,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
+        <text encoding="base64">CQkJCWMgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
       <register name="-" type="4">
-        <text>System.out.println(&quot;HERE&quot;);</text>
+        <text>next_</text>
       </register>
       <register name="/" type="4">
         <text>start</text>
@@ -197,33 +196,31 @@
         <text encoding="base64">CQlMb2NhdGVkQ2hhciBuZXh0XyA9IGlucHV0LnBlZWsoKTsK</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
+        <text encoding="base64">CQkJCWMgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">CQlpZihpbnB1dC5uZXh0KCkuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJU3lzdGVtLm91dC5wcmludGxuKCJoZXJlIik7CgkJfQ==</text>
+      <register name="2" type="4">
+        <text encoding="base64">CWlmKCFuZXh0Xy5pc051bWVyaWNTaWduKCkgfHwgIW5leHRfLmlzRGlnaXQoKSl7CgkJCQkvL2lucHV0LnB1c2hiYWNrKGMpOwoJCQkJcmV0dXJuOwoJCQl9</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQlpZihidWZmZXIudG9TdHJpbmcoKS5lbmRzV2l0aCgiLiIpKSB7CgkJCWxleGljYWxFcnJvcihmaXJzdENoYXIpOwoJCX0=</text>
+        <text encoding="base64">CQkJCX0K</text>
       </register>
-      <register name="4" type="4">
-        <text>if(input.peek().getCharacter() == 'E'){
-			System.out.println(&quot;here&quot;);
-		}</text>
+      <register name="4" type="2">
+        <text encoding="base64">CQkJCQlicmVhazsK</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">CWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJaWYobmV4dF8uZ2V0Q2hhcmFjdGVyKCkgPT0gJy4nKSBsZXhpY2FsRXJyb3IoYyk7CgkJCXBvd2VyQnVmZmVyID0gYzsKCQkJd2hpbGUocG93ZXJCdWZmZXIuZ2V0Q2hhcmFjdGVyKCkgIT0gJy4nKXsKCQkJCXRlbXAuYXBwZW5kKHBvd2VyQnVmZmVyLmdldENoYXJhY3RlcigpKTsKCQkJfQoJCQkKCQl9</text>
+      <register name="5" type="2">
+        <text encoding="base64">CQkJCQlsZXhpY2FsRXJyb3IoYyk7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text>added a float class, and renamed the Number to integers to differentiate</text>
+        <text encoding="base64">CQkJCWlmICghYy5pc0RpZ2l0KCkpIHsK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuXG4gaGVyZSAiICsgYnVmZmVyLnRvU3RyaW5nKCkpOw==</text>
+        <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oIlxuYyBpczogIisgYy50b1N0cmluZygpKyAiXG4iKTs=</text>
+        <text encoding="base64">CQlpZihpbnB1dC5uZXh0KCkuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJU3lzdGVtLm91dC5wcmludGxuKCJoZXJlIik7CgkJfQ==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQlTeXN0ZW0ub3V0LnByaW50bG4oYnVmZmVyLnRvU3RyaW5nKCkpOwo=</text>
+        <text encoding="base64">CQlpZihidWZmZXIudG9TdHJpbmcoKS5lbmRzV2l0aCgiLiIpKSB7CgkJCWxleGljYWxFcnJvcihmaXJzdENoYXIpOwoJCX0=</text>
       </register>
       <register name=":" type="4">
         <text>?scan</text>

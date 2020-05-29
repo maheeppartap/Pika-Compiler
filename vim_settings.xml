@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>main</entry>
         <entry>m</entry>
         <entry>tests</entry>
         <entry>Label</entry>
@@ -25,9 +24,9 @@
         <entry>literal</entry>
         <entry>Literal</entry>
         <entry>visit</entry>
+        <entry>ASSIGN</entry>
       </history-search>
       <history-cmd>
-        <entry>?m</entry>
         <entry>?tests</entry>
         <entry>?Label</entry>
         <entry>?PushD</entry>
@@ -47,6 +46,7 @@
         <entry>?literal</entry>
         <entry>?Literal</entry>
         <entry>?visit</entry>
+        <entry>?ASSIGN</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -130,12 +130,12 @@
         <mark key="]" line="2" column="4" />
         <mark key="." line="2" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590783750277">
-        <mark key="'" line="258" column="21" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590787839275">
+        <mark key="'" line="188" column="26" />
         <mark key="[" line="314" column="96" />
-        <mark key="]" line="299" column="38" />
-        <mark key="^" line="299" column="38" />
-        <mark key="." line="299" column="37" />
+        <mark key="]" line="47" column="48" />
+        <mark key="^" line="47" column="48" />
+        <mark key="." line="47" column="47" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/IntegerToken.java" timestamp="1590606200543">
         <mark key="[" line="29" column="0" />
@@ -148,8 +148,8 @@
       <file name="/fragment.java" timestamp="1590786914052">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590782287192">
-        <mark key="'" line="164" column="77" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590787822217">
+        <mark key="'" line="154" column="68" />
         <mark key="[" line="103" column="0" />
         <mark key="]" line="103" column="33" />
         <mark key="." line="103" column="0" />
@@ -238,6 +238,8 @@
       <jump line="73" column="15" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="72" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="71" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="154" column="68" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="188" column="26" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
@@ -249,7 +251,7 @@
         <text>const y :=  x + 2.</text>
       </register>
       <register name="/" type="4">
-        <text>visit</text>
+        <text>ASSIGN</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXZvaWQgdmlzaXQoRmxvYXRpbmdDb25zdGFudE5vZGUgbm9kZSk7Cg==</text>
@@ -282,15 +284,15 @@
         <text encoding="base64">CQlpZihpbnB1dC5uZXh0KCkuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJU3lzdGVtLm91dC5wcmludGxuKCJoZXJlIik7CgkJfQ==</text>
       </register>
       <register name=":" type="4">
-        <text>?visit</text>
+        <text>?ASSIGN</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>visit</last-search>
+      <last-search>ASSIGN</last-search>
       <last-offset />
-      <last-pattern>visit</last-pattern>
+      <last-pattern>ASSIGN</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

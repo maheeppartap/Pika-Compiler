@@ -24,9 +24,9 @@
         <entry>start</entry>
         <entry>literal</entry>
         <entry>Literal</entry>
+        <entry>visit</entry>
       </history-search>
       <history-cmd>
-        <entry>?main</entry>
         <entry>?m</entry>
         <entry>?tests</entry>
         <entry>?Label</entry>
@@ -46,6 +46,7 @@
         <entry>?start</entry>
         <entry>?literal</entry>
         <entry>?Literal</entry>
+        <entry>?visit</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -70,7 +71,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590777507875">
+      <file name="/Dummy.txt" timestamp="1590786862934">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -118,10 +119,16 @@
         <mark key="." line="108" column="0" />
         <mark key="^" line="108" column="8" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590776740943">
-        <mark key="[" line="1" column="16" />
-        <mark key="]" line="1" column="20" />
-        <mark key="." line="1" column="20" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590786447976">
+        <mark key="'" line="62" column="20" />
+        <mark key="[" line="295" column="26" />
+        <mark key="]" line="295" column="26" />
+        <mark key="." line="295" column="26" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590786924622">
+        <mark key="[" line="2" column="3" />
+        <mark key="]" line="2" column="4" />
+        <mark key="." line="2" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590783750277">
         <mark key="'" line="258" column="21" />
@@ -138,7 +145,7 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/NumberToken.java" timestamp="1590605863005">
         <mark key="[" line="4" column="14" />
       </file>
-      <file name="/fragment.java" timestamp="1590779203487">
+      <file name="/fragment.java" timestamp="1590786914052">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590782287192">
@@ -215,59 +222,75 @@
       <jump line="289" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="286" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="258" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="263" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="228" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="225" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="222" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="218" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="193" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="186" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="181" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="177" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="166" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="159" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="151" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="150" column="71" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="73" column="15" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="72" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="71" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">CXZvaWQgdmlzaXQoRmxvYXRpbmdDb25zdGFudE5vZGUgbm9kZSk7Cg==</text>
+      <register name="&quot;" type="4">
+        <text>const y :=  x + 2.</text>
       </register>
       <register name="-" type="4">
-        <text>loatingConstantNode</text>
+        <text>const y :=  x + 2.</text>
       </register>
       <register name="/" type="4">
-        <text>Literal</text>
+        <text>visit</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXZvaWQgdmlzaXQoRmxvYXRpbmdDb25zdGFudE5vZGUgbm9kZSk7Cg==</text>
       </register>
       <register name="1" type="2">
+        <text>Added a float reading functionality</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">CQkJCWMgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">CWlmKCFuZXh0Xy5pc051bWVyaWNTaWduKCkgfHwgIW5leHRfLmlzRGlnaXQoKSl7CgkJCQkvL2lucHV0LnB1c2hiYWNrKGMpOwoJCQkJcmV0dXJuOwoJCQl9</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">CQkJCX0K</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">CQkJCQlicmVhazsK</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CQkJCQlsZXhpY2FsRXJyb3IoYyk7Cg==</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQkJCWlmICghYy5pc0RpZ2l0KCkpIHsK</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsK</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">CQlpZihpbnB1dC5uZXh0KCkuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJU3lzdGVtLm91dC5wcmludGxuKCJoZXJlIik7CgkJfQ==</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">CQlpZihidWZmZXIudG9TdHJpbmcoKS5lbmRzV2l0aCgiLiIpKSB7CgkJCWxleGljYWxFcnJvcihmaXJzdENoYXIpOwoJCX0=</text>
-      </register>
       <register name=":" type="4">
-        <text>?Literal</text>
+        <text>?visit</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Literal</last-search>
+      <last-search>visit</last-search>
       <last-offset />
-      <last-pattern>Literal</last-pattern>
+      <last-pattern>visit</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

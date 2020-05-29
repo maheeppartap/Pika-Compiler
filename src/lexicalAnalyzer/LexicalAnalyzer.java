@@ -83,9 +83,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			//buffer.append(next.getCharacter());
 		}
 		appendSubsequentDigits(buffer);
-		if(buffer.toString().endsWith(".")) {
-			lexicalError(firstChar);
-		}
 		return FloatingToken.make(firstChar.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {
@@ -98,6 +95,14 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		}
 		if(c.getCharacter() == '.' && next_.getCharacter() == '.'){
 			lexicalError(c);
+		}
+		if(c.getCharacter() == 'E'){
+			buffer.append(c.getCharacter());
+			c = input.next();
+			while(c.isDigit() || c.isNumericSign()) {
+				buffer.append(c.getCharacter());
+				c = input.next();
+			}
 		}
 		input.pushback(c);
 	}

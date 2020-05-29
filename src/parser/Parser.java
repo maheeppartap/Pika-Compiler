@@ -4,17 +4,7 @@ import java.util.Arrays;
 
 import logging.PikaLogger;
 import parseTree.*;
-import parseTree.nodeTypes.BinaryOperatorNode;
-import parseTree.nodeTypes.BooleanConstantNode;
-import parseTree.nodeTypes.MainBlockNode;
-import parseTree.nodeTypes.DeclarationNode;
-import parseTree.nodeTypes.ErrorNode;
-import parseTree.nodeTypes.IdentifierNode;
-import parseTree.nodeTypes.IntegerConstantNode;
-import parseTree.nodeTypes.NewlineNode;
-import parseTree.nodeTypes.PrintStatementNode;
-import parseTree.nodeTypes.ProgramNode;
-import parseTree.nodeTypes.SpaceNode;
+import parseTree.nodeTypes.*;
 import tokens.*;
 import lexicalAnalyzer.Keyword;
 import lexicalAnalyzer.Lextant;
@@ -305,7 +295,10 @@ public class Parser {
 		if(!startsLiteral(nowReading)) {
 			return syntaxErrorNode("literal");
 		}
-		
+
+		if(startsFloatNumber(nowReading)){
+			return parseFloatNumber();
+		}
 		if(startsIntNumber(nowReading)) {
 			return parseIntNumber();
 		}
@@ -319,10 +312,17 @@ public class Parser {
 		return syntaxErrorNode("literal");
 	}
 	private boolean startsLiteral(Token token) {
-		return startsIntNumber(token) || startsIdentifier(token) || startsBooleanConstant(token);
+		return startsIntNumber(token) || startsIdentifier(token) || startsBooleanConstant(token) || startsFloatNumber(token);
 	}
 
 	// number (terminal)
+	private ParseNode parseFloatNumber(){
+		if(!startsFloatNumber(nowReading)){
+			return syntaxErrorNode("Floating constant");
+		}
+		readToken();
+		return new FloatingConstantNode(previouslyRead);
+	}
 	private ParseNode parseIntNumber() {
 		if(!startsIntNumber(nowReading)) {
 			return syntaxErrorNode("integer constant");
@@ -332,6 +332,9 @@ public class Parser {
 	}
 	private boolean startsIntNumber(Token token) {
 		return token instanceof IntegerToken;
+	}
+	private boolean startsFloatNumber(Token token){
+		return token instanceof FloatingToken;
 	}
 
 	// identifier (terminal)

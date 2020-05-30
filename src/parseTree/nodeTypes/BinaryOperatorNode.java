@@ -3,6 +3,7 @@ package parseTree.nodeTypes;
 import parseTree.ParseNode;
 import parseTree.ParseNodeVisitor;
 import lexicalAnalyzer.Lextant;
+import semanticAnalyzer.signatures.FunctionSignature;
 import tokens.LextantToken;
 import tokens.Token;
 
@@ -20,6 +21,13 @@ public class BinaryOperatorNode extends ParseNode {
 	
 	////////////////////////////////////////////////////////////
 	// attributes
+	private FunctionSignature signature = FunctionSignature.nullInstance();
+	public final FunctionSignature getSignature(){
+		return signature;
+	}
+	public final void setSignature(FunctionSignature signature){
+		this.signature = signature;
+	}
 	
 	public Lextant getOperator() {
 		return lextantToken().getLextant();

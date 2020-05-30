@@ -1,5 +1,6 @@
-exec{
-    const x :=  -22.5E3.
-    const y :=  x + 2.
-    print y.
+exec {
+    const avogadro := 6.022E+23.
+    const pi := 3.14159.
+    const twopi := pi + pi.
+    print twopi.
 }

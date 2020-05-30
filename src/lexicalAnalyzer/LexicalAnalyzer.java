@@ -76,35 +76,73 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			next = input.next();
 			LocatedChar secondNext = input.peek();
 
-			if(next.getCharacter() != '.' && !secondNext.isDigit()){ // means int, and we added an extra '.'
-				input.pushback(next);
-				return IntegerToken.make(firstChar.getLocation(), buffer.toString());
+			if(next.getCharacter() == '.'){ // means int, and we added an extra '.'
+				//to check if there is something after the decimal
+				if(secondNext.getCharacter() == '.'){
+					lexicalError(secondNext);
+				}
+				if(!secondNext.isDigit()){
+					input.pushback(next);
+					return IntegerToken.make(firstChar.getLocation(), buffer.toString());
+				}
+
 			}
-			//buffer.append(next.getCharacter());
+			buffer.append(next.getCharacter());
+		}
+		if(buffer.toString().endsWith("E")){
+			appendSubsequentDigits(buffer);
+			return FloatingToken.make(firstChar.getLocation(), buffer.toString());
+
 		}
 		appendSubsequentDigits(buffer);
+		next = input.next();
+		LocatedChar sec = input.peek();
+		if(next.getCharacter() == 'E'){
+			buffer.append(next.getCharacter());
+			if(sec.isNumericSign()){
+				next = input.next();
+				buffer.append(next.getCharacter());
+			}
+			appendSubsequentDigits(buffer);
+		}
+		//next = input.next();
+		if(next.getCharacter() == '.') {
+			input.pushback(next);
+		}
 		return FloatingToken.make(firstChar.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {
+		boolean e_flag = false;
 		LocatedChar c = input.next();
-		LocatedChar next_ = input.peek();
-		while(c.isDigit() || (c.getCharacter() == '.' &&  next_.isDigit())) {
+		while (c.isDigit()){
 			buffer.append(c.getCharacter());
 			c = input.next();
-			next_ = input.peek();
-		}
-		if(c.getCharacter() == '.' && next_.getCharacter() == '.'){
-			lexicalError(c);
-		}
-		if(c.getCharacter() == 'E'){
-			buffer.append(c.getCharacter());
-			c = input.next();
-			while(c.isDigit() || c.isNumericSign()) {
-				buffer.append(c.getCharacter());
-				c = input.next();
-			}
 		}
 		input.pushback(c);
+
+
+
+
+
+//		LocatedChar c = input.next();
+//		LocatedChar next_ = input.peek();
+//		while(c.isDigit() || (c.getCharacter() == '.' &&  next_.isDigit())) {
+//			buffer.append(c.getCharacter());
+//			c = input.next();
+//			next_ = input.peek();
+//		}
+//		if(c.getCharacter() == '.' && next_.getCharacter() == '.'){
+//			lexicalError(c);
+//		}
+//		if(c.getCharacter() == 'E'){
+//			buffer.append(c.getCharacter());
+//			c = input.next();
+//			while(c.isDigit() || c.isNumericSign()) {
+//				buffer.append(c.getCharacter());
+//				c = input.next();
+//			}
+//		}
+//		input.pushback(c);
 	}
 
 	//////////////////////////////////////////////////////////////////////////////
@@ -185,6 +223,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	// Error-reporting	
 
 	private void lexicalError(LocatedChar ch) {
+		if(ch.getCharacter() == 'E') return;
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
 		log.severe("Lexical error: invalid character " + ch);
 	}

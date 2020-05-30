@@ -23,7 +23,7 @@ public class FloatingToken extends TokenImp {
 
     @Override
     protected String rawString() {
-        return "number, " + value;
+        return "FloatingConst, " + value;
     }
 }
 

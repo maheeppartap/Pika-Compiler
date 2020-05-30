@@ -150,12 +150,11 @@
       <file name="/fragment.java" timestamp="1590786914052">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590805917058">
-        <mark key="'" line="170" column="68" />
-        <mark key="[" line="79" column="40" />
-        <mark key="]" line="79" column="40" />
-        <mark key="." line="79" column="40" />
-        <mark key="^" line="78" column="40" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590806931904">
+        <mark key="'" line="173" column="68" />
+        <mark key="[" line="84" column="12" />
+        <mark key="]" line="84" column="12" />
+        <mark key="." line="84" column="12" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Temp/Temp1_pika0point2 (3).zip/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590804838177" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590733543469">
@@ -249,10 +248,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>)</text>
+        <text>/</text>
       </register>
       <register name="-" type="4">
-        <text>)</text>
+        <text>/</text>
       </register>
       <register name="/" type="4">
         <text>ASSIGN</text>
@@ -261,31 +260,31 @@
         <text encoding="base64">CXZvaWQgdmlzaXQoRmxvYXRpbmdDb25zdGFudE5vZGUgbm9kZSk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Ly8JCXdoaWxlKGMuaXNEaWdpdCgpKSB7Ci8vCQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsKLy8JCQljID0gaW5wdXQubmV4dCgpOwovLwkJfQovLwkJTG9jYXRlZENoYXIgbmV4dCA9IGlucHV0LnBlZWsoKTsKLy8JCWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnICYmIG5leHQuaXNEaWdpdCgpKXsKLy8JCQlidWZmZXIuYXBwZW5kKGMuZ2V0Q2hhcmFjdGVyKCkpOwovLwkJCXdoaWxlIChjLmlzRGlnaXQoKSl7Ci8vCQkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJCWMgPSBpbnB1dC5uZXh0KCk7Ci8vCQkJCWVfZmxhZyA9IHRydWU7Ci8vCQkJfQovLwkJfQovLwkJaWYoYy5nZXRDaGFyYWN0ZXIoKSA9PSAnLicgJiYgbmV4dC5pc0RpZ2l0KCkgJiYgIWVfZmxhZyl7Ci8vCQkJYnVmZmVyLmFwCi8vCQl9</text>
+        <text encoding="base64">CQkJCWJ1ZmZlci5hcHBlbmQobmV4dC5nZXRDaGFyYWN0ZXIoKSk7Cg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IGF2b2dhZHJvICA6PSAgNi4wMjJFKzIzLgogICAgY29uc3QgcGkgICAgOj0gIDMuMTQxNTku</text>
+        <text encoding="base64">CQkJCWJ1ZmZlci5hcHBlbmQoc2Vjb25kTmV4dC5nZXRDaGFyYWN0ZXIoKSk7Cg==</text>
       </register>
       <register name="3" type="2">
-        <text>Added a float reading functionality</text>
+        <text encoding="base64">Ly8JCXdoaWxlKGMuaXNEaWdpdCgpKSB7Ci8vCQkJYnVmZmVyLmFwcGVuZChjLmdldENoYXJhY3RlcigpKTsKLy8JCQljID0gaW5wdXQubmV4dCgpOwovLwkJfQovLwkJTG9jYXRlZENoYXIgbmV4dCA9IGlucHV0LnBlZWsoKTsKLy8JCWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnICYmIG5leHQuaXNEaWdpdCgpKXsKLy8JCQlidWZmZXIuYXBwZW5kKGMuZ2V0Q2hhcmFjdGVyKCkpOwovLwkJCXdoaWxlIChjLmlzRGlnaXQoKSl7Ci8vCQkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJCWMgPSBpbnB1dC5uZXh0KCk7Ci8vCQkJCWVfZmxhZyA9IHRydWU7Ci8vCQkJfQovLwkJfQovLwkJaWYoYy5nZXRDaGFyYWN0ZXIoKSA9PSAnLicgJiYgbmV4dC5pc0RpZ2l0KCkgJiYgIWVfZmxhZyl7Ci8vCQkJYnVmZmVyLmFwCi8vCQl9</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQkJCWMgPSBpbnB1dC5uZXh0KCk7Cg==</text>
+        <text encoding="base64">ICAgIGNvbnN0IGF2b2dhZHJvICA6PSAgNi4wMjJFKzIzLgogICAgY29uc3QgcGkgICAgOj0gIDMuMTQxNTku</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">CWlmKCFuZXh0Xy5pc051bWVyaWNTaWduKCkgfHwgIW5leHRfLmlzRGlnaXQoKSl7CgkJCQkvL2lucHV0LnB1c2hiYWNrKGMpOwoJCQkJcmV0dXJuOwoJCQl9</text>
+      <register name="5" type="2">
+        <text>Added a float reading functionality</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkJCX0K</text>
+        <text encoding="base64">CQkJCWMgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">CQkJCQlicmVhazsK</text>
+      <register name="7" type="4">
+        <text encoding="base64">CWlmKCFuZXh0Xy5pc051bWVyaWNTaWduKCkgfHwgIW5leHRfLmlzRGlnaXQoKSl7CgkJCQkvL2lucHV0LnB1c2hiYWNrKGMpOwoJCQkJcmV0dXJuOwoJCQl9</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQkJCQlsZXhpY2FsRXJyb3IoYyk7Cg==</text>
+        <text encoding="base64">CQkJCX0K</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQkJCWlmICghYy5pc0RpZ2l0KCkpIHsK</text>
+        <text encoding="base64">CQkJCQlicmVhazsK</text>
       </register>
       <register name=":" type="4">
         <text>?ASSIGN</text>

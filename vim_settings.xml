@@ -129,10 +129,10 @@
         <mark key="^" line="276" column="36" />
         <mark key="." line="290" column="17" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590895118048">
-        <mark key="[" line="0" column="3" />
-        <mark key="]" line="0" column="4" />
-        <mark key="." line="0" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590897582613">
+        <mark key="[" line="3" column="3" />
+        <mark key="]" line="3" column="4" />
+        <mark key="." line="3" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590891400265">
         <mark key="'" line="227" column="25" />
@@ -283,10 +283,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>System.out.println(&quot;here!&quot;);</text>
+        <text>.</text>
       </register>
       <register name="-" type="4">
-        <text>System.out.println(&quot;here!&quot;);</text>
+        <text>.</text>
       </register>
       <register name="/" type="4">
         <text>numericSign</text>

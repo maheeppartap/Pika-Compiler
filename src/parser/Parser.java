@@ -1,6 +1,7 @@
 package parser;
 
 
+import java.net.PortUnreachableException;
 import java.util.Arrays;
 
 import logging.PikaLogger;
@@ -226,7 +227,7 @@ public class Parser {
 		}
 		
 		ParseNode left = parseAdditiveExpression();
-		if(nowReading.isLextant(Punctuator.GREATER)) {
+		if(nowReading.isLextant(Punctuator.GREATER, Punctuator.GREATEREQUAL, Punctuator.LESSTHAN, Punctuator.LESSTHANEQUAL, Punctuator.EQUALTO, Punctuator.NOTEQUALTO)) {
 			Token compareToken = nowReading;
 			readToken();
 			ParseNode right = parseAdditiveExpression();

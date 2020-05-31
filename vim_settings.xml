@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>ErrorNode</entry>
         <entry>visit</entry>
         <entry>multiplicativeExpression</entry>
         <entry>DIVISION</entry>
@@ -25,9 +24,9 @@
         <entry>FAdd</entry>
         <entry>F</entry>
         <entry>Sub</entry>
+        <entry>peek</entry>
       </history-search>
       <history-cmd>
-        <entry>?Add</entry>
         <entry>?visit</entry>
         <entry>?multiplicativeExpression</entry>
         <entry>?DIVISION</entry>
@@ -47,6 +46,7 @@
         <entry>?FAdd</entry>
         <entry>?F</entry>
         <entry>?Sub</entry>
+        <entry>?peek</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -101,7 +101,7 @@
         <mark key="." line="98" column="4" />
         <mark key="^" line="98" column="5" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590903728574">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590948596131">
         <mark key="'" line="163" column="89" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590808919389">
@@ -117,12 +117,11 @@
         <mark key="." line="97" column="47" />
         <mark key="^" line="97" column="48" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590945662553">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590948265085">
         <mark key="'" line="201" column="32" />
-        <mark key="[" line="235" column="33" />
-        <mark key="]" line="235" column="33" />
-        <mark key="^" line="226" column="13" />
-        <mark key="." line="235" column="33" />
+        <mark key="[" line="313" column="12" />
+        <mark key="]" line="313" column="16" />
+        <mark key="." line="313" column="16" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1590942140382" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590939002425">
@@ -284,45 +283,49 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>LESSTHANEQUAL</text>
+        <text>code.append(arg1);
+				code.add(Label, arg2Label);
+				code.append(arg2);
+				code.add(FSubtract);</text>
       </register>
       <register name="-" type="4">
-        <text>LESSTHANEQUAL</text>
+        <text>|| node.getOperator() == Punctuator.GREATEREQUAL || node.getOperator() == Punctuator.LESSTHANEQUAL</text>
       </register>
       <register name="/" type="4">
-        <text>Sub</text>
+        <text>peek</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQkJRnVuY3Rpb25TaWduYXR1cmUgYlNpZ25hdHVyZSA9IG5ldyBGdW5jdGlvblNpZ25hdHVyZSgxLCBCT09MRUFOLCBCT09MRUFOLCBCT09MRUFOKTsK</text>
+        <text encoding="base64">CQkJU3RyaW5nIGFyZzJMYWJlbCAgPSBsYWJlbGxlci5uZXdMYWJlbCgiYXJnMiIpOwo=</text>
       </register>
-      <register name="1" type="2">
-        <text>implemented float addition and some bugs in reading them.</text>
+      <register name="1" type="4">
+        <text>code.append(arg1);
+				code.add(Label, arg2Label);
+				code.append(arg2);
+				code.add(FSubtract);</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBmcmFnbWVudC5hZGQoUHVzaEYsIDAuMCk7CiAgICAgICAgZnJhZ21lbnQuYWRkKEZTdWJ0cmFjdCk7</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
-      <register name="4" type="4">
-        <text>if(next.getCharacter().toString() == &quot;\32&quot;){
-				System.out.println(&quot;here!&quot;);
-			}</text>
+      <register name="4" type="2">
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBhcmcyTGFiZWwpOwo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdWJMYWJlbCk7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImhlcmUiKTsK</text>
+        <text encoding="base64">CQkJZWxzZSBpZiggbm9kZS5nZXRPcGVyYXRvcigpID09IFB1bmN0dWF0b3IuR1JFQVRFUkVRVUFMKXsKCQkJCWNvZGUuYWRkKCk7CgkJCX0=</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICByZXR1cm4gbmV3IEFTTUNvZGVGcmFnbWVudCgpOwo=</text>
+        <text>implemented float addition and some bugs in reading them.</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
+        <text encoding="base64">ICAgICAgICBmcmFnbWVudC5hZGQoUHVzaEYsIDAuMCk7CiAgICAgICAgZnJhZ21lbnQuYWRkKEZTdWJ0cmFjdCk7</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
+        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
       </register>
       <register name=":" type="4">
         <text>?Sub</text>
@@ -331,9 +334,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Sub</last-search>
+      <last-search>peek</last-search>
       <last-offset />
-      <last-pattern>Sub</last-pattern>
+      <last-pattern>peek</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

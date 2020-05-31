@@ -131,12 +131,12 @@
         <mark key="]" line="0" column="4" />
         <mark key="." line="0" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590945282486">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590946088163">
         <mark key="'" line="344" column="36" />
-        <mark key="[" line="229" column="122" />
-        <mark key="]" line="252" column="45" />
+        <mark key="[" line="229" column="155" />
+        <mark key="]" line="229" column="155" />
         <mark key="^" line="252" column="45" />
-        <mark key="." line="252" column="44" />
+        <mark key="." line="229" column="155" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/simpleCodeGenerator.java" timestamp="1590892291139">
         <mark key="[" line="6" column="50" />
@@ -284,10 +284,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>FloatingConstantNode</text>
+        <text>LESSTHANEQUAL</text>
       </register>
       <register name="-" type="4">
-        <text>FloatingConstantNode</text>
+        <text>LESSTHANEQUAL</text>
       </register>
       <register name="/" type="4">
         <text>Sub</text>

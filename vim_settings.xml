@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>visit</entry>
         <entry>multiplicativeExpression</entry>
         <entry>DIVISION</entry>
         <entry>Multiplicative</entry>
@@ -25,9 +24,9 @@
         <entry>F</entry>
         <entry>Sub</entry>
         <entry>peek</entry>
+        <entry>Pop</entry>
       </history-search>
       <history-cmd>
-        <entry>?visit</entry>
         <entry>?multiplicativeExpression</entry>
         <entry>?DIVISION</entry>
         <entry>?Multiplicative</entry>
@@ -47,6 +46,7 @@
         <entry>?F</entry>
         <entry>?Sub</entry>
         <entry>?peek</entry>
+        <entry>?Pop</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -74,7 +74,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590938969116">
+      <file name="/Dummy.txt" timestamp="1590951158198">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -101,7 +101,7 @@
         <mark key="." line="98" column="4" />
         <mark key="^" line="98" column="5" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590949423004">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590951192870">
         <mark key="'" line="163" column="89" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590808919389">
@@ -117,11 +117,11 @@
         <mark key="." line="97" column="47" />
         <mark key="^" line="97" column="48" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590949386424">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590951096814">
         <mark key="'" line="201" column="32" />
-        <mark key="[" line="307" column="0" />
-        <mark key="]" line="307" column="0" />
-        <mark key="." line="307" column="0" />
+        <mark key="[" line="313" column="41" />
+        <mark key="]" line="313" column="14" />
+        <mark key="." line="313" column="14" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1590942140382" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590939002425">
@@ -283,57 +283,57 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
+        <text>Float has been fully integrated!</text>
       </register>
       <register name="-" type="4">
-        <text>|| node.getOperator() == Punctuator.GREATEREQUAL || node.getOperator() == Punctuator.LESSTHANEQUAL</text>
+        <text>////////////////////////////////////////////////</text>
       </register>
       <register name="/" type="4">
-        <text>peek</text>
+        <text>Pop</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQkJU3RyaW5nIGFyZzJMYWJlbCAgPSBsYWJlbGxlci5uZXdMYWJlbCgiYXJnMiIpOwo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
+        <text>Float has been fully integrated!</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfdHJ1ZSA9IGxhYmVsbGVyLm5ld0xhYmVsKCJyZXN0b3JlX3RydWUiKTsK</text>
+      <register name="2" type="4">
+        <text encoding="base64">CWNvZGUuYXBwZW5kKGFyZzEpOwoJCQkJY29kZS5hcHBlbmQoYXJnMik7CgkJCQljb2RlLmFkZChGU3VidHJhY3QpOw==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfZmFsc2UgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZV9mYWxzZSIpOwo=</text>
+        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfdHJ1ZSA9IGxhYmVsbGVyLm5ld0xhYmVsKCJyZXN0b3JlX3RydWUiKTsK</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfZmFsc2UgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZV9mYWxzZSIpOwo=</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmUgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZSIpOwo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>code.append(arg1);
 				code.add(Label, arg2Label);
 				code.append(arg2);
 				code.add(FSubtract);</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
-      </register>
       <register name="8" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBhcmcyTGFiZWwpOwo=</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdWJMYWJlbCk7Cg==</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
       <register name=":" type="4">
-        <text>?Sub</text>
+        <text>?Pop</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>peek</last-search>
+      <last-search>Pop</last-search>
       <last-offset />
-      <last-pattern>peek</last-pattern>
+      <last-pattern>Pop</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

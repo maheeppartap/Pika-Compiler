@@ -128,10 +128,10 @@
         <mark key="^" line="271" column="0" />
         <mark key="." line="273" column="16" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590813622770">
-        <mark key="[" line="1" column="24" />
-        <mark key="]" line="1" column="24" />
-        <mark key="." line="1" column="24" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590890510279">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590787839275">
         <mark key="'" line="188" column="26" />
@@ -274,7 +274,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text>added the part where we generate float statements fro the asm for floats</text>
+        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
       </register>
       <register name="-" type="4">
         <text>//throw exception</text>
@@ -286,31 +286,31 @@
         <text encoding="base64">CQlmcmFnLmFkZChEYXRhUywgIiVkIik7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text>added the part where we generate float statements fro the asm for floats</text>
+        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
       </register>
       <register name="2" type="2">
+        <text>added the part where we generate float statements fro the asm for floats</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CQkJQVNNT3Bjb2RlIG9wY29kZSA9IG9wY29kZUZvck9wZXJhdG9yKG5vZGUuZ2V0T3BlcmF0b3IoKSk7CgkJCWNvZGUuYWRkKG9wY29kZSk7CQk=</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">CQluZXh0ID0gaW5wdXQubmV4dCgpOwo=</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CQkJCW5leHQgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">IGNvbnN0IHggOj0gMS4KIGNvbnN0IHkgOj0gMS4zRTUuCiBjb25zdCB6IDo9ICsuMjVFMC4=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">IGNvbnN0IHkgOj0gMS4wRTEuCiBjb25zdCB6IDo9ICsuMjVFMC4=</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">IGNvbnN0IGEgOj0geCArIHku</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CWlmKG5leHQuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJYnVmZmVyLmFwcGVuZChuZXh0LmdldENoYXJhY3RlcigpKTsKCQkJYXBwZW5kU3Vic2VxdWVudERpZ2l0cyhidWZmZXIpOwoJCX0=</text>
       </register>
       <register name=":" type="4">
         <text>?FunctionSignature</text>

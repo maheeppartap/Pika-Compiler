@@ -123,11 +123,8 @@
         <mark key="]" line="313" column="14" />
         <mark key="." line="313" column="14" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590956098807">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590957986087">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="0" column="5" />
-        <mark key="]" line="0" column="4" />
-        <mark key="." line="0" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590946088163">
         <mark key="'" line="344" column="36" />
@@ -162,12 +159,12 @@
       <file name="/fragment.java" timestamp="1590898603869">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590956582297">
-        <mark key="'" line="145" column="12" />
-        <mark key="[" line="41" column="24" />
-        <mark key="]" line="41" column="25" />
-        <mark key="." line="41" column="25" />
-        <mark key="^" line="104" column="50" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590958772273">
+        <mark key="'" line="148" column="12" />
+        <mark key="[" line="53" column="8" />
+        <mark key="]" line="53" column="12" />
+        <mark key="." line="53" column="12" />
+        <mark key="^" line="107" column="50" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590940049045">
         <mark key="[" line="13" column="11" />
@@ -282,10 +279,11 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>nextNonWhitespaceChar();</text>
+        <text>if(ch.getCharacter() == '\n')
+				findNextToken();</text>
       </register>
       <register name="-" type="4">
-        <text>nextNonWhitespaceChar();</text>
+        <text># efewfsdfdsf</text>
       </register>
       <register name="/" type="4">
         <text>Pop</text>
@@ -293,35 +291,36 @@
       <register name="0" type="2">
         <text encoding="base64">CQkJU3RyaW5nIGFyZzJMYWJlbCAgPSBsYWJlbGxlci5uZXdMYWJlbCgiYXJnMiIpOwo=</text>
       </register>
-      <register name="1" type="2">
-        <text>Float has been fully integrated!</text>
+      <register name="1" type="4">
+        <text>if(ch.getCharacter() == '\n')
+				findNextToken();</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">CWNvZGUuYXBwZW5kKGFyZzEpOwoJCQkJY29kZS5hcHBlbmQoYXJnMik7CgkJCQljb2RlLmFkZChGU3VidHJhY3QpOw==</text>
+      <register name="2" type="2">
+        <text encoding="base64">Y29uc3QgeSA6PSAxMC4wLgpjb25zdCB6IDo9IHggPiB5LgojY2hqc2JkaGpjYiMgcHJpbnQgei4=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
+        <text>Float has been fully integrated!</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfdHJ1ZSA9IGxhYmVsbGVyLm5ld0xhYmVsKCJyZXN0b3JlX3RydWUiKTsK</text>
+      <register name="4" type="4">
+        <text encoding="base64">CWNvZGUuYXBwZW5kKGFyZzEpOwoJCQkJY29kZS5hcHBlbmQoYXJnMik7CgkJCQljb2RlLmFkZChGU3VidHJhY3QpOw==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfZmFsc2UgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZV9mYWxzZSIpOwo=</text>
+        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
       </register>
       <register name="6" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfdHJ1ZSA9IGxhYmVsbGVyLm5ld0xhYmVsKCJyZXN0b3JlX3RydWUiKTsK</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfZmFsc2UgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZV9mYWxzZSIpOwo=</text>
+      </register>
+      <register name="8" type="2">
         <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmUgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZSIpOwo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>code.append(arg1);
 				code.add(Label, arg2Label);
 				code.append(arg2);
 				code.add(FSubtract);</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
       <register name=":" type="4">
         <text>?Pop</text>

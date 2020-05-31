@@ -101,7 +101,7 @@
         <mark key="." line="98" column="4" />
         <mark key="^" line="98" column="5" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590948596131">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590949423004">
         <mark key="'" line="163" column="89" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590808919389">
@@ -117,11 +117,11 @@
         <mark key="." line="97" column="47" />
         <mark key="^" line="97" column="48" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590948265085">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590949386424">
         <mark key="'" line="201" column="32" />
-        <mark key="[" line="313" column="12" />
-        <mark key="]" line="313" column="16" />
-        <mark key="." line="313" column="16" />
+        <mark key="[" line="307" column="0" />
+        <mark key="]" line="307" column="0" />
+        <mark key="." line="307" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1590942140382" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590939002425">
@@ -282,11 +282,8 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>code.append(arg1);
-				code.add(Label, arg2Label);
-				code.append(arg2);
-				code.add(FSubtract);</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
       </register>
       <register name="-" type="4">
         <text>|| node.getOperator() == Punctuator.GREATEREQUAL || node.getOperator() == Punctuator.LESSTHANEQUAL</text>
@@ -297,35 +294,35 @@
       <register name="0" type="2">
         <text encoding="base64">CQkJU3RyaW5nIGFyZzJMYWJlbCAgPSBsYWJlbGxlci5uZXdMYWJlbCgiYXJnMiIpOwo=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfdHJ1ZSA9IGxhYmVsbGVyLm5ld0xhYmVsKCJyZXN0b3JlX3RydWUiKTsK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfZmFsc2UgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZV9mYWxzZSIpOwo=</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmUgPSBsYWJlbGxlci5uZXdMYWJlbCgicmVzdG9yZSIpOwo=</text>
+      </register>
+      <register name="5" type="4">
         <text>code.append(arg1);
 				code.add(Label, arg2Label);
 				code.append(arg2);
 				code.add(FSubtract);</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
-      </register>
-      <register name="3" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
-      </register>
-      <register name="4" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBhcmcyTGFiZWwpOwo=</text>
-      </register>
-      <register name="5" type="2">
-        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdWJMYWJlbCk7Cg==</text>
-      </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkJZWxzZSBpZiggbm9kZS5nZXRPcGVyYXRvcigpID09IFB1bmN0dWF0b3IuR1JFQVRFUkVRVUFMKXsKCQkJCWNvZGUuYWRkKCk7CgkJCX0=</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
       <register name="7" type="2">
-        <text>implemented float addition and some bugs in reading them.</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdGFydExhYmVsKTsK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBmcmFnbWVudC5hZGQoUHVzaEYsIDAuMCk7CiAgICAgICAgZnJhZ21lbnQuYWRkKEZTdWJ0cmFjdCk7</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBhcmcyTGFiZWwpOwo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
+        <text encoding="base64">CQkJCWNvZGUuYWRkKExhYmVsLCBzdWJMYWJlbCk7Cg==</text>
       </register>
       <register name=":" type="4">
         <text>?Sub</text>

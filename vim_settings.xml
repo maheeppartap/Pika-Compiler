@@ -5,11 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>visitLeave</entry>
-        <entry>Node</entry>
-        <entry>Binary</entry>
-        <entry>signa</entry>
-        <entry>Normal</entry>
         <entry>BinaryOperator</entry>
         <entry>Signature</entry>
         <entry>FunctionSignature</entry>
@@ -25,14 +20,13 @@
         <entry>multiplicativeExpression</entry>
         <entry>DIVISION</entry>
         <entry>Multiplicative</entry>
+        <entry>parseMultiplicative</entry>
+        <entry>jump</entry>
+        <entry>Jump</entry>
+        <entry>pushI</entry>
+        <entry>PushI</entry>
       </history-search>
       <history-cmd>
-        <entry>?addSignature</entry>
-        <entry>?visitLeave</entry>
-        <entry>?Node</entry>
-        <entry>?Binary</entry>
-        <entry>?signa</entry>
-        <entry>?Normal</entry>
         <entry>?BinaryOperator</entry>
         <entry>?Signature</entry>
         <entry>?FunctionSignature</entry>
@@ -47,6 +41,12 @@
         <entry>?multiplicativeExpression</entry>
         <entry>?DIVISION</entry>
         <entry>?Multiplicative</entry>
+        <entry>?parseMultiplicative</entry>
+        <entry>Jump</entry>
+        <entry>?jump</entry>
+        <entry>?Jump</entry>
+        <entry>?pushI</entry>
+        <entry>?PushI</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -74,18 +74,15 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590817821513">
+      <file name="/Dummy.txt" timestamp="1590904099063">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingDivideCodeGenerator.java" timestamp="1590893652435">
-        <mark key="[" line="10" column="13" />
-        <mark key="]" line="10" column="13" />
-        <mark key="." line="10" column="13" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1590784284820">
-        <mark key="[" line="5" column="15" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingDivideCodeGenerator.java" timestamp="1590903973230">
+        <mark key="[" line="14" column="40" />
+        <mark key="]" line="14" column="40" />
+        <mark key="." line="14" column="40" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignature.java" timestamp="1590815493790">
         <mark key="'" line="98" column="8" />
@@ -103,24 +100,21 @@
         <mark key="." line="98" column="4" />
         <mark key="^" line="98" column="5" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590903728574">
+        <mark key="'" line="163" column="89" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/FloatingToken.java" timestamp="1590808919389">
         <mark key="[" line="25" column="16" />
         <mark key="]" line="25" column="16" />
         <mark key="." line="25" column="16" />
         <mark key="^" line="18" column="36" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1590783877571">
-        <mark key="[" line="108" column="8" />
-        <mark key="]" line="108" column="46" />
-        <mark key="." line="108" column="0" />
-        <mark key="^" line="108" column="8" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590893979482">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590904013990">
         <mark key="'" line="24" column="22" />
-        <mark key="[" line="96" column="50" />
-        <mark key="]" line="96" column="48" />
-        <mark key="." line="96" column="47" />
-        <mark key="^" line="96" column="48" />
+        <mark key="[" line="63" column="39" />
+        <mark key="]" line="97" column="48" />
+        <mark key="." line="97" column="47" />
+        <mark key="^" line="97" column="48" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590894747659">
         <mark key="'" line="317" column="20" />
@@ -129,17 +123,17 @@
         <mark key="^" line="276" column="36" />
         <mark key="." line="290" column="17" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590899603912">
-        <mark key="[" line="0" column="3" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590902776288">
+        <mark key="[" line="3" column="17" />
         <mark key="]" line="0" column="4" />
         <mark key="." line="0" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590902659406">
-        <mark key="'" line="266" column="12" />
-        <mark key="[" line="241" column="0" />
-        <mark key="]" line="241" column="0" />
-        <mark key="^" line="82" column="63" />
-        <mark key="." line="241" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590902735262">
+        <mark key="'" line="249" column="25" />
+        <mark key="[" line="270" column="54" />
+        <mark key="]" line="237" column="5" />
+        <mark key="^" line="237" column="5" />
+        <mark key="." line="237" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/simpleCodeGenerator.java" timestamp="1590892291139">
         <mark key="[" line="6" column="50" />
@@ -178,29 +172,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="141" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="120" column="5" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="12" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="5" column="63" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="4" column="52" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="128" column="59" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="127" column="55" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="124" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="123" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="122" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="121" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="99" column="88" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="92" column="73" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="160" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="126" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="38" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="13" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="51" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="34" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="136" column="81" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="117" column="43" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="92" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="71" column="37" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="67" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="43" column="37" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="40" column="19" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
@@ -278,61 +249,84 @@
       <jump line="108" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="104" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="284" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="264" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="253" column="30" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="249" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="113" column="43" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="112" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="110" column="47" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="109" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="108" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="107" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="106" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="105" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="104" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="103" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="102" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="166" column="70" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="165" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="163" column="89" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
+      <jump line="107" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
+      <jump line="103" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
+      <jump line="100" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
+      <jump line="95" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
+      <jump line="90" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
+      <jump line="115" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
+        <text>implemented float addition and some bugs in reading them.</text>
       </register>
       <register name="-" type="4">
-        <text>.</text>
+        <text>F</text>
       </register>
       <register name="/" type="4">
-        <text>Multiplicative</text>
+        <text>PushI</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIElOVEVHRVJfRElWSURFX0JZX1pFUk9fUlVOVElNRV9FUlJPUiA9ICIkJGktZGl2aWRlLWJ5LXplcm8iOwo=</text>
       </register>
       <register name="1" type="2">
+        <text>implemented float addition and some bugs in reading them.</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICBmcmFnbWVudC5hZGQoUHVzaEYsIDAuMCk7CiAgICAgICAgZnJhZ21lbnQuYWRkKEZTdWJ0cmFjdCk7</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text>if(next.getCharacter().toString() == &quot;\32&quot;){
 				System.out.println(&quot;here!&quot;);
 			}</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgIH0K</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImhlcmUiKTsK</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICByZXR1cm4gbmV3IEFTTUNvZGVGcmFnbWVudCgpOwo=</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
       </register>
-      <register name="7" type="2">
+      <register name="9" type="2">
         <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
-      </register>
-      <register name="9" type="2">
-        <text>added the part where we generate float statements fro the asm for floats</text>
-      </register>
       <register name=":" type="4">
-        <text>?Multiplicative</text>
+        <text>?PushI</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Multiplicative</last-search>
+      <last-search>PushI</last-search>
       <last-offset />
-      <last-pattern>Multiplicative</last-pattern>
+      <last-pattern>PushI</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

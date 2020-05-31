@@ -1,5 +1,6 @@
 package parser;
 
+
 import java.util.Arrays;
 
 import logging.PikaLogger;
@@ -239,6 +240,7 @@ public class Parser {
 		return startsAdditiveExpression(token);
 	}
 
+
 	// additiveExpression -> multiplicativeExpression [+ multiplicativeExpression]*  (left-assoc)
 	private ParseNode parseAdditiveExpression() {
 		if(!startsAdditiveExpression(nowReading)) {
@@ -246,7 +248,7 @@ public class Parser {
 		}
 		
 		ParseNode left = parseMultiplicativeExpression();
-		while(nowReading.isLextant(Punctuator.ADD)) {
+		while(nowReading.isLextant(Punctuator.ADD, Punctuator.SUBTRACT)) {
 			Token additiveToken = nowReading;
 			readToken();
 			ParseNode right = parseMultiplicativeExpression();
@@ -264,9 +266,9 @@ public class Parser {
 		if(!startsMultiplicativeExpression(nowReading)) {
 			return syntaxErrorNode("multiplicativeExpression");
 		}
-		
+
 		ParseNode left = parseAtomicExpression();
-		while(nowReading.isLextant(Punctuator.MULTIPLY)) {
+		while(nowReading.isLextant(Punctuator.MULTIPLY, Punctuator.DIVIDE)) {
 			Token multiplicativeToken = nowReading;
 			readToken();
 			ParseNode right = parseAtomicExpression();
@@ -278,7 +280,28 @@ public class Parser {
 	private boolean startsMultiplicativeExpression(Token token) {
 		return startsAtomicExpression(token);
 	}
-	
+
+
+	private ParseNode parseDivisionExpression() {
+		if(!startsDivisionExpression(nowReading)) {
+			return syntaxErrorNode("DivisionExpression");
+		}
+
+		ParseNode left = parseAtomicExpression();
+		while(nowReading.isLextant(Punctuator.MULTIPLY)) {
+			Token DivisionToken = nowReading;
+			readToken();
+			ParseNode right = parseAtomicExpression();
+
+			left = BinaryOperatorNode.withChildren(DivisionToken, left, right);
+		}
+		return left;
+	}
+	private boolean startsDivisionExpression(Token token) {
+		return startsAtomicExpression(token);
+	}
+
+
 	// atomicExpression -> literal
 	private ParseNode parseAtomicExpression() {
 		if(!startsAtomicExpression(nowReading)) {

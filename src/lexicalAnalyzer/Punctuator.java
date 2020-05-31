@@ -6,8 +6,10 @@ import tokens.Token;
 
 public enum Punctuator implements Lextant {
 	ADD("+"),
+	SUBTRACT("-"),
 	MULTIPLY("*"),
 	GREATER(">"),
+	DIVIDE("/"),
 	ASSIGN(":="),
 	SEPARATOR(","),
 	SPACE(";"),

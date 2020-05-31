@@ -84,25 +84,25 @@ public class FunctionSignature {
 	///////////////////////////////////////////////////////////////////
 	// Signatures for pika-0 operators
 	// this section will probably disappear in pika-1 (in favor of FunctionSignatures)
-	
-	private static FunctionSignature addSignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.INTEGER);
-	private static FunctionSignature multiplySignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.INTEGER);
-	private static FunctionSignature greaterSignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.BOOLEAN);
-
-	
-	// the switch here is ugly compared to polymorphism.  This should perhaps be a method on Lextant.
-	public static FunctionSignature signatureOf(Lextant lextant) {
-		assert(lextant instanceof Punctuator);	
-		Punctuator punctuator = (Punctuator)lextant;
-		
-		switch(punctuator) {
-		case ADD:		return addSignature;
-		case MULTIPLY:	return multiplySignature;
-		case GREATER:	return greaterSignature;
-
-		default:
-			return neverMatchedSignature;
-		}
-	}
+//
+//	private static FunctionSignature addSignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.INTEGER);
+//	private static FunctionSignature multiplySignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.INTEGER);
+//	private static FunctionSignature greaterSignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.BOOLEAN);
+//
+//
+//	// the switch here is ugly compared to polymorphism.  This should perhaps be a method on Lextant.
+//	public static FunctionSignature signatureOf(Lextant lextant) {
+//		assert(lextant instanceof Punctuator);
+//		Punctuator punctuator = (Punctuator)lextant;
+//
+//		switch(punctuator) {
+//		case ADD:		return addSignature;
+//		case MULTIPLY:	return multiplySignature;
+//		case GREATER:	return greaterSignature;
+//
+//		default:
+//			return neverMatchedSignature;
+//		}
+//	}
 
 }

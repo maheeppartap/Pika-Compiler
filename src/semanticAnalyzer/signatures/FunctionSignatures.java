@@ -92,6 +92,26 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 				new FunctionSignature(ASMOpcode.Multiply, INTEGER, INTEGER, INTEGER),
 				new FunctionSignature(ASMOpcode.FMultiply, FLOATING, FLOATING, FLOATING)
 				);
+
+		Punctuator []comparisons = {Punctuator.GREATER,
+				Punctuator.LESSTHAN,
+				Punctuator.GREATEREQUAL,
+				Punctuator.LESSTHANEQUAL,
+				Punctuator.EQUALTO,
+				Punctuator.NOTEQUALTO};
+		for(Punctuator punc : comparisons){
+			FunctionSignature iSignature = new FunctionSignature(1, INTEGER, INTEGER, BOOLEAN);
+			FunctionSignature fSignature = new FunctionSignature(1, FLOATING,FLOATING, BOOLEAN);
+			FunctionSignature bSignature = new FunctionSignature(1, BOOLEAN, BOOLEAN, BOOLEAN);
+
+			//For later
+			//	FunctionSignature cSignature = new FunctionSignature(1, CHARACTER,CHARACTER, BOOLEAN);
+
+			if(punc == Punctuator.EQUALTO || punc == Punctuator.NOTEQUALTO){
+				new FunctionSignatures(punc, iSignature, /*cSignature*/ fSignature, bSignature);
+			}else
+				new FunctionSignatures(punc, iSignature, /*cSignature*/ fSignature);
+		}
 		
 		// First, we use the operator itself (in this case the Punctuator ADD) as the key.
 		// Then, we give that key two signatures: one an (INT x INT -> INT) and the other

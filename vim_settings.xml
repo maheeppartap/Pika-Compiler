@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>BinaryOperator</entry>
         <entry>Signature</entry>
         <entry>FunctionSignature</entry>
         <entry>subtr</entry>
@@ -25,6 +24,7 @@
         <entry>Jump</entry>
         <entry>pushI</entry>
         <entry>PushI</entry>
+        <entry encoding="base64">XDxjb25zdFw+</entry>
       </history-search>
       <history-cmd>
         <entry>?BinaryOperator</entry>
@@ -74,7 +74,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590904099063">
+      <file name="/Dummy.txt" timestamp="1590938969116">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -123,8 +123,9 @@
         <mark key="^" line="276" column="36" />
         <mark key="." line="290" column="17" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590902776288">
-        <mark key="[" line="3" column="17" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590939002425">
+        <mark key="'" line="1" column="0" />
+        <mark key="[" line="4" column="0" />
         <mark key="]" line="0" column="4" />
         <mark key="." line="0" column="4" />
       </file>
@@ -151,9 +152,9 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1590816328094">
         <mark key="[" line="22" column="17" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1590898557033">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1590939917240">
         <mark key="'" line="16" column="13" />
-        <mark key="[" line="86" column="38" />
+        <mark key="[" line="93" column="18" />
         <mark key="]" line="89" column="0" />
         <mark key="." line="89" column="0" />
       </file>
@@ -172,7 +173,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="67" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="43" column="37" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="40" column="19" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="37" column="19" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
@@ -272,6 +272,7 @@
       <jump line="95" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
       <jump line="90" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
       <jump line="115" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/output/helloPika.asm" />
+      <jump line="1" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
@@ -283,7 +284,7 @@
         <text>F</text>
       </register>
       <register name="/" type="4">
-        <text>PushI</text>
+        <text encoding="base64">XDxjb25zdFw+</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIElOVEVHRVJfRElWSURFX0JZX1pFUk9fUlVOVElNRV9FUlJPUiA9ICIkJGktZGl2aWRlLWJ5LXplcm8iOwo=</text>
@@ -324,9 +325,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>PushI</last-search>
+      <last-search encoding="base64">XDxjb25zdFw+</last-search>
       <last-offset />
-      <last-pattern>PushI</last-pattern>
+      <last-pattern encoding="base64">XDxjb25zdFw+</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>ASSIGN</entry>
         <entry>error</entry>
         <entry>lexicalError</entry>
         <entry>turnAddress</entry>
@@ -25,9 +24,9 @@
         <entry>Subt</entry>
         <entry>Add</entry>
         <entry>parseAdditive</entry>
+        <entry>visitNormalBinaryOperator</entry>
       </history-search>
       <history-cmd>
-        <entry>?ASSIGN</entry>
         <entry>?error</entry>
         <entry>?lexicalError</entry>
         <entry>?turnAddress</entry>
@@ -47,6 +46,7 @@
         <entry>?Subt</entry>
         <entry>?Add</entry>
         <entry>?parseAdditive</entry>
+        <entry>?visitNormalBinaryOperator</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -121,12 +121,12 @@
         <mark key="." line="41" column="25" />
         <mark key="^" line="21" column="44" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590890732330">
-        <mark key="'" line="307" column="20" />
-        <mark key="[" line="280" column="74" />
-        <mark key="]" line="273" column="16" />
-        <mark key="^" line="271" column="0" />
-        <mark key="." line="273" column="16" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590892461271">
+        <mark key="'" line="317" column="20" />
+        <mark key="[" line="276" column="38" />
+        <mark key="]" line="276" column="36" />
+        <mark key="^" line="276" column="36" />
+        <mark key="." line="276" column="35" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590890567000">
         <mark key="[" line="3" column="11" />
@@ -139,6 +139,11 @@
         <mark key="]" line="82" column="63" />
         <mark key="^" line="82" column="63" />
         <mark key="." line="82" column="62" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/simpleCodeGenerator.java" timestamp="1590892291139">
+        <mark key="[" line="6" column="50" />
+        <mark key="]" line="6" column="51" />
+        <mark key="." line="6" column="51" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/IntegerToken.java" timestamp="1590808900583">
         <mark key="[" line="25" column="16" />
@@ -276,54 +281,54 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>e</text>
+        <text>{</text>
       </register>
       <register name="-" type="4">
-        <text>e</text>
+        <text>{</text>
       </register>
       <register name="/" type="4">
-        <text>parseAdditive</text>
+        <text>visitNormalBinaryOperator</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQlmcmFnLmFkZChEYXRhUywgIiVkIik7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImhlcmUiKTsK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gbmV3IEFTTUNvZGVGcmFnbWVudCgpOwo=</text>
       </register>
       <register name="4" type="2">
-        <text>added the part where we generate float statements fro the asm for floats</text>
+        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
+        <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">CQkJQVNNT3Bjb2RlIG9wY29kZSA9IG9wY29kZUZvck9wZXJhdG9yKG5vZGUuZ2V0T3BlcmF0b3IoKSk7CgkJCWNvZGUuYWRkKG9wY29kZSk7CQk=</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQluZXh0ID0gaW5wdXQubmV4dCgpOwo=</text>
+        <text>added the part where we generate float statements fro the asm for floats</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQkJCW5leHQgPSBpbnB1dC5uZXh0KCk7Cg==</text>
+        <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">IGNvbnN0IHggOj0gMS4KIGNvbnN0IHkgOj0gMS4zRTUuCiBjb25zdCB6IDo9ICsuMjVFMC4=</text>
+      <register name="9" type="4">
+        <text encoding="base64">CQkJQVNNT3Bjb2RlIG9wY29kZSA9IG9wY29kZUZvck9wZXJhdG9yKG5vZGUuZ2V0T3BlcmF0b3IoKSk7CgkJCWNvZGUuYWRkKG9wY29kZSk7CQk=</text>
       </register>
       <register name=":" type="4">
-        <text>?parseAdditive</text>
+        <text>?visitNormalBinaryOperator</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>parseAdditive</last-search>
+      <last-search>visitNormalBinaryOperator</last-search>
       <last-offset />
-      <last-pattern>parseAdditive</last-pattern>
+      <last-pattern>visitNormalBinaryOperator</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

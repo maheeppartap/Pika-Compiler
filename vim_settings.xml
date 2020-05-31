@@ -123,10 +123,9 @@
         <mark key="]" line="313" column="14" />
         <mark key="." line="313" column="14" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1590942140382" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590939002425">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590956098807">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="3" column="0" />
+        <mark key="[" line="0" column="5" />
         <mark key="]" line="0" column="4" />
         <mark key="." line="0" column="4" />
       </file>
@@ -163,12 +162,12 @@
       <file name="/fragment.java" timestamp="1590898603869">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590896960213">
-        <mark key="'" line="139" column="12" />
-        <mark key="[" line="79" column="12" />
-        <mark key="]" line="79" column="16" />
-        <mark key="." line="79" column="16" />
-        <mark key="^" line="98" column="50" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590956582297">
+        <mark key="'" line="145" column="12" />
+        <mark key="[" line="41" column="24" />
+        <mark key="]" line="41" column="25" />
+        <mark key="." line="41" column="25" />
+        <mark key="^" line="104" column="50" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590940049045">
         <mark key="[" line="13" column="11" />
@@ -282,11 +281,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text>Float has been fully integrated!</text>
+      <register name="&quot;" type="4">
+        <text>nextNonWhitespaceChar();</text>
       </register>
       <register name="-" type="4">
-        <text>////////////////////////////////////////////////</text>
+        <text>nextNonWhitespaceChar();</text>
       </register>
       <register name="/" type="4">
         <text>Pop</text>

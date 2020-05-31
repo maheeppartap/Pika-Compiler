@@ -16,6 +16,7 @@ import symbolTable.Binding;
 import symbolTable.Scope;
 import static asmCodeGenerator.codeStorage.ASMCodeFragment.CodeType.*;
 import static asmCodeGenerator.codeStorage.ASMOpcode.*;
+import simpleCodeGenerator.*;
 
 // do not call the code generator if any errors have occurred during analysis.
 public class ASMCodeGenerator {
@@ -270,7 +271,16 @@ public class ASMCodeGenerator {
 			if(variant instanceof ASMOpcode){
 				ASMOpcode opcode = (ASMOpcode)variant;
 				code.add(opcode);
-			}else{
+			}else if(variant instanceof simpleCodeGenerator){
+				simpleCodeGenerator generator = (simpleCodeGenerator)variant;
+				ASMCodeFragment fragment = generator.generate(node);
+				code.append(fragment);
+
+				if(fragment.isAddress()){
+					code.markAsAddress();
+				}
+			}
+			else{
 				assert false : "The opcode is not working";
 			}
 		}
@@ -279,6 +289,7 @@ public class ASMCodeGenerator {
 			Punctuator punctuator = (Punctuator)lextant;
 			switch(punctuator) {
 			case ADD: 	   		return Add;				// type-dependent!
+			case DIVIDE:		return Divide;		// type-dependant lol!
 			case MULTIPLY: 		return Multiply;		// type-dependent!
 			default:
 				assert false : "unimplemented operator in opcodeForOperator";

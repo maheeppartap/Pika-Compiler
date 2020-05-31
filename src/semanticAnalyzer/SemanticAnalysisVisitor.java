@@ -106,9 +106,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		node.setType(PrimitiveType.BOOLEAN);
 	}
 	@Override
-	public void visit(ErrorNode node) {
-		node.setType(PrimitiveType.ERROR);
-	}
+	public void visit(ErrorNode node) { node.setType(PrimitiveType.ERROR);	}
 	@Override
 	public void visit(IntegerConstantNode node) {
 		node.setType(PrimitiveType.INTEGER);

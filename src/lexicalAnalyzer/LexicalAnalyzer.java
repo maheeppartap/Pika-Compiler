@@ -30,7 +30,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
 		
-		if(ch.isDigit() || ch.getCharacter() == '+' || ch.getCharacter() == '-') {
+		if(ch.isDigit() || ch.getCharacter() == '+' || ch.getCharacter() == '-' ) {
 			return scanNumber(ch);
 		}
 		else if(ch.isLowerCase()) {
@@ -74,6 +74,11 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		if(firstChar.isDigit() || firstChar.isNumericSign()){
 			appendSubsequentDigits(buffer);
 			next = input.next();
+			//means we have a sign, so return buffer
+			if(next.getCharacter() == ' '){
+				input.pushback(next);
+				return IntegerToken.make(firstChar.getLocation(), buffer.toString());
+			}
 			LocatedChar secondNext = input.peek();
 
 			if(next.getCharacter() == '.'){ // means int, and we added an extra '.'
@@ -184,6 +189,8 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		switch(ch.getCharacter()) {
 		case '*':
 			return LextantToken.make(location, "*", Punctuator.MULTIPLY);
+		case '-':
+			return LextantToken.make(location, "-", Punctuator.SUBTRACT);
 		case '+':
 			return LextantToken.make(location, "+", Punctuator.ADD);
 		case '>':

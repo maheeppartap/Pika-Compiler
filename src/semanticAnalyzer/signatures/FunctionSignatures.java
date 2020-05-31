@@ -8,6 +8,8 @@ import java.util.Map;
 import asmCodeGenerator.codeStorage.ASMOpcode;
 import lexicalAnalyzer.Punctuator;
 import semanticAnalyzer.types.Type;
+import simpleCodeGenerator.FloatingDivideCodeGenerator;
+import simpleCodeGenerator.IntegerDivideCodeGenerator;
 
 import static semanticAnalyzer.types.PrimitiveType.*;
 
@@ -75,6 +77,21 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		    new FunctionSignature(ASMOpcode.Add, INTEGER, INTEGER, INTEGER),
 		    new FunctionSignature(ASMOpcode.FAdd, FLOATING, FLOATING, FLOATING)
 		);
+
+		new FunctionSignatures(Punctuator.SUBTRACT,
+				new FunctionSignature(ASMOpcode.Subtract, INTEGER, INTEGER, INTEGER),
+				new FunctionSignature(ASMOpcode.FSubtract, FLOATING, FLOATING, FLOATING)
+				);
+
+		new FunctionSignatures(Punctuator.DIVIDE,
+				new FunctionSignature(new IntegerDivideCodeGenerator(), INTEGER, INTEGER, INTEGER),
+				new FunctionSignature(new FloatingDivideCodeGenerator(), FLOATING, FLOATING, FLOATING)
+				);
+
+		new FunctionSignatures(Punctuator.MULTIPLY,
+				new FunctionSignature(ASMOpcode.Multiply, INTEGER, INTEGER, INTEGER),
+				new FunctionSignature(ASMOpcode.FMultiply, FLOATING, FLOATING, FLOATING)
+				);
 		
 		// First, we use the operator itself (in this case the Punctuator ADD) as the key.
 		// Then, we give that key two signatures: one an (INT x INT -> INT) and the other

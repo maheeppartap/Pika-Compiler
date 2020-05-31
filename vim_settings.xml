@@ -124,15 +124,15 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590894747659">
         <mark key="'" line="317" column="20" />
-        <mark key="[" line="291" column="17" />
-        <mark key="]" line="291" column="17" />
+        <mark key="[" line="290" column="17" />
+        <mark key="]" line="290" column="17" />
         <mark key="^" line="276" column="36" />
-        <mark key="." line="291" column="17" />
+        <mark key="." line="290" column="17" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590890567000">
-        <mark key="[" line="3" column="11" />
-        <mark key="]" line="5" column="0" />
-        <mark key="." line="5" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590895118048">
+        <mark key="[" line="0" column="3" />
+        <mark key="]" line="0" column="4" />
+        <mark key="." line="0" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590891400265">
         <mark key="'" line="227" column="25" />
@@ -166,12 +166,12 @@
       <file name="/fragment.java" timestamp="1590786914052">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590894639112">
-        <mark key="'" line="134" column="12" />
-        <mark key="[" line="32" column="79" />
-        <mark key="]" line="93" column="50" />
-        <mark key="." line="93" column="49" />
-        <mark key="^" line="93" column="50" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590896960213">
+        <mark key="'" line="138" column="12" />
+        <mark key="[" line="78" column="12" />
+        <mark key="]" line="78" column="16" />
+        <mark key="." line="78" column="16" />
+        <mark key="^" line="97" column="50" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590890696651">
         <mark key="[" line="7" column="13" />
@@ -283,10 +283,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>SUBTRACT</text>
+        <text>System.out.println(&quot;here!&quot;);</text>
       </register>
       <register name="-" type="4">
-        <text>SUBTRACT</text>
+        <text>System.out.println(&quot;here!&quot;);</text>
       </register>
       <register name="/" type="4">
         <text>numericSign</text>
@@ -294,32 +294,34 @@
       <register name="0" type="2">
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIElOVEVHRVJfRElWSURFX0JZX1pFUk9fUlVOVElNRV9FUlJPUiA9ICIkJGktZGl2aWRlLWJ5LXplcm8iOwo=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+      <register name="1" type="4">
+        <text>if(next.getCharacter().toString() == &quot;\32&quot;){
+				System.out.println(&quot;here!&quot;);
+			}</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImhlcmUiKTsK</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICByZXR1cm4gbmV3IEFTTUNvZGVGcmFnbWVudCgpOwo=</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImhlcmUiKTsK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gbmV3IEFTTUNvZGVGcmFnbWVudCgpOwo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
+        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
+        <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
       </register>
       <register name="7" type="2">
-        <text>added the part where we generate float statements fro the asm for floats</text>
+        <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
+        <text>added the part where we generate float statements fro the asm for floats</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">CQkJQVNNT3Bjb2RlIG9wY29kZSA9IG9wY29kZUZvck9wZXJhdG9yKG5vZGUuZ2V0T3BlcmF0b3IoKSk7CgkJCWNvZGUuYWRkKG9wY29kZSk7CQk=</text>
+      <register name="9" type="2">
+        <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
       </register>
       <register name=":" type="4">
         <text>?visitNormalBinaryOperator</text>

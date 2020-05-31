@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>error</entry>
         <entry>lexicalError</entry>
         <entry>turnAddress</entry>
         <entry>opcodeForStore</entry>
@@ -25,9 +24,9 @@
         <entry>Add</entry>
         <entry>parseAdditive</entry>
         <entry>visitNormalBinaryOperator</entry>
+        <entry>numericSign</entry>
       </history-search>
       <history-cmd>
-        <entry>?error</entry>
         <entry>?lexicalError</entry>
         <entry>?turnAddress</entry>
         <entry>?opcodeForStore</entry>
@@ -47,6 +46,7 @@
         <entry>?Add</entry>
         <entry>?parseAdditive</entry>
         <entry>?visitNormalBinaryOperator</entry>
+        <entry>?numericSign</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -79,21 +79,22 @@
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingDivideCodeGenerator.java" timestamp="1590893652435">
+        <mark key="[" line="10" column="13" />
+        <mark key="]" line="10" column="13" />
+        <mark key="." line="10" column="13" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1590784284820">
         <mark key="[" line="5" column="15" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignature.java" timestamp="1590815493790">
         <mark key="'" line="98" column="8" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/FloatingConstantNode.java" timestamp="1590783179776">
-        <mark key="[" line="8" column="13" />
-        <mark key="]" line="8" column="13" />
-        <mark key="." line="8" column="13" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1590733848298">
-        <mark key="[" line="56" column="72" />
-        <mark key="]" line="56" column="72" />
-        <mark key="." line="56" column="72" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/IntegerDivideCodeGenerator.java" timestamp="1590893643961">
+        <mark key="[" line="15" column="29" />
+        <mark key="]" line="15" column="27" />
+        <mark key="^" line="15" column="27" />
+        <mark key="." line="15" column="26" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1590816250001">
         <mark key="'" line="76" column="27" />
@@ -114,19 +115,19 @@
         <mark key="." line="108" column="0" />
         <mark key="^" line="108" column="8" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590815068284">
-        <mark key="'" line="23" column="22" />
-        <mark key="[" line="41" column="25" />
-        <mark key="]" line="41" column="25" />
-        <mark key="." line="41" column="25" />
-        <mark key="^" line="21" column="44" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590893979482">
+        <mark key="'" line="24" column="22" />
+        <mark key="[" line="96" column="50" />
+        <mark key="]" line="96" column="48" />
+        <mark key="." line="96" column="47" />
+        <mark key="^" line="96" column="48" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590892461271">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590894747659">
         <mark key="'" line="317" column="20" />
-        <mark key="[" line="276" column="38" />
-        <mark key="]" line="276" column="36" />
+        <mark key="[" line="291" column="17" />
+        <mark key="]" line="291" column="17" />
         <mark key="^" line="276" column="36" />
-        <mark key="." line="276" column="35" />
+        <mark key="." line="291" column="17" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590890567000">
         <mark key="[" line="3" column="11" />
@@ -157,19 +158,20 @@
         <mark key="[" line="22" column="17" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1590890814253">
-        <mark key="'" line="14" column="13" />
-        <mark key="[" line="76" column="10" />
-        <mark key="]" line="82" column="0" />
-        <mark key="." line="82" column="0" />
+        <mark key="'" line="16" column="13" />
+        <mark key="[" line="78" column="10" />
+        <mark key="]" line="89" column="0" />
+        <mark key="." line="89" column="0" />
       </file>
       <file name="/fragment.java" timestamp="1590786914052">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590890838180">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590894639112">
         <mark key="'" line="134" column="12" />
-        <mark key="[" line="185" column="73" />
-        <mark key="]" line="108" column="8" />
-        <mark key="." line="108" column="8" />
+        <mark key="[" line="32" column="79" />
+        <mark key="]" line="93" column="50" />
+        <mark key="." line="93" column="49" />
+        <mark key="^" line="93" column="50" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590890696651">
         <mark key="[" line="7" column="13" />
@@ -281,16 +283,16 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>{</text>
+        <text>SUBTRACT</text>
       </register>
       <register name="-" type="4">
-        <text>{</text>
+        <text>SUBTRACT</text>
       </register>
       <register name="/" type="4">
-        <text>visitNormalBinaryOperator</text>
+        <text>numericSign</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQlmcmFnLmFkZChEYXRhUywgIiVkIik7Cg==</text>
+        <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIElOVEVHRVJfRElWSURFX0JZX1pFUk9fUlVOVElNRV9FUlJPUiA9ICIkJGktZGl2aWRlLWJ5LXplcm8iOwo=</text>
       </register>
       <register name="1" type="2">
         <text encoding="base64">ICAgIH0K</text>
@@ -326,9 +328,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>visitNormalBinaryOperator</last-search>
+      <last-search>numericSign</last-search>
       <last-offset />
-      <last-pattern>visitNormalBinaryOperator</last-pattern>
+      <last-pattern>numericSign</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

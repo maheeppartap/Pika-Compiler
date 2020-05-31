@@ -5,8 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>punctuator</entry>
-        <entry>scanPunctuator</entry>
         <entry>scan</entry>
         <entry>start</entry>
         <entry>literal</entry>
@@ -25,10 +23,10 @@
         <entry>Normal</entry>
         <entry>visit</entry>
         <entry>BinaryOperator</entry>
+        <entry>Signature</entry>
+        <entry>FunctionSignature</entry>
       </history-search>
       <history-cmd>
-        <entry>?scanPunctuator</entry>
-        <entry>scan</entry>
         <entry>?scan</entry>
         <entry>?start</entry>
         <entry>?literal</entry>
@@ -47,6 +45,8 @@
         <entry>?Normal</entry>
         <entry>?visit</entry>
         <entry>?BinaryOperator</entry>
+        <entry>?Signature</entry>
+        <entry>?FunctionSignature</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -74,7 +74,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1590786862934">
+      <file name="/Dummy.txt" timestamp="1590817821513">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -151,8 +151,9 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1590816328094">
         <mark key="[" line="22" column="17" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1590816218072">
-        <mark key="[" line="11" column="51" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1590889484019">
+        <mark key="'" line="14" column="13" />
+        <mark key="[" line="73" column="46" />
         <mark key="]" line="16" column="53" />
         <mark key="^" line="16" column="53" />
         <mark key="." line="16" column="52" />
@@ -166,11 +167,8 @@
         <mark key="]" line="108" column="8" />
         <mark key="." line="108" column="8" />
       </file>
-      <file name="$USER_HOME$/AppData/Local/Temp/Temp1_pika0point2 (3).zip/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590804838177" />
     </filemarks>
     <jumps>
-      <jump line="38" column="43" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
-      <jump line="35" column="29" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
       <jump line="34" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
       <jump line="33" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
       <jump line="26" column="10" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/Course Project/src/tests/FileFixturesTestCase.java" />
@@ -269,59 +267,61 @@
       <jump line="63" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="62" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="301" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
+      <jump line="16" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" />
+      <jump line="14" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>//throw exception</text>
+      <register name="&quot;" type="2">
+        <text>added the part where we generate float statements fro the asm for floats</text>
       </register>
       <register name="-" type="4">
         <text>//throw exception</text>
       </register>
       <register name="/" type="4">
-        <text>BinaryOperator</text>
+        <text>FunctionSignature</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQlmcmFnLmFkZChEYXRhUywgIiVkIik7Cg==</text>
       </register>
       <register name="1" type="2">
+        <text>added the part where we generate float statements fro the asm for floats</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">CQkJQVNNT3Bjb2RlIG9wY29kZSA9IG9wY29kZUZvck9wZXJhdG9yKG5vZGUuZ2V0T3BlcmF0b3IoKSk7CgkJCWNvZGUuYWRkKG9wY29kZSk7CQk=</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">CQluZXh0ID0gaW5wdXQubmV4dCgpOwo=</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">CQkJCW5leHQgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">IGNvbnN0IHggOj0gMS4KIGNvbnN0IHkgOj0gMS4zRTUuCiBjb25zdCB6IDo9ICsuMjVFMC4=</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">IGNvbnN0IHkgOj0gMS4wRTEuCiBjb25zdCB6IDo9ICsuMjVFMC4=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">IGNvbnN0IGEgOj0geCArIHku</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CWlmKG5leHQuZ2V0Q2hhcmFjdGVyKCkgPT0gJ0UnKXsKCQkJYnVmZmVyLmFwcGVuZChuZXh0LmdldENoYXJhY3RlcigpKTsKCQkJYXBwZW5kU3Vic2VxdWVudERpZ2l0cyhidWZmZXIpOwoJCX0=</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">CQkJCWJ1ZmZlci5hcHBlbmQobmV4dC5nZXRDaGFyYWN0ZXIoKSk7Cg==</text>
-      </register>
       <register name=":" type="4">
-        <text>?BinaryOperator</text>
+        <text>?FunctionSignature</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>BinaryOperator</last-search>
+      <last-search>FunctionSignature</last-search>
       <last-offset />
-      <last-pattern>BinaryOperator</last-pattern>
+      <last-pattern>FunctionSignature</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

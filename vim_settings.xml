@@ -5,9 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>opcodeForStore</entry>
-        <entry>stringsFor</entry>
-        <entry>addSignature</entry>
         <entry>visitLeave</entry>
         <entry>Node</entry>
         <entry>Binary</entry>
@@ -25,11 +22,11 @@
         <entry>Add</entry>
         <entry>ErrorNode</entry>
         <entry>visit</entry>
+        <entry>multiplicativeExpression</entry>
+        <entry>DIVISION</entry>
+        <entry>Multiplicative</entry>
       </history-search>
       <history-cmd>
-        <entry>?turnAddress</entry>
-        <entry>?opcodeForStore</entry>
-        <entry>?stringsFor</entry>
         <entry>?addSignature</entry>
         <entry>?visitLeave</entry>
         <entry>?Node</entry>
@@ -47,6 +44,9 @@
         <entry>?ADD</entry>
         <entry>?Add</entry>
         <entry>?visit</entry>
+        <entry>?multiplicativeExpression</entry>
+        <entry>?DIVISION</entry>
+        <entry>?Multiplicative</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -134,12 +134,12 @@
         <mark key="]" line="0" column="4" />
         <mark key="." line="0" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590891400265">
-        <mark key="'" line="227" column="25" />
-        <mark key="[" line="268" column="50" />
-        <mark key="]" line="82" column="63" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590902659406">
+        <mark key="'" line="266" column="12" />
+        <mark key="[" line="241" column="0" />
+        <mark key="]" line="241" column="0" />
         <mark key="^" line="82" column="63" />
-        <mark key="." line="82" column="62" />
+        <mark key="." line="241" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/simpleCodeGenerator.java" timestamp="1590892291139">
         <mark key="[" line="6" column="50" />
@@ -178,7 +178,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="143" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="141" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="120" column="5" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="12" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
@@ -278,61 +277,62 @@
       <jump line="110" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="108" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="104" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
+      <jump line="284" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>.</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
       </register>
       <register name="-" type="4">
         <text>.</text>
       </register>
       <register name="/" type="4">
-        <text>visit</text>
+        <text>Multiplicative</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIElOVEVHRVJfRElWSURFX0JZX1pFUk9fUlVOVElNRV9FUlJPUiA9ICIkJGktZGl2aWRlLWJ5LXplcm8iOwo=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCkgewoJCWlmKCFzdGFydHNBZGRpdGl2ZUV4cHJlc3Npb24obm93UmVhZGluZykpIHsKCQkJcmV0dXJuIHN5bnRheEVycm9yTm9kZSgiU3VidHJhY3RpdmVFeHByZXNzaW9uIik7CgkJfQoKCQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlTXVsdGlwbGljYXRpdmVFeHByZXNzaW9uKCk7CgkJd2hpbGUobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5TVUJUUkFDVCkpIHsKCQkJVG9rZW4gU3VidHJhY3RpdmVUb2tlbiA9IG5vd1JlYWRpbmc7CgkJCXJlYWRUb2tlbigpOwoJCQlQYXJzZU5vZGUgcmlnaHQgPSBwYXJzZU11bHRpcGxpY2F0aXZlRXhwcmVzc2lvbigpOwoKCQkJbGVmdCA9IEJpbmFyeU9wZXJhdG9yTm9kZS53aXRoQ2hpbGRyZW4oU3VidHJhY3RpdmVUb2tlbiwgbGVmdCwgcmlnaHQpOwoJCX0KCQlyZXR1cm4gbGVmdDsKCX0KCXByaXZhdGUgYm9vbGVhbiBzdGFydHNTdWJ0cmFjdHV2ZUV4cHJlc3Npb24oVG9rZW4gdG9rZW4pIHsKCQlyZXR1cm4gc3RhcnRzTGl0ZXJhbCh0b2tlbik7Cgl9</text>
+      </register>
+      <register name="2" type="4">
         <text>if(next.getCharacter().toString() == &quot;\32&quot;){
 				System.out.println(&quot;here!&quot;);
 			}</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text encoding="base64">ICAgIH0K</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImhlcmUiKTsK</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICByZXR1cm4gbmV3IEFTTUNvZGVGcmFnbWVudCgpOwo=</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlU3VidHJhY3RpdmVFeHByZXNzaW9uKCl7CgkJCgl9</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQluZXcgRnVuY3Rpb25TaWduYXR1cmVzKFB1bmN0dWF0b3IuKWQK</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIGNvbnN0IHR3b3BpIDo9IHBpICogYXZvZ2Fkcm8uCiAgICBjb25zdCB4IDo9IDIuCiAgICBjb25zdCB5Oj0geCAqIHguCiAgICBwcmludCB0d29waTs7IHku</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text>added the part where we generate float statements fro the asm for floats</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">CQkJCQkvLyB0eXBlLWRlcGVuZGVudCEgKG9wY29kZSBpcyBkaWZmZXJlbnQgZm9yIGZsb2F0cyBhbmQgZm9yIGludHMpCg==</text>
-      </register>
       <register name=":" type="4">
-        <text>?visit</text>
+        <text>?Multiplicative</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>visit</last-search>
+      <last-search>Multiplicative</last-search>
       <last-offset />
-      <last-pattern>visit</last-pattern>
+      <last-pattern>Multiplicative</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

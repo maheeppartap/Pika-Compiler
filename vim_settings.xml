@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry encoding="base64">XDxjb25zdFw+</entry>
         <entry>Multiply</entry>
         <entry>multiplicative</entry>
         <entry>visitLeave</entry>
@@ -25,9 +24,9 @@
         <entry>print</entry>
         <entry>Print</entry>
         <entry>Push</entry>
+        <entry>Load</entry>
       </history-search>
       <history-cmd>
-        <entry>?pushI</entry>
         <entry>?PushI</entry>
         <entry>?Multiply</entry>
         <entry>?multiplicative</entry>
@@ -47,6 +46,7 @@
         <entry>?print</entry>
         <entry>?Print</entry>
         <entry>?Push</entry>
+        <entry>?Load</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -87,12 +87,12 @@
         <mark key="." line="9" column="31" />
         <mark key="^" line="8" column="80" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590994815276">
-        <mark key="'" line="177" column="31" />
-        <mark key="[" line="136" column="13" />
-        <mark key="]" line="132" column="32" />
-        <mark key="." line="132" column="31" />
-        <mark key="^" line="132" column="32" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590995855271">
+        <mark key="'" line="178" column="31" />
+        <mark key="[" line="211" column="13" />
+        <mark key="]" line="133" column="32" />
+        <mark key="." line="133" column="31" />
+        <mark key="^" line="133" column="32" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590994498965">
         <mark key="'" line="0" column="0" />
@@ -283,7 +283,7 @@
         <text>N</text>
       </register>
       <register name="/" type="4">
-        <text>Push</text>
+        <text>Load</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIEJPT0xFQU5fUFJJTlRfRk9STUFUICAgPSAiJHByaW50LWZvcm1hdC1ib29sZWFuIjsK</text>
@@ -320,15 +320,15 @@
 				code.add(FSubtract);</text>
       </register>
       <register name=":" type="4">
-        <text>?Push</text>
+        <text>?Load</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Push</last-search>
+      <last-search>Load</last-search>
       <last-offset />
-      <last-pattern>Push</last-pattern>
+      <last-pattern>Load</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

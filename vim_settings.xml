@@ -5,8 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>multiplicative</entry>
-        <entry>operator</entry>
         <entry>comparison</entry>
         <entry>Fadd</entry>
         <entry>FAdd</entry>
@@ -25,10 +23,10 @@
         <entry>Load</entry>
         <entry>visitLeave</entry>
         <entry>TypeNode</entry>
+        <entry>mainBlock</entry>
+        <entry>parseStatement</entry>
       </history-search>
       <history-cmd>
-        <entry>?Multiply</entry>
-        <entry>?multiplicative</entry>
         <entry>?operator</entry>
         <entry>?comparison</entry>
         <entry>?Fadd</entry>
@@ -47,6 +45,8 @@
         <entry>?Load</entry>
         <entry>?visitLeave</entry>
         <entry>?TypeNode</entry>
+        <entry>?mainBlock</entry>
+        <entry>?parseStatement</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -141,11 +141,12 @@
         <mark key="]" line="21" column="24" />
         <mark key="." line="21" column="24" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591051701397">
-        <mark key="'" line="86" column="34" />
-        <mark key="[" line="366" column="0" />
-        <mark key="]" line="366" column="4" />
-        <mark key="." line="366" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591053362748">
+        <mark key="'" line="86" column="22" />
+        <mark key="[" line="67" column="19" />
+        <mark key="]" line="72" column="39" />
+        <mark key="." line="72" column="38" />
+        <mark key="^" line="72" column="39" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/CharacterConstantNode.java" timestamp="1590993341682">
         <mark key="[" line="11" column="32" />
@@ -166,16 +167,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="277" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="263" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="262" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="243" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="239" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="231" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="227" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="150" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="76" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="36" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="34" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="31" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="28" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
@@ -266,18 +257,28 @@
       <jump line="177" column="31" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="62" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="59" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
+      <jump line="75" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="72" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="67" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="65" column="36" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="62" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="60" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="46" column="28" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="45" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="71" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="86" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>0</text>
+        <text>mainBlock</text>
       </register>
       <register name="-" type="4">
-        <text>0</text>
+        <text>mainBlock</text>
       </register>
       <register name="/" type="4">
-        <text>TypeNode</text>
+        <text>parseStatement</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CXByaXZhdGUgYm9vbGVhbiBzdGFydHNDaGFyYWN0ZXJDb25zdGFudChUb2tlbiB0b2tlbil7Cg==</text>
@@ -311,15 +312,15 @@
         <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
       </register>
       <register name=":" type="4">
-        <text>?visitLeave</text>
+        <text>?parseStatement</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>TypeNode</last-search>
+      <last-search>parseStatement</last-search>
       <last-offset />
-      <last-pattern>TypeNode</last-pattern>
+      <last-pattern>parseStatement</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

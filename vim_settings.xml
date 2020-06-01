@@ -125,11 +125,11 @@
         <mark key="]" line="313" column="14" />
         <mark key="." line="313" column="14" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590988631046">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1590990833122">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="17" />
-        <mark key="." line="1" column="17" />
+        <mark key="[" line="1" column="11" />
+        <mark key="]" line="1" column="11" />
+        <mark key="." line="1" column="11" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590989767607">
         <mark key="'" line="344" column="36" />
@@ -168,8 +168,8 @@
         <mark key="." line="54" column="12" />
         <mark key="^" line="108" column="50" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590940049045">
-        <mark key="[" line="13" column="11" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590991021536">
+        <mark key="[" line="24" column="23" />
         <mark key="]" line="13" column="18" />
         <mark key="." line="13" column="0" />
         <mark key="^" line="12" column="13" />
@@ -281,10 +281,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>r</text>
+        <text>0E2</text>
       </register>
       <register name="-" type="4">
-        <text>r</text>
+        <text>0E2</text>
       </register>
       <register name="/" type="4">
         <text>Pop</text>

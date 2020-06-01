@@ -161,12 +161,12 @@
       <file name="/fragment.java" timestamp="1590898603869">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590958772273">
-        <mark key="'" line="149" column="12" />
-        <mark key="[" line="54" column="8" />
-        <mark key="]" line="54" column="12" />
-        <mark key="." line="54" column="12" />
-        <mark key="^" line="108" column="50" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1590992911778">
+        <mark key="'" line="159" column="12" />
+        <mark key="[" line="57" column="16" />
+        <mark key="]" line="53" column="35" />
+        <mark key="." line="53" column="34" />
+        <mark key="^" line="53" column="35" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590991021536">
         <mark key="[" line="24" column="23" />

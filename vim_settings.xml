@@ -74,14 +74,47 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CharacterToken.java" timestamp="1591052335451" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1590993404373">
+        <mark key="[" line="112" column="9" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590995250135">
+        <mark key="'" line="25" column="22" />
+        <mark key="[" line="9" column="31" />
+        <mark key="]" line="9" column="31" />
+        <mark key="." line="9" column="31" />
+        <mark key="^" line="8" column="80" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590995855271">
+        <mark key="'" line="178" column="31" />
+        <mark key="[" line="211" column="13" />
+        <mark key="]" line="133" column="32" />
+        <mark key="." line="133" column="31" />
+        <mark key="^" line="133" column="32" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591052678606">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="2" column="11" />
+        <mark key="." line="2" column="11" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1590994869734">
+        <mark key="[" line="73" column="17" />
+        <mark key="]" line="73" column="17" />
+        <mark key="." line="73" column="17" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1591038091711" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
+        <mark key="[" line="25" column="9" />
+        <mark key="]" line="25" column="9" />
+        <mark key="." line="25" column="9" />
+        <mark key="^" line="24" column="15" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591039100399">
         <mark key="[" line="26" column="50" />
         <mark key="]" line="26" column="50" />
         <mark key="." line="26" column="50" />
         <mark key="^" line="14" column="21" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1590989611720">
-        <mark key="[" line="7" column="19" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/character.java" timestamp="1590990114571">
         <mark key="[" line="4" column="13" />
@@ -98,57 +131,27 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" timestamp="1590994115451">
         <mark key="'" line="157" column="23" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1590993404373">
-        <mark key="[" line="112" column="9" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/TypeNode.java" timestamp="1591038760881">
         <mark key="[" line="32" column="0" />
         <mark key="]" line="32" column="0" />
         <mark key="." line="32" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590995250135">
-        <mark key="'" line="25" column="22" />
-        <mark key="[" line="9" column="31" />
-        <mark key="]" line="9" column="31" />
-        <mark key="." line="9" column="31" />
-        <mark key="^" line="8" column="80" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CastingToken.java" timestamp="1591052636967">
+        <mark key="[" line="21" column="24" />
+        <mark key="]" line="21" column="24" />
+        <mark key="." line="21" column="24" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1590995855271">
-        <mark key="'" line="178" column="31" />
-        <mark key="[" line="211" column="13" />
-        <mark key="]" line="133" column="32" />
-        <mark key="." line="133" column="31" />
-        <mark key="^" line="133" column="32" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591040100924">
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="2" column="11" />
-        <mark key="]" line="2" column="11" />
-        <mark key="." line="2" column="11" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590993674278">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591051701397">
         <mark key="'" line="86" column="34" />
-        <mark key="[" line="345" column="89" />
-        <mark key="]" line="345" column="89" />
-        <mark key="^" line="345" column="89" />
-        <mark key="." line="345" column="88" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/IntegerToken.java" timestamp="1590990103776">
-        <mark key="[" line="25" column="16" />
-        <mark key="]" line="25" column="16" />
-        <mark key="." line="25" column="16" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1590994869734">
-        <mark key="[" line="73" column="17" />
-        <mark key="]" line="73" column="17" />
-        <mark key="." line="73" column="17" />
+        <mark key="[" line="366" column="0" />
+        <mark key="]" line="366" column="4" />
+        <mark key="." line="366" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/CharacterConstantNode.java" timestamp="1590993341682">
         <mark key="[" line="11" column="32" />
         <mark key="]" line="11" column="32" />
         <mark key="." line="11" column="32" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1591038091711" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591039461007">
         <mark key="'" line="163" column="12" />
         <mark key="[" line="85" column="42" />
@@ -160,12 +163,6 @@
         <mark key="[" line="6" column="13" />
         <mark key="]" line="6" column="13" />
         <mark key="." line="6" column="13" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
-        <mark key="[" line="25" column="9" />
-        <mark key="]" line="25" column="9" />
-        <mark key="." line="25" column="9" />
-        <mark key="^" line="24" column="15" />
       </file>
     </filemarks>
     <jumps>
@@ -274,44 +271,44 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>^a^</text>
+        <text>0</text>
       </register>
       <register name="-" type="4">
-        <text>^a^</text>
+        <text>0</text>
       </register>
       <register name="/" type="4">
         <text>TypeNode</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CUNBU1RfRU5EKCJdIiksCg==</text>
+        <text encoding="base64">CXByaXZhdGUgYm9vbGVhbiBzdGFydHNDaGFyYWN0ZXJDb25zdGFudChUb2tlbiB0b2tlbil7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHByaXZhdGUgc3RhdGljIFR5cGUgdHlwZVRva2VuOwo=</text>
+        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlQ2FzdGluZ0NvbnN0YW50KCl7CgkJCgl9</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIHB1YmxpYyBzdGF0aWMgVHlwZSB0eXBlVG9rZW4oKXsKICAgICAgICByZXR1cm4gdHlwZVRva2VuOwogICAgfQ==</text>
+        <text encoding="base64">ICAgIHByaXZhdGUgc3RhdGljIFR5cGUgdHlwZVRva2VuOwo=</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgIHB1YmxpYyBzdGF0aWMgVHlwZSB0eXBlVG9rZW4oKXsKICAgICAgICByZXR1cm4gdHlwZVRva2VuOwogICAgfQ==</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">CXByaXZhdGUgU3RyaW5nIGxleHRhbnRUeXBlOw==</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>if(ch.getCharacter() == '\n')
 				findNextToken();</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">Y29uc3QgeSA6PSAxMC4wLgpjb25zdCB6IDo9IHggPiB5LgojY2hqc2JkaGpjYiMgcHJpbnQgei4=</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text>Float has been fully integrated!</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CWNvZGUuYXBwZW5kKGFyZzEpOwoJCQkJY29kZS5hcHBlbmQoYXJnMik7CgkJCQljb2RlLmFkZChGU3VidHJhY3QpOw==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">CQkJU3RyaW5nIHJlc3RvcmVfdHJ1ZSA9IGxhYmVsbGVyLm5ld0xhYmVsKCJyZXN0b3JlX3RydWUiKTsK</text>
+        <text encoding="base64">CQkJY29kZS5hZGQoZHUpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>?visitLeave</text>

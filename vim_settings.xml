@@ -82,10 +82,6 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1590993781815">
         <mark key="[" line="5" column="15" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignature.java" timestamp="1590940753453">
-        <mark key="'" line="98" column="8" />
-        <mark key="[" line="105" column="4" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1590989611720">
         <mark key="[" line="7" column="19" />
       </file>
@@ -121,18 +117,18 @@
         <mark key="." line="133" column="31" />
         <mark key="^" line="133" column="32" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591032087656">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591035799345">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="1" column="12" />
-        <mark key="]" line="1" column="13" />
-        <mark key="." line="1" column="13" />
+        <mark key="[" line="0" column="5" />
+        <mark key="]" line="2" column="13" />
+        <mark key="." line="2" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1590993674278">
-        <mark key="'" line="87" column="34" />
-        <mark key="[" line="346" column="89" />
-        <mark key="]" line="346" column="89" />
-        <mark key="^" line="346" column="89" />
-        <mark key="." line="346" column="88" />
+        <mark key="'" line="86" column="34" />
+        <mark key="[" line="345" column="89" />
+        <mark key="]" line="345" column="89" />
+        <mark key="^" line="345" column="89" />
+        <mark key="." line="345" column="88" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/IntegerToken.java" timestamp="1590990103776">
         <mark key="[" line="25" column="16" />
@@ -162,6 +158,11 @@
         <mark key="]" line="58" column="25" />
         <mark key="." line="58" column="25" />
         <mark key="^" line="53" column="35" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/MainBlockNode.java" timestamp="1591035969606">
+        <mark key="[" line="6" column="13" />
+        <mark key="]" line="6" column="13" />
+        <mark key="." line="6" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1590991021536">
         <mark key="[" line="24" column="23" />
@@ -276,10 +277,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>N</text>
+        <text>MainBlockNode</text>
       </register>
       <register name="-" type="4">
-        <text>N</text>
+        <text>MainBlockNode</text>
       </register>
       <register name="/" type="4">
         <text>Load</text>

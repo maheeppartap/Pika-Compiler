@@ -5,10 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>turnAddress</entry>
-        <entry>Value</entry>
-        <entry>print</entry>
-        <entry>Print</entry>
         <entry>Push</entry>
         <entry>Load</entry>
         <entry>TypeNode</entry>
@@ -25,12 +21,12 @@
         <entry>visitLeave</entry>
         <entry>type</entry>
         <entry>binding</entry>
+        <entry>BLOCk</entry>
+        <entry>block</entry>
+        <entry>END</entry>
+        <entry>CLOSE</entry>
       </history-search>
       <history-cmd>
-        <entry>?Value</entry>
-        <entry>?print</entry>
-        <entry>?Print</entry>
-        <entry>?Push</entry>
         <entry>?Load</entry>
         <entry>?TypeNode</entry>
         <entry>?mainBlock</entry>
@@ -47,6 +43,10 @@
         <entry>?visitLeave</entry>
         <entry>?type</entry>
         <entry>?binding</entry>
+        <entry>?BLOCk</entry>
+        <entry>?block</entry>
+        <entry>?END</entry>
+        <entry>?CLOSE</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -94,12 +94,11 @@
         <mark key="." line="133" column="31" />
         <mark key="^" line="133" column="32" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591057893393">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591058581583">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="3" column="0" />
-        <mark key="]" line="3" column="0" />
-        <mark key="." line="3" column="0" />
-        <mark key="^" line="2" column="3" />
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="0" />
+        <mark key="." line="1" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1591038091711" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
@@ -163,7 +162,7 @@
         <mark key="]" line="6" column="13" />
         <mark key="." line="6" column="13" />
       </file>
-      <file name="/fragment.java" timestamp="1591056871172">
+      <file name="/fragment.java" timestamp="1591058892800">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/Binding.java" timestamp="1591056991808">
@@ -275,57 +274,62 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>var</text>
+      <register name="&quot;" type="2">
+        <text>{
+var x := 2.3 + 5.3.
+print x.
+}</text>
       </register>
       <register name="-" type="4">
         <text>var</text>
       </register>
       <register name="/" type="4">
-        <text>binding</text>
+        <text>CLOSE</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQlwdWJsaWMgdm9pZCB2aXNpdEVudGVyKEJsb2NrU3RhdGVtZW50Tm9kZSBub2RlKSB7Cg==</text>
       </register>
       <register name="1" type="2">
+        <text>{
+var x := 2.3 + 5.3.
+print x.
+}</text>
+      </register>
+      <register name="2" type="2">
+        <text>x := 3.8.</text>
+      </register>
+      <register name="3" type="2">
+        <text>#const y := [2.3 | int]</text>
+      </register>
+      <register name="4" type="2">
         <text>#x := 2.2.
 #print x.</text>
       </register>
-      <register name="2" type="2">
+      <register name="5" type="2">
         <text encoding="base64">CUBTdXBwcmVzc1dhcm5pbmdzKCJ1bnVzZWQiKQ==</text>
       </register>
-      <register name="3" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CQlyZXR1cm4gbnVsbDsK</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">aW1wb3J0IGxleGljYWxBbmFseXplci5LZXl3b3JkOwo=</text>
       </register>
-      <register name="5" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlQ2FzdGluZ0NvbnN0YW50KCl7CgkJCgl9</text>
       </register>
-      <register name="6" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgIHByaXZhdGUgc3RhdGljIFR5cGUgdHlwZVRva2VuOwo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIHB1YmxpYyBzdGF0aWMgVHlwZSB0eXBlVG9rZW4oKXsKICAgICAgICByZXR1cm4gdHlwZVRva2VuOwogICAgfQ==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">CXByaXZhdGUgU3RyaW5nIGxleHRhbnRUeXBlOw==</text>
-      </register>
-      <register name="9" type="4">
-        <text>if(ch.getCharacter() == '\n')
-				findNextToken();</text>
-      </register>
       <register name=":" type="4">
-        <text>?binding</text>
+        <text>?CLOSE</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>binding</last-search>
+      <last-search>CLOSE</last-search>
       <last-offset />
-      <last-pattern>binding</last-pattern>
+      <last-pattern>CLOSE</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

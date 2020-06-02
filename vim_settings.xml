@@ -87,11 +87,11 @@
         <mark key="." line="150" column="81" />
         <mark key="^" line="150" column="84" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591067440188">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591068154248">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="4" column="0" />
-        <mark key="]" line="4" column="0" />
-        <mark key="." line="4" column="0" />
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1591038091711" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
@@ -271,7 +271,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text>added boolean instructions</text>
+        <text>y := 3 + 2.</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IHNldFR5cGUoZGVjbGFyZWROYW1lLmdldFR5cGUoKSk7</text>
@@ -283,35 +283,34 @@
         <text encoding="base64">CQlwdWJsaWMgdm9pZCB2aXNpdEVudGVyKEJsb2NrU3RhdGVtZW50Tm9kZSBub2RlKSB7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text>added boolean instructions</text>
+        <text>y := 3 + 2.</text>
       </register>
       <register name="2" type="2">
-        <text>#lalalal#</text>
+        <text>added boolean instructions</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICBzZXRNRSgpOyAK</text>
+        <text>#lalalal#</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICB0aGlzLnNldFR5cGUoKTsK</text>
+        <text encoding="base64">ICAgICAgICBzZXRNRSgpOyAK</text>
       </register>
       <register name="5" type="2">
-        <text>y := 3.</text>
+        <text encoding="base64">ICAgICAgICB0aGlzLnNldFR5cGUoKTsK</text>
       </register>
       <register name="6" type="2">
+        <text>y := 3.</text>
+      </register>
+      <register name="7" type="2">
         <text>{
 var x := 2.3 + 5.3.
 print x.
 }</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text>x := 3.8.</text>
       </register>
-      <register name="8" type="2">
-        <text>#const y := [2.3 | int]</text>
-      </register>
       <register name="9" type="2">
-        <text>#x := 2.2.
-#print x.</text>
+        <text>#const y := [2.3 | int]</text>
       </register>
       <register name=":" type="4">
         <text>?visitLeave</text>

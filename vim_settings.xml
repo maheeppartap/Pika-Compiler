@@ -80,13 +80,6 @@
         <mark key="]" line="58" column="31" />
         <mark key="." line="58" column="31" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1590995250135">
-        <mark key="'" line="25" column="22" />
-        <mark key="[" line="9" column="31" />
-        <mark key="]" line="9" column="31" />
-        <mark key="." line="9" column="31" />
-        <mark key="^" line="8" column="80" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1591066154342">
         <mark key="'" line="239" column="8" />
         <mark key="[" line="214" column="9" />
@@ -94,11 +87,11 @@
         <mark key="." line="150" column="81" />
         <mark key="^" line="150" column="84" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591065350466">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591067440188">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/BinaryOperatorNode.java" timestamp="1591038091711" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
@@ -106,6 +99,11 @@
         <mark key="]" line="25" column="9" />
         <mark key="." line="25" column="9" />
         <mark key="^" line="24" column="15" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1591067837350">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591039100399">
         <mark key="[" line="26" column="50" />
@@ -121,10 +119,10 @@
         <mark key="." line="96" column="45" />
         <mark key="^" line="96" column="46" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/AssignmentStatementNode.java" timestamp="1591054281377">
-        <mark key="[" line="4" column="0" />
-        <mark key="]" line="4" column="0" />
-        <mark key="." line="4" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/AssignmentStatementNode.java" timestamp="1591067318419">
+        <mark key="[" line="36" column="0" />
+        <mark key="]" line="36" column="0" />
+        <mark key="." line="36" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/TypeNode.java" timestamp="1591038760881">
         <mark key="[" line="32" column="0" />
@@ -150,17 +148,15 @@
         <mark key="^" line="83" column="26" />
         <mark key="." line="83" column="25" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNode.java" timestamp="1591067353143">
+        <mark key="[" line="113" column="28" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591039461007">
         <mark key="'" line="163" column="12" />
         <mark key="[" line="85" column="42" />
         <mark key="]" line="59" column="25" />
         <mark key="." line="59" column="25" />
         <mark key="^" line="54" column="35" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/MainBlockNode.java" timestamp="1591035969606">
-        <mark key="[" line="6" column="13" />
-        <mark key="]" line="6" column="13" />
-        <mark key="." line="6" column="13" />
       </file>
       <file name="/fragment.java" timestamp="1591058892800">
         <mark key="[" line="0" column="0" />
@@ -274,11 +270,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>DeclarationNode</text>
+      <register name="&quot;" type="2">
+        <text>added boolean instructions</text>
       </register>
       <register name="-" type="4">
-        <text>DeclarationNode</text>
+        <text encoding="base64">IHNldFR5cGUoZGVjbGFyZWROYW1lLmdldFR5cGUoKSk7</text>
       </register>
       <register name="/" type="4">
         <text>visitLeave</text>
@@ -287,35 +283,35 @@
         <text encoding="base64">CQlwdWJsaWMgdm9pZCB2aXNpdEVudGVyKEJsb2NrU3RhdGVtZW50Tm9kZSBub2RlKSB7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text>y := 3.</text>
+        <text>added boolean instructions</text>
       </register>
       <register name="2" type="2">
+        <text>#lalalal#</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICBzZXRNRSgpOyAK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICB0aGlzLnNldFR5cGUoKTsK</text>
+      </register>
+      <register name="5" type="2">
+        <text>y := 3.</text>
+      </register>
+      <register name="6" type="2">
         <text>{
 var x := 2.3 + 5.3.
 print x.
 }</text>
       </register>
-      <register name="3" type="2">
+      <register name="7" type="2">
         <text>x := 3.8.</text>
       </register>
-      <register name="4" type="2">
+      <register name="8" type="2">
         <text>#const y := [2.3 | int]</text>
       </register>
-      <register name="5" type="2">
+      <register name="9" type="2">
         <text>#x := 2.2.
 #print x.</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">CUBTdXBwcmVzc1dhcm5pbmdzKCJ1bnVzZWQiKQ==</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">CQlyZXR1cm4gbnVsbDsK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">aW1wb3J0IGxleGljYWxBbmFseXplci5LZXl3b3JkOwo=</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">CXByaXZhdGUgUGFyc2VOb2RlIHBhcnNlQ2FzdGluZ0NvbnN0YW50KCl7CgkJCgl9</text>
       </register>
       <register name=":" type="4">
         <text>?visitLeave</text>

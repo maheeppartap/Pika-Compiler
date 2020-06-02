@@ -16,7 +16,7 @@ import symbolTable.Binding;
 import symbolTable.Scope;
 import static asmCodeGenerator.codeStorage.ASMCodeFragment.CodeType.*;
 import static asmCodeGenerator.codeStorage.ASMOpcode.*;
-import static semanticAnalyzer.types.PrimitiveType.FLOATING;
+import static semanticAnalyzer.types.PrimitiveType.*;
 
 import simpleCodeGenerator.*;
 
@@ -135,6 +135,9 @@ public class ASMCodeGenerator {
 			else if(node.getType() == FLOATING){
 				code.add(LoadF);
 			}
+			else if(node.getType() == CHARACTER){
+				code.add(LoadI);
+			}
 			else if(node.getType() == PrimitiveType.BOOLEAN) {
 				code.add(LoadC);
 			}	
@@ -161,7 +164,7 @@ public class ASMCodeGenerator {
 				code.append(childCode);
 			}
 		}
-		public void visitLeave(MainBlockNode node) {
+		public void visitLeave(BlockStatementNode node) {
 			newVoidCode(node);
 			for(ParseNode child : node.getChildren()) {
 				ASMCodeFragment childCode = removeVoidCode(child);
@@ -186,25 +189,40 @@ public class ASMCodeGenerator {
 			code.add(PushD, RunTime.SPACE_PRINT_FORMAT);
 			code.add(Printf);
 		}
-		
+
+		public void visitLeave(AssignmentStatementNode node) {
+			newVoidCode(node);
+			ASMCodeFragment lvalue = removeAddressCode(node.child(0));
+			ASMCodeFragment rvalue = removeValueCode(node.child(1));
+
+			code.append(lvalue);
+			code.append(rvalue);
+
+			Type type = INTEGER;
+			code.add(opcodeForStore(type));
+		}
 
 		public void visitLeave(DeclarationNode node) {
 			newVoidCode(node);
-			ASMCodeFragment lvalue = removeAddressCode(node.child(0));	
+			ASMCodeFragment lvalue = removeAddressCode(node.child(0));
 			ASMCodeFragment rvalue = removeValueCode(node.child(1));
-			
+
 			code.append(lvalue);
 			code.append(rvalue);
-			
+
 			Type type = node.getType();
 			code.add(opcodeForStore(type));
 		}
+
 		private ASMOpcode opcodeForStore(Type type) {
 			if(type == PrimitiveType.INTEGER) {
 				return StoreI;
 			}
 			if(type == FLOATING){
 				return StoreF;
+			}
+			if(type == CHARACTER){
+				return StoreI;
 			}
 			if(type == PrimitiveType.BOOLEAN) {
 				return StoreC;
@@ -407,6 +425,12 @@ public class ASMCodeGenerator {
 			newValueCode(node);
 
 			code.add(PushF, node.getValue());
+		}
+
+		public void visit(CharacterConstantNode node) {
+			newValueCode(node);
+
+			code.add(PushI, node.getValue());
 		}
 	}
 

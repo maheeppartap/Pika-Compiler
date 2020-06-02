@@ -112,6 +112,7 @@ public class ParseNode {
 	// adds a new child to this node (as last child) and sets its parent link.
 	public void appendChild(ParseNode child) {
 		children.add(child);
+		setType(child.getType());
 		child.setParent(this);
 	}
 	// do not do this in the middle of a visit; the children list traversal may be zapped if you do.

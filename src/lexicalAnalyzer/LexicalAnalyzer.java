@@ -7,6 +7,7 @@ import inputHandler.LocatedChar;
 import inputHandler.LocatedCharStream;
 import inputHandler.PushbackCharStream;
 import inputHandler.TextLocation;
+import parseTree.nodeTypes.TypeNode;
 import tokens.*;
 
 import static lexicalAnalyzer.PunctuatorScanningAids.*;
@@ -29,7 +30,17 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	@Override
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
-		
+
+		if (ch.getCharacter() == '#'){
+			ch = input.next();
+			while (ch.getCharacter() != '\n' && ch.getCharacter() != '#'){
+				ch = input.next();
+			}
+			ch = input.next();
+			if(ch.getCharacter() == '\n') return findNextToken();
+			//input.pushback(ch);
+			//return findNextToken();
+		}
 		if(ch.isDigit() || ch.getCharacter() == '+' || ch.getCharacter() == '-' ) {
 			return scanNumber(ch);
 		}
@@ -37,6 +48,19 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			return scanIdentifier(ch);
 		}
 		else if(isPunctuatorStart(ch)) {
+			if(ch.getCharacter() == '^'){
+				LocatedChar next = input.next();
+				LocatedChar next__ = input.peek();
+				if(next__.getCharacter() != '^') {
+					lexicalError(ch);
+					return findNextToken();
+				}
+				input.next();
+				StringBuffer x = new StringBuffer();
+				x.append(next.getCharacter());
+				return CharacterToken.make(next.getLocation(), x.toString());
+				//input.pushback(ch);
+			}
 			return PunctuatorScanner.scan(ch, input);
 		}
 		else if(isEndOfInput(ch)) {

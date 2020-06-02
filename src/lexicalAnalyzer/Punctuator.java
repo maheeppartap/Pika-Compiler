@@ -21,8 +21,12 @@ public enum Punctuator implements Lextant {
 	TERMINATOR("."), 
 	OPEN_BRACE("{"),
 	CLOSE_BRACE("}"),
+	CAST_BEGIN("["),
+	CAST_END("]"),
+	CAST_MID("|"),
 	NULL_PUNCTUATOR(""),
 	DECIMAL_POINT("."),
+	CIRCUMFLEX("^"),
 	COMMENT("#");	//added this for PIKA 1
 
 	private String lexeme;

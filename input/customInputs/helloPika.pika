@@ -1,6 +1,6 @@
 exec{
-const x := 9.0E2.
-const y := 10.0.
-const z := x >= y.
-print z.
+var y := 1.
+print y,_n_.
+y := 3 + 2.
+print y.
 }

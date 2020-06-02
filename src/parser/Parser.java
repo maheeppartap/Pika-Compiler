@@ -1,7 +1,6 @@
 package parser;
 
 
-import java.net.PortUnreachableException;
 import java.util.Arrays;
 
 import logging.PikaLogger;
@@ -35,7 +34,7 @@ public class Parser {
 
 	////////////////////////////////////////////////////////////
 	// "program" is the start symbol S
-	// S -> EXEC mainBlock
+	// S -> EXEC BlockStatement
 	
 	private ParseNode parseProgram() {
 		if(!startsProgram(nowReading)) {
@@ -44,7 +43,7 @@ public class Parser {
 		ParseNode program = new ProgramNode(nowReading);
 		
 		expect(Keyword.EXEC);
-		ParseNode mainBlock = parseMainBlock();
+		ParseNode mainBlock = parseBlockStatement();
 		program.appendChild(mainBlock);
 		
 		if(!(nowReading instanceof NullToken)) {
@@ -59,24 +58,24 @@ public class Parser {
 	
 	
 	///////////////////////////////////////////////////////////
-	// mainBlock
+	// Blockstatement
 	
-	// mainBlock -> { statement* }
-	private ParseNode parseMainBlock() {
-		if(!startsMainBlock(nowReading)) {
-			return syntaxErrorNode("mainBlock");
+	// BlockStatement -> { statement* }
+	private ParseNode parseBlockStatement() {
+		if(!startsBlockStatement(nowReading)) {
+			return syntaxErrorNode("BlockStatement");
 		}
-		ParseNode mainBlock = new MainBlockNode(nowReading);
+		ParseNode blockStatement = new BlockStatementNode(nowReading);
 		expect(Punctuator.OPEN_BRACE);
 		
 		while(startsStatement(nowReading)) {
 			ParseNode statement = parseStatement();
-			mainBlock.appendChild(statement);
+			blockStatement.appendChild(statement);
 		}
 		expect(Punctuator.CLOSE_BRACE);
-		return mainBlock;
+		return blockStatement;
 	}
-	private boolean startsMainBlock(Token token) {
+	private boolean startsBlockStatement(Token token) {
 		return token.isLextant(Punctuator.OPEN_BRACE);
 	}
 	
@@ -84,7 +83,7 @@ public class Parser {
 	///////////////////////////////////////////////////////////
 	// statements
 	
-	// statement-> declaration | printStmt
+	// statement-> declaration | printStmt | block | assignment
 	private ParseNode parseStatement() {
 		if(!startsStatement(nowReading)) {
 			return syntaxErrorNode("statement");
@@ -95,13 +94,53 @@ public class Parser {
 		if(startsPrintStatement(nowReading)) {
 			return parsePrintStatement();
 		}
+		if(startsBlockStatement(nowReading)){
+			return parseBlockStatement();
+		}
+		if(startsAssignmentStatement(nowReading)){
+			return parseAssignmentStatement();
+		}
 		return syntaxErrorNode("statement");
 	}
+
+
+
 	private boolean startsStatement(Token token) {
 		return startsPrintStatement(token) ||
+				startsBlockStatement(token)||
+				startsAssignmentStatement(token)||
 			   startsDeclaration(token);
 	}
-	
+
+	//assignment statement -> target := expr
+	private ParseNode parseAssignmentStatement() {
+		if(!startsAssignmentStatement(nowReading)){
+			return syntaxErrorNode("assignmentStatement");
+		}
+		ParseNode target = parseTarget();
+		Token assnToken = nowReading;
+		expect(Punctuator.ASSIGN);
+		ParseNode expr = parseExpression();
+		expect(Punctuator.TERMINATOR);
+		return AssignmentStatementNode.withChildren(assnToken, target, expr);
+	}
+
+
+	private boolean startsAssignmentStatement(Token token) {
+		return startsTarget(token);
+	}
+
+	//target ->identifier
+	private ParseNode parseTarget() {
+		if(!startsTarget(nowReading)) return syntaxErrorNode("target");
+
+		return parseIdentifier();
+	}
+
+	private boolean startsTarget(Token token) {
+		return startsIdentifier(token);
+	}
+
 	// printStmt -> PRINT printExpressionList .
 	private ParseNode parsePrintStatement() {
 		if(!startsPrintStatement(nowReading)) {
@@ -195,7 +234,7 @@ public class Parser {
 		return DeclarationNode.withChildren(declarationToken, identifier, initializer);
 	}
 	private boolean startsDeclaration(Token token) {
-		return token.isLextant(Keyword.CONST);
+		return token.isLextant(Keyword.CONST, Keyword.VAR);
 	}
 
 
@@ -205,8 +244,8 @@ public class Parser {
 	// expr                     -> comparisonExpression
 	// comparisonExpression     -> additiveExpression [> additiveExpression]?
 	// additiveExpression       -> multiplicativeExpression [+ multiplicativeExpression]*  (left-assoc)
-	// multiplicativeExpression -> atomicExpression [MULT atomicExpression]*  (left-assoc)
-	// atomicExpression         -> literal
+	//	// multiplicativeExpression -> atomicExpression [MULT atomicExpression]*  (left-assoc)
+	//	// atomicExpression         -> literal
 	// literal                  -> intNumber | identifier | booleanConstant
 
 	// expr  -> comparisonExpression
@@ -332,11 +371,22 @@ public class Parser {
 		if(startsBooleanConstant(nowReading)) {
 			return parseBooleanConstant();
 		}
+		if(startsCharacterConstant(nowReading)){
+			return parseCharacterConstant();
+		}
 
 		return syntaxErrorNode("literal");
 	}
 	private boolean startsLiteral(Token token) {
-		return startsIntNumber(token) || startsIdentifier(token) || startsBooleanConstant(token) || startsFloatNumber(token);
+		return startsIntNumber(token) || startsIdentifier(token) || startsBooleanConstant(token) || startsFloatNumber(token) || startsCharacterConstant(token);
+	}
+
+
+	//character and strings
+	private ParseNode parseCharacterConstant(){
+		if(!startsCharacterConstant(nowReading)) return syntaxErrorNode("Char constant");
+		readToken();
+		return new CharacterConstantNode(previouslyRead);
 	}
 
 	// number (terminal)
@@ -353,6 +403,10 @@ public class Parser {
 		}
 		readToken();
 		return new IntegerConstantNode(previouslyRead);
+	}
+
+	private boolean startsCharacterConstant(Token token){
+		return token instanceof CharacterToken;
 	}
 	private boolean startsIntNumber(Token token) {
 		return token instanceof IntegerToken;

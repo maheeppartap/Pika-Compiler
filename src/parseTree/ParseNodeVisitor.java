@@ -9,8 +9,8 @@ public interface ParseNodeVisitor {
 	void visitEnter(BinaryOperatorNode node);
 	void visitLeave(BinaryOperatorNode node);
 	
-	void visitEnter(MainBlockNode node);
-	void visitLeave(MainBlockNode node);
+	void visitEnter(BlockStatementNode node);
+	void visitLeave(BlockStatementNode node);
 
 	void visitEnter(DeclarationNode node);
 	void visitLeave(DeclarationNode node);
@@ -25,6 +25,9 @@ public interface ParseNodeVisitor {
 	void visitEnter(ProgramNode node);
 	void visitLeave(ProgramNode node);
 
+	void visitEnter(AssignmentStatementNode node);
+	void visitLeave(AssignmentStatementNode node);
+
 
 	// leaf nodes: visitLeaf only
 	void visit(BooleanConstantNode node);
@@ -35,6 +38,8 @@ public interface ParseNodeVisitor {
 	void visit(SpaceNode node);
 
 	void visit(FloatingConstantNode node);
+
+	void visit(CharacterConstantNode node);
 
 
 	public static class Default implements ParseNodeVisitor
@@ -49,6 +54,14 @@ public interface ParseNodeVisitor {
 		public void defaultVisitForLeaf(ParseNode node) {
 			defaultVisit(node);
 		}
+
+
+		public void visitEnter( AssignmentStatementNode node) {
+			defaultVisitEnter(node);
+		}
+		public void visitLeave(AssignmentStatementNode node) {
+			defaultVisitLeave(node);
+		}
 		
 		public void visitEnter(BinaryOperatorNode node) {
 			defaultVisitEnter(node);
@@ -62,10 +75,10 @@ public interface ParseNodeVisitor {
 		public void visitLeave(DeclarationNode node) {
 			defaultVisitLeave(node);
 		}					
-		public void visitEnter(MainBlockNode node) {
+		public void visitEnter(BlockStatementNode node) {
 			defaultVisitEnter(node);
 		}
-		public void visitLeave(MainBlockNode node) {
+		public void visitLeave(BlockStatementNode node) {
 			defaultVisitLeave(node);
 		}				
 		public void visitEnter(ParseNode node) {
@@ -107,6 +120,9 @@ public interface ParseNodeVisitor {
 			defaultVisitForLeaf(node);
 		}
 		public void visit(FloatingConstantNode node){
+			defaultVisitForLeaf(node);
+		}
+		public void visit(CharacterConstantNode node){
 			defaultVisitForLeaf(node);
 		}
 

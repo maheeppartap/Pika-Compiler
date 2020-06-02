@@ -7,6 +7,7 @@ public class RunTime {
 	public static final String INTEGER_PRINT_FORMAT   = "$print-format-integer";
 	public static final String FLOATING_PRINT_FORMAT   = "$print-format-floating";
 	public static final String BOOLEAN_PRINT_FORMAT   = "$print-format-boolean";
+	public static final String CHARACTER_PRINT_FORMAT   = "$print-format-character";
 	public static final String NEWLINE_PRINT_FORMAT   = "$print-format-newline";
 	public static final String SPACE_PRINT_FORMAT     = "$print-format-space";
 	public static final String BOOLEAN_TRUE_STRING    = "$boolean-true-string";
@@ -44,6 +45,8 @@ public class RunTime {
 		frag.add(DataS, "%g");
 		frag.add(DLabel, BOOLEAN_PRINT_FORMAT);
 		frag.add(DataS, "%s");
+		frag.add(DLabel, CHARACTER_PRINT_FORMAT);
+		frag.add(DataS, "%c");
 		frag.add(DLabel, NEWLINE_PRINT_FORMAT);
 		frag.add(DataS, "\n");
 		frag.add(DLabel, SPACE_PRINT_FORMAT);

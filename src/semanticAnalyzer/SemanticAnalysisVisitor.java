@@ -3,6 +3,7 @@ package semanticAnalyzer;
 import java.util.Arrays;
 import java.util.List;
 
+import lexicalAnalyzer.Keyword;
 import lexicalAnalyzer.Lextant;
 import logging.PikaLogger;
 import parseTree.ParseNode;
@@ -32,9 +33,11 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	public void visitLeave(ProgramNode node) {
 		leaveScope(node);
 	}
-	public void visitEnter(MainBlockNode node) {
+	public void visitEnter(BlockStatementNode node) {
+		enterSubscope(node);
 	}
-	public void visitLeave(MainBlockNode node) {
+	public void visitLeave(BlockStatementNode node) {
+		leaveScope(node);
 	}
 	
 	
@@ -44,7 +47,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		Scope scope = Scope.createProgramScope();
 		node.setScope(scope);
 	}	
-	@SuppressWarnings("unused")
+
 	private void enterSubscope(ParseNode node) {
 		Scope baseScope = node.getLocalScope();
 		Scope scope = baseScope.createSubscope();
@@ -68,11 +71,32 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		node.setType(declarationType);
 		
 		identifier.setType(declarationType);
-		addBinding(identifier, declarationType);
+		boolean isVar = node.getToken().isLextant(Keyword.VAR);
+		addBinding(identifier, declarationType, isVar);
+	}
+
+	@Override
+	public void visitLeave(AssignmentStatementNode node){
+		IdentifierNode identifier = (IdentifierNode)node.child(0);
+		ParseNode expression = node.child(1);
+
+		if(!identifier.getType().equals(expression.getType())){
+			typeCheckError(node, Arrays.asList(identifier.getType(), expression.getType()));
+		};
+
+		// check identifier is not CONST
+		if(!identifier.getBinding().isVar()){
+			assignToConstError(node);
+		}
 	}
 
 	///////////////////////////////////////////////////////////////////////////
 	// expressions
+	//@Override
+	public void visitLeave(TypeNode node){
+		node.setType(PrimitiveType.fromToken(node.getToken()));
+	}
+
 	@Override
 	public void visitLeave(BinaryOperatorNode node) {
 		assert node.nChildren() == 2;
@@ -89,7 +113,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 			node.setSignature(signature);
 		}
 		else {
-			typeCheckError(node, childTypes);
+			assignToConstError(node);
 			node.setType(PrimitiveType.ERROR);
 		}
 	}
@@ -114,6 +138,11 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	@Override
     public void visit(FloatingConstantNode node){ node.setType(PrimitiveType.FLOATING);}
 	@Override
+	public void visit(CharacterConstantNode node) {
+		node.setType(PrimitiveType.CHARACTER);
+	}
+
+	@Override
 	public void visit(NewlineNode node) {
 	}
 	@Override
@@ -135,20 +164,26 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		ParseNode parent = node.getParent();
 		return (parent instanceof DeclarationNode) && (node == parent.child(0));
 	}
-	private void addBinding(IdentifierNode identifierNode, Type type) {
+	private void addBinding(IdentifierNode identifierNode, Type type, boolean isVar) {
 		Scope scope = identifierNode.getLocalScope();
-		Binding binding = scope.createBinding(identifierNode, type);
+		Binding binding = scope.createBinding(identifierNode, type, isVar);
 		identifierNode.setBinding(binding);
 	}
 	
 	///////////////////////////////////////////////////////////////////////////
 	// error logging/printing
 
-	private void typeCheckError(ParseNode node, List<Type> operandTypes) {
+	private void typeCheckError(ParseNode node, List<Type> operandTypes){
+		Token token = node.getToken();
+
+		logError("operator " +token.getLexeme() + " not defined for types "
+				+ operandTypes + " at " + token.getLocation());
+	}
+	private void assignToConstError(ParseNode node) {
 		Token token = node.getToken();
 		
-		logError("operator " + token.getLexeme() + " not defined for types " 
-				 + operandTypes  + " at " + token.getLocation());	
+		logError("Attempting to assign to a CONSTANT variable " + token.getLexeme() + " not defined for types "
+				 +" at " + token.getLocation());
 	}
 	private void logError(String message) {
 		PikaLogger log = PikaLogger.getLogger("compiler.semanticAnalyzer");

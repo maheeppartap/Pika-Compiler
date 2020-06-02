@@ -184,6 +184,11 @@ public class ASMCodeGenerator {
 			code.add(PushD, RunTime.NEWLINE_PRINT_FORMAT);
 			code.add(Printf);
 		}
+		public void visit(TabNode node) {
+			newVoidCode(node);
+			code.add(PushD, RunTime.TAB_PRINT_FORMAT);
+			code.add(Printf);
+		}
 		public void visit(SpaceNode node) {
 			newVoidCode(node);
 			code.add(PushD, RunTime.SPACE_PRINT_FORMAT);

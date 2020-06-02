@@ -1,6 +1,7 @@
 package parser;
 
 
+import java.security.Key;
 import java.util.Arrays;
 
 import logging.PikaLogger;
@@ -183,10 +184,15 @@ public class Parser {
 			ParseNode child = new NewlineNode(previouslyRead);
 			parent.appendChild(child);
 		}
+		else if(nowReading.isLextant(Keyword.TAB)){
+			readToken();
+			ParseNode child = new TabNode(previouslyRead);
+			parent.appendChild(child);
+		}
 		// else we interpret the printExpression as epsilon, and do nothing
 	}
 	private boolean startsPrintExpression(Token token) {
-		return startsExpression(token) || token.isLextant(Keyword.NEWLINE) ;
+		return startsExpression(token) || token.isLextant(Keyword.NEWLINE) || token.isLextant(Keyword.TAB);
 	}
 	
 	
@@ -207,7 +213,7 @@ public class Parser {
 		}
 		else if(nowReading.isLextant(Punctuator.SEPARATOR)) {
 			readToken();
-		}		
+		}
 		else if(nowReading.isLextant(Punctuator.TERMINATOR)) {
 			// we're at the end of the bowtie and this printSeparator is not required.
 			// do nothing.  Terminator is handled in a higher-level nonterminal.

@@ -1,6 +1,6 @@
 exec{
 var y := 1.
-print y,_n_.
-y := 3 + 2.
-print y.
+print y, _t_, y.
+#y := 2 * 6.
+
 }

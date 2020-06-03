@@ -115,7 +115,7 @@
         <mark key="." line="25" column="9" />
         <mark key="^" line="24" column="15" />
       </file>
-      <file name="/Dummy.txt" timestamp="1591067837350">
+      <file name="/Dummy.txt" timestamp="1591075648911">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -284,8 +284,8 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>NEWLINE</text>
+      <register name="&quot;" type="2">
+        <text>added functionality to add comments in pika code, added block statements, added variable statements and fixed chars. Phew, should push more often.</text>
       </register>
       <register name="-" type="4">
         <text>NEWLINE</text>
@@ -297,31 +297,31 @@
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIE5FV0xJTkVfUFJJTlRfRk9STUFUICAgPSAiJHByaW50LWZvcm1hdC1uZXdsaW5lIjsK</text>
       </register>
       <register name="1" type="2">
-        <text>#print y.</text>
+        <text>added functionality to add comments in pika code, added block statements, added variable statements and fixed chars. Phew, should push more often.</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQkJaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5ORVdMSU5FKSkgCg==</text>
+        <text>#print y.</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJfWVsc2UgaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5UQUIpKXsKCQkJCWNoaWxkID0gbmV3IFRhYk5vZGUocHJldmlvdXNseVJlYWQpOwoJCQl9</text>
+        <text encoding="base64">CQkJaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5ORVdMSU5FKSkgCg==</text>
       </register>
       <register name="4" type="2">
-        <text>y := 3 + 2.</text>
+        <text encoding="base64">CQkJfWVsc2UgaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5UQUIpKXsKCQkJCWNoaWxkID0gbmV3IFRhYk5vZGUocHJldmlvdXNseVJlYWQpOwoJCQl9</text>
       </register>
       <register name="5" type="2">
-        <text>added boolean instructions</text>
+        <text>y := 3 + 2.</text>
       </register>
       <register name="6" type="2">
-        <text>#lalalal#</text>
+        <text>added boolean instructions</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICBzZXRNRSgpOyAK</text>
+        <text>#lalalal#</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICB0aGlzLnNldFR5cGUoKTsK</text>
+        <text encoding="base64">ICAgICAgICBzZXRNRSgpOyAK</text>
       </register>
       <register name="9" type="2">
-        <text>y := 3.</text>
+        <text encoding="base64">ICAgICAgICB0aGlzLnNldFR5cGUoKTsK</text>
       </register>
       <register name=":" type="4">
         <text>?Newline</text>

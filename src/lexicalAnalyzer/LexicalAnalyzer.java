@@ -36,8 +36,9 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			while (ch.getCharacter() != '\n' && ch.getCharacter() != '#'){
 				ch = input.next();
 			}
-			ch = input.next();
-			if(ch.getCharacter() == '\n') return findNextToken();
+			//ch = input.next();
+			/*if(ch.getCharacter() == '\n')*/
+			return findNextToken();
 			//input.pushback(ch);
 			//return findNextToken();
 		}

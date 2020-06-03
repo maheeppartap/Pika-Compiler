@@ -77,17 +77,49 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
+      <file name="/Dummy.txt" timestamp="1591146469878">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591039100399">
+        <mark key="[" line="26" column="50" />
+        <mark key="]" line="26" column="50" />
+        <mark key="." line="26" column="50" />
+        <mark key="^" line="14" column="21" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1591071206128">
         <mark key="[" line="11" column="4" />
         <mark key="]" line="23" column="12" />
         <mark key="." line="23" column="11" />
         <mark key="^" line="23" column="12" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CharacterToken.java" timestamp="1591052335451" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1591072284950">
+        <mark key="'" line="78" column="27" />
+        <mark key="[" line="144" column="22" />
+        <mark key="]" line="144" column="22" />
+        <mark key="." line="144" column="22" />
+        <mark key="^" line="96" column="46" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/AssignmentStatementNode.java" timestamp="1591067318419">
+        <mark key="[" line="36" column="0" />
+        <mark key="]" line="36" column="0" />
+        <mark key="." line="36" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1591071865263">
         <mark key="[" line="119" column="12" />
         <mark key="]" line="43" column="24" />
         <mark key="." line="43" column="24" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/TypeNode.java" timestamp="1591038760881">
+        <mark key="[" line="32" column="0" />
+        <mark key="]" line="32" column="0" />
+        <mark key="." line="32" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CastingToken.java" timestamp="1591052636967">
+        <mark key="[" line="21" column="24" />
+        <mark key="]" line="21" column="24" />
+        <mark key="." line="21" column="24" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1591074316129">
         <mark key="'" line="26" column="22" />
@@ -103,51 +135,11 @@
         <mark key="." line="188" column="36" />
         <mark key="^" line="150" column="84" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591073368123">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591146553919">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="2" column="10" />
-        <mark key="]" line="2" column="11" />
-        <mark key="." line="2" column="11" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
-        <mark key="[" line="25" column="9" />
-        <mark key="]" line="25" column="9" />
-        <mark key="." line="25" column="9" />
-        <mark key="^" line="24" column="15" />
-      </file>
-      <file name="/Dummy.txt" timestamp="1591075648911">
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591039100399">
-        <mark key="[" line="26" column="50" />
-        <mark key="]" line="26" column="50" />
-        <mark key="." line="26" column="50" />
-        <mark key="^" line="14" column="21" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/DeclarationNode.java" timestamp="1591054104560" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1591072284950">
-        <mark key="'" line="78" column="27" />
-        <mark key="[" line="144" column="22" />
-        <mark key="]" line="144" column="22" />
-        <mark key="." line="144" column="22" />
-        <mark key="^" line="96" column="46" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/AssignmentStatementNode.java" timestamp="1591067318419">
-        <mark key="[" line="36" column="0" />
-        <mark key="]" line="36" column="0" />
-        <mark key="." line="36" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/TypeNode.java" timestamp="1591038760881">
-        <mark key="[" line="32" column="0" />
-        <mark key="]" line="32" column="0" />
-        <mark key="." line="32" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CastingToken.java" timestamp="1591052636967">
-        <mark key="[" line="21" column="24" />
-        <mark key="]" line="21" column="24" />
-        <mark key="." line="21" column="24" />
+        <mark key="[" line="1" column="5" />
+        <mark key="]" line="5" column="0" />
+        <mark key="." line="5" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591074074506">
         <mark key="'" line="441" column="15" />
@@ -165,15 +157,21 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNode.java" timestamp="1591067353143">
         <mark key="[" line="113" column="28" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591039461007">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591146871478">
         <mark key="'" line="163" column="12" />
-        <mark key="[" line="85" column="42" />
-        <mark key="]" line="59" column="25" />
-        <mark key="." line="59" column="25" />
+        <mark key="[" line="205" column="0" />
+        <mark key="]" line="205" column="4" />
+        <mark key="." line="205" column="4" />
         <mark key="^" line="54" column="35" />
       </file>
       <file name="/fragment.java" timestamp="1591071781933">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1591039528521">
+        <mark key="[" line="25" column="9" />
+        <mark key="]" line="25" column="9" />
+        <mark key="." line="25" column="9" />
+        <mark key="^" line="24" column="15" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/Binding.java" timestamp="1591056991808">
         <mark key="[" line="14" column="29" />
@@ -284,11 +282,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text>added functionality to add comments in pika code, added block statements, added variable statements and fixed chars. Phew, should push more often.</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CWlmKGNfLmlzTG93ZXJDYXNlKCkpewoJCQkKCQl9</text>
       </register>
       <register name="-" type="4">
-        <text>NEWLINE</text>
+        <text>#</text>
       </register>
       <register name="/" type="4">
         <text>Newline</text>
@@ -296,32 +294,32 @@
       <register name="0" type="2">
         <text encoding="base64">CXB1YmxpYyBzdGF0aWMgZmluYWwgU3RyaW5nIE5FV0xJTkVfUFJJTlRfRk9STUFUICAgPSAiJHByaW50LWZvcm1hdC1uZXdsaW5lIjsK</text>
       </register>
-      <register name="1" type="2">
-        <text>added functionality to add comments in pika code, added block statements, added variable statements and fixed chars. Phew, should push more often.</text>
+      <register name="1" type="4">
+        <text encoding="base64">CWlmKGNfLmlzTG93ZXJDYXNlKCkpewoJCQkKCQl9</text>
       </register>
       <register name="2" type="2">
-        <text>#print y.</text>
+        <text>added new printing formats</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5ORVdMSU5FKSkgCg==</text>
+        <text>#dckuws</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQkJfWVsc2UgaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5UQUIpKXsKCQkJCWNoaWxkID0gbmV3IFRhYk5vZGUocHJldmlvdXNseVJlYWQpOwoJCQl9</text>
+        <text>#k</text>
       </register>
       <register name="5" type="2">
-        <text>y := 3 + 2.</text>
+        <text encoding="base64">I2Z2YmRzZmJ2ZHNoYgo=</text>
       </register>
       <register name="6" type="2">
-        <text>added boolean instructions</text>
+        <text encoding="base64">I3kgOj0gMiAqIDYK</text>
       </register>
       <register name="7" type="2">
-        <text>#lalalal#</text>
+        <text>added functionality to add comments in pika code, added block statements, added variable statements and fixed chars. Phew, should push more often.</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBzZXRNRSgpOyAK</text>
+        <text>#print y.</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICB0aGlzLnNldFR5cGUoKTsK</text>
+        <text encoding="base64">CQkJaWYobm93UmVhZGluZy5pc0xleHRhbnQoS2V5d29yZC5ORVdMSU5FKSkgCg==</text>
       </register>
       <register name=":" type="4">
         <text>?Newline</text>

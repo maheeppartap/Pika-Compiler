@@ -101,6 +101,9 @@
         <mark key="." line="144" column="22" />
         <mark key="^" line="96" column="46" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1591206139940">
+        <mark key="[" line="52" column="19" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/AssignmentStatementNode.java" timestamp="1591067318419">
         <mark key="[" line="36" column="0" />
         <mark key="]" line="36" column="0" />
@@ -135,11 +138,11 @@
         <mark key="." line="188" column="36" />
         <mark key="^" line="150" column="84" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591147693060">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591206013245">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="3" column="9" />
-        <mark key="]" line="3" column="9" />
-        <mark key="." line="3" column="9" />
+        <mark key="[" line="1" column="4" />
+        <mark key="]" line="1" column="4" />
+        <mark key="." line="1" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591074074506">
         <mark key="'" line="441" column="15" />
@@ -157,9 +160,9 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNode.java" timestamp="1591067353143">
         <mark key="[" line="113" column="28" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591147763260">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591206094096">
         <mark key="'" line="163" column="12" />
-        <mark key="[" line="193" column="37" />
+        <mark key="[" line="46" column="32" />
         <mark key="]" line="208" column="4" />
         <mark key="." line="208" column="4" />
         <mark key="^" line="54" column="35" />
@@ -283,10 +286,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>, _t_, yG_</text>
+        <text>yGfcnebcvaryu</text>
       </register>
       <register name="-" type="4">
-        <text>, _t_, yG_</text>
+        <text>yGfcnebcvaryu</text>
       </register>
       <register name="/" type="4">
         <text>Newline</text>

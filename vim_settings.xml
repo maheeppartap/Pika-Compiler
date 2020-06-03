@@ -157,11 +157,11 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNode.java" timestamp="1591067353143">
         <mark key="[" line="113" column="28" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591147161853">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591147763260">
         <mark key="'" line="163" column="12" />
-        <mark key="[" line="205" column="0" />
-        <mark key="]" line="205" column="4" />
-        <mark key="." line="205" column="4" />
+        <mark key="[" line="193" column="37" />
+        <mark key="]" line="208" column="4" />
+        <mark key="." line="208" column="4" />
         <mark key="^" line="54" column="35" />
       </file>
       <file name="/fragment.java" timestamp="1591071781933">

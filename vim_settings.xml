@@ -5,11 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>Labeller</entry>
-        <entry>labeller</entry>
-        <entry>StoreI</entry>
-        <entry>(\?</entry>
-        <entry>(</entry>
         <entry>expression</entry>
         <entry>comparison</entry>
         <entry>compare</entry>
@@ -25,13 +20,13 @@
         <entry>Binary</entry>
         <entry>TypeNode</entry>
         <entry>operator</entry>
+        <entry>{</entry>
+        <entry>[?</entry>
+        <entry>appendSubsequent</entry>
+        <entry>print</entry>
+        <entry>Print</entry>
       </history-search>
       <history-cmd>
-        <entry>?labeller</entry>
-        <entry>?StoreI</entry>
-        <entry>?(\</entry>
-        <entry>?(</entry>
-        <entry>?expression</entry>
         <entry>?comparison</entry>
         <entry>?compare</entry>
         <entry>?EQUAL</entry>
@@ -47,6 +42,11 @@
         <entry>?Binary</entry>
         <entry>?TypeNode</entry>
         <entry>?operator</entry>
+        <entry>?{</entry>
+        <entry>?[</entry>
+        <entry>?appendSubsequent</entry>
+        <entry>?print</entry>
+        <entry>?Print</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -134,18 +134,16 @@
         <mark key="." line="288" column="56" />
         <mark key="^" line="343" column="29" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591321934245">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591326801149">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
+        <mark key="[" line="0" column="12" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591323142788">
-        <mark key="'" line="353" column="12" />
-        <mark key="[" line="389" column="189" />
-        <mark key="]" line="389" column="193" />
-        <mark key="." line="389" column="193" />
-        <mark key="^" line="436" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591327078605">
+        <mark key="'" line="164" column="12" />
+        <mark key="[" line="194" column="107" />
+        <mark key="]" line="194" column="107" />
+        <mark key="." line="194" column="107" />
+        <mark key="^" line="385" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1591319725450">
         <mark key="[" line="43" column="8" />
@@ -163,11 +161,12 @@
         <mark key="." line="100" column="70" />
         <mark key="^" line="100" column="70" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591317869907">
-        <mark key="'" line="184" column="12" />
-        <mark key="[" line="42" column="9" />
-        <mark key="]" line="44" column="79" />
-        <mark key="." line="44" column="79" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591328111360">
+        <mark key="'" line="185" column="8" />
+        <mark key="[" line="81" column="102" />
+        <mark key="]" line="81" column="103" />
+        <mark key="." line="81" column="103" />
+        <mark key="^" line="77" column="24" />
       </file>
       <file name="/fragment.java" timestamp="1591071781933">
         <mark key="[" line="0" column="0" />
@@ -181,21 +180,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="184" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="179" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="177" column="31" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="62" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="75" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="72" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="67" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="65" column="36" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="62" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="60" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="46" column="28" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="45" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="71" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="86" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="36" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="68" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="59" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="72" column="31" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
@@ -281,61 +265,78 @@
       <jump line="137" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="119" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="100" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
+      <jump line="292" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="284" column="49" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="279" column="54" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="215" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="205" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="221" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="202" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="201" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="194" column="107" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="193" column="26" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="176" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="167" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="166" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="165" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="164" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>startsCasting(token)</text>
+        <text>next = input.next();
+					next_ = input.peek();</text>
       </register>
       <register name="-" type="4">
-        <text>startsCasting(token)</text>
+        <text>|| token.isLextant(Punctuator.STRING_QUOTES)</text>
       </register>
       <register name="/" type="4">
-        <text>operator</text>
+        <text>Print</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQkJCW5ldyBGdW5jdGlvblNpZ25hdHVyZShBU01PcGNvZGUuTm9wLCBCT09MRUFOLEJPT0xFQU4sQk9PTEVBTiksCg==</text>
+        <text encoding="base64">Y29uc3QgbSA6PSAyICsgMy4K</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text>next = input.next();
+					next_ = input.peek();</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">Ly8JCUxvY2F0ZWRDaGFyIGMgPSBpbnB1dC5uZXh0KCk7Ci8vCQlMb2NhdGVkQ2hhciBuZXh0XyA9IGlucHV0LnBlZWsoKTsKLy8JCXdoaWxlKGMuaXNEaWdpdCgpIHx8IChjLmdldENoYXJhY3RlcigpID09ICcuJyAmJiAgbmV4dF8uaXNEaWdpdCgpKSkgewovLwkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJYyA9IGlucHV0Lm5leHQoKTsKLy8JCQluZXh0XyA9IGlucHV0LnBlZWsoKTsKLy8JCX0KLy8JCWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJy4nICYmIG5leHRfLmdldENoYXJhY3RlcigpID09ICcuJyl7Ci8vCQkJbGV4aWNhbEVycm9yKGMpOwovLwkJfQovLwkJaWYoYy5nZXRDaGFyYWN0ZXIoKSA9PSAnRScpewovLwkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJYyA9IGlucHV0Lm5leHQoKTsKLy8JCQl3aGlsZShjLmlzRGlnaXQoKSB8fCBjLmlzTnVtZXJpY1NpZ24oKSkgewovLwkJCQlidWZmZXIuYXBwZW5kKGMuZ2V0Q2hhcmFjdGVyKCkpOwovLwkJCQljID0gaW5wdXQubmV4dCgpOwovLwkJCX0KLy8JCX0KLy8JCWlucHV0LnB1c2hiYWNrKGMpOw==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">CQlib29sZWFuIGVfZmxhZyA9IGZhbHNlOwo=</text>
+      </register>
+      <register name="4" type="2">
+        <text>#const m := 2 + 3.</text>
+      </register>
+      <register name="5" type="2">
         <text>var x := 2.
 const v := 2.
 const m := v == x.</text>
       </register>
-      <register name="2" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CQkJLy9Gb3IgbGF0ZXIK</text>
       </register>
-      <register name="3" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQlpZihmaXJzdENoYXIuZ2V0Q2hhcmFjdGVyKCkgPT0gJygnKSBmaXJzdENoYXIgPSBpbnB1dC5uZXh0KCk7Cg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="8" type="2">
         <text encoding="base64">XyQgOj0gMy4K</text>
       </register>
-      <register name="5" type="2">
+      <register name="9" type="2">
         <text>#yG$ := 2 * 6.</text>
       </register>
-      <register name="6" type="2">
-        <text>_ := 2.</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">CQkJCUxvY2F0ZWRDaGFyIG5leHRfID0gaW5wdXQucGVlaygpOwo=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">CQkJCUxvY2F0ZWRDaGFyIG5leHRfID0gaW5wdXQucGVlaygpOwo=</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CWlmKGNfLmlzTG93ZXJDYXNlKCkpewoJCQkKCQl9</text>
-      </register>
       <register name=":" type="4">
-        <text>?TypeNode</text>
+        <text>?Print</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>operator</last-search>
+      <last-search>Print</last-search>
       <last-offset />
-      <last-pattern>operator</last-pattern>
+      <last-pattern>Print</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

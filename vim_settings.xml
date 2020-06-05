@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>expression</entry>
         <entry>comparison</entry>
         <entry>compare</entry>
         <entry>EQUAL</entry>
@@ -23,11 +22,11 @@
         <entry>{</entry>
         <entry>[?</entry>
         <entry>appendSubsequent</entry>
-        <entry>print</entry>
         <entry>Print</entry>
+        <entry>printf</entry>
+        <entry>print</entry>
       </history-search>
       <history-cmd>
-        <entry>?comparison</entry>
         <entry>?compare</entry>
         <entry>?EQUAL</entry>
         <entry>?ASSIGN</entry>
@@ -45,8 +44,9 @@
         <entry>?{</entry>
         <entry>?[</entry>
         <entry>?appendSubsequent</entry>
-        <entry>?print</entry>
         <entry>?Print</entry>
+        <entry>?printf</entry>
+        <entry>?print</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -134,16 +134,18 @@
         <mark key="." line="288" column="56" />
         <mark key="^" line="343" column="29" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591326801149">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591330858511">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="0" column="12" />
+        <mark key="[" line="1" column="13" />
+        <mark key="]" line="1" column="13" />
+        <mark key="." line="1" column="13" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591327078605">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591331246056">
         <mark key="'" line="164" column="12" />
-        <mark key="[" line="194" column="107" />
-        <mark key="]" line="194" column="107" />
-        <mark key="." line="194" column="107" />
-        <mark key="^" line="385" column="4" />
+        <mark key="[" line="388" column="12" />
+        <mark key="]" line="398" column="0" />
+        <mark key="^" line="389" column="4" />
+        <mark key="." line="398" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1591319725450">
         <mark key="[" line="43" column="8" />
@@ -161,12 +163,12 @@
         <mark key="." line="100" column="70" />
         <mark key="^" line="100" column="70" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591328111360">
-        <mark key="'" line="185" column="8" />
-        <mark key="[" line="81" column="102" />
-        <mark key="]" line="81" column="103" />
-        <mark key="." line="81" column="103" />
-        <mark key="^" line="77" column="24" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591330498111">
+        <mark key="'" line="194" column="8" />
+        <mark key="[" line="88" column="0" />
+        <mark key="]" line="88" column="0" />
+        <mark key="." line="88" column="0" />
+        <mark key="^" line="29" column="19" />
       </file>
       <file name="/fragment.java" timestamp="1591071781933">
         <mark key="[" line="0" column="0" />
@@ -284,59 +286,63 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>next = input.next();
-					next_ = input.peek();</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">Cglwcml2YXRlIFBhcnNlTm9kZSBwYXJzZUNhc3QoKXsKCQkKCX0=</text>
       </register>
       <register name="-" type="4">
-        <text>|| token.isLextant(Punctuator.STRING_QUOTES)</text>
+        <text>[2 | char]</text>
       </register>
       <register name="/" type="4">
-        <text>Print</text>
+        <text>print</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">Y29uc3QgbSA6PSAyICsgMy4K</text>
+        <text encoding="base64">ICAgIHByaW50ICJMb3JlbSBpcnVyZSBkb2xvciI7IF9uXyAuCg==</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">Cglwcml2YXRlIFBhcnNlTm9kZSBwYXJzZUNhc3QoKXsKCQkKCX0=</text>
+      </register>
+      <register name="2" type="4">
+        <text>switch (nowReading.getLexeme()){
+			
+		}</text>
+      </register>
+      <register name="3" type="4">
+        <text>var x := &quot;hello&quot;.
+    print &quot;Lorem ipsum dolor&quot;; _n_ .
+    print &quot;Lorem irure dolor&quot;; _n_ .
+    print x; _n_ .</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">CQkJCVN5c3RlbS5vdXQucHJpbnRsbihuZXh0Xy5nZXRDaGFyYWN0ZXIoKSAhPSAnLicpOwo=</text>
+      </register>
+      <register name="5" type="4">
         <text>next = input.next();
 					next_ = input.peek();</text>
       </register>
-      <register name="2" type="2">
+      <register name="6" type="2">
         <text encoding="base64">Ly8JCUxvY2F0ZWRDaGFyIGMgPSBpbnB1dC5uZXh0KCk7Ci8vCQlMb2NhdGVkQ2hhciBuZXh0XyA9IGlucHV0LnBlZWsoKTsKLy8JCXdoaWxlKGMuaXNEaWdpdCgpIHx8IChjLmdldENoYXJhY3RlcigpID09ICcuJyAmJiAgbmV4dF8uaXNEaWdpdCgpKSkgewovLwkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJYyA9IGlucHV0Lm5leHQoKTsKLy8JCQluZXh0XyA9IGlucHV0LnBlZWsoKTsKLy8JCX0KLy8JCWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJy4nICYmIG5leHRfLmdldENoYXJhY3RlcigpID09ICcuJyl7Ci8vCQkJbGV4aWNhbEVycm9yKGMpOwovLwkJfQovLwkJaWYoYy5nZXRDaGFyYWN0ZXIoKSA9PSAnRScpewovLwkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJYyA9IGlucHV0Lm5leHQoKTsKLy8JCQl3aGlsZShjLmlzRGlnaXQoKSB8fCBjLmlzTnVtZXJpY1NpZ24oKSkgewovLwkJCQlidWZmZXIuYXBwZW5kKGMuZ2V0Q2hhcmFjdGVyKCkpOwovLwkJCQljID0gaW5wdXQubmV4dCgpOwovLwkJCX0KLy8JCX0KLy8JCWlucHV0LnB1c2hiYWNrKGMpOw==</text>
       </register>
-      <register name="3" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQlib29sZWFuIGVfZmxhZyA9IGZhbHNlOwo=</text>
       </register>
-      <register name="4" type="2">
+      <register name="8" type="2">
         <text>#const m := 2 + 3.</text>
       </register>
-      <register name="5" type="2">
+      <register name="9" type="2">
         <text>var x := 2.
 const v := 2.
 const m := v == x.</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">CQkJLy9Gb3IgbGF0ZXIK</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">CQlpZihmaXJzdENoYXIuZ2V0Q2hhcmFjdGVyKCkgPT0gJygnKSBmaXJzdENoYXIgPSBpbnB1dC5uZXh0KCk7Cg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">XyQgOj0gMy4K</text>
-      </register>
-      <register name="9" type="2">
-        <text>#yG$ := 2 * 6.</text>
-      </register>
       <register name=":" type="4">
-        <text>?Print</text>
+        <text>?print</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Print</last-search>
+      <last-search>print</last-search>
       <last-offset />
-      <last-pattern>Print</last-pattern>
+      <last-pattern>print</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

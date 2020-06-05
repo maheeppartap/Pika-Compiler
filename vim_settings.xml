@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>string</entry>
         <entry>Labeller</entry>
         <entry>labeller</entry>
         <entry>StoreI</entry>
@@ -25,9 +24,9 @@
         <entry>Normal</entry>
         <entry>Binary</entry>
         <entry>TypeNode</entry>
+        <entry>operator</entry>
       </history-search>
       <history-cmd>
-        <entry>?Labeller</entry>
         <entry>?labeller</entry>
         <entry>?StoreI</entry>
         <entry>?(\</entry>
@@ -47,6 +46,7 @@
         <entry>?Normal</entry>
         <entry>?Binary</entry>
         <entry>?TypeNode</entry>
+        <entry>?operator</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -112,6 +112,7 @@
         <mark key="'" line="86" column="4" />
         <mark key="n" line="126" column="20" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CharacterToken.java" timestamp="1591322732347" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1591211111747">
         <mark key="'" line="131" column="26" />
         <mark key="[" line="134" column="26" />
@@ -135,20 +136,26 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591321934245">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591317507518">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591323142788">
         <mark key="'" line="353" column="12" />
-        <mark key="[" line="401" column="18" />
-        <mark key="]" line="401" column="18" />
-        <mark key="." line="401" column="18" />
+        <mark key="[" line="389" column="189" />
+        <mark key="]" line="389" column="193" />
+        <mark key="." line="389" column="193" />
+        <mark key="^" line="436" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1591319725450">
         <mark key="[" line="43" column="8" />
         <mark key="]" line="74" column="17" />
         <mark key="." line="74" column="17" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/casting.java" timestamp="1591322741027">
+        <mark key="[" line="4" column="13" />
+        <mark key="]" line="4" column="13" />
+        <mark key="." line="4" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1591321906619">
         <mark key="[" line="100" column="70" />
@@ -157,7 +164,7 @@
         <mark key="^" line="100" column="70" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591317869907">
-        <mark key="'" line="186" column="12" />
+        <mark key="'" line="184" column="12" />
         <mark key="[" line="42" column="9" />
         <mark key="]" line="44" column="79" />
         <mark key="." line="44" column="79" />
@@ -278,16 +285,14 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text>var x := 2.
-const v := 2.
-const m := v == x.</text>
+      <register name="&quot;" type="4">
+        <text>startsCasting(token)</text>
       </register>
       <register name="-" type="4">
-        <text>BOOLEAN</text>
+        <text>startsCasting(token)</text>
       </register>
       <register name="/" type="4">
-        <text>TypeNode</text>
+        <text>operator</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQkJCW5ldyBGdW5jdGlvblNpZ25hdHVyZShBU01PcGNvZGUuTm9wLCBCT09MRUFOLEJPT0xFQU4sQk9PTEVBTiksCg==</text>
@@ -328,9 +333,9 @@ const m := v == x.</text>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>TypeNode</last-search>
+      <last-search>operator</last-search>
       <last-offset />
-      <last-pattern>TypeNode</last-pattern>
+      <last-pattern>operator</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

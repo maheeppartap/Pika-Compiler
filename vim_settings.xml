@@ -83,25 +83,18 @@
         <mark key="." line="29" column="18" />
         <mark key="^" line="15" column="21" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/StringToken.java" timestamp="1591208058336">
-        <mark key="[" line="4" column="13" />
-        <mark key="]" line="4" column="13" />
-        <mark key="." line="4" column="13" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/StringConstantNode.java" timestamp="1591210916562">
-        <mark key="[" line="9" column="13" />
-        <mark key="]" line="9" column="13" />
-        <mark key="." line="9" column="13" />
-      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/IntegerDivideCodeGenerator.java" timestamp="1591395688613" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1591336224938">
         <mark key="[" line="15" column="21" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/booleanToCharCasting.java" timestamp="1591395740700">
+        <mark key="[" line="10" column="13" />
+        <mark key="]" line="10" column="13" />
+        <mark key="." line="10" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/FloatingConstantNode.java" timestamp="1591393600886">
         <mark key="[" line="20" column="0" />
         <mark key="]" line="20" column="30" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1591206139940">
-        <mark key="[" line="52" column="19" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1591393462763">
         <mark key="'" line="112" column="16" />
@@ -129,6 +122,11 @@
         <mark key="]" line="51" column="44" />
         <mark key="." line="51" column="43" />
         <mark key="^" line="51" column="44" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/CharToBoolCodeGenerator.java" timestamp="1591395904243">
+        <mark key="[" line="10" column="13" />
+        <mark key="]" line="10" column="13" />
+        <mark key="." line="10" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1591394091857">
         <mark key="'" line="142" column="25" />
@@ -160,11 +158,11 @@
         <mark key="]" line="4" column="13" />
         <mark key="." line="4" column="13" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1591394651127">
-        <mark key="[" line="100" column="69" />
-        <mark key="]" line="100" column="69" />
-        <mark key="." line="100" column="69" />
-        <mark key="^" line="100" column="70" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1591395845047">
+        <mark key="[" line="102" column="48" />
+        <mark key="]" line="102" column="53" />
+        <mark key="." line="102" column="52" />
+        <mark key="^" line="102" column="53" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591342175723">
         <mark key="'" line="196" column="8" />
@@ -287,33 +285,36 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>CHARACTER</text>
+        <text encoding="base64">SW50ZWdlckRpdmlkZUNvZGVHZW5lcmF0b3Ig</text>
       </register>
       <register name="-" type="4">
-        <text>CHARACTER</text>
+        <text encoding="base64">SW50ZWdlckRpdmlkZUNvZGVHZW5lcmF0b3Ig</text>
       </register>
       <register name="/" type="4">
         <text>Type</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQkJCW5ldyBGdW5jdGlvblNpZ25hdHVyZShBU01PcGNvZGUuTm9wLCBJTlRFR0VSLENIQVJBQ1RFUixDSEFSQUNURVIpLAo=</text>
+        <text encoding="base64">CQkJCW5ldyBGdW5jdGlvblNpZ25hdHVyZShBU01PcGNvZGUuTm9wLCBDSEFSQUNURVIsQk9PTEVBTixCT09MRUFOKSwJLy90byBiZSBjaGFuZ2VkCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHZhciB4IDo9IFsgMyB8IGZsb2F0IF0uCiAgICB2YXIgeSA6PSAyLjAzLgogICAgdmFyIHogOj0geCArIHku</text>
+        <text encoding="base64">CQkJCW5ldyBGdW5jdGlvblNpZ25hdHVyZShBU01PcGNvZGUuQ29udmVydEYsIElOVEVHRVIsRkxPQVRJTkcsRkxPQVRJTkcpLAo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQkJaWYoZnJhZyA9PSBudWxsKSBmcmFnID0gKEFTTUNvZGVGcmFnbWVudCkK</text>
+        <text encoding="base64">ICAgIHZhciB4IDo9IFsgMyB8IGZsb2F0IF0uCiAgICB2YXIgeSA6PSAyLjAzLgogICAgdmFyIHogOj0geCArIHku</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
+        <text encoding="base64">CQkJaWYoZnJhZyA9PSBudWxsKSBmcmFnID0gKEFTTUNvZGVGcmFnbWVudCkK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQlyZXR1cgo=</text>
+        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
       </register>
       <register name="5" type="2">
+        <text encoding="base64">CQlyZXR1cgo=</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">CQkJICAgIGZpbmROZXh0VG9rZW4oKTsK</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>private ParseNode ParseCasting(){/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//if(!startsCharacterConstant(nowReading)) return syntaxErrorNode(&quot;Char constant&quot;);
 		readToken();
@@ -321,14 +322,11 @@
 		return new;
 	}</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
-      </register>
       <register name="8" type="2">
         <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQlleHBlY3QoUHVuY3R1YXRvci5DQVNUX01JRCk7Cg==</text>
+        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
       </register>
       <register name=":" type="4">
         <text>?Type</text>

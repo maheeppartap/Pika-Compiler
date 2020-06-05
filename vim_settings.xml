@@ -133,11 +133,11 @@
         <mark key="." line="151" column="73" />
         <mark key="^" line="151" column="74" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591238700750">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591238894070">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="2" column="6" />
-        <mark key="]" line="2" column="6" />
-        <mark key="." line="2" column="6" />
+        <mark key="[" line="1" column="10" />
+        <mark key="]" line="1" column="10" />
+        <mark key="." line="1" column="10" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591210846787">
         <mark key="'" line="452" column="15" />
@@ -272,10 +272,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>d</text>
+        <text>&quot;iissda&quot;</text>
       </register>
       <register name="-" type="4">
-        <text>d</text>
+        <text>&quot;iissda&quot;</text>
       </register>
       <register name="/" type="4">
         <text>Load</text>

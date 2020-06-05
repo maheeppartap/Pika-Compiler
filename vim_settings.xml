@@ -115,13 +115,11 @@
         <mark key="'" line="86" column="4" />
         <mark key="n" line="126" column="20" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/CharacterToken.java" timestamp="1591322732347" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1591343221270">
         <mark key="'" line="137" column="26" />
         <mark key="[" line="74" column="9" />
         <mark key="^" line="126" column="18" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/TypeNode.java" timestamp="1591342431966" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1591213628936">
         <mark key="'" line="27" column="22" />
         <mark key="[" line="51" column="46" />
@@ -341,9 +339,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Integer</last-search>
+      <last-search>TypeNode</last-search>
       <last-offset />
-      <last-pattern>Integer</last-pattern>
+      <last-pattern>TypeNode</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

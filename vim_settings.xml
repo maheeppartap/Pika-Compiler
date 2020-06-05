@@ -5,18 +5,11 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>comparison</entry>
-        <entry>compare</entry>
-        <entry>EQUAL</entry>
-        <entry>ASSIGN</entry>
-        <entry>ASS</entry>
-        <entry>STRING</entry>
         <entry>Load</entry>
         <entry>visitNormalBinary</entry>
         <entry>BinaryOperator</entry>
         <entry>visitLeave</entry>
         <entry>Normal</entry>
-        <entry>Binary</entry>
         <entry>TypeNode</entry>
         <entry>operator</entry>
         <entry>{</entry>
@@ -25,20 +18,20 @@
         <entry>Print</entry>
         <entry>printf</entry>
         <entry>print</entry>
+        <entry>atomic</entry>
+        <entry>Lextant</entry>
+        <entry>startsLiteral</entry>
+        <entry>Lex</entry>
+        <entry>Binary</entry>
+        <entry>CAST</entry>
+        <entry>multiplicative</entry>
       </history-search>
       <history-cmd>
-        <entry>?compare</entry>
-        <entry>?EQUAL</entry>
-        <entry>?ASSIGN</entry>
-        <entry>?ASS</entry>
-        <entry>?STRING</entry>
-        <entry>Load</entry>
         <entry>?Load</entry>
         <entry>?visitNormalBinary</entry>
         <entry>?BinaryOperator</entry>
         <entry>?visitLeave</entry>
         <entry>?Normal</entry>
-        <entry>?Binary</entry>
         <entry>?TypeNode</entry>
         <entry>?operator</entry>
         <entry>?{</entry>
@@ -47,6 +40,13 @@
         <entry>?Print</entry>
         <entry>?printf</entry>
         <entry>?print</entry>
+        <entry>?atomic</entry>
+        <entry>?Lextant</entry>
+        <entry>?startsLiteral</entry>
+        <entry>?Lex</entry>
+        <entry>?Binary</entry>
+        <entry>?CAST</entry>
+        <entry>?multiplicative</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -98,6 +98,9 @@
         <mark key="]" line="9" column="13" />
         <mark key="." line="9" column="13" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1591336224938">
+        <mark key="[" line="15" column="21" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/inputHandler/LocatedChar.java" timestamp="1591206139940">
         <mark key="[" line="52" column="19" />
       </file>
@@ -134,18 +137,19 @@
         <mark key="." line="288" column="56" />
         <mark key="^" line="343" column="29" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591330858511">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591340878700">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="1" column="13" />
-        <mark key="]" line="1" column="13" />
-        <mark key="." line="1" column="13" />
+        <mark key="[" line="1" column="3" />
+        <mark key="]" line="1" column="5" />
+        <mark key="." line="1" column="4" />
+        <mark key="^" line="1" column="5" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591331246056">
-        <mark key="'" line="164" column="12" />
-        <mark key="[" line="388" column="12" />
-        <mark key="]" line="398" column="0" />
-        <mark key="^" line="389" column="4" />
-        <mark key="." line="398" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591340681150">
+        <mark key="'" line="316" column="8" />
+        <mark key="[" line="389" column="19" />
+        <mark key="]" line="389" column="19" />
+        <mark key="." line="389" column="19" />
+        <mark key="^" line="387" column="19" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1591319725450">
         <mark key="[" line="43" column="8" />
@@ -163,12 +167,11 @@
         <mark key="." line="100" column="70" />
         <mark key="^" line="100" column="70" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591330498111">
-        <mark key="'" line="194" column="8" />
-        <mark key="[" line="88" column="0" />
-        <mark key="]" line="88" column="0" />
-        <mark key="." line="88" column="0" />
-        <mark key="^" line="29" column="19" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1591340982551">
+        <mark key="'" line="196" column="8" />
+        <mark key="[" line="55" column="17" />
+        <mark key="]" line="55" column="17" />
+        <mark key="." line="55" column="17" />
       </file>
       <file name="/fragment.java" timestamp="1591071781933">
         <mark key="[" line="0" column="0" />
@@ -182,14 +185,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="68" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="59" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="72" column="31" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="71" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="69" column="21" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="8" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="7" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
-      <jump line="9" column="7" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
       <jump line="115" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="100" column="19" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="97" column="19" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -282,67 +277,76 @@
       <jump line="166" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="165" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="164" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="253" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="252" column="39" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="336" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="296" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="274" column="24" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="242" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="341" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="316" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">Cglwcml2YXRlIFBhcnNlTm9kZSBwYXJzZUNhc3QoKXsKCQkKCX0=</text>
+      <register name="&quot;" type="4">
+        <text>input.next()</text>
       </register>
       <register name="-" type="4">
-        <text>[2 | char]</text>
+        <text>input.next()</text>
       </register>
       <register name="/" type="4">
-        <text>print</text>
+        <text>multiplicative</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">ICAgIHByaW50ICJMb3JlbSBpcnVyZSBkb2xvciI7IF9uXyAuCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Cglwcml2YXRlIFBhcnNlTm9kZSBwYXJzZUNhc3QoKXsKCQkKCX0=</text>
+        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
       </register>
-      <register name="2" type="4">
-        <text>switch (nowReading.getLexeme()){
-			
-		}</text>
+      <register name="2" type="2">
+        <text encoding="base64">CQlyZXR1cgo=</text>
       </register>
-      <register name="3" type="4">
-        <text>var x := &quot;hello&quot;.
-    print &quot;Lorem ipsum dolor&quot;; _n_ .
-    print &quot;Lorem irure dolor&quot;; _n_ .
-    print x; _n_ .</text>
+      <register name="3" type="2">
+        <text encoding="base64">CQkJICAgIGZpbmROZXh0VG9rZW4oKTsK</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">CQkJCVN5c3RlbS5vdXQucHJpbnRsbihuZXh0Xy5nZXRDaGFyYWN0ZXIoKSAhPSAnLicpOwo=</text>
+      <register name="4" type="4">
+        <text>private ParseNode ParseCasting(){/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//if(!startsCharacterConstant(nowReading)) return syntaxErrorNode(&quot;Char constant&quot;);
+		readToken();
+		readToken();
+		return new;
+	}</text>
       </register>
-      <register name="5" type="4">
-        <text>next = input.next();
-					next_ = input.peek();</text>
+      <register name="5" type="2">
+        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">Ly8JCUxvY2F0ZWRDaGFyIGMgPSBpbnB1dC5uZXh0KCk7Ci8vCQlMb2NhdGVkQ2hhciBuZXh0XyA9IGlucHV0LnBlZWsoKTsKLy8JCXdoaWxlKGMuaXNEaWdpdCgpIHx8IChjLmdldENoYXJhY3RlcigpID09ICcuJyAmJiAgbmV4dF8uaXNEaWdpdCgpKSkgewovLwkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJYyA9IGlucHV0Lm5leHQoKTsKLy8JCQluZXh0XyA9IGlucHV0LnBlZWsoKTsKLy8JCX0KLy8JCWlmKGMuZ2V0Q2hhcmFjdGVyKCkgPT0gJy4nICYmIG5leHRfLmdldENoYXJhY3RlcigpID09ICcuJyl7Ci8vCQkJbGV4aWNhbEVycm9yKGMpOwovLwkJfQovLwkJaWYoYy5nZXRDaGFyYWN0ZXIoKSA9PSAnRScpewovLwkJCWJ1ZmZlci5hcHBlbmQoYy5nZXRDaGFyYWN0ZXIoKSk7Ci8vCQkJYyA9IGlucHV0Lm5leHQoKTsKLy8JCQl3aGlsZShjLmlzRGlnaXQoKSB8fCBjLmlzTnVtZXJpY1NpZ24oKSkgewovLwkJCQlidWZmZXIuYXBwZW5kKGMuZ2V0Q2hhcmFjdGVyKCkpOwovLwkJCQljID0gaW5wdXQubmV4dCgpOwovLwkJCX0KLy8JCX0KLy8JCWlucHV0LnB1c2hiYWNrKGMpOw==</text>
+        <text encoding="base64">CQkJCWNoID0gbmV4dE5vbldoaXRlc3BhY2VDaGFyKCk7Cg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQlib29sZWFuIGVfZmxhZyA9IGZhbHNlOwo=</text>
+        <text encoding="base64">CQlleHBlY3QoUHVuY3R1YXRvci5DQVNUX01JRCk7Cg==</text>
       </register>
-      <register name="8" type="2">
-        <text>#const m := 2 + 3.</text>
+      <register name="8" type="4">
+        <text>if(nowReading.isLextant(Punctuator.CAST_BEGIN)){
+			//return parseCast();
+		}</text>
       </register>
-      <register name="9" type="2">
-        <text>var x := 2.
-const v := 2.
-const m := v == x.</text>
+      <register name="9" type="4">
+        <text>private ParseNode parseCast(){
+		
+	}</text>
       </register>
       <register name=":" type="4">
-        <text>?print</text>
+        <text>?multiplicative</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>print</last-search>
+      <last-search>multiplicative</last-search>
       <last-offset />
-      <last-pattern>print</last-pattern>
+      <last-pattern>multiplicative</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

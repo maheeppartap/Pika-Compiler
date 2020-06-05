@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>[?</entry>
         <entry>appendSubsequent</entry>
         <entry>Print</entry>
         <entry>printf</entry>
@@ -19,15 +18,15 @@
         <entry>Scope</entry>
         <entry>scope</entry>
         <entry>tyeNode</entry>
-        <entry>TypeNode</entry>
         <entry>Binary</entry>
         <entry>BinaryOperator</entry>
         <entry>visitLeave</entry>
         <entry>visit</entry>
         <entry>Integer</entry>
+        <entry>typeNode</entry>
+        <entry>TypeNode</entry>
       </history-search>
       <history-cmd>
-        <entry>?[</entry>
         <entry>?appendSubsequent</entry>
         <entry>?Print</entry>
         <entry>?printf</entry>
@@ -41,12 +40,13 @@
         <entry>?Scope</entry>
         <entry>?scope</entry>
         <entry>?tyeNode</entry>
-        <entry>?TypeNode</entry>
         <entry>?Binary</entry>
         <entry>?BinaryOperator</entry>
         <entry>?visitLeave</entry>
         <entry>?visit</entry>
         <entry>?Integer</entry>
+        <entry>?typeNode</entry>
+        <entry>?TypeNode</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -82,10 +82,10 @@
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591344515600">
-        <mark key="[" line="10" column="0" />
-        <mark key="]" line="10" column="4" />
-        <mark key="." line="10" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591391931715">
+        <mark key="[" line="29" column="18" />
+        <mark key="]" line="29" column="18" />
+        <mark key="." line="29" column="18" />
         <mark key="^" line="15" column="21" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/StringToken.java" timestamp="1591208058336">
@@ -115,10 +115,10 @@
         <mark key="'" line="86" column="4" />
         <mark key="n" line="126" column="20" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1591343221270">
-        <mark key="'" line="137" column="26" />
-        <mark key="[" line="74" column="9" />
-        <mark key="^" line="126" column="18" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1591375456817">
+        <mark key="'" line="140" column="26" />
+        <mark key="[" line="9" column="45" />
+        <mark key="^" line="129" column="18" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/runtime/RunTime.java" timestamp="1591213628936">
         <mark key="'" line="27" column="22" />
@@ -285,13 +285,13 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>TYPENODE(8),</text>
+        <text>INTEGER</text>
       </register>
       <register name="-" type="4">
-        <text>TYPENODE(8),</text>
+        <text>INTEGER</text>
       </register>
       <register name="/" type="4">
-        <text>Integer</text>
+        <text>TypeNode</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQlwdWJsaWMgdm9pZCB2aXNpdExlYXZlKEJpbmFyeU9wZXJhdG9yTm9kZSBub2RlKSB7Cg==</text>
@@ -333,7 +333,7 @@
 	}</text>
       </register>
       <register name=":" type="4">
-        <text>?Integer</text>
+        <text>?TypeNode</text>
       </register>
     </registers>
   </component>

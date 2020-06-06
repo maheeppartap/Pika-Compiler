@@ -18,6 +18,8 @@ import symbolTable.Scope;
 import tokens.LextantToken;
 import tokens.Token;
 
+import static lexicalAnalyzer.Keyword.INT;
+
 class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	@Override
 	public void visitLeave(ParseNode node) {
@@ -92,9 +94,19 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 
 	///////////////////////////////////////////////////////////////////////////
 	// expressions
-	//@Override
+
+	@Override
 	public void visitLeave(TypeNode node){
 		node.setType(PrimitiveType.fromToken(node.getToken()));
+
+	}
+	//@Override
+	public void visit(TypeNode node){
+	}
+
+
+	public void visitEnter(TypeNode node){
+
 	}
 
 	@Override
@@ -117,6 +129,8 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 			node.setType(PrimitiveType.ERROR);
 		}
 	}
+
+
 	private Lextant operatorFor(BinaryOperatorNode node) {
 		LextantToken token = (LextantToken) node.getToken();
 		return token.getLextant();
@@ -141,7 +155,13 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	public void visit(CharacterConstantNode node) {
 		node.setType(PrimitiveType.CHARACTER);
 	}
-
+	@Override
+	public void visit(StringConstantNode node) {
+		node.setType(PrimitiveType.STRING);
+	}
+	@Override
+	public void visit(TabNode node) {
+	}
 	@Override
 	public void visit(NewlineNode node) {
 	}

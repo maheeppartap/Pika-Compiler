@@ -5,8 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>visit</entry>
-        <entry>Integer</entry>
         <entry>typeNode</entry>
         <entry>TypeNode</entry>
         <entry>Keyword</entry>
@@ -25,10 +23,10 @@
         <entry>atomic</entry>
         <entry>Terminator</entry>
         <entry>CLOSE</entry>
+        <entry>^</entry>
+        <entry>/^</entry>
       </history-search>
       <history-cmd>
-        <entry>?visit</entry>
-        <entry>?Integer</entry>
         <entry>?typeNode</entry>
         <entry>?TypeNode</entry>
         <entry>?Keyword</entry>
@@ -47,6 +45,8 @@
         <entry>?atomic</entry>
         <entry>?Terminator</entry>
         <entry>?CLOSE</entry>
+        <entry>?^</entry>
+        <entry>?/^</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -144,8 +144,8 @@
         <mark key="[" line="38" column="5" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/CharToBoolCodeGenerator.java" timestamp="1591399233635" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591408358587">
-        <mark key="'" line="375" column="30" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591408946181">
+        <mark key="'" line="319" column="0" />
         <mark key="[" line="326" column="8" />
         <mark key="]" line="118" column="35" />
         <mark key="." line="118" column="34" />
@@ -165,9 +165,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="322" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="321" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="320" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="319" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="85" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="83" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
@@ -265,6 +262,9 @@
       <jump line="75" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="405" column="229" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="375" column="30" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="321" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="320" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="319" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
@@ -276,7 +276,7 @@
         <text>return</text>
       </register>
       <register name="/" type="4">
-        <text>CLOSE</text>
+        <text>/^</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQlpZihub3dSZWFkaW5nLmlzTGV4dGFudChQdW5jdHVhdG9yLkNMT1NFX0JSQUNLRVQpKSByZWFkVG9rZW4oKTsK</text>
@@ -317,15 +317,15 @@
         <text encoding="base64">CQkJcmVhZFRva2VuKCk7Cg==</text>
       </register>
       <register name=":" type="4">
-        <text>?CLOSE</text>
+        <text>?^</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>CLOSE</last-search>
+      <last-search>/^</last-search>
       <last-offset />
-      <last-pattern>CLOSE</last-pattern>
+      <last-pattern>/^</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

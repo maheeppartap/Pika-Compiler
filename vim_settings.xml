@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>visitLeave</entry>
         <entry>visit</entry>
         <entry>Integer</entry>
         <entry>typeNode</entry>
@@ -25,9 +24,9 @@
         <entry>OPEN</entry>
         <entry>atomic</entry>
         <entry>Terminator</entry>
+        <entry>CLOSE</entry>
       </history-search>
       <history-cmd>
-        <entry>?visitLeave</entry>
         <entry>?visit</entry>
         <entry>?Integer</entry>
         <entry>?typeNode</entry>
@@ -47,6 +46,7 @@
         <entry>?OPEN</entry>
         <entry>?atomic</entry>
         <entry>?Terminator</entry>
+        <entry>?CLOSE</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -115,15 +115,15 @@
         <mark key="]" line="1" column="13" />
         <mark key="." line="1" column="13" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1591319725450">
-        <mark key="[" line="43" column="8" />
-        <mark key="]" line="74" column="17" />
-        <mark key="." line="74" column="17" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/casting.java" timestamp="1591322741027">
         <mark key="[" line="4" column="13" />
         <mark key="]" line="4" column="13" />
         <mark key="." line="4" column="13" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1591408517082">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1591391931715">
         <mark key="[" line="29" column="18" />
@@ -144,12 +144,12 @@
         <mark key="[" line="38" column="5" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/CharToBoolCodeGenerator.java" timestamp="1591399233635" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591403299756">
-        <mark key="'" line="252" column="39" />
-        <mark key="[" line="372" column="12" />
-        <mark key="]" line="271" column="8" />
-        <mark key="." line="271" column="8" />
-        <mark key="^" line="367" column="16" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591408358587">
+        <mark key="'" line="375" column="30" />
+        <mark key="[" line="326" column="8" />
+        <mark key="]" line="118" column="35" />
+        <mark key="." line="118" column="34" />
+        <mark key="^" line="118" column="35" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1591400032215">
         <mark key="[" line="98" column="0" />
@@ -165,8 +165,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="316" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="323" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="322" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="321" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="320" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
@@ -251,7 +249,6 @@
       <jump line="6" column="24" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/TypeNode.java" />
       <jump line="60" column="15" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
       <jump line="53" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="375" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="358" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="337" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="312" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -265,74 +262,70 @@
       <jump line="311" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="253" column="11" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="252" column="39" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="75" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="405" column="229" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="375" column="30" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
-			readToken();
-		}</text>
+      <register name="&quot;" type="2">
+        <text>fixed bug where comments where being read as identifiers if it was a print statement.</text>
       </register>
       <register name="-" type="4">
-        <text>parseAtomicExpression();</text>
+        <text>return</text>
       </register>
       <register name="/" type="4">
-        <text>Terminator</text>
+        <text>CLOSE</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQlQYXJzZU5vZGUgbGVmdCA9IHBhcnNlQXRvbWljRXhwcmVzc2lvbigpOwo=</text>
+        <text encoding="base64">CQlpZihub3dSZWFkaW5nLmlzTGV4dGFudChQdW5jdHVhdG9yLkNMT1NFX0JSQUNLRVQpKSByZWFkVG9rZW4oKTsK</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text>fixed bug where comments where being read as identifiers if it was a print statement.</text>
+      </register>
+      <register name="2" type="4">
+        <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
+				Token multiplicativeToken = nowReading;
+				readToken();
+				ParseNode right = parseAtomicExpression();
+			}</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">CQkJcmV0dXJuIHBhcnNlRXhwcmVzc2lvbkluUGFyZW50aGVzZXMoKTsK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">CQkJPSBwYXJzZUxpdGVyYWwoKTsK</text>
+      </register>
+      <register name="5" type="4">
         <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
 			readToken();
 		}</text>
       </register>
-      <register name="2" type="4">
+      <register name="6" type="4">
         <text encoding="base64">aWYobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5URVJNSU5BVE9SKSl7CgkJCQoJCQ==</text>
       </register>
-      <register name="3" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CgkJcmVhZFRva2VuKCk7CgkJcmV0dXJuIHBhcnNlTGl0ZXJhbCgpOw==</text>
       </register>
-      <register name="4" type="4">
+      <register name="8" type="4">
         <text>while(!nowReading.isLextant(Punctuator.CLOSE_BRACKET)) {
 			return parseLiteral();
 		}</text>
       </register>
-      <register name="5" type="2">
+      <register name="9" type="2">
         <text encoding="base64">CQkJcmVhZFRva2VuKCk7Cg==</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">CQlyZXR1cm4gcGFyc2VMaXRlcmFsKCk7Cg==</text>
-      </register>
-      <register name="7" type="4">
-        <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
-			Token multiplicativeToken = nowReading;
-			readToken();
-			ParseNode right = parseAtomicExpression();
-
-			ParseNode left = BinaryOperatorNode.withChildren(multiplicativeToken, left, right);
-		}</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">ZXhlYyB7CiAgICB2YXIgeCA6PSA=</text>
-      </register>
-      <register name="9" type="4">
-        <text>var x := [ 70.3 | char ].
-    #var z := &quot;2&quot;.
-    #var y := x == z.
-    print x.</text>
-      </register>
       <register name=":" type="4">
-        <text>?Terminator</text>
+        <text>?CLOSE</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Terminator</last-search>
+      <last-search>CLOSE</last-search>
       <last-offset />
-      <last-pattern>Terminator</last-pattern>
+      <last-pattern>CLOSE</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

@@ -8,8 +8,7 @@ import java.util.Map;
 import asmCodeGenerator.codeStorage.ASMOpcode;
 import lexicalAnalyzer.Punctuator;
 import semanticAnalyzer.types.Type;
-import simpleCodeGenerator.FloatingDivideCodeGenerator;
-import simpleCodeGenerator.IntegerDivideCodeGenerator;
+import simpleCodeGenerator.*;
 
 import static semanticAnalyzer.types.PrimitiveType.*;
 
@@ -92,6 +91,18 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 				new FunctionSignature(ASMOpcode.Multiply, INTEGER, INTEGER, INTEGER),
 				new FunctionSignature(ASMOpcode.FMultiply, FLOATING, FLOATING, FLOATING)
 				);
+		new FunctionSignatures(Punctuator.CAST_MID,
+				new FunctionSignature(ASMOpcode.Nop, BOOLEAN,BOOLEAN,BOOLEAN),
+				new FunctionSignature(ASMOpcode.Nop, CHARACTER,CHARACTER,CHARACTER),
+				new FunctionSignature(ASMOpcode.Nop, CHARACTER,INTEGER,INTEGER),
+				new FunctionSignature(new CharToBoolCodeGenerator(), CHARACTER,BOOLEAN,BOOLEAN),
+				new FunctionSignature(ASMOpcode.Nop, INTEGER,BOOLEAN,BOOLEAN),
+				new FunctionSignature(new IntToCharCodeGenerator(), INTEGER,CHARACTER,CHARACTER),
+				new FunctionSignature(ASMOpcode.Nop, INTEGER,INTEGER,INTEGER),
+				new FunctionSignature(ASMOpcode.ConvertF, INTEGER,FLOATING,FLOATING),
+				new FunctionSignature(ASMOpcode.Nop, FLOATING,FLOATING,FLOATING),
+				new FunctionSignature(ASMOpcode.ConvertI, FLOATING,INTEGER,INTEGER)
+				);
 
 		Punctuator []comparisons = {Punctuator.GREATER,
 				Punctuator.LESSTHAN,
@@ -103,14 +114,13 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 			FunctionSignature iSignature = new FunctionSignature(1, INTEGER, INTEGER, BOOLEAN);
 			FunctionSignature fSignature = new FunctionSignature(1, FLOATING,FLOATING, BOOLEAN);
 			FunctionSignature bSignature = new FunctionSignature(1, BOOLEAN, BOOLEAN, BOOLEAN);
-
-			//For later
-			//	FunctionSignature cSignature = new FunctionSignature(1, CHARACTER,CHARACTER, BOOLEAN);
+			FunctionSignature cSignature = new FunctionSignature(1, CHARACTER,CHARACTER, BOOLEAN);
+			FunctionSignature sSignature = new FunctionSignature(1, STRING,STRING, BOOLEAN);
 
 			if(punc == Punctuator.EQUALTO || punc == Punctuator.NOTEQUALTO){
-				new FunctionSignatures(punc, iSignature, /*cSignature*/ fSignature, bSignature);
+				new FunctionSignatures(punc, iSignature, cSignature, fSignature, bSignature, sSignature);
 			}else
-				new FunctionSignatures(punc, iSignature, /*cSignature*/ fSignature);
+				new FunctionSignatures(punc, iSignature, cSignature, fSignature);
 		}
 		
 		// First, we use the operator itself (in this case the Punctuator ADD) as the key.

@@ -1,5 +1,4 @@
-exec{
-var y := 1.
-y := 2 * 6.
-print y, _t_, y.
+exec {
+    var x := 2 * ( [ 20.98 | int ] - 3 ).
+    print x.
 }

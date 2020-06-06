@@ -7,7 +7,6 @@ import inputHandler.LocatedChar;
 import inputHandler.LocatedCharStream;
 import inputHandler.PushbackCharStream;
 import inputHandler.TextLocation;
-import parseTree.nodeTypes.TypeNode;
 import tokens.*;
 
 import static lexicalAnalyzer.PunctuatorScanningAids.*;
@@ -25,11 +24,20 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 
 	
 	//////////////////////////////////////////////////////////////////////////////
-	// Token-finding main dispatch	
+	// Token-finding main dispatch
 
+
+	//just a helper
+
+	private boolean isValidString(char x){
+		if(x == '.') return false;
+		if(x == ',') return false;
+		return !(x == ';');
+	}
 	@Override
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
+
 
 		if (ch.getCharacter() == '#'){
 			ch = input.next();
@@ -42,13 +50,21 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			//input.pushback(ch);
 			//return findNextToken();
 		}
-		if(ch.isDigit() || ch.getCharacter() == '+' || ch.getCharacter() == '-' ) {
+
+
+		if(ch.getCharacter() == '[' || ch.getCharacter() == ']'){
+			ch = nextNonWhitespaceChar();
+		}
+
+		//if(ch.getCharacter() == '(' || ch.getCharacter() == ')') ch = nextNonWhitespaceChar();
+		if(ch.isDigit() || ch.getCharacter() == '+' || ch.getCharacter() == '-') {
 			return scanNumber(ch);
 		}
-		else if(ch.isLowerCase()) {
+		else if(ch.isAllowedToBeIdentifier()) {
 			return scanIdentifier(ch);
 		}
 		else if(isPunctuatorStart(ch)) {
+			//for chars
 			if(ch.getCharacter() == '^'){
 				LocatedChar next = input.next();
 				LocatedChar next__ = input.peek();
@@ -62,6 +78,28 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 				return CharacterToken.make(next.getLocation(), x.toString());
 				//input.pushback(ch);
 			}
+
+			//for strings
+			if(ch.getCharacter() == '"'){
+				LocatedChar next = input.next();
+				LocatedChar next_ = input.peek();
+				StringBuffer x = new StringBuffer();
+				while (next.getCharacter() != '"' && next.getCharacter() != '\n'){
+					x.append(next.getCharacter());
+					next = input.next();
+					next_ = input.peek();
+				}
+				if(next_.getCharacter() == ' '){
+					next_ = nextNonWhitespaceChar();
+				}
+				//input.pushback(next);
+
+				if(isValidString(next_.getCharacter())) {
+					lexicalError(next);
+				}
+				return StringToken.make(next.getLocation(), x.toString());
+			}
+
 			return PunctuatorScanner.scan(ch, input);
 		}
 		else if(isEndOfInput(ch)) {
@@ -95,6 +133,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		if(firstChar.isNumericSign() && !next.isDigit() & next.getCharacter() != '.'){
 			return PunctuatorScanner.scan(firstChar, input); //sketchyyyyyyyyy
 		}
+
 		buffer.append(firstChar.getCharacter());
 		if(firstChar.isDigit() || firstChar.isNumericSign()){
 			appendSubsequentDigits(buffer);
@@ -122,7 +161,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		if(buffer.toString().endsWith("E")){
 			appendSubsequentDigits(buffer);
 			return FloatingToken.make(firstChar.getLocation(), buffer.toString());
-
 		}
 		appendSubsequentDigits(buffer);
 		next = input.next();
@@ -142,37 +180,12 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		return FloatingToken.make(firstChar.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {
-		boolean e_flag = false;
 		LocatedChar c = input.next();
 		while (c.isDigit()){
 			buffer.append(c.getCharacter());
 			c = input.next();
 		}
 		input.pushback(c);
-
-
-
-
-
-//		LocatedChar c = input.next();
-//		LocatedChar next_ = input.peek();
-//		while(c.isDigit() || (c.getCharacter() == '.' &&  next_.isDigit())) {
-//			buffer.append(c.getCharacter());
-//			c = input.next();
-//			next_ = input.peek();
-//		}
-//		if(c.getCharacter() == '.' && next_.getCharacter() == '.'){
-//			lexicalError(c);
-//		}
-//		if(c.getCharacter() == 'E'){
-//			buffer.append(c.getCharacter());
-//			c = input.next();
-//			while(c.isDigit() || c.isNumericSign()) {
-//				buffer.append(c.getCharacter());
-//				c = input.next();
-//			}
-//		}
-//		input.pushback(c);
 	}
 
 	//////////////////////////////////////////////////////////////////////////////
@@ -181,7 +194,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	private Token scanIdentifier(LocatedChar firstChar) {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(firstChar.getCharacter());
-		appendSubsequentLowercase(buffer);
+		appendSubsequentLetters(buffer);
 
 		String lexeme = buffer.toString();
 		if(Keyword.isAKeyword(lexeme)) {
@@ -191,13 +204,28 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			return IdentifierToken.make(firstChar.getLocation(), lexeme);
 		}
 	}
-	private void appendSubsequentLowercase(StringBuffer buffer) {
+	private void appendSubsequentLetters(StringBuffer buffer) {
 		LocatedChar c = input.next();
-		while(c.isLowerCase()) {
+		int length = 0;
+		while(allowedLetters(c)) {
+			length++;
 			buffer.append(c.getCharacter());
 			c = input.next();
 		}
+		if(length >= 32) lexicalError(c);
 		input.pushback(c);
+	}
+	private boolean allowedLetters(LocatedChar c){
+		char c_ = c.getCharacter();
+		switch(c_){
+			case '_': return true;
+			case '$': return true;
+		}
+		if((int)c_ >=48 && (int)c_ <=57) return true; //case of a number
+		if((int)c_ >= 65 && (int)c_ <= 90) return true; //case of upperCase
+		if((int)c_ >= 97 && (int)c_ <= 122) return true; //case of lowercase
+
+		return false;
 	}
 
 

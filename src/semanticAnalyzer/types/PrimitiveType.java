@@ -7,6 +7,7 @@ public enum PrimitiveType implements Type {
 	BOOLEAN(1),
 	INTEGER(4),
 	CHARACTER(1),
+	STRING(4),
 	FLOATING(8),
 	ERROR(0),			// use as a value when a syntax error has occurred
 	NO_TYPE(0, "");		// use as a value when no type has been assigned.
@@ -26,10 +27,11 @@ public enum PrimitiveType implements Type {
 	public static Type fromToken(Token token) {
 		String x = token.getLexeme();
 		switch (x){
-			case "INTEGER": return INTEGER;
-			case "BOOLEAN": return BOOLEAN;
-			case "CHARACTER": return CHARACTER;
-			case "FLOATING": return FLOATING;
+			case "int": return INTEGER;
+			case "bool": return BOOLEAN;
+			case "char": return CHARACTER;
+			case "float": return FLOATING;
+			case "string": return STRING;
 			default: return NO_TYPE;
 		}
 	}

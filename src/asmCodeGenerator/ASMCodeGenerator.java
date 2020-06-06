@@ -20,6 +20,8 @@ import static semanticAnalyzer.types.PrimitiveType.*;
 
 import simpleCodeGenerator.*;
 
+import javax.print.DocFlavor;
+
 // do not call the code generator if any errors have occurred during analysis.
 public class ASMCodeGenerator {
 	ParseNode root;
@@ -105,6 +107,11 @@ public class ASMCodeGenerator {
 		}		
 		ASMCodeFragment removeValueCode(ParseNode node) {
 			ASMCodeFragment frag = getAndRemoveCode(node);
+			if(frag == null) {
+				frag = new ASMCodeFragment(GENERATES_VOID);
+				//frag.add(Nop);
+				return frag;
+			};
 			makeFragmentValueCode(frag, node);
 			return frag;
 		}		
@@ -126,7 +133,7 @@ public class ASMCodeGenerator {
 			
 			if(code.isAddress()) {
 				turnAddressIntoValue(code, node);
-			}	
+			}
 		}
 		private void turnAddressIntoValue(ASMCodeFragment code, ParseNode node) {
 			if(node.getType() == PrimitiveType.INTEGER) {
@@ -140,7 +147,10 @@ public class ASMCodeGenerator {
 			}
 			else if(node.getType() == PrimitiveType.BOOLEAN) {
 				code.add(LoadC);
-			}	
+			}
+			else if(node.getType() == STRING){
+				code.add(LoadC);
+			}
 			else {
 				assert false : "node " + node;
 			}
@@ -226,7 +236,7 @@ public class ASMCodeGenerator {
 			if(type == FLOATING){
 				return StoreF;
 			}
-			if(type == CHARACTER){
+			if(type == CHARACTER || type == STRING){
 				return StoreI;
 			}
 			if(type == PrimitiveType.BOOLEAN) {
@@ -271,7 +281,8 @@ public class ASMCodeGenerator {
 			String trueLabel  = labeller.newLabel("true");
 			String falseLabel = labeller.newLabel("false");
 			String joinLabel  = labeller.newLabel("join");
-			
+			String trueLabel_ = labeller.newLabel("true_");
+
 			newValueCode(node);
 			code.add(Label, startLabel);
 			code.append(arg1);
@@ -280,7 +291,7 @@ public class ASMCodeGenerator {
 			code.add(Label, subLabel);
 			code.add(Subtract);
 
-			if(node.getOperator() == Punctuator.EQUALTO || node.getOperator() == Punctuator.GREATEREQUAL || node.getOperator() == Punctuator.LESSTHANEQUAL){
+			if(node.getOperator() == Punctuator.EQUALTO ){
 				code.add(JumpFalse, trueLabel);
 				code.add(Jump, falseLabel);
 			}
@@ -296,14 +307,29 @@ public class ASMCodeGenerator {
 				code.add(JumpPos, falseLabel);
 				code.add(Jump, trueLabel);
 			}
+			else if( node.getOperator() == Punctuator.GREATEREQUAL){
+				code.add(Duplicate);
+				code.add(JumpPos, trueLabel_);
+				code.add(JumpFalse, trueLabel);
+				code.add(Jump, falseLabel);
+			}
+			else if( node.getOperator() == Punctuator.LESSTHANEQUAL){
+				code.add(Duplicate);
+				code.add(JumpFalse, trueLabel_);
+				code.add(JumpNeg, trueLabel);
+				code.add(Jump, falseLabel);
+			}
 			code.add(Label, trueLabel);
 			code.add(PushI, 1);
 			code.add(Jump, joinLabel);
 			code.add(Label, falseLabel);
 			code.add(PushI, 0);
 			code.add(Jump, joinLabel);
+			code.add(Label, trueLabel_);
+			code.add(Pop);
+			code.add(PushI, 1);
+			code.add(Jump, joinLabel);
 			code.add(Label, joinLabel);
-
 		}
 
 		private void visitComparisonOperatorNodeF(BinaryOperatorNode node,
@@ -320,6 +346,7 @@ public class ASMCodeGenerator {
 			String trueLabel  = labeller.newLabel("true");
 			String falseLabel = labeller.newLabel("false");
 			String joinLabel  = labeller.newLabel("join");
+			String trueLabel_ = labeller.newLabel("true_");
 
 			newValueCode(node);
 			code.add(Label, startLabel);
@@ -336,11 +363,14 @@ public class ASMCodeGenerator {
 			}
 			//todo: implement greaterEqual and lessThanEqual
 			else if( node.getOperator() == Punctuator.GREATEREQUAL){
-				code.add(JumpFPos, trueLabel);
+				code.add(Duplicate);
+				code.add(JumpFPos, trueLabel_);
+				code.add(JumpFZero, trueLabel);
 				code.add(Jump, falseLabel);
 			}
 			else if( node.getOperator() == Punctuator.LESSTHANEQUAL){
-				code.add(JumpFZero, trueLabel);
+				code.add(Duplicate);
+				code.add(JumpFZero, trueLabel_);
 				code.add(JumpFNeg, trueLabel);
 				code.add(Jump, falseLabel);
 			}
@@ -363,8 +393,11 @@ public class ASMCodeGenerator {
 			code.add(Label, falseLabel);
 			code.add(PushI, 0);
 			code.add(Jump, joinLabel);
+			code.add(Label, trueLabel_);
+			code.add(Pop);
+			code.add(PushI, 1);
+			code.add(Jump, joinLabel);
 			code.add(Label, joinLabel);
-
 		}
 
 
@@ -436,6 +469,20 @@ public class ASMCodeGenerator {
 			newValueCode(node);
 
 			code.add(PushI, node.getValue());
+		}
+		public void visit(StringConstantNode node) {
+			newValueCode(node);
+
+			Labeller labeller = new Labeller("String-num");
+			String label = labeller.newLabel("%");
+			code.add(DLabel, label);
+			String x = node.getValue();
+			for(int i = 0; i < x.length(); i++){
+				code.add(DataC, x.charAt(i));
+			}
+			code.add(DataC, 0);
+
+			code.add(PushD, label);
 		}
 	}
 

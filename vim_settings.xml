@@ -88,8 +88,10 @@
         <mark key="." line="29" column="18" />
         <mark key="^" line="15" column="21" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1591336224938">
-        <mark key="[" line="15" column="21" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1591763672480">
+        <mark key="[" line="21" column="4" />
+        <mark key="]" line="21" column="4" />
+        <mark key="." line="21" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/booleanToCharCasting.java" timestamp="1591395740700">
         <mark key="[" line="10" column="13" />
@@ -132,10 +134,10 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingToCharCodeGenerator.java" timestamp="1591399442251">
         <mark key="[" line="2" column="42" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591400347074">
-        <mark key="[" line="1" column="13" />
-        <mark key="]" line="1" column="13" />
-        <mark key="." line="1" column="13" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591763703096">
+        <mark key="[" line="0" column="5" />
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591467096276">
         <mark key="'" line="319" column="0" />
@@ -268,51 +270,49 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text>fixed bug where comments where being read as identifiers if it was a print statement.</text>
+        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4KfQ==</text>
       </register>
       <register name="-" type="4">
-        <text>return</text>
+        <text>FLOAT</text>
       </register>
       <register name="/" type="4">
         <text>/^</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQlpZihub3dSZWFkaW5nLmlzTGV4dGFudChQdW5jdHVhdG9yLkNMT1NFX0JSQUNLRVQpKSByZWFkVG9rZW4oKTsK</text>
+        <text encoding="base64">CUZMT0FUKCJmbG9hdCIpLAo=</text>
       </register>
       <register name="1" type="2">
+        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4KfQ==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIHByaW50IHguCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4K</text>
+      </register>
+      <register name="4" type="2">
         <text>fixed bug where comments where being read as identifiers if it was a print statement.</text>
       </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
 				Token multiplicativeToken = nowReading;
 				readToken();
 				ParseNode right = parseAtomicExpression();
 			}</text>
       </register>
-      <register name="3" type="2">
+      <register name="6" type="2">
         <text encoding="base64">CQkJcmV0dXJuIHBhcnNlRXhwcmVzc2lvbkluUGFyZW50aGVzZXMoKTsK</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQkJPSBwYXJzZUxpdGVyYWwoKTsK</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
 			readToken();
 		}</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text encoding="base64">aWYobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5URVJNSU5BVE9SKSl7CgkJCQoJCQ==</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">CgkJcmVhZFRva2VuKCk7CgkJcmV0dXJuIHBhcnNlTGl0ZXJhbCgpOw==</text>
-      </register>
-      <register name="8" type="4">
-        <text>while(!nowReading.isLextant(Punctuator.CLOSE_BRACKET)) {
-			return parseLiteral();
-		}</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">CQkJcmVhZFRva2VuKCk7Cg==</text>
       </register>
       <register name=":" type="4">
         <text>?^</text>

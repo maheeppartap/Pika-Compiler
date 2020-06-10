@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>typeNode</entry>
         <entry>TypeNode</entry>
         <entry>Keyword</entry>
         <entry>value</entry>
@@ -25,9 +24,9 @@
         <entry>CLOSE</entry>
         <entry>^</entry>
         <entry>/^</entry>
+        <entry>statement</entry>
       </history-search>
       <history-cmd>
-        <entry>?typeNode</entry>
         <entry>?TypeNode</entry>
         <entry>?Keyword</entry>
         <entry>?value</entry>
@@ -47,6 +46,7 @@
         <entry>?CLOSE</entry>
         <entry>?^</entry>
         <entry>?/^</entry>
+        <entry>?statement</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -136,15 +136,15 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591763703096">
         <mark key="[" line="0" column="5" />
-        <mark key="]" line="4" column="0" />
-        <mark key="." line="4" column="0" />
+        <mark key="]" line="8" column="0" />
+        <mark key="." line="8" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591467096276">
-        <mark key="'" line="319" column="0" />
-        <mark key="[" line="326" column="8" />
-        <mark key="]" line="118" column="35" />
-        <mark key="." line="118" column="34" />
-        <mark key="^" line="118" column="35" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591767338815">
+        <mark key="'" line="89" column="36" />
+        <mark key="[" line="111" column="8" />
+        <mark key="]" line="111" column="12" />
+        <mark key="." line="111" column="12" />
+        <mark key="^" line="134" column="35" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/tokens/casting.java" timestamp="1591322741027">
         <mark key="[" line="4" column="13" />
@@ -165,10 +165,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="319" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="85" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="83" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
-      <jump line="86" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMOpcode.java" />
       <jump line="14" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" />
       <jump line="13" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" />
       <jump line="353" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -265,18 +261,22 @@
       <jump line="321" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="320" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="319" column="0" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="147" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="115" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="103" column="32" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="89" column="36" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4KfQ==</text>
+      <register name="&quot;" type="4">
+        <text>System.out.println(&quot;ERROR&quot;);</text>
       </register>
       <register name="-" type="4">
-        <text>FLOAT</text>
+        <text>System.out.println(&quot;ERROR&quot;);</text>
       </register>
       <register name="/" type="4">
-        <text>/^</text>
+        <text>statement</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CUZMT0FUKCJmbG9hdCIpLAo=</text>
@@ -315,15 +315,15 @@
         <text encoding="base64">aWYobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5URVJNSU5BVE9SKSl7CgkJCQoJCQ==</text>
       </register>
       <register name=":" type="4">
-        <text>?^</text>
+        <text>?statement</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>/^</last-search>
+      <last-search>statement</last-search>
       <last-offset />
-      <last-pattern>/^</last-pattern>
+      <last-pattern>statement</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

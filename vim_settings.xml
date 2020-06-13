@@ -134,10 +134,10 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingToCharCodeGenerator.java" timestamp="1591399442251">
         <mark key="[" line="2" column="42" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591763703096">
-        <mark key="[" line="0" column="5" />
-        <mark key="]" line="8" column="0" />
-        <mark key="." line="8" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1591815005849">
+        <mark key="[" line="3" column="3" />
+        <mark key="]" line="3" column="4" />
+        <mark key="." line="3" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1591767338815">
         <mark key="'" line="89" column="36" />
@@ -270,7 +270,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>System.out.println(&quot;ERROR&quot;);</text>
+        <text encoding="base64">aWYgKCB4ID4gMiApewogICAgICAgIHkgOj0gMy4KICAgIH0=</text>
       </register>
       <register name="-" type="4">
         <text>System.out.println(&quot;ERROR&quot;);</text>
@@ -281,38 +281,38 @@
       <register name="0" type="2">
         <text encoding="base64">CUZMT0FUKCJmbG9hdCIpLAo=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4KfQ==</text>
+      <register name="1" type="4">
+        <text encoding="base64">aWYgKCB4ID4gMiApewogICAgICAgIHkgOj0gMy4KICAgIH0=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIHByaW50IHguCg==</text>
+        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4KfQ==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4K</text>
+        <text encoding="base64">ICAgIHByaW50IHguCg==</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">ICAgIHZhciB4IDo9IDIgKiAoIFsgMjAuOTggfCBpbnQgXSAtIDMgKS4K</text>
+      </register>
+      <register name="5" type="2">
         <text>fixed bug where comments where being read as identifiers if it was a print statement.</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
 				Token multiplicativeToken = nowReading;
 				readToken();
 				ParseNode right = parseAtomicExpression();
 			}</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">CQkJcmV0dXJuIHBhcnNlRXhwcmVzc2lvbkluUGFyZW50aGVzZXMoKTsK</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CQkJPSBwYXJzZUxpdGVyYWwoKTsK</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>if(nowReading.isLextant(Punctuator.OPEN_BRACKET)){
 			readToken();
 		}</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">aWYobm93UmVhZGluZy5pc0xleHRhbnQoUHVuY3R1YXRvci5URVJNSU5BVE9SKSl7CgkJCQoJCQ==</text>
       </register>
       <register name=":" type="4">
         <text>?statement</text>
@@ -321,9 +321,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>statement</last-search>
+      <last-search>WHILE</last-search>
       <last-offset />
-      <last-pattern>statement</last-pattern>
+      <last-pattern>WHILE</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

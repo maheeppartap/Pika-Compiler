@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>TypeNode</entry>
         <entry>Keyword</entry>
         <entry>value</entry>
         <entry>type</entry>
@@ -25,9 +24,9 @@
         <entry>^</entry>
         <entry>/^</entry>
         <entry>statement</entry>
+        <entry>WHILE</entry>
       </history-search>
       <history-cmd>
-        <entry>?TypeNode</entry>
         <entry>?Keyword</entry>
         <entry>?value</entry>
         <entry>?type</entry>
@@ -47,6 +46,7 @@
         <entry>?^</entry>
         <entry>?/^</entry>
         <entry>?statement</entry>
+        <entry>?WHILE</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -88,10 +88,10 @@
         <mark key="." line="29" column="18" />
         <mark key="^" line="15" column="21" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1591763672480">
-        <mark key="[" line="21" column="4" />
-        <mark key="]" line="21" column="4" />
-        <mark key="." line="21" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1592027020777">
+        <mark key="[" line="8" column="4" />
+        <mark key="]" line="8" column="4" />
+        <mark key="." line="8" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/booleanToCharCasting.java" timestamp="1591395740700">
         <mark key="[" line="10" column="13" />
@@ -270,16 +270,16 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">aWYgKCB4ID4gMiApewogICAgICAgIHkgOj0gMy4KICAgIH0=</text>
+        <text>CONST</text>
       </register>
       <register name="-" type="4">
-        <text>System.out.println(&quot;ERROR&quot;);</text>
+        <text>CONST</text>
       </register>
       <register name="/" type="4">
-        <text>statement</text>
+        <text>WHILE</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CUZMT0FUKCJmbG9hdCIpLAo=</text>
+        <text encoding="base64">CUNPTlNUKCJjb25zdCIpLAo=</text>
       </register>
       <register name="1" type="4">
         <text encoding="base64">aWYgKCB4ID4gMiApewogICAgICAgIHkgOj0gMy4KICAgIH0=</text>

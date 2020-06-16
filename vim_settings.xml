@@ -137,7 +137,7 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingToCharCodeGenerator.java" timestamp="1591399442251">
         <mark key="[" line="2" column="42" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592344618684">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592345881352">
         <mark key="[" line="1" column="20" />
         <mark key="]" line="1" column="20" />
         <mark key="." line="1" column="20" />
@@ -165,12 +165,12 @@
         <mark key="]" line="98" column="0" />
         <mark key="." line="98" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1592341617707">
-        <mark key="'" line="200" column="8" />
-        <mark key="[" line="145" column="41" />
-        <mark key="]" line="73" column="48" />
-        <mark key="." line="73" column="47" />
-        <mark key="^" line="73" column="48" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1592346198241">
+        <mark key="'" line="204" column="8" />
+        <mark key="[" line="34" column="8" />
+        <mark key="]" line="34" column="18" />
+        <mark key="." line="34" column="18" />
+        <mark key="^" line="75" column="48" />
       </file>
     </filemarks>
     <jumps>
@@ -279,10 +279,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>_true_</text>
+        <text>2</text>
       </register>
       <register name="-" type="4">
-        <text>_true_</text>
+        <text>2</text>
       </register>
       <register name="/" type="4">
         <text>Ass</text>

@@ -112,8 +112,11 @@
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeVariable.java" timestamp="1592518699002">
-        <mark key="[" line="4" column="25" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeVariable.java" timestamp="1592519525682">
+        <mark key="[" line="32" column="3" />
+        <mark key="]" line="22" column="70" />
+        <mark key="^" line="6" column="25" />
+        <mark key="." line="22" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/ParseNodeVisitor.java" timestamp="1591375456817">
         <mark key="'" line="140" column="26" />
@@ -139,6 +142,9 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/simpleCodeGenerator/FloatingToCharCodeGenerator.java" timestamp="1591399442251">
         <mark key="[" line="2" column="42" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/Type.java" timestamp="1592518785335">
+        <mark key="[" line="17" column="31" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592369308459">
         <mark key="[" line="1" column="30" />
@@ -281,8 +287,8 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">ID09ICIyIg==</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIC8vIHNvbWUgcmVkdW5kYW50IG1ldGhvZHMsIGhlcmUgYmVjYXVzZSBpdCBzY3JlYW1zIGF0IG1lIG90aGVyd2lzZQo=</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ID09ICIyIg==</text>
@@ -294,18 +300,30 @@
         <text encoding="base64">CUNPTlNUKCJjb25zdCIpLAo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHByaW50IHJlc3VsdCwgX25fLgo=</text>
+        <text encoding="base64">ICAgIC8vIHNvbWUgcmVkdW5kYW50IG1ldGhvZHMsIGhlcmUgYmVjYXVzZSBpdCBzY3JlYW1zIGF0IG1lIG90aGVyd2lzZQo=</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IHJlc3VsdCA6PSA4LjAgKyA5LjguCiAgICB2YXIga25vd25UeXBlIDo9IDcuOS4KICAgICBrbm93blR5cGUgOj0gcmVzdWx0LgogICAgcHJpbnQgcmVzdWx0LCBfbl8uCn0=</text>
+      <register name="2" type="4">
+        <text encoding="base64">IHB1YmxpYyBpbnQgZ2V0U2l6ZSgpOwoKICAgIEBPdmVycmlkZQogICAgcHVibGljIFN0cmluZyBpbmZvU3RyaW5nKCkgewogICAgICAgIHJldHVybiBudWxsOwogICAgfQ==</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgIEBPdmVycmlkZQo=</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">IHsKICAgICAgICByZXR1cm4gMDsKICAgIH0=</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIHByaW50IHJlc3VsdCwgX25fLgo=</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgIGNvbnN0IHJlc3VsdCA6PSA4LjAgKyA5LjguCiAgICB2YXIga25vd25UeXBlIDo9IDcuOS4KICAgICBrbm93blR5cGUgOj0gcmVzdWx0LgogICAgcHJpbnQgcmVzdWx0LCBfbl8uCn0=</text>
+      </register>
+      <register name="7" type="2">
         <text encoding="base64">CQkvLyBIQVJEQ09ESU5HIFRISVMgRk9SIE5PVywgZml4IGxhdGVy</text>
       </register>
-      <register name="4" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ZXhlYyB7CgkJdmFyIHMgOj0gIk1pc3RlciIuCgkJcHJpbnQgIlRoZXkiOy4KCQl7CgkJCXByaW50ICJjYWxsIjsuCgkJCWNvbnN0IHMgOj0gIm1lIi4KCQkJewoJCQkJcHJpbnQgczsuCgkJCX0KCQl9Cgl9CglwcmludCBzOy4KCXByaW50ICJUaWJicyEiLCBfbl8uCn0K</text>
       </register>
-      <register name="5" type="4">
+      <register name="9" type="4">
         <text>var s := &quot;Mister&quot;.
 		print &quot;They&quot;;.
 		{
@@ -316,22 +334,6 @@
 			}
 		}
 	}</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">CXByaW50IHM7LgoJcHJpbnQgIlRpYmJzISIu</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICBwcmludCAzLjkgKyAyLjAgKyA1LjQsIF9uXy4KICBwcmludCA4LjcgKyA2LjIgKyA2LjQsIF9uXy4KICBwcmludCA3LjQgKyAyLjkgKyA5LjcsIF9uXy4KICBwcmludCA1LjUgKyA3LjUgKyAxLjAsIF9uXy4KICBwcmludCAxLjYgKyA1LjYgKyA0LjEsIF9uXy4KICBwcmludCA0LjYgKyA5LjkgKyA3LjAsIF9uXy4KICBwcmludCAyLjkgKyA5LjAgKyA1LjgsIF9uXy4KICBwcmludCA4LjEgKyA3LjkgKyA2LjgsIF9uXy4KICBwcmludCAzLjEgKyA3LjIgKyA2LjgsIF9uXy4KICBwcmludCA3LjIgKyA3LjEgKyA4LjMsIF9uXy4KICBwcmludCAyLjYgKyAxLjEgKyA2LjgsIF9uXy4KCiAgcHJpbnQgNC4yICsgNy41ICsgNC42LCBfbl8uCiAgcHJpbnQgNy41ICsgMy44ICsgNi4zLCBfbl8uCiAgcHJpbnQgNC43ICsgNy44ICsgOS40LCBfbl8uCiAgcHJpbnQgOS4zICsgMy4xICsgOS4wLCBfbl8uCiAgcHJpbnQgNi44ICsgMy43ICsgNi44LCBfbl8uCiAgcHJpbnQgMi4yICsgNi4yICsgMS4zLCBfbl8uCiAgcHJpbnQgNy45ICsgMS42ICsgNS43LCBfbl8uCiAgcHJpbnQgNy41ICsgNC4yICsgNS42LCBfbl8uCiAgcHJpbnQgNS45ICsgNi45ICsgMy4zLCBfbl8uCiAgcHJpbnQgMy4wICsgMi45ICsgMi45LCBfbl8uCiAgcHJpbnQgNS41ICsgNy40ICsgNC40LCBfbl8uCiAgcHJpbnQgMi45ICsgMi4zICsgOS4xLCBfbl8uCgogIHByaW50IDIuOSArIDEuNyArIDUuNyArIDUuOCwgX25fLgogIHByaW50IDQuMiArIDUuOCArIDUuMCArIDguNywgX25fLgogIHByaW50IDcuMyArIDMuNSArIDYuNiArIDEuOCwgX25fLgogIHByaW50IDEuMyArIDYuMSArIDQuMCArIDMuMywgX25fLgogIHByaW50IDkuMyArIDIuNCArIDEuNSArIDIuOSwgX25fLgogIHByaW50IDguMSArIDguNSArIDMuMCArIDcuMiwgX25fLgogIHByaW50IDcuNiArIDIuNCArIDguNyArIDMuNiwgX25fLgogIHByaW50IDcuOCArIDUuNiArIDkuOCArIDUuMCwgX25fLgogIHByaW50IDEuNCArIDIuMiArIDQuNiArIDUuMSwgX25fLgogIHByaW50IDEuOCArIDMuNiArIDMuNSArIDcuOSwgX25fLgogIHByaW50IDUuMCArIDYuNSArIDcuNCArIDQuMCwgX25fLgogIHByaW50IDUuMiArIDMuMiArIDUuMiArIDQuMCwgX25fLgoKICBwcmludCA3LjMgKyAxLjQgKyAzLjcgKyAzLjcsIF9uXy4KICBwcmludCA1LjcgKyA5LjIgKyAxLjMgKyA1LjMsIF9uXy4KICBwcmludCAyLjMgKyAyLjMgKyAzLjEgKyAxLjMsIF9uXy4KICBwcmludCA3LjIgKyA4LjkgKyAxLjEgKyA5LjYsIF9uXy4KICBwcmludCA3LjMgKyA2LjggKyA3LjUgKyAyLjgsIF9uXy4KICBwcmludCA0LjIgKyA3LjMgKyA5LjMgKyAxLjQsIF9uXy4KICBwcmludCA1LjEgKyA4LjEgKyA0LjIgKyA1LjksIF9uXy4KICBwcmludCAyLjggKyA0LjcgKyA5LjAgKyA1LjIsIF9uXy4KICBwcmludCA3LjcgKyA2LjMgKyAxLjQgKyA4LjQsIF9uXy4KICBwcmludCA1LjEgKyA2LjYgKyA2LjMgKyA1LjIsIF9uXy4KICBwcmludCA2LjAgKyA0LjYgKyAxLjUgKyAxLjUsIF9uXy4KICBwcmludCA5LjEgKyAxLjggKyAyLjggKyA1LjksIF9uXy4=</text>
-      </register>
-      <register name="8" type="4">
-        <text>const x := 2.
-    var y := 2.
-     var z := 1/3
-
-    print z.</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">aWYgKCB4ID4gMiApewogICAgICAgIHkgOj0gMy4KICAgIH0=</text>
       </register>
       <register name=":" type="4">
         <text>?Ass</text>

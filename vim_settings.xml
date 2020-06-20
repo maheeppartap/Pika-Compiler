@@ -5,8 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>CAST</entry>
-        <entry>StoreI</entry>
         <entry>ErrorNode</entry>
         <entry>ERROR</entry>
         <entry>OPEM_</entry>
@@ -25,10 +23,10 @@
         <entry>assign</entry>
         <entry>Ass</entry>
         <entry>expression</entry>
+        <entry>*</entry>
+        <entry>+</entry>
       </history-search>
       <history-cmd>
-        <entry>?CAST</entry>
-        <entry>?StoreI</entry>
         <entry>?ErrorNode</entry>
         <entry>?ERROR</entry>
         <entry>?OPEM_</entry>
@@ -47,6 +45,8 @@
         <entry>?assign</entry>
         <entry>?Ass</entry>
         <entry>?expression</entry>
+        <entry>?*</entry>
+        <entry>?+</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -146,10 +146,10 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/Type.java" timestamp="1592518785335">
         <mark key="[" line="17" column="31" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592592648726">
-        <mark key="[" line="1" column="20" />
-        <mark key="]" line="1" column="20" />
-        <mark key="." line="1" column="20" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592627066953">
+        <mark key="[" line="1" column="19" />
+        <mark key="]" line="1" column="19" />
+        <mark key="." line="1" column="19" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1592592795407">
         <mark key="'" line="288" column="47" />
@@ -174,8 +174,8 @@
         <mark key="]" line="98" column="0" />
         <mark key="." line="98" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1592346198241">
-        <mark key="'" line="204" column="8" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1592627224357">
+        <mark key="'" line="218" column="18" />
         <mark key="[" line="34" column="8" />
         <mark key="]" line="34" column="18" />
         <mark key="." line="34" column="18" />
@@ -189,17 +189,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="134" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="143" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="140" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="137" column="25" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" />
-      <jump line="292" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="284" column="49" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="279" column="54" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="215" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="205" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
-      <jump line="221" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="202" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="201" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="193" column="26" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="176" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -289,18 +278,29 @@
       <jump line="243" column="46" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="374" column="43" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="288" column="47" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
+      <jump line="252" column="16" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="251" column="48" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="250" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="49" column="13" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="11" column="53" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="9" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="295" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="270" column="66" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="255" column="48" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="254" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="218" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>&quot;2&quot; == &quot;3&quot;</text>
+        <text encoding="base64">IF90cnVlXyAmJiBfX2ZhbHNlXw==</text>
       </register>
       <register name="-" type="4">
-        <text>&quot;2&quot; == &quot;3&quot;</text>
+        <text encoding="base64">IF90cnVlXyAmJiBfX2ZhbHNlXw==</text>
       </register>
       <register name="/" type="4">
-        <text>expression</text>
+        <text>+</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CUJPT0xPUigifHwiKSwK</text>
@@ -342,15 +342,15 @@
 	}</text>
       </register>
       <register name=":" type="4">
-        <text>?expression</text>
+        <text>?+</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>expression</last-search>
+      <last-search>+</last-search>
       <last-offset />
-      <last-pattern>expression</last-pattern>
+      <last-pattern>+</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

@@ -20,11 +20,11 @@
         <entry>WHILE</entry>
         <entry>float</entry>
         <entry>FLOAT</entry>
-        <entry>expression</entry>
         <entry>parse</entry>
         <entry>Store</entry>
         <entry>assign</entry>
         <entry>Ass</entry>
+        <entry>expression</entry>
       </history-search>
       <history-cmd>
         <entry>?CAST</entry>
@@ -42,11 +42,11 @@
         <entry>?WHILE</entry>
         <entry>?float</entry>
         <entry>?FLOAT</entry>
-        <entry>?expression</entry>
         <entry>?parse</entry>
         <entry>?Store</entry>
         <entry>?assign</entry>
         <entry>?Ass</entry>
+        <entry>?expression</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -348,9 +348,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Ass</last-search>
+      <last-search>expression</last-search>
       <last-offset />
-      <last-pattern>Ass</last-pattern>
+      <last-pattern>expression</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

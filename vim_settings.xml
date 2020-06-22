@@ -80,10 +80,17 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592799966193" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1592796317024">
         <mark key="[" line="61" column="0" />
         <mark key="]" line="61" column="4" />
         <mark key="." line="61" column="4" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaStandaloneOptimizer.java" timestamp="1592796580985">
         <mark key="[" line="7" column="0" />
@@ -97,18 +104,6 @@
         <mark key="]" line="93" column="0" />
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1592798595905" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592796611478">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
-        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlockFragment.java" timestamp="1592796499091">
         <mark key="[" line="0" column="0" />

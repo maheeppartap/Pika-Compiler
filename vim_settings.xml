@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>OPEM_</entry>
         <entry>OPEN</entry>
         <entry>atomic</entry>
         <entry>Terminator</entry>
@@ -25,9 +24,9 @@
         <entry>+</entry>
         <entry>compiled</entry>
         <entry>Program</entry>
+        <entry>Reset</entry>
       </history-search>
       <history-cmd>
-        <entry>?OPEM_</entry>
         <entry>?OPEN</entry>
         <entry>?atomic</entry>
         <entry>?Terminator</entry>
@@ -47,6 +46,7 @@
         <entry>?+</entry>
         <entry>?compiled</entry>
         <entry>?Program</entry>
+        <entry>?Reset</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -101,6 +101,7 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1592798595905" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592796611478">
         <mark key="[" line="1" column="0" />
         <mark key="]" line="1" column="0" />
@@ -228,7 +229,7 @@
         <text>System.out.println(&quot;Program compiled + OPTIMIZED successfully: &quot; + filename);</text>
       </register>
       <register name="/" type="4">
-        <text>Program</text>
+        <text>Reset</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">CQlyZXN1bHQuYXBwZW5kKHJ1bnRpbWVFcnJvcnMoKSk7Cg==</text>
@@ -267,9 +268,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Program</last-search>
+      <last-search>Reset</last-search>
       <last-offset />
-      <last-pattern>Program</last-pattern>
+      <last-pattern>Reset</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

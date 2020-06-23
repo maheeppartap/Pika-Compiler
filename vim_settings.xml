@@ -83,8 +83,7 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592800243541">
-        <mark key="[" line="1" column="56" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592800391865">
         <mark key="]" line="1" column="57" />
         <mark key="." line="1" column="57" />
       </file>
@@ -222,10 +221,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>System.out.println(&quot;Program compiled + OPTIMIZED successfully: &quot; + filename);</text>
+        <text>#</text>
       </register>
       <register name="-" type="4">
-        <text>System.out.println(&quot;Program compiled + OPTIMIZED successfully: &quot; + filename);</text>
+        <text>#</text>
       </register>
       <register name="/" type="4">
         <text>Reset</text>

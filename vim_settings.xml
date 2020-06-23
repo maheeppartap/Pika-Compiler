@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>OPEN</entry>
         <entry>atomic</entry>
         <entry>Terminator</entry>
         <entry>CLOSE</entry>
@@ -25,9 +24,9 @@
         <entry>compiled</entry>
         <entry>Program</entry>
         <entry>Reset</entry>
+        <entry>new</entry>
       </history-search>
       <history-cmd>
-        <entry>?OPEN</entry>
         <entry>?atomic</entry>
         <entry>?Terminator</entry>
         <entry>?CLOSE</entry>
@@ -47,6 +46,7 @@
         <entry>?compiled</entry>
         <entry>?Program</entry>
         <entry>?Reset</entry>
+        <entry>?new</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -80,21 +80,15 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
-        <mark key="[" line="0" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignature.java" timestamp="1592931970914">
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="." line="13" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592930995032">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1592796317024">
-        <mark key="[" line="61" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1592933482222">
+        <mark key="[" line="12" column="4" />
         <mark key="]" line="61" column="4" />
         <mark key="." line="61" column="4" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
-        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaStandaloneOptimizer.java" timestamp="1592796580985">
         <mark key="[" line="7" column="0" />
@@ -109,6 +103,36 @@
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/logging/PikaLogger.java" timestamp="1592931908713" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/RationalComparisonOperatorSCG.java" timestamp="1592932188654">
+        <mark key="[" line="7" column="13" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1592933988182">
+        <mark key="[" line="680" column="20" />
+        <mark key="]" line="634" column="0" />
+        <mark key="." line="634" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1592933695208">
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="0" />
+        <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/signatures/FunctionSignatures.java" timestamp="1592932404367">
+        <mark key="[" line="86" column="0" />
+        <mark key="]" line="86" column="0" />
+        <mark key="." line="86" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/promoter/Promoter.java" timestamp="1592932577002">
+        <mark key="[" line="212" column="8" />
+        <mark key="]" line="212" column="12" />
+        <mark key="." line="212" column="12" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlockFragment.java" timestamp="1592796499091">
         <mark key="[" line="0" column="0" />
       </file>
@@ -117,7 +141,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="201" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="193" column="26" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="176" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="167" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -217,59 +240,62 @@
       <jump line="255" column="48" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="254" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="218" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
+      <jump line="1" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CXByaW50IG15UmF0MSwgX25fLgoKCW15UmF0MSA6PSAtOCAvLyA4LgoJcHJpbnQgbXlSYXQxLCBfbl8uCgoJbXlSYXQxIDo9IC0wIC8vIDguCglwcmludCBteVJhdDEsIF9uXy4KCglteVJhdDEgOj0gLTIyIC8vIDguCglwcmludCBteVJhdDEsIF9uXy4KCgl2YXIgbXlSYXQyIDo9IDUgLy8gMTAuCglwcmludCBteVJhdDIsIF9uXy4KCgl2YXIgdGVzdCA6PSBteVJhdDEgKyBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdGVzdCA6PSBteVJhdDEgLSBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdGVzdCA6PSBteVJhdDEgKiBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdGVzdCA6PSBteVJhdDEgLyBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdmFyIG90aGVyIDo9ICgtMjIgLy8gOCkgLyAoNSAvLyAxMCkuCglwcmludCBvdGhlciwgX25fLg==</text>
+        <text encoding="base64">CQkJCS8vIFB1c2ggbGVuZ3RoIG9udG8gc3RhY2sK</text>
       </register>
       <register name="-" type="4">
-        <text>#</text>
+        <text encoding="base64">dmFyIA==</text>
       </register>
       <register name="/" type="4">
-        <text>Reset</text>
+        <text>new</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">CQlyZXN1bHQuYXBwZW5kKHJ1bnRpbWVFcnJvcnMoKSk7Cg==</text>
+        <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CXByaW50IG15UmF0MSwgX25fLgoKCW15UmF0MSA6PSAtOCAvLyA4LgoJcHJpbnQgbXlSYXQxLCBfbl8uCgoJbXlSYXQxIDo9IC0wIC8vIDguCglwcmludCBteVJhdDEsIF9uXy4KCglteVJhdDEgOj0gLTIyIC8vIDguCglwcmludCBteVJhdDEsIF9uXy4KCgl2YXIgbXlSYXQyIDo9IDUgLy8gMTAuCglwcmludCBteVJhdDIsIF9uXy4KCgl2YXIgdGVzdCA6PSBteVJhdDEgKyBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdGVzdCA6PSBteVJhdDEgLSBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdGVzdCA6PSBteVJhdDEgKiBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdGVzdCA6PSBteVJhdDEgLyBteVJhdDIuCglwcmludCB0ZXN0LCBfbl8uCgoJdmFyIG90aGVyIDo9ICgtMjIgLy8gOCkgLyAoNSAvLyAxMCkuCglwcmludCBvdGhlciwgX25fLg==</text>
+        <text encoding="base64">CQkJCS8vIFB1c2ggbGVuZ3RoIG9udG8gc3RhY2sK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IG15QXJyMSA6PSBbMCwgMSwgMiwgMywgNCwgNV0uCiAgICBwcmludCBteUFycjEsIF9uXy4KCiAgICB2YXIgbXlBcnIxNSA6PSBjbG9uZSBteUFycjEuCiAgICBwcmludCBteUFycjE1LCBfbl8uCgogICAgdmFyIG15QXJyMiA6PSBbMS4xLCAyLjIsIDMuM10uCiAgICBwcmludCBteUFycjIsIF9uXy4KCiAgICB2YXIgbXlBcnIyNSA6PSBjbG9uZSBteUFycjIuCiAgICBwcmludCBteUFycjI1LCBfbl8uCgogICAgdmFyIG15QXJyMyA6PSBbXnleLCBeZV4sIF5zXl0uCiAgICBwcmludCBteUFycjMsIF9uXy4KCiAgICB2YXIgbXlBcnIzNSA6PSBjbG9uZSBteUFycjMuCiAgICBwcmludCBteUFycjM1LCBfbl8uCgogICAgdmFyIG15QXJyNCA6PSBuZXcgW2NoYXJdKDE0KS4KICAgIHByaW50IG15QXJyNCwgX25fLgoKICAgIHZhciBteUFycjQ1IDo9IGNsb25lIG15QXJyNC4KICAgIHByaW50IG15QXJyNDUsIF9uXy4KCiAgICBteUFycjQgOj0gbXlBcnIzLgogICAgcHJpbnQgbXlBcnI0LCBfbl8uCgogICAgbXlBcnI0NSA6PSBjbG9uZSBteUFycjQuCiAgICBwcmludCBteUFycjQ1LCBfbl8uCgogICAgdmFyIG15Q2hhciA6PSBeZV4uCiAgICB2YXIgbXlBcnI1IDo9IFtec14sIFsxMDEgfCBjaGFyXSwgbXlDaGFyLCBeZF5dLgogICAgcHJpbnQgbXlBcnI1LCBfbl8uCgogICAgdmFyIG15QXJyNTUgOj0gY2xvbmUgbXlBcnI1LgogICAgcHJpbnQgbXlBcnI1NSwgX25fLgoKICAgIGNvbnN0IG15QXJyNiA6PSBteUFycjEuCiAgICBwcmludCBteUFycjYsIF9uXy4KCiAgICB2YXIgbXlBcnI2NSA6PSBjbG9uZSBteUFycjYuCiAgICBwcmludCBteUFycjY1LCBfbl8uCgogICAgdmFyIG15QXJyNyA6PSBbIkhlbGxvIiwgIldvcmxkIl0uCiAgICBwcmludCBteUFycjcsIF9uXy4KCiAgICB2YXIgbXlBcnI3NSA6PSBjbG9uZSBteUFycjcuCiAgICBwcmludCBteUFycjc1LCBfbl8uCgogICAgdmFyIG15QXJyOCA6PSBbNSAvLyAzLCAtNCAvLyA5LCAxMiAvLyA1MF0uCiAgICBwcmludCBteUFycjgsIF9uXy4KCiAgICB2YXIgbXlBcnI4NSA6PSBjbG9uZSBteUFycjguCiAgICBwcmludCBteUFycjg1LCBfbl8uCgogICAgdmFyIG15QXJyOSA6PSBbWzEsMiwzXSxbNCw1LDZdLFs3LDgsOV1dLgogICAgcHJpbnQgbXlBcnI5LCBfbl8uCgogICAgI3ZhciBteUFycjk1IDo9IGNsb25lIG15QXJyOS4KICAgICNwcmludCBteUFycjk1LCBfbl8uCgogICAgdmFyIG15QXJyMTAgOj0gW190cnVlXywgX2ZhbHNlXywgX2ZhbHNlX10uCiAgICBwcmludCBteUFycjEwLCBfbl8uCgogICAgdmFyIG15QXJyMTA1IDo9IGNsb25lIG15QXJyMTAuCiAgICBwcmludCBteUFycjEwNSwgX25fLgoKICAgIHZhciBzIDo9IDEwLgogICAgdmFyIGEgOj0gbmV3IFtpbnRdKHMpLgogICAgcHJpbnQgYSwgX25fLgoKICAgIHZhciBvIDo9IDUuCiAgICB2YXIgYiA6PSBuZXcgW2ludF0ocytvKS4KICAgIHByaW50IGIsIF9uXy4KCiAgICBjb25zdCBteVRlc3QgOj0gWzRdLgogICAgcHJpbnQgbXlUZXN0LCBfbl8uCgogICAgdmFyIGQgOj0gbmV3IFtbW2ludF1dXSgxKS4KICAgIHByaW50IGQsIF9uXy4KCiAgICBjb25zdCBteUFyck11bHRpVGVzdCA6PSBbW1swXV0sW1sxXV0sW1syXV1dLgogICAgcHJpbnQgbXlBcnJNdWx0aVRlc3QsIF9uXy4=</text>
+        <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CiAgcHJpbnQgMzggKyAyNiA+IDgxLCBfbl8uCiAgcHJpbnQgNTUgKyA0MyA+IDEsIF9uXy4KICBwcmludCA1MCArIDEwID4gMzIsIF9uXy4KICBwcmludCA4OCArIDY2ID4gMzEsIF9uXy4KICBwcmludCA4OCArIDE5ID4gMTYsIF9uXy4KICBwcmludCAxOCArIDQwID4gODQsIF9uXy4KICBwcmludCAxNCArIDY0ID4gODUsIF9uXy4KICBwcmludCA2OSArIDkxID4gMjEsIF9uXy4KICBwcmludCA3MyArIDEwID4gNzQsIF9uXy4KICBwcmludCAxNyArIDM2ID4gNDksIF9uXy4KICBwcmludCAzNCArIDEzID4gOTQsIF9uXy4KICBwcmludCA5OCArIDY3ID4gMjQsIF9uXy4KCiAgcHJpbnQgMzEgPiAxMiArIDg4LCBfbl8uCiAgcHJpbnQgNjkgPiA4OCArIDk0LCBfbl8uCiAgcHJpbnQgMzcgPiAyNyArIDY2LCBfbl8uCiAgcHJpbnQgMTcgPiA3NyArIDExLCBfbl8uCiAgcHJpbnQgOTQgPiA5NiArIDM3LCBfbl8uCiAgcHJpbnQgNiA+IDg0ICsgNTIsIF9uXy4KICBwcmludCA5NCA+IDQ0ICsgNjAsIF9uXy4KICBwcmludCA4NSA+IDg4ICsgOTIsIF9uXy4KICBwcmludCA3OCA+IDkzICsgMTYsIF9uXy4KICBwcmludCA5NiA+IDg4ICsgNjYsIF9uXy4KICBwcmludCAxID4gOTEgKyA5NSwgX25fLgogIHByaW50IDM2ID4gMzAgKyA4NywgX25fLgoKICBwcmludCAxNCArIDUwID4gMTMgKyA3NiwgX25fLgogIHByaW50IDE4ICsgMjcgPiA3ICsgMjAsIF9uXy4KICBwcmludCA1MCArIDY1ID4gNzIgKyA2MiwgX25fLgogIHByaW50IDExICsgMjAgPiAzMSArIDU2LCBfbl8uCiAgcHJpbnQgNDYgKyA3MSA+IDE4ICsgOTMsIF9uXy4KICBwcmludCAyNyArIDg4ID4gOTYgKyAyMSwgX25fLgogIHByaW50IDMzICsgOTIgPiA0ICsgNzcsIF9uXy4KICBwcmludCAyNyArIDg4ID4gMjggKyAzOSwgX25fLgogIHByaW50IDEgKyAzNSA+IDUyICsgOTksIF9uXy4KICBwcmludCA2MyArIDUxID4gOTUgKyAyLCBfbl8uCiAgcHJpbnQgMzUgKyA5NSA+IDY2ICsgNjgsIF9uXy4KICBwcmludCA2NSArIDIwID4gOTIgKyA0NywgX25fLgo=</text>
+        <text encoding="base64">ICAgICNjb25zdCBhIDo9IFtbMSwgMiwgM10sIFs0LCA1XSwgWzYsIDcsIDhdLCBuZXcgW2ludF0oMCldLgogICAgI3ByaW50IGEsIF9uXy4KICAgIGNvbnN0IGIgOj0gW1swLDEsM10sWzIsM10sWzQsNV1dLgogICAgcHJpbnQgYjsgInZzIjsuCiAgICBjb25zdCBjIDo9IGNsb25lIGIuCiAgICBwcmludCBjLCBfbl8uCiAgICBjWzBdIDo9IFs5OSwgODhdLgogICAgcHJpbnQgYjsgInZzIjsgYywgX25fLgogICAgY29uc3QgZCA6PSBbW1swXV0sW1sxXV0sW1syXV1dLgogICAgcHJpbnQgZCwgX25fLgogICAgdmFyIHIgOj0gWzcsIDVdLgogICAgcHJpbnQgImhlcmUiLgogICAgY29uc3QgcyA6PSByLgogICAgcHJpbnQgcjsgczsgIi0+IjsuCiAgICByWzBdIDo9IDQuCiAgICBwcmludCByOyBzLCBfbl8uCiAgICByIDo9IG5ldyBbaW50XSg1KS4KICAgIHByaW50ICJoZXJlIi4KICAgIHByaW50IHI7IHMsIF9uXy4KICAgIGNvbnN0IGUgOj0gWzAsIDMwLCAzMV0uCiAgICBwcmludCBlOyAiLT4iOy4KICAgIGVbMF0gOj0gOTkuCiAgICBwcmludCBlLCBfbl8uCiAgICBwcmludCAiaGVyZSIuCiAgICAjIENoZWNrIGZvciBiYWQgaW5kZXhpbmcgKGRpc2FibGVkKQogICAgIyBwcmludCBlWy0xXTsgZVszXTsgX25fLgogICAgcHJpbnQgZVswXTsgZVsxXTsgZVsyXSwgX25fLgogICAgcHJpbnQgZSwgX25fLgogICAgIyBQb3B1bGF0ZSBlbXB0eSBhcnJheQogICAgdmFyIGYgOj0gbmV3IFtbaW50XV0oMSkuCiAgICBmWzBdIDo9IGFsbG9jIFtpbnRdKDIpLgogICAgcHJpbnQgZiwgX25fLg==</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">LyogICB0aGUgZm9sbG93aW5nIGhhc2h0YWJsZSBsb29rdXAgY2FuIHJlcGxhY2UgdGhlIHNlcmlhbC1zZWFyY2ggaW1wbGVtZW50YXRpb24gb2YgZm9yTGV4ZW1lKCkgYWJvdmUuIEl0IGlzIGZhc3RlciBidXQgbGVzcyBjbGVhci4gCglwcml2YXRlIHN0YXRpYyBMZXhlbWVNYXA8S2V5d29yZD4gbGV4ZW1lVG9LZXl3b3JkID0gbmV3IExleGVtZU1hcDxLZXl3b3JkPih2YWx1ZXMoKSwgTlVMTF9LRVlXT1JEKTsKCXB1YmxpYyBzdGF0aWMgS2V5d29yZCBmb3JMZXhlbWUoU3RyaW5nIGxleGVtZSkgewoJCXJldHVybiBsZXhlbWVUb0tleXdvcmQuZm9yTGV4ZW1lKGxleGVtZSk7Cgl9CgkqLw==</text>
+        <text encoding="base64">ICAgIAlpZiAoZGVidWcpIHsKCQkgICAgCQlTeXN0ZW0ub3V0LnByaW50bG4oRnVuY3Rpb25TaWduYXR1cmVzLm51bVNpZ25hdHVyZShvcGVyYXRvciwgY2hpbGRUeXBlcykpOwoJCSAgICAJfQ==</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgIC8vIHNvbWUgcmVkdW5kYW50IG1ldGhvZHMsIGhlcmUgYmVjYXVzZSBpdCBzY3JlYW1zIGF0IG1lIG90aGVyd2lzZQo=</text>
+      <register name="5" type="4">
+        <text encoding="base64">CWlmIChkZWJ1ZykgewoJCSAgICAJCVN5c3RlbS5vdXQucHJpbnRsbihGdW5jdGlvblNpZ25hdHVyZXMubnVtU2lnbmF0dXJlKG9wZXJhdG9yLCBjaGlsZFR5cGVzKSk7CgkJICAgIAl9</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">IHB1YmxpYyBpbnQgZ2V0U2l6ZSgpOwoKICAgIEBPdmVycmlkZQogICAgcHVibGljIFN0cmluZyBpbmZvU3RyaW5nKCkgewogICAgICAgIHJldHVybiBudWxsOwogICAgfQ==</text>
+        <text encoding="base64">ICAgIAlpZiAoZGVidWcpIHsKCQkJCQlTeXN0ZW0ub3V0LnByaW50bG4oRnVuY3Rpb25TaWduYXR1cmVzLm51bVNpZ25hdHVyZShvcGVyYXRvciwgY2hpbGRUeXBlcykpOwoJCQkJfQ==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIEBPdmVycmlkZQo=</text>
+      <register name="7" type="4">
+        <text encoding="base64">CWlmIChkZWJ1ZykgewoJCSAgICAJCVN5c3RlbS5vdXQucHJpbnRsbihGdW5jdGlvblNpZ25hdHVyZXMubnVtU2lnbmF0dXJlKG9wZXJhdG9yLCBjaGlsZFR5cGVzKSk7CgkJICAgIAl9</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">IHsKICAgICAgICByZXR1cm4gMDsKICAgIH0=</text>
+      <register name="8" type="2">
+        <text encoding="base64">CWJvb2xlYW4gZGVidWcgPSBmYWxzZTsK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIHByaW50IHJlc3VsdCwgX25fLgo=</text>
+        <text>//		    	if (debug) {
+//		    		System.out.println(FunctionSignatures.numSignature(operator, childTypes));
+//		    	}</text>
       </register>
       <register name=":" type="4">
-        <text>?+</text>
+        <text>?new</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Reset</last-search>
+      <last-search>new</last-search>
       <last-offset />
-      <last-pattern>Reset</last-pattern>
+      <last-pattern>new</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

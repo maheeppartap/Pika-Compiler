@@ -118,6 +118,12 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1593115512650">
+        <mark key="[" line="8" column="19" />
+        <mark key="]" line="8" column="14" />
+        <mark key="." line="8" column="13" />
+        <mark key="^" line="8" column="14" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1593062470517">
         <mark key="[" line="47" column="24" />
         <mark key="]" line="47" column="25" />
@@ -144,11 +150,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="193" column="26" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="176" column="22" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="167" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="166" column="17" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
-      <jump line="165" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="164" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="336" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="296" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -244,15 +245,20 @@
       <jump line="254" column="14" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="218" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" />
       <jump line="1" column="4" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
+      <jump line="79" column="5" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
+      <jump line="73" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
+      <jump line="69" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
+      <jump line="19" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
+      <jump line="68" column="15" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">CQkJCS8vIEdldCBjbG9uZU5vZGUgc3VidHlwZSBzaXplCg==</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">cmVsZWFzZSA=</text>
       </register>
       <register name="-" type="4">
-        <text>// TASK: Finish character and string lexical analysis</text>
+        <text encoding="base64">cmVsZWFzZSA=</text>
       </register>
       <register name="/" type="4">
         <text>new</text>
@@ -261,33 +267,34 @@
         <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQkJCS8vIEdldCBjbG9uZU5vZGUgc3VidHlwZSBzaXplCg==</text>
+        <text encoding="base64">ZXhlYyB7CiAgICBjb25zdCBteUFycjEgOj0gWzAsIDEsIDIsIDMsIDQsIDVdLgogICAgcHJpbnQgbXlBcnIxLCBfbl8uCgogICAgdmFyIG15QXJyMTUgOj0gY2xvbmUgbXlBcnIxLgogICAgcHJpbnQgbXlBcnIxNSwgX25fLgoKICAgIHZhciBteUFycjIgOj0gWzEuMSwgMi4yLCAzLjNdLgogICAgcHJpbnQgbXlBcnIyLCBfbl8uCgogICAgdmFyIG15QXJyMjUgOj0gY2xvbmUgbXlBcnIyLgogICAgcHJpbnQgbXlBcnIyNSwgX25fLgoKICAgIHZhciBteUFycjMgOj0gW155XiwgXmVeLCBec15dLgogICAgcHJpbnQgbXlBcnIzLCBfbl8uCgogICAgdmFyIG15QXJyMzUgOj0gY2xvbmUgbXlBcnIzLgogICAgcHJpbnQgbXlBcnIzNSwgX25fLgoKICAgIHZhciBteUFycjQgOj0gYWxsb2MgW2NoYXJdKDE0KS4KICAgIHByaW50IG15QXJyNCwgX25fLgoKICAgIHZhciBteUFycjQ1IDo9IGNsb25lIG15QXJyNC4KICAgIHByaW50IG15QXJyNDUsIF9uXy4KCiAgICBteUFycjQgOj0gbXlBcnIzLgogICAgcHJpbnQgbXlBcnI0LCBfbl8uCgogICAgbXlBcnI0NSA6PSBjbG9uZSBteUFycjQuCiAgICBwcmludCBteUFycjQ1LCBfbl8uCgogICAgdmFyIG15Q2hhciA6PSBeZV4uCiAgICB2YXIgbXlBcnI1IDo9IFtec14sIFsxMDEgfCBjaGFyXSwgbXlDaGFyLCBeZF5dLgogICAgcHJpbnQgbXlBcnI1LCBfbl8uCgogICAgdmFyIG15QXJyNTUgOj0gY2xvbmUgbXlBcnI1LgogICAgcHJpbnQgbXlBcnI1NSwgX25fLgoKICAgIGNvbnN0IG15QXJyNiA6PSBteUFycjEuCiAgICBwcmludCBteUFycjYsIF9uXy4KCiAgICB2YXIgbXlBcnI2NSA6PSBjbG9uZSBteUFycjYuCiAgICBwcmludCBteUFycjY1LCBfbl8uCgogICAgdmFyIG15QXJyNyA6PSBbIkhlbGxvIiwgIldvcmxkIl0uCiAgICBwcmludCBteUFycjcsIF9uXy4KCiAgICB2YXIgbXlBcnI3NSA6PSBjbG9uZSBteUFycjcuCiAgICBwcmludCBteUFycjc1LCBfbl8uCgogICAgdmFyIG15QXJyOCA6PSBbNSAvLyAzLCAtNCAvLyA5LCAxMiAvLyA1MF0uCiAgICBwcmludCBteUFycjgsIF9uXy4KCiAgICB2YXIgbXlBcnI4NSA6PSBjbG9uZSBteUFycjguCiAgICBwcmludCBteUFycjg1LCBfbl8uCgogICAgdmFyIG15QXJyOSA6PSBbWzEsMiwzXSxbNCw1LDZdLFs3LDgsOV1dLgogICAgcHJpbnQgbXlBcnI5LCBfbl8uCgogICAgI3ZhciBteUFycjk1IDo9IGNsb25lIG15QXJyOS4KICAgICNwcmludCBteUFycjk1LCBfbl8uCgogICAgdmFyIG15QXJyMTAgOj0gW190cnVlXywgX2ZhbHNlXywgX2ZhbHNlX10uCiAgICBwcmludCBteUFycjEwLCBfbl8uCgogICAgdmFyIG15QXJyMTA1IDo9IGNsb25lIG15QXJyMTAuCiAgICBwcmludCBteUFycjEwNSwgX25fLgoKICAgIHZhciBzIDo9IDEwLgogICAgdmFyIGEgOj0gYWxsb2MgW2ludF0ocykuCiAgICBwcmludCBhLCBfbl8uCgogICAgdmFyIG8gOj0gNS4KICAgIHZhciBiIDo9IGFsbG9jIFtpbnRdKHMrbykuCiAgICBwcmludCBiLCBfbl8uCgogICAgY29uc3QgbXlUZXN0IDo9IFs0XS4KICAgIHByaW50IG15VGVzdCwgX25fLgoKICAgIHZhciBkIDo9IGFsbG9jIFtbW2ludF1dXSgxKS4KICAgIHByaW50IGQsIF9uXy4KCiAgICBjb25zdCBteUFyck11bHRpVGVzdCA6PSBbW1swXV0sW1sxXV0sW1syXV1dLgogICAgcHJpbnQgbXlBcnJNdWx0aVRlc3QsIF9uXy4KfQo=</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">CQkJLy8gSWYgb3BlcmF0b3IgaXMgTkVXLCBhcnJheVNpemUgb24gc3RhY2sKCQkJLy8gR2V0IGFycmF5U2l6ZSBieSB1c2luZyBjbG9uZU5vZGUK</text>
+      <register name="2" type="4">
+        <text>print  3 == 4 == _true_, _n_.
+	print  4 == 4 == _true_, _n_.</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">Ly8gYSBnbG9yaWZpZWQgbGlzdCBvZiBpbnN0cnVjdGlvbnMuCg==</text>
+        <text encoding="base64">CQkJCS8vIEdldCBjbG9uZU5vZGUgc3VidHlwZSBzaXplCg==</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">CQkJLy8gSWYgb3BlcmF0b3IgaXMgTkVXLCBhcnJheVNpemUgb24gc3RhY2sKCQkJLy8gR2V0IGFycmF5U2l6ZSBieSB1c2luZyBjbG9uZU5vZGUK</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">Ly8gYSBnbG9yaWZpZWQgbGlzdCBvZiBpbnN0cnVjdGlvbnMuCg==</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">LyoqIFRoaXMgY2xhc3MgaXMgYSBGYWNhZGUgZm9yIGphdmEudXRpbC5sb2dnaW5nLgogKiBJdCBhbHNvIHJldGFpbnMgdGhlIG51bWJlciBvZiBtZXNzYWdlcyB0aGF0IGhhdmUgYmVlbiBsb2dnZWQuCiAqIE9wdGlvbmFsbHksIG9uZSBtYXkgY29uZmlndXJlIHRoaXMgbG9nZ2VyIHRvIHRocm93IGFuIGV4Y2VwdGlvbgogKiB3aGVuIGEgY2VydGFpbiBtZXNzYWdlIGNvdW50IGlzIHJlYWNoZWQuCiAqIDxwPgogKiBSZXRhaW5zIGhhcmQgcmVmZXJlbmNlcyB0byBhbGwgbG9nZ2VycyBjcmVhdGVkLgogKi8g</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>var c := _true_.
 	const d := [c | bool].
 	print c; d, _n_.</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CS8vanVzdCBhIGhlbHBlcgo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIHZhciB4IDo9IGFsbG9jIFtpbnRdKDIpLgogICAgcHJpbnQgImhlcmUiLgogICAgeFswXSA6PSAyLgogICAgcHJpbnQgeFswXS4=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">CQkJCS8vIFN0b3JlIENsb25lTm9kZSBhZGRyZXNzCg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">CQkJCS8vIFB1c2ggbGVuZ3RoIG9udG8gc3RhY2sK</text>
+        <text encoding="base64">ICAgIHZhciB4IDo9IGFsbG9jIFtpbnRdKDIpLgogICAgcHJpbnQgImhlcmUiLgogICAgeFswXSA6PSAyLgogICAgcHJpbnQgeFswXS4=</text>
       </register>
       <register name=":" type="4">
         <text>?new</text>

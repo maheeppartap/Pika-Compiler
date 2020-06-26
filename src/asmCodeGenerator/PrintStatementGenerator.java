@@ -4,15 +4,17 @@ import parseTree.ParseNode;
 import parseTree.nodeTypes.NewlineNode;
 import parseTree.nodeTypes.PrintStatementNode;
 import parseTree.nodeTypes.SpaceNode;
+import parseTree.nodeTypes.TabNode;
+import semanticAnalyzer.types.ArrayType;
 import semanticAnalyzer.types.PrimitiveType;
 import semanticAnalyzer.types.Type;
 import asmCodeGenerator.ASMCodeGenerator.CodeVisitor;
+import asmCodeGenerator.codeGenerator.PrintArraySCG;
+import asmCodeGenerator.codeGenerator.PrintBooleanSCG;
+import asmCodeGenerator.codeGenerator.PrintRationalSCG;
 import asmCodeGenerator.codeStorage.ASMCodeFragment;
+import asmCodeGenerator.codeStorage.ASMOpcode;
 import asmCodeGenerator.runtime.RunTime;
-
-import javax.print.DocFlavor;
-
-import static asmCodeGenerator.codeStorage.ASMOpcode.*;
 
 public class PrintStatementGenerator {
 	ASMCodeFragment code;
@@ -27,7 +29,7 @@ public class PrintStatementGenerator {
 
 	public void generate(PrintStatementNode node) {
 		for(ParseNode child : node.getChildren()) {
-			if(child instanceof NewlineNode || child instanceof SpaceNode) {
+			if(child instanceof NewlineNode || child instanceof TabNode || child instanceof SpaceNode) {
 				ASMCodeFragment childCode = visitor.removeVoidCode(child);
 				code.append(childCode);
 			}
@@ -38,30 +40,33 @@ public class PrintStatementGenerator {
 	}
 
 	private void appendPrintCode(ParseNode node) {
-		String format = printFormat(node.getType());
-
-		code.append(visitor.removeValueCode(node));
-		//if(node.getType() == PrimitiveType.STRING) code.add(LoadC);
-		convertToStringIfBoolean(node);
-
-		code.add(PushD, format);
-		code.add(Printf);
-	}
-	private void convertToStringIfBoolean(ParseNode node) {
-		if(node.getType() != PrimitiveType.BOOLEAN) {
-			return;
-		}
+		Type type = node.getType();
+		ASMCodeFragment value = visitor.removeValueCode(node);
 		
-		Labeller labeller = new Labeller("print-boolean");
-		String trueLabel = labeller.newLabel("true");
-		String endLabel = labeller.newLabel("join");
-
-		code.add(JumpTrue, trueLabel);
-		code.add(PushD, RunTime.BOOLEAN_FALSE_STRING);
-		code.add(Jump, endLabel);
-		code.add(Label, trueLabel);
-		code.add(PushD, RunTime.BOOLEAN_TRUE_STRING);
-		code.add(Label, endLabel);
+		code.append(value);
+		
+		if (type == PrimitiveType.RATIONAL) {
+			PrintRationalSCG scg = new PrintRationalSCG();
+			code.addChunk(scg.generate());
+		} else if (type instanceof ArrayType) {			
+			PrintArraySCG scg = new PrintArraySCG();
+			Type subType = ((ArrayType) type).getSubtype();
+			code.addChunk(scg.generate(subType));
+		} else {
+			if (type == PrimitiveType.BOOLEAN) {
+				PrintBooleanSCG scg = new PrintBooleanSCG();
+				code.addChunk(scg.generate());
+			}
+			
+			if (type == PrimitiveType.STRING) {
+				code.add(ASMOpcode.PushI, 12);
+				code.add(ASMOpcode.Add);
+			}
+		
+			String format = printFormat(type);
+			code.add(ASMOpcode.PushD, format);
+			code.add(ASMOpcode.Printf);
+		}
 	}
 
 
@@ -70,11 +75,12 @@ public class PrintStatementGenerator {
 		
 		switch((PrimitiveType)type) {
 		case INTEGER:	return RunTime.INTEGER_PRINT_FORMAT;
-			case FLOATING:	return RunTime.FLOATING_PRINT_FORMAT;
+		case FLOATING:	return RunTime.FLOATING_PRINT_FORMAT;
+		case RATIONAL:  return RunTime.RATIONAL_PRINT_FORMAT;
 		case BOOLEAN:	return RunTime.BOOLEAN_PRINT_FORMAT;
-			case CHARACTER:	return RunTime.CHARACTER_PRINT_FORMAT;
+		case CHARACTER:	return RunTime.CHARACTER_PRINT_FORMAT;
 		case STRING:	return RunTime.STRING_PRINT_FORMAT;
-		default:
+		default:		
 			assert false : "Type " + type + " unimplemented in PrintStatementGenerator.printFormat()";
 			return "";
 		}

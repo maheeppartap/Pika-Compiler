@@ -3,12 +3,14 @@ package asmCodeGenerator.codeStorage;
 import java.util.LinkedList;
 import java.util.List;
 
-// a glorified list of instructions.
 public class ASMCodeChunk {
 	List<ASMInstruction> instructions;
 	
 	public ASMCodeChunk() {
 		instructions = new LinkedList<ASMInstruction>();
+	}
+	public void add(ASMInstruction instruction) {
+		instructions.add(instruction);
 	}
 	public void add(ASMOpcode opcode, int operand, String comment) {
 		ASMInstruction instruction = new ASMInstruction(opcode, operand, comment);
@@ -30,6 +32,10 @@ public class ASMCodeChunk {
 		ASMInstruction instruction = new ASMInstruction(opcode, operand, comment);
 		instructions.add(instruction);
 	}
+	public void add(ASMOpcode opcode, Object operand, String comment) {
+		ASMInstruction instruction = new ASMInstruction(opcode, operand, comment);
+		instructions.add(instruction);
+	}
 	public void add(ASMOpcode opcode, String operand) {
 		ASMInstruction instruction = new ASMInstruction(opcode, operand);
 		instructions.add(instruction);
@@ -37,6 +43,15 @@ public class ASMCodeChunk {
 	public void add(ASMOpcode opcode) {
 		ASMInstruction instruction = new ASMInstruction(opcode);
 		instructions.add(instruction);
+	}
+	public void append(ASMCodeChunk chunk) {
+		for (ASMInstruction instr : chunk.getInstructions()) {
+			this.instructions.add(instr);
+		}
+	}
+	
+	public List<ASMInstruction> getInstructions() {
+		return instructions;
 	}
 	
 	static private String terminator = System.getProperty("line.separator");

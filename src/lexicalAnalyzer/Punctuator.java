@@ -3,34 +3,44 @@ package lexicalAnalyzer;
 import tokens.LextantToken;
 import tokens.Token;
 
-
 public enum Punctuator implements Lextant {
+	SPACE(";"),
+	SEPARATOR(","),
+	TERMINATOR("."),
+	
 	ADD("+"),
 	SUBTRACT("-"),
 	MULTIPLY("*"),
-	GREATER(">"),
-	GREATEREQUAL(">="),
-	LESSTHAN("<"),
+	DIVISION("/"),
+	
+	OVER("//"),
+	EO("///"),
+	RATIONALIZE("////"),
+	
+	AND("&&"),
+	OR("||"),
+	
+	NOT("!"),
+	
 	LESSTHANEQUAL("<="),
-	EQUALTO("=="),
-	NOTEQUALTO("!="),
-	DIVIDE("/"),
-	ASSIGN(":="),
-	SEPARATOR(","),
-	SPACE(";"),
-	TERMINATOR("."), 
+	LESS("<"),
+	EQUAL("=="),
+	NOT_EQUAL("!="),
+	GREATER(">"),
+	GREATERTHANEQUAL(">="),
+	
 	OPEN_BRACE("{"),
 	CLOSE_BRACE("}"),
-	OPEN_BRACKET("("),
-	CLOSE_BRACKET(")"),
-	CAST_BEGIN("["),
-	CAST_END("]"),
+	OPEN_PARENTHESIS("("),
+	CLOSE_PARENTHESIS(")"),
+	OPEN_BRACKET("["),
+	CLOSE_BRACKET("]"),
+	
 	CAST_MID("|"),
-	STRING_QUOTES("\""),
-	NULL_PUNCTUATOR(""),
-	DECIMAL_POINT("."),
-	CIRCUMFLEX("^"),
-	COMMENT("#");	//added this for PIKA 1
+	HASH("#"),
+	ASSIGN(":="),
+	
+	NULL_PUNCTUATOR("");
 
 	private String lexeme;
 	private Token prototype;
@@ -46,23 +56,35 @@ public enum Punctuator implements Lextant {
 		return prototype;
 	}
 	
-	
-	public static Punctuator forLexeme(String lexeme) {
-		for(Punctuator punctuator: values()) {
-			if(punctuator.lexeme.equals(lexeme)) {
-				return punctuator;
-			}
-		}
-		return NULL_PUNCTUATOR;
-	}
-	
-/*
 	//   the following hashtable lookup can replace the implementation of forLexeme above. It is faster but less clear. 
 	private static LexemeMap<Punctuator> lexemeToPunctuator = new LexemeMap<Punctuator>(values(), NULL_PUNCTUATOR);
 	public static Punctuator forLexeme(String lexeme) {
 		   return lexemeToPunctuator.forLexeme(lexeme);
 	}
-*/
+	
+	public static Lextant[] getMultiplicatives() {
+		Lextant[] multiplicatives = { MULTIPLY, DIVISION, OVER, EO, RATIONALIZE };
+		return multiplicatives;
+	}
+	
+	public static Lextant[] getRationals() {
+		Lextant[] rationals = { OVER, EO, RATIONALIZE };
+		return rationals;
+	}
+	
+	public static Lextant[] getComparators() {
+		Lextant[] comparators = {LESSTHANEQUAL, LESS, EQUAL, NOT_EQUAL, GREATER, GREATERTHANEQUAL};
+		return comparators;
+	}
+	
+//	public static Punctuator forLexeme(String lexeme) {
+//	for(Punctuator punctuator: values()) {
+//		if(punctuator.lexeme.equals(lexeme)) {
+//			return punctuator;
+//		}
+//	}
+//	return NULL_PUNCTUATOR;
+//}
 	
 }
 

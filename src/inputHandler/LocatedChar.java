@@ -50,16 +50,23 @@ public class LocatedChar {
 	//////////////////////////////////////////////////////////////////////////////
 	// delegates
 	
-	public boolean isAllowedToBeIdentifier() {
-		return Character.isLowerCase(character) || (character == '_') || Character.isUpperCase(character);
+	public boolean isLowerCase() {
+		return Character.isLowerCase(character) || (character == '_');
+	}
+	public boolean isUpperCase() {
+		return Character.isUpperCase(character) || (character == '_');
 	}
 	public boolean isDigit() {
 		return Character.isDigit(character);
 	}
-	public boolean isNumericSign() {
-		return (character == '+' || character == '-');	//add here if we wanna add += or --
+	public boolean isSign() {
+		return (character == '+' || character == '-');
 	}
 	public boolean isWhitespace() {
 		return Character.isWhitespace(character);
+	}
+	public boolean isASCII() {
+		int n = character;
+		return ((n >= 32) && (n <= 126));
 	}
 }

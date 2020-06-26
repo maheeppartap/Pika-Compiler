@@ -166,4 +166,40 @@ public enum ASMOpcode {
 	private boolean labelJumpOrCall() {
 		return this == Label || this == Call || (this.name().indexOf("Jump") == 0 && this != JumpV);
 	}
+	
+/////////////////////////////////////////////////////////////////////////
+//Optimizer helper functions
+	
+	public boolean isArithmetic() {
+		return (this == ASMOpcode.Add || this == ASMOpcode.FAdd ||
+				this == ASMOpcode.Subtract || this == ASMOpcode.FSubtract ||
+				this == ASMOpcode.Multiply || this == ASMOpcode.FMultiply ||
+				this == ASMOpcode.Divide || this == ASMOpcode.FDivide
+			   );
+				
+	}
+	
+	public boolean isDataDirective() {
+		return (this == ASMOpcode.DLabel || this == DataC ||
+				this == ASMOpcode.DataI || this == DataF ||
+				this == ASMOpcode.DataS || this == DataZ ||
+				this == ASMOpcode.DataD
+			   );
+	}
+	
+	public boolean isJump() {
+		return (this == ASMOpcode.Jump 		|| 
+				this == ASMOpcode.JumpTrue	|| 
+				this == ASMOpcode.JumpFalse || this == ASMOpcode.JumpFZero  ||
+				this == ASMOpcode.JumpPos 	|| this == ASMOpcode.JumpFPos  	||
+				this == ASMOpcode.JumpNeg 	|| this == ASMOpcode.JumpFNeg	||
+				this == ASMOpcode.JumpV		||
+				this == ASMOpcode.Call		|| this == ASMOpcode.CallV
+			   );
+	}
+	
+	public boolean isLeave() {
+		return (this == ASMOpcode.Return || this == ASMOpcode.Halt);
+	}
+	
 }

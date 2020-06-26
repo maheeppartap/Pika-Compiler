@@ -4,8 +4,6 @@ import java.util.List;
 
 import semanticAnalyzer.types.PrimitiveType;
 import semanticAnalyzer.types.Type;
-import lexicalAnalyzer.Lextant;
-import lexicalAnalyzer.Punctuator;
 
 //immutable
 public class FunctionSignature {
@@ -13,11 +11,7 @@ public class FunctionSignature {
 	private Type resultType;
 	private Type[] paramTypes;
 	Object whichVariant;
-	
-	
-	///////////////////////////////////////////////////////////////
-	// construction
-	
+
 	public FunctionSignature(Object whichVariant, Type ...types) {
 		assert(types.length >= 1);
 		storeParamTypes(types);
@@ -30,24 +24,21 @@ public class FunctionSignature {
 			paramTypes[i] = types[i];
 		}
 	}
-	
-	
-	///////////////////////////////////////////////////////////////
-	// accessors
-	
+
 	public Object getVariant() {
 		return whichVariant;
 	}
 	public Type resultType() {
 		return resultType;
 	}
+	public Type paramType() {
+		return paramTypes[0];
+	}
 	public boolean isNull() {
 		return false;
 	}
 	
 	
-	///////////////////////////////////////////////////////////////
-	// main query
 
 	public boolean accepts(List<Type> types) {
 		if(types.size() != paramTypes.length) {
@@ -80,29 +71,6 @@ public class FunctionSignature {
 	public static FunctionSignature nullInstance() {
 		return neverMatchedSignature;
 	}
-	
-	///////////////////////////////////////////////////////////////////
-	// Signatures for pika-0 operators
-	// this section will probably disappear in pika-1 (in favor of FunctionSignatures)
-//
-//	private static FunctionSignature addSignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.INTEGER);
-//	private static FunctionSignature multiplySignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.INTEGER);
-//	private static FunctionSignature greaterSignature = new FunctionSignature(1, PrimitiveType.INTEGER, PrimitiveType.INTEGER, PrimitiveType.BOOLEAN);
-//
-//
-//	// the switch here is ugly compared to polymorphism.  This should perhaps be a method on Lextant.
-//	public static FunctionSignature signatureOf(Lextant lextant) {
-//		assert(lextant instanceof Punctuator);
-//		Punctuator punctuator = (Punctuator)lextant;
-//
-//		switch(punctuator) {
-//		case ADD:		return addSignature;
-//		case MULTIPLY:	return multiplySignature;
-//		case GREATER:	return greaterSignature;
-//
-//		default:
-//			return neverMatchedSignature;
-//		}
-//	}
+
 
 }

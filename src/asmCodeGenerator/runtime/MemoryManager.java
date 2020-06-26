@@ -7,7 +7,7 @@ import asmCodeGenerator.Labeller;
 import asmCodeGenerator.codeStorage.ASMCodeFragment;
 
 public class MemoryManager {
-	// Debug Mode. DEBUGGING Adds debug code and executes insertDebugMain when the program is initialized.
+	// Debug Mode. DEBUGGING Adds debug code and executes insertDebugMain when the program is initiailzed.
 	// Debug Mode. DEBUGGING2 does not insertDebugMain, but prints allocation diagnostics.
 	private static final boolean DEBUGGING = false;
 	private static final boolean DEBUGGING2 = false;		// does not insertDebugMain
@@ -426,16 +426,13 @@ public class MemoryManager {
 		// convert user block to mmgr block
 		frag.add(PushI, MMGR_TAG_SIZE_IN_BYTES);		// [... usableBlock tagsize]
 		frag.add(Subtract);								// [... block]
-		storeITo(frag, MMGR_DEALLOC_BLOCK);				// [...]
+		storeITo(frag, MMGR_DEALLOC_BLOCK);				// [...]		
 		
-		// if(firstFree != 0) { firstFree.prev = block }
-		String bypassLabel = "-mmgr-bypass-firstFree";
-		loadIFrom(frag, MEM_MANAGER_FIRST_FREE_BLOCK);
-		frag.add(JumpFalse, bypassLabel);
+		
+		// firstFree.prev = block
 		loadIFrom(frag, MMGR_DEALLOC_BLOCK);
 		loadIFrom(frag, MEM_MANAGER_FIRST_FREE_BLOCK);	// [... block firstFree]
-		writeTagPointer(frag);		
-		frag.add(Label, bypassLabel);
+		writeTagPointer(frag);											
 
 		// block.prev = 0
 		frag.add(PushI, 0);
@@ -456,7 +453,7 @@ public class MemoryManager {
 		// block.avail2 = 1;
 		frag.add(PushI, 1);						// [... 1]
 		loadIFrom(frag, MMGR_DEALLOC_BLOCK);	// [... 1 block]
-		tailTag(frag);						    // [... 1 blockTail]
+		tailTag(frag);						// [... 1 blockTail]
 		writeTagAvailable(frag);
 
 		// firstFree = block
@@ -465,6 +462,7 @@ public class MemoryManager {
 		
 		// return
 		loadIFrom(frag, MMGR_DEALLOC_RETURN_ADDRESS);
+		
 		frag.add(Return);
 		return frag;
 	}

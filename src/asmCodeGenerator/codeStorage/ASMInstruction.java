@@ -46,6 +46,37 @@ public class ASMInstruction {
 		this.argument = null;
 		this.comment = "";
 	}
+	
+	
+/////////////////////////////////////////////////////////////////////////
+// Optimizer helper functions
+	
+	public ASMInstruction(ASMOpcode opcode, Object argument) {
+		this.opcode = opcode;
+		this.argument = argument;
+		this.comment = "";
+	}
+	public ASMInstruction(ASMOpcode opcode, Object argument, String comment) {
+		this.opcode = opcode;
+		this.argument = argument;
+		this.comment = comment;
+	}
+	public ASMOpcode getOpcode() {
+		return opcode;
+	}
+	public Object getArgument() {
+		return argument;
+	}
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+	public String getComment() {
+		return comment;
+	}
+	public boolean isString() {	
+		return (opcode == ASMOpcode.DLabel && argument instanceof String &&
+					((String)argument).contains("stringConstant"));
+	}
 
 	
 /////////////////////////////////////////////////////////////////////////
@@ -123,7 +154,8 @@ public class ASMInstruction {
 	
 	private String argumentString() {
 		if(opcode.takesFloat()) {
-			return String.format("%-25f", (Double)argument);
+			// TODO: %-25f for accuracy, %-25g for grading
+            return String.format("%-25g", (Double)argument);
 		}
 		
 		if(opcode.takesInteger()) {

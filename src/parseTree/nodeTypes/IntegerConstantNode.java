@@ -18,10 +18,10 @@ public class IntegerConstantNode extends ParseNode {
 // attributes
 	
 	public int getValue() {
-		return numberToken().getValue();
+		return integerToken().getValue();
 	}
 
-	public IntegerToken numberToken() {
+	public IntegerToken integerToken() {
 		return (IntegerToken)token;
 	}	
 

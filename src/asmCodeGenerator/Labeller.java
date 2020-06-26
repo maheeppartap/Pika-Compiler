@@ -11,11 +11,23 @@ public class Labeller {
 		labelNumber = labelSequenceNumber;
 		this.prefix = makePrefix(userPrefix);
 	}
+	public Labeller(String userPrefix, boolean inc) {
+		if (inc) {
+			labelSequenceNumber++;
+		}
+		
+		labelNumber = labelSequenceNumber;
+		this.prefix = makePrefix(userPrefix);
+	}
 	private String makePrefix(String prefix) {
 		return "-" + prefix + "-" + labelNumber + "-";
 	}
 
 	public String newLabel(String suffix) {
 		return prefix + suffix;
+	}
+	
+	public void resetSequenceNumber() {
+		labelSequenceNumber = 0;
 	}
 }

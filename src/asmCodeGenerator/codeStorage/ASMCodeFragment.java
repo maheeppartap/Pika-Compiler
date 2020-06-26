@@ -54,6 +54,10 @@ public class ASMCodeFragment {
 		chunks.addAll(fragment.chunks);
 	}
 	
+	public void add(ASMInstruction instruction){
+		lastChunk().add(instruction);
+	}
+	
 	public void add(ASMOpcode opcode, int operand, String comment) {
 		lastChunk().add(opcode, operand, comment);
 	}
@@ -82,11 +86,28 @@ public class ASMCodeFragment {
 		}
 		return chunks.get(chunks.size() - 1);
 	}
-
 	private void newChunk() {
 		ASMCodeChunk chunk = new ASMCodeChunk();
 		chunks.add(chunk);
 	}
+	
+/////////////////////////////////////////////////////////////////////////
+//Optimizer helper functions
+	
+	public void addChunk(ASMCodeChunk chunk) {
+		chunks.add(chunk);
+	}
+	public void add(ASMOpcode opcode, Object operand, String comment) {
+		lastChunk().add(opcode, operand, comment);
+	}
+	public List<ASMCodeChunk> getChunks() {
+		return chunks;
+	}
+	public ASMCodeChunk getChunk(int index) {
+		return chunks.get(index);
+	}
+
+	
 	
 	public String toString() {
 		StringBuffer buffer = new StringBuffer();
@@ -174,6 +195,7 @@ public class ASMCodeFragment {
 			super(s, e);
 		}
 	}
+	
 	private static void error(String message) {
 		PikaLogger log = PikaLogger.getLogger("compiler.Optimizer");
 		log.severe("read error: " + message);

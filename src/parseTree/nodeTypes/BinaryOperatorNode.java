@@ -3,11 +3,13 @@ package parseTree.nodeTypes;
 import parseTree.ParseNode;
 import parseTree.ParseNodeVisitor;
 import lexicalAnalyzer.Lextant;
-import semanticAnalyzer.signatures.FunctionSignature;
+import lexicalAnalyzer.Punctuator;
 import tokens.LextantToken;
 import tokens.Token;
+import semanticAnalyzer.signatures.FunctionSignature;
 
-public class BinaryOperatorNode extends ParseNode {
+public class BinaryOperatorNode extends OperatorNode {
+	protected FunctionSignature signature;
 
 	public BinaryOperatorNode(Token token) {
 		super(token);
@@ -21,21 +23,21 @@ public class BinaryOperatorNode extends ParseNode {
 	
 	////////////////////////////////////////////////////////////
 	// attributes
-	private FunctionSignature signature = FunctionSignature.nullInstance();
-	public final FunctionSignature getSignature(){
-		return signature;
-	}
-	public final void setSignature(FunctionSignature signature){
-		this.signature = signature;
-	}
 	
 	public Lextant getOperator() {
 		return lextantToken().getLextant();
 	}
 	public LextantToken lextantToken() {
 		return (LextantToken)token;
-	}	
-	
+	}
+
+	public void setSignature(FunctionSignature signature) {
+		this.signature = signature;
+	}
+	public FunctionSignature getSignature() {
+		return signature;
+	}
+
 	
 	////////////////////////////////////////////////////////////
 	// convenience factory
@@ -45,6 +47,21 @@ public class BinaryOperatorNode extends ParseNode {
 		node.appendChild(left);
 		node.appendChild(right);
 		return node;
+	}
+	
+	//////////////////////////////////////////////////////////////////////////////
+	//delegates
+	
+	public boolean isComparator() {
+		Lextant operator = getOperator();
+		return (operator == Punctuator.LESSTHANEQUAL || operator == Punctuator.LESS ||
+				operator == Punctuator.EQUAL || operator == Punctuator.NOT_EQUAL ||
+				operator == Punctuator.GREATER || operator == Punctuator.GREATERTHANEQUAL);
+	}
+	
+	public boolean isBooleanOperator() {
+		Lextant operator = getOperator();
+		return (operator == Punctuator.AND || operator == Punctuator.OR);
 	}
 	
 	

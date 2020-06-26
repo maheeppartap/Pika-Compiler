@@ -23,7 +23,6 @@ public class IntegerToken extends TokenImp {
 	
 	@Override
 	protected String rawString() {
-		return "IntegerConst, " + value;
+		return "integer, " + value;
 	}
 }
-

@@ -89,7 +89,6 @@
         <mark key="]" line="52" column="4" />
         <mark key="." line="52" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/NumberedFileLister.java" timestamp="1593149377705" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaStandaloneOptimizer.java" timestamp="1592796580985">
         <mark key="[" line="7" column="0" />
       </file>
@@ -102,11 +101,6 @@
         <mark key="]" line="93" column="0" />
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/logging/PikaLogger.java" timestamp="1593062536718">
-        <mark key="[" line="7" column="0" />
-        <mark key="]" line="7" column="0" />
-        <mark key="." line="7" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMCodeChunk.java" timestamp="1593062620419">
         <mark key="[" line="8" column="11" />
@@ -124,34 +118,19 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1593150514554">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1593062470517">
-        <mark key="[" line="47" column="24" />
-        <mark key="]" line="47" column="25" />
-        <mark key="." line="47" column="25" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1593310852656">
+        <mark key="[" line="7" column="13" />
+        <mark key="]" line="7" column="13" />
+        <mark key="." line="7" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
         <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/promoter/Promoter.java" timestamp="1592932577002">
-        <mark key="[" line="212" column="8" />
-        <mark key="]" line="212" column="12" />
-        <mark key="." line="212" column="12" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlockFragment.java" timestamp="1592796499091">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/fragment.java" timestamp="1593064540572">
         <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1592946423647">
-        <mark key="[" line="272" column="17" />
-        <mark key="]" line="97" column="4" />
-        <mark key="." line="97" column="4" />
       </file>
     </filemarks>
     <jumps>
@@ -259,11 +238,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHZhciBhIDo9IFsxMDAsIDIwMCwgMzAwXS4KICAgIHByaW50IGEsIF9uXy4KICAgIGFbMF0gOj0gNTAwLgogICAgcHJpbnQgYSwgX25fLgogICAgcHJpbnQgYVswXSwgX25fLCBfbl8uCgogICAgdmFyIGIgOj0gWzEwMCwgMjAwXS4KICAgIHByaW50IGIsIF9uXy4KICAgIGJbMF0gOj0gOTkuCiAgICBwcmludCBiLCBfbl8uCiAgICBwcmludCBiWzBdLCBfbl8sIF9uXy4KCiAgICB2YXIgYyA6PSBbWzEwMCwgMjAwXSwgWzMwMCwgNDAwXV0uCiAgICBwcmludCBjLCBfbl8uCiAgICBwcmludCBjWzBdLCBfbl8uCiAgICBwcmludCBjWzBdWzBdLCBfbl8uCiAgICBjWzBdWzBdIDo9IDk5LgogICAgcHJpbnQgY1swXVswXSwgX25fLgogICAgcHJpbnQgY1swXSwgX25fLgogICAgcHJpbnQgYywgX25fLgogICAgcHJpbnQgbGVuZ3RoIGNbMF0sIF9uXywgX25fLgoKICAgIHZhciBpIDo9IDIuCiAgICBwcmludCBbMTAwLCAyMDAsIDMwMF1baSoyIC0gMl0sIF9uXy4KICAgIHByaW50IFsxMDAwLCAyMDAwLCAzMDAwXVswICsgMV0sIF9uXy4=</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">YWxsb2Mg</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">cmVsZWFzZSA=</text>
+        <text encoding="base64">YWxsb2Mg</text>
       </register>
       <register name="/" type="4">
         <text>new</text>

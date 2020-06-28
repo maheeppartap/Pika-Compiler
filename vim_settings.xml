@@ -118,11 +118,11 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1593312806124">
-        <mark key="[" line="11" column="23" />
-        <mark key="]" line="11" column="9" />
-        <mark key="." line="11" column="8" />
-        <mark key="^" line="11" column="9" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1593313025111">
+        <mark key="[" line="5" column="1" />
+        <mark key="]" line="10" column="9" />
+        <mark key="." line="10" column="8" />
+        <mark key="^" line="10" column="9" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
         <mark key="[" line="0" column="0" />

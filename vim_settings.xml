@@ -95,9 +95,9 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler_Batch.java" timestamp="1592796563327">
         <mark key="[" line="7" column="1" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1592592725520">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1593311483703">
         <mark key="'" line="85" column="69" />
-        <mark key="[" line="152" column="48" />
+        <mark key="[" line="12" column="0" />
         <mark key="]" line="93" column="0" />
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
@@ -131,6 +131,12 @@
       </file>
       <file name="/fragment.java" timestamp="1593064540572">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1593312253889">
+        <mark key="[" line="91" column="0" />
+        <mark key="]" line="33" column="4" />
+        <mark key="^" line="33" column="4" />
+        <mark key="." line="33" column="0" />
       </file>
     </filemarks>
     <jumps>

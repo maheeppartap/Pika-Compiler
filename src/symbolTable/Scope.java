@@ -17,6 +17,14 @@ public class Scope {
 	public static Scope createProgramScope() {
 		return new Scope(programScopeAllocator(), nullInstance());
 	}
+	public static Scope createParameterScope() {
+		return new Scope(parameterScopeAllocator(), nullInstanceNegative());
+	}
+	public Scope createProcedureScope() {
+		Scope proc = new Scope(procedureScopeAllocator(), this);
+		proc.allocator.allocate(8);
+		return proc;
+	}
 	public Scope createSubscope() {
 		return new Scope(allocator, this);
 	}
@@ -27,15 +35,25 @@ public class Scope {
 				MemoryLocation.GLOBAL_VARIABLE_BLOCK);
 	}
 	
+	private static MemoryAllocator parameterScopeAllocator() {
+		return new ParamMemoryAlloc(
+				MemoryAccessMethod.INDIRECT_ACCESS_BASE,
+				MemoryLocation.FRAME_POINTER);
+	}
+	
+	private static MemoryAllocator procedureScopeAllocator() {
+		return new NegativeMemoryAllocator(
+				MemoryAccessMethod.INDIRECT_ACCESS_BASE,
+				MemoryLocation.FRAME_POINTER);
+	}
+	
 //////////////////////////////////////////////////////////////////////
 // private constructor.	
 	private Scope(MemoryAllocator allocator, Scope baseScope) {
 		super();
 		this.baseScope = (baseScope == null) ? this : baseScope;
 		this.symbolTable = new SymbolTable();
-		
 		this.allocator = allocator;
-		allocator.saveState();
 	}
 	
 ///////////////////////////////////////////////////////////////////////
@@ -52,6 +70,10 @@ public class Scope {
 	
 ///////////////////////////////////////////////////////////////////////
 //memory allocation
+	// must call enter() when creating/enterting a scope.
+	public void enter() {
+		allocator.saveState();
+	}
 	// must call leave() when destroying/leaving a scope.
 	public void leave() {
 		allocator.restoreState();
@@ -95,8 +117,30 @@ public class Scope {
 		private static NullScope instance = new NullScope();
 
 		private NullScope() {
-			super(	new PositiveMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0),
-					null);
+			super(new PositiveMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0), null);
+		}
+		public String toString() {
+			return "scope: the-null-scope";
+		}
+		@Override
+		public Binding createBinding(IdentifierNode identifierNode, Type type) {
+			unscopedIdentifierError(identifierNode.getToken());
+			return super.createBinding(identifierNode, type);
+		}
+		// subscopes of null scope need their own strategy.  Assumes global block is static.
+		public Scope createSubscope() {
+			return new Scope(programScopeAllocator(), this);
+		}
+	}
+	
+	public static Scope nullInstanceNegative() {
+		return NullScopeNegative.instance;
+	}
+	private static class NullScopeNegative extends Scope {
+		private static NullScope instance = new NullScope();
+
+		private NullScopeNegative() {
+			super(new NegativeMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0), null);
 		}
 		public String toString() {
 			return "scope: the-null-scope";

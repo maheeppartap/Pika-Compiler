@@ -3,6 +3,7 @@ package asmCodeGenerator.codeStorage;
 import java.util.LinkedList;
 import java.util.List;
 
+// a glorified list of instructions.
 public class ASMCodeChunk {
 	List<ASMInstruction> instructions;
 	

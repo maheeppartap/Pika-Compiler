@@ -30,13 +30,17 @@ public class Parser {
 
 	////////////////////////////////////////////////////////////
 	// "program" is the start symbol S
-	// S -> EXEC mainBlock
-	
+	// S -> globalDefinition* EXEC mainBlock
 	private ParseNode parseProgram() {
 		if(!startsProgram(nowReading)) {
 			return syntaxErrorNode("program");
-		}
+		}		
 		ParseNode program = new ProgramNode(nowReading);
+		
+		while (startsFunctionDefinition(nowReading)) {
+			ParseNode globalDefinition = parseFunctionDefinition();
+			program.appendChild(globalDefinition);
+		}
 		
 		expect(Keyword.EXEC);
 		ParseNode mainBlock = parseMainBlock();
@@ -49,11 +53,32 @@ public class Parser {
 		return program;
 	}
 	private boolean startsProgram(Token token) {
-		return token.isLextant(Keyword.EXEC);
+		return token.isLextant(Keyword.FUNCTION) || token.isLextant(Keyword.EXEC);
 	}
 	
+	///////////////////////////////////////////////////////////
+	
+	// functionDefinition -> FUNC identifier lambda
+	private ParseNode parseFunctionDefinition() {
+		if(!startsFunctionDefinition(nowReading)) {
+			return syntaxErrorNode("function definition");
+		}
+		
+		expect(Keyword.FUNCTION);
+		
+		Token definitionToken = previouslyRead;		
+		ParseNode identifier = parseIdentifier();
+		ParseNode lambda = parseLambda();
+		
+		ParseNode functionDefinitionNode = FunctionDefinitionNode.withChildren(definitionToken, identifier, lambda);
+		return functionDefinitionNode;
+	}
+	private boolean startsFunctionDefinition(Token token){
+		return token.isLextant(Keyword.FUNCTION);
+	}
 	
 	///////////////////////////////////////////////////////////	
+	
 	// mainBlock -> { statement* }
 	private ParseNode parseMainBlock() {
 		if(!startsMainBlock(nowReading)) {
@@ -79,8 +104,8 @@ public class Parser {
 		return token.isLextant(Punctuator.OPEN_BRACE);
 	}
 	
-	
 	///////////////////////////////////////////////////////////	
+	
 	// blockStatement -> { statement* }
 	private ParseNode parseBlockStatement() {
 		if(!startsBlockStatement(nowReading)) {
@@ -106,14 +131,15 @@ public class Parser {
 		return token.isLextant(Punctuator.OPEN_BRACE);
 	}
 	
-	
 	///////////////////////////////////////////////////////////
-	// statements
 	
 	// statement-> declaration | printStmt
 	private ParseNode parseStatement() {
 		if(!startsStatement(nowReading)) {
 			return syntaxErrorNode("statement");
+		}
+		if(startsFunctionDefinition(nowReading)) {
+			return parseFunctionDefinition();
 		}
 		if(startsDeclaration(nowReading)) {
 			return parseDeclaration();
@@ -124,11 +150,23 @@ public class Parser {
 		if(startsReleaseStatement(nowReading)) {
 			return parseReleaseStatement();
 		}
+		if(startsCallStatement(nowReading)) {
+			return parseCallStatement();
+		}
+		if(startsReturnStatement(nowReading)) {
+			return parseReturnStatement();
+		}
+		if(startsReleaseStatement(nowReading)) {
+			return parseReleaseStatement();
+		}
 		if(startsIfStatement(nowReading)) {
 			return parseIfStatement();
 		}
 		if(startsWhileStatement(nowReading)) {
 			return parseWhileStatement();
+		}
+		if(startsControlStatement(nowReading)) {
+			return parseControlStatement();
 		}
 		if(startsPrintStatement(nowReading)) {
 			return parsePrintStatement();
@@ -136,16 +174,22 @@ public class Parser {
 		return syntaxErrorNode("statement");
 	}
 	private boolean startsStatement(Token token) {
-		return startsDeclaration(token) ||
+		return startsFunctionDefinition(token) || 
+			   startsDeclaration(token) ||
 			   startsAssignment(token) ||
+			   startsCallStatement(nowReading) ||
+			   startsReturnStatement(nowReading) ||
 			   startsReleaseStatement(token) || 
 			   startsIfStatement(token) ||
 			   startsWhileStatement(token) ||
+			   startsControlStatement(token) ||
 			   startsPrintStatement(token) ||
 			   startsBlockStatement(token);
 	}
 	
-	// declaration -> CONST identifier := expression .
+	///////////////////////////////////////////////////////////
+	
+	// declarationStmt -> CONST/VAR identifier := expression .
 	private ParseNode parseDeclaration() {
 		if(!startsDeclaration(nowReading)) {
 			return syntaxErrorNode("declaration");
@@ -161,6 +205,14 @@ public class Parser {
 		
 		ParseNode initializer = parseExpression();
 		
+		// Check for index
+		if (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
+			while (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
+				ParseNode index = parseIndex();
+				initializer = IndexNode.withChildren(initializer.getToken(), initializer, index);
+			}
+		}
+		
 		expect(Punctuator.TERMINATOR);
 		
 		return DeclarationNode.withChildren(declarationToken, identifier, initializer);
@@ -169,7 +221,9 @@ public class Parser {
 		return token.isLextant(Keyword.CONST, Keyword.VAR);
 	}
 	
-	// assignment -> target := expression .
+	///////////////////////////////////////////////////////////
+	
+	// assignmentStmt -> target := expression .
 	private ParseNode parseAssignment() {
 		if(!startsAssignment(nowReading)) {
 			return syntaxErrorNode("assignment");
@@ -185,7 +239,19 @@ public class Parser {
 			target = parseExpression();
 		}
 		
+		if (startsCastOrArray(nowReading)) {
+			target = parseExpression();
+		}
+		
 		assert target != null;
+		
+		// Check for index
+		if (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
+			while (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
+				ParseNode index = parseIndex();
+				target = IndexNode.withChildren(target.getToken(), target, index);
+			}
+		}
 
 		expect(Punctuator.ASSIGN);
 		Token assignmentToken = Punctuator.ASSIGN.prototype();
@@ -196,12 +262,12 @@ public class Parser {
 		return AssignmentNode.withChildren(assignmentToken, target, expression);
 	}
 	private boolean startsAssignment(Token token) {
-		return (token instanceof IdentifierToken ||
-				startsParenthetical(token));
+		return (token instanceof IdentifierToken || startsParenthetical(token) || startsCastOrArray(token));
 	}
 	
 	///////////////////////////////////////////////////////////
-	// releaseSmt -> RELEASE expression
+	
+	// releaseStmt -> RELEASE expression
 	private ParseNode parseReleaseStatement() {
 		if(!startsReleaseStatement(nowReading)) {
 			return syntaxErrorNode("release");
@@ -217,13 +283,58 @@ public class Parser {
 		return ReleaseNode.withChild(releaseToken, identifier);
 	}
 	private boolean startsReleaseStatement(Token token){
-		return token.isLextant(Keyword.DEALLOC);
+		return token.isLextant(Keyword.RELEASE);
 	}
 	
 	///////////////////////////////////////////////////////////
-	// control structures
+		
+	// returnStmt -> RETURN expression
+	private ParseNode parseCallStatement() {
+		if(!startsCallStatement(nowReading)) {
+			return syntaxErrorNode("call");
+		}
 	
-	// if (expression) blockStatement (else blockStatement)?
+		Token callToken = nowReading;
+		readToken();
+		
+		ParseNode callExpression = parseExpression();
+		
+		expect(Punctuator.TERMINATOR);
+		return CallNode.withChild(callToken, callExpression);
+	}
+	private boolean startsCallStatement(Token token){
+		return token.isLextant(Keyword.CALL);
+	}
+	
+	///////////////////////////////////////////////////////////
+	
+	// returnStmt -> RETURN expression
+	private ParseNode parseReturnStatement() {
+		if(!startsReturnStatement(nowReading)) {
+			return syntaxErrorNode("return");
+		}
+	
+		Token returnToken = nowReading;
+		readToken();
+		
+		if (nowReading.isLextant(Punctuator.TERMINATOR)) {
+			readToken();
+			return new ReturnNode(returnToken);
+		}
+		
+		ParseNode returnExpression = parseExpression();
+		
+		expect(Punctuator.TERMINATOR);
+		return ReturnNode.withChild(returnToken, returnExpression);
+	}
+	private boolean startsReturnStatement(Token token){
+		return token.isLextant(Keyword.RETURN);
+	}
+
+
+	///////////////////////////////////////////////////////////
+	
+	// ifStmt -> if (expression) blockStatement (else blockStatement)?
 	private ParseNode parseIfStatement() {
 		if(!startsIfStatement(nowReading)) {
 			return syntaxErrorNode("if-statement");
@@ -232,7 +343,11 @@ public class Parser {
 		expect(Keyword.IF);
 
 		Token ifToken = previouslyRead;
+		
+		expect(Punctuator.OPEN_PARENTHESIS);
 		ParseNode condition = parseExpression();
+		expect(Punctuator.CLOSE_PARENTHESIS);
+		
 		ParseNode blockStatement = parseBlockStatement();
 		
 		// Check for ELSE clause
@@ -252,7 +367,9 @@ public class Parser {
 		return token.isLextant(Keyword.ELSE);
 	}
 	
-	// while (expression) blockStatement
+	///////////////////////////////////////////////////////////
+	
+	// whileStmt -> while (expression) blockStatement
 	private ParseNode parseWhileStatement() {
 		if(!startsWhileStatement(nowReading)) {
 			return syntaxErrorNode("while-statement");
@@ -261,7 +378,11 @@ public class Parser {
 		expect(Keyword.WHILE);
 
 		Token whileToken = previouslyRead;
+		
+		expect(Punctuator.OPEN_PARENTHESIS);
 		ParseNode condition = parseExpression();
+		expect(Punctuator.CLOSE_PARENTHESIS);
+		
 		ParseNode blockStatement = parseBlockStatement();
 		
 		ParseNode whileNode = new WhileNode(whileToken, condition, blockStatement);	
@@ -272,11 +393,32 @@ public class Parser {
 	}
 	
 	///////////////////////////////////////////////////////////
+	
+	// controlStmt -> CONTINUE or BREAK.
+	private ParseNode parseControlStatement() {
+		if(!startsControlStatement(nowReading)) {
+			return syntaxErrorNode("release");
+		}
+		
+		Token controlToken = nowReading;
+		readToken();
+		
+		expect(Punctuator.TERMINATOR);
+		
+		return ControlNode.withChild(controlToken);
+	}
+	private boolean startsControlStatement(Token token){
+		return token.isLextant(Keyword.CONTINUE, Keyword.BREAK);
+	}
+	
+	///////////////////////////////////////////////////////////
+	
 	// printStmt -> PRINT printExpressionList .
 	private ParseNode parsePrintStatement() {
 		if(!startsPrintStatement(nowReading)) {
 			return syntaxErrorNode("print statement");
 		}
+		
 		PrintStatementNode result = new PrintStatementNode(nowReading);
 		
 		readToken();
@@ -319,7 +461,7 @@ public class Parser {
 		// else we interpret the printExpression as epsilon, and do nothing
 	}
 	private boolean startsPrintExpression(Token token) {
-		return startsExpression(token) || token.isLextant(Keyword.TAB) || token.isLextant(Keyword.NEWLINE) ;
+		return startsExpression(token) || token.isLextant(Keyword.TAB) || token.isLextant(Keyword.NEWLINE);
 	}
 
 	// This adds the printExpression it parses to the children of the given parent
@@ -347,7 +489,6 @@ public class Parser {
 	private boolean startsPrintSeparator(Token token) {
 		return token.isLextant(Punctuator.SEPARATOR, Punctuator.SPACE);
 	}
-	
 	
 
 	///////////////////////////////////////////////////////////
@@ -517,8 +658,7 @@ public class Parser {
 	private boolean startsClone(Token token) {
 		return token.isLextant(Keyword.CLONE); 
 	}
-	
-	
+		
 	// atomicExpression -> literal
 	private ParseNode parseAtomicExpression() {
 		if(!startsAtomicExpression(nowReading)) {
@@ -532,6 +672,11 @@ public class Parser {
 			return left;
 		}
 		
+		if (startsLambda(nowReading)) {
+			ParseNode left = parseLambda();
+			return left;
+		}
+		
 		if (startsCastOrArray(nowReading)){
 			if (nowReading.isLextant(Keyword.ALLOC)) {
 				return parseArrayExpression();
@@ -542,7 +687,7 @@ public class Parser {
 			ParseNode node = null;
 			ParseNode left = parseExpression();
 			
-			expect(Punctuator.CAST_MID, Punctuator.SEPARATOR, Punctuator.CLOSE_BRACKET);
+			expect(Punctuator.PIPE, Punctuator.SEPARATOR, Punctuator.CLOSE_BRACKET);
 			
 			// Array
 			if (previouslyRead.isLextant(Punctuator.SEPARATOR, Punctuator.CLOSE_BRACKET)) {
@@ -550,19 +695,20 @@ public class Parser {
 			}
 			
 			// Cast
-			if (previouslyRead.isLextant(Punctuator.CAST_MID)) {
+			if (previouslyRead.isLextant(Punctuator.PIPE)) {
 				Token castToken = previouslyRead;
 				Type castType;
 				
 				if (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
 					castType = parseArrayType();	
 				} else {
-					castType = TypeLiteral.withToken(nowReading);
+					castType = parseTypeLiteral();
 					readToken();
 				}
 				
 				expect(Punctuator.CLOSE_BRACKET);
 				node = CastNode.withChildren(castToken, left, castType);
+				node.setType(castType);
 			}
 			
 			if (node == null) {
@@ -612,7 +758,7 @@ public class Parser {
 		if (previouslyRead.isLextant(Keyword.ALLOC)) {
 			Token token = previouslyRead;
 			
-			ArrayType type = parseArrayType();
+			Type type = parseArrayType();
 			
 			expect(Punctuator.OPEN_PARENTHESIS);
 			ParseNode size = parseExpression();
@@ -658,16 +804,18 @@ public class Parser {
 		}
 		return parent;
 	}	
-	private ArrayType parseArrayType() {
+	private Type parseArrayType() {
 		expect(Punctuator.OPEN_BRACKET);
 		ArrayType type = new ArrayType();
 		
-		TypeLiteral subtype = TypeLiteral.withToken(nowReading);
+		Type subtype = parseType();
 		if (subtype == TypeLiteral.ARRAY) {
 			type.setSubtype(parseArrayType());	
-		} else {
+		} else {			
 			type.setSubtype(subtype);
-			readToken();
+			if (subtype instanceof TypeLiteral) {
+				readToken();
+			}
 		}
 		
 		expect(Punctuator.CLOSE_BRACKET);
@@ -675,6 +823,93 @@ public class Parser {
 		return type;
 	}
 
+	///////////////////////////////////////////////////////////
+	// lambda -> lambdaParamType blockStatement
+	// lambdaParamType -> < parameterList > -> type
+	// parameterList -> parameterSpecification bowtie ,
+	private ParseNode parseLambda() {
+		if(!startsLambda(nowReading)) {
+			return syntaxErrorNode("lambda");
+		}
+		
+		Token lambdaToken = nowReading;
+		ParseNode lambdaParamType = parseLambdaParamType();
+		ParseNode blockStatement = parseBlockStatement();
+		
+		ParseNode node = LambdaNode.withChildren(lambdaToken, lambdaParamType, blockStatement);
+		
+		// Check for function invocation
+		if (nowReading.isLextant(Punctuator.OPEN_PARENTHESIS)) {
+			ParseNode invocation = new FunctionInvocationNode(node);
+			invocation.appendChild(node);
+			node = parseArguments(invocation);
+		}
+		
+		return node;
+	}
+	private boolean startsLambda(Token token){
+		return token.isLextant(Punctuator.LESS);
+	}
+	private ParseNode parseLambdaParamType() {
+		LambdaParamTypeNode result = new LambdaParamTypeNode(previouslyRead);
+		parseParameterList(result);
+
+		expect(Punctuator.RETURNS);
+		
+		Type returnType = parseType();		
+		result.setType(returnType);
+		
+		return result;
+	}
+	private void parseParameterList(LambdaParamTypeNode parent) {
+		expect(Punctuator.LESS);
+		
+		while (!nowReading.isLextant(Punctuator.GREATER)) {
+			if(nowReading.isLextant(Punctuator.SEPARATOR)) {
+				readToken();
+			}
+			
+			if(startsTypeLiteral(nowReading)) {
+				Type type = parseType();
+
+				Token token = nowReading;
+				ParseNode identifier = parseIdentifier();
+				
+				LambdaParamNode child = LambdaParamNode.withChildren(token, type, identifier);
+				parent.appendChild(child);
+			} else if(startsCastOrArray(nowReading)) {
+				Token token = nowReading;
+				Type type = parseArrayType();
+				
+				ParseNode identifier = parseIdentifier();
+				
+				LambdaParamNode child = LambdaParamNode.withChildren(token, type, identifier);
+				parent.appendChild(child);
+			} else if(startsLambdaType(nowReading)) {
+				ParseNode lambda = parseLambdaType();
+				
+				Token token = nowReading;
+				ParseNode identifier = parseIdentifier();
+				Type type = lambda.getType();
+				
+				LambdaParamNode child = LambdaParamNode.withChildren(token, type, identifier, lambda);
+				parent.appendChild(child);
+			} else {
+				parent.appendChild(syntaxErrorNode(Punctuator.GREATER.getLexeme()));
+				return;
+			}
+		}
+		
+		expect(Punctuator.GREATER);
+	}
+		
+	// type literal
+	private TypeLiteral parseTypeLiteral() {
+		return TypeLiteral.withToken(nowReading);
+	}
+	private boolean startsTypeLiteral(Token token){
+		return token.isLextant(Keyword.getTypeLiteral());
+	}
 	
 	// literal -> number | identifier | booleanConstant
 	private ParseNode parseLiteral() {
@@ -696,13 +931,17 @@ public class Parser {
 		if(startsBooleanConstant(nowReading)) {
 			return parseBooleanConstant();
 		}
+		if(startsLambda(nowReading)) {
+			return parseLambda();
+		}
 
 		return syntaxErrorNode("literal");
 	}
 	private boolean startsLiteral(Token token) {
 		return  startsCharacter(token) || startsString(token) ||
 				startsIntNumber(token) || startsFloatNumber(token) ||
-				startsIdentifier(token) || startsBooleanConstant(token);
+				startsIdentifier(token) || startsBooleanConstant(token) ||
+				startsLambdaType(token);
 	}
 	
 	// number (terminal)
@@ -751,7 +990,7 @@ public class Parser {
 		return token instanceof StringToken;
 	}
 
-	// identifier (terminal)
+	// identifier (terminal) [ also handles indexing and functionInvocation]
 	private ParseNode parseIdentifier() {
 		if(!startsIdentifier(nowReading)) {
 			return syntaxErrorNode("identifier");
@@ -763,11 +1002,19 @@ public class Parser {
 		
 		Token identifier = nowReading;
 		readToken();
-		
+
 		ParseNode node = new IdentifierNode(identifier);
 		
-		if (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
-			while (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
+		while (nowReading.isLextant(Punctuator.OPEN_PARENTHESIS, Punctuator.OPEN_BRACKET)) {
+			// Check for function invocation
+			if (nowReading.isLextant(Punctuator.OPEN_PARENTHESIS)) {
+				ParseNode invocation = new FunctionInvocationNode(identifier);
+				invocation.appendChild(node);
+				node = parseArguments(invocation);
+			}
+			
+			// Check for index
+			if (nowReading.isLextant(Punctuator.OPEN_BRACKET)) {
 				ParseNode index = parseIndex();
 				node = IndexNode.withChildren(node.getToken(), node, index);
 			}
@@ -787,6 +1034,23 @@ public class Parser {
 		return index;
 	}
 	
+	// function arguments (terminal)
+	private ParseNode parseArguments(ParseNode node){
+		expect(Punctuator.OPEN_PARENTHESIS);
+		
+		while (!nowReading.isLextant(Punctuator.CLOSE_PARENTHESIS)) {
+			if (nowReading.isLextant(Punctuator.SEPARATOR)) {
+				readToken();
+			}
+			
+			ParseNode child = parseExpression();
+			node.appendChild(child);
+		}
+		
+		expect(Punctuator.CLOSE_PARENTHESIS);
+		return node;
+	}
+	
 	// boolean constant (terminal)
 	private ParseNode parseBooleanConstant() {
 		if(!startsBooleanConstant(nowReading)) {
@@ -799,10 +1063,82 @@ public class Parser {
 		return token.isLextant(Keyword.TRUE, Keyword.FALSE);
 	}
 
+	///////////////////////////////////////////////////////////
+	// lambdaType (terminal) -> < typeList > -> type
+	// typeList -> type bowtie ,
+	private ParseNode parseLambdaType() {
+		if(!startsLambdaType(nowReading)) {
+			return syntaxErrorNode("lambdaType");
+		}
+		
+		LambdaTypeNode result = new LambdaTypeNode(nowReading);
+		parseTypeList(result);
+
+		expect(Punctuator.RETURNS);
+		
+		Type returnType = parseType();
+		if (returnType == PrimitiveType.ERROR) {
+			return syntaxErrorNode("valid type");
+		}
+		
+		result.setReturnType(returnType);
+		
+		return result;
+	}
+	private boolean startsLambdaType(Token token) {
+		return token.isLextant(Punctuator.LESS);
+	}
+	private void parseTypeList(LambdaTypeNode parent) {
+		expect(Punctuator.LESS);
+		
+		boolean expectSeparator = false;
+		while (!nowReading.isLextant(Punctuator.GREATER)) {
+			if (expectSeparator) {
+				expect(Punctuator.SEPARATOR);
+			} else {
+				expectSeparator = true;
+			}
+			
+			Type type = parseType();
+			parent.addChildType(type);
+			if (type == PrimitiveType.ERROR) {
+				syntaxError(nowReading, "Bad lambda type.");
+				return;
+			}
+		}
+		
+		expect(Punctuator.GREATER);
+	}
+	private Type parseType() {
+		if(startsTypeLiteral(nowReading)) {
+			TypeLiteral type = parseTypeLiteral();
+			readToken();
+			return type.getType();
+		}
+
+		if(startsLambdaType(nowReading)) {
+			ParseNode lambda = parseLambdaType();
+			return lambda.getType();
+		}
+		
+		if(startsCastOrArray(nowReading)) {
+			Type arrayType = parseArrayType();
+			return arrayType;
+		}
+		
+		return PrimitiveType.ERROR;
+	}
+
+	
+	///////////////////////////////////////////////////////////
+	
 	private void readToken() {
 		previouslyRead = nowReading;
 		nowReading = scanner.next();
 	}	
+	
+	
+	///////////////////////////////////////////////////////////
 	
 	// if the current token is one of the given lextants, read the next token.
 	// otherwise, give a syntax error and read next token (to avoid endless looping).
@@ -825,7 +1161,6 @@ public class Parser {
 	private void error(String message) {
 		PikaLogger log = PikaLogger.getLogger("compiler.Parser");
 		log.severe("syntax error: " + message);
-		//TODO: System.exit(0);
 	}	
 }
 

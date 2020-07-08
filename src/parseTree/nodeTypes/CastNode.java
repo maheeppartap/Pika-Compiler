@@ -15,7 +15,7 @@ public class CastNode extends ParseNode {
 	
 	public CastNode(Token token) {
 		super(token);
-		assert(token.isLextant(Punctuator.CAST_MID));
+		assert(token.isLextant(Punctuator.PIPE));
 	}
 
 	public CastNode(ParseNode node) {

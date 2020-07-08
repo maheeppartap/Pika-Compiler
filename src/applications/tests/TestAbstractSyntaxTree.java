@@ -29,7 +29,6 @@ public class TestAbstractSyntaxTree extends FileFixturesTestCase {
 		String expectedOutput = getContents(string);
 		assertEquals(expectedOutput, actualOutput);
 	}
-
 	private String tokenPrinterOutput(String filename) throws Exception {
 		return outputFor(new ASTCommand(filename));
 	}

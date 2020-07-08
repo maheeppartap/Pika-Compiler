@@ -82,8 +82,10 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 	// Put the signatures for operators in the following static block.
 	
 	static {
+		// here's one example to get you started with FunctionSignatures: the signatures for addition.		
+		// for this to work, you should statically import PrimitiveType.*
 
-
+		// Arithmetic Operators
 		new FunctionSignatures(Punctuator.ADD,
 		    new FunctionSignature(ASMOpcode.Add, 		INTEGER, 	INTEGER, 	INTEGER),
 		    new FunctionSignature(ASMOpcode.FAdd, 		FLOATING, 	FLOATING, 	FLOATING),
@@ -118,7 +120,7 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	RATIONAL)
 		);
 		
-		new FunctionSignatures(Punctuator.EO,
+		new FunctionSignatures(Punctuator.EXPRESS_OVER,
 		    new FunctionSignature(1, 	RATIONAL, 	INTEGER, 	INTEGER),
 		    new FunctionSignature(1, 	FLOATING, 	INTEGER, 	INTEGER)
 		);
@@ -130,8 +132,8 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		
 		
 		// Casting Operators
-		new FunctionSignatures(Punctuator.CAST_MID,
-			new FunctionSignature(1, 						new ArrayType(), 	TypeLiteral.ARRAY, 		new ArrayType()),
+		new FunctionSignatures(Punctuator.PIPE,
+			new FunctionSignature(1, 						new ArrayType(), 	TypeLiteral.ARRAY, 		new ArrayType()),	// Variable type not working
 			
 			new FunctionSignature(1, 								CHARACTER, 	TypeLiteral.CHARACTER, 	CHARACTER),
 			new FunctionSignature(new CastToBoolSCG(CHARACTER), 	CHARACTER, 	TypeLiteral.BOOLEAN, 	BOOLEAN),
@@ -150,7 +152,7 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		    
 		    new FunctionSignature(1, 								RATIONAL, 	TypeLiteral.RATIONAL, 	RATIONAL),
 		    new FunctionSignature(new CastRatToFloatSCG(RATIONAL), 	RATIONAL, 	TypeLiteral.FLOATING, 	FLOATING),
-		    new FunctionSignature(ASMOpcode.Divide, 				RATIONAL, 	TypeLiteral.INTEGER, 	INTEGER),	//todo: divide by that huge number prof shermer gave us.
+		    new FunctionSignature(ASMOpcode.Divide, 				RATIONAL, 	TypeLiteral.INTEGER, 	INTEGER),
 		    
 		    new FunctionSignature(1, 								BOOLEAN, 	TypeLiteral.BOOLEAN, 	BOOLEAN),
 		    
@@ -159,11 +161,11 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		
 		
 		// Comparison Operators
-		new FunctionSignatures(Punctuator.LESSTHANEQUAL,
+		new FunctionSignatures(Punctuator.LESS_OR_EQUAL,
 			new FunctionSignature(1, 	CHARACTER, 	CHARACTER, 	BOOLEAN),
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	BOOLEAN),
 		    new FunctionSignature(1, 	FLOATING, 	FLOATING, 	BOOLEAN),
-		    new FunctionSignature(new RATCODEGEN(),
+		    new FunctionSignature(new RationalComparisonOperatorSCG(), 
 										RATIONAL, 	RATIONAL,	BOOLEAN)
 		);
 		
@@ -171,7 +173,7 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 			new FunctionSignature(1, 	CHARACTER, 	CHARACTER, 	BOOLEAN),
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	BOOLEAN),
 		    new FunctionSignature(1, 	FLOATING, 	FLOATING, 	BOOLEAN),
-		    new FunctionSignature(new RATCODEGEN(),
+		    new FunctionSignature(new RationalComparisonOperatorSCG(), 
 					RATIONAL, 	RATIONAL,	BOOLEAN)
 		);
 		
@@ -179,35 +181,35 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 			new FunctionSignature(1, 	CHARACTER, 	CHARACTER, 	BOOLEAN),
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	BOOLEAN),
 		    new FunctionSignature(1, 	FLOATING, 	FLOATING, 	BOOLEAN),
-		    new FunctionSignature(new RATCODEGEN(),
+		    new FunctionSignature(new RationalComparisonOperatorSCG(), 
 					RATIONAL, 	RATIONAL,	BOOLEAN)
 		);
 		
-		new FunctionSignatures(Punctuator.GREATERTHANEQUAL,
+		new FunctionSignatures(Punctuator.GREATER_OR_EQUAL,
 			new FunctionSignature(1, 	CHARACTER, 	CHARACTER, 	BOOLEAN),
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	BOOLEAN),
 		    new FunctionSignature(1, 	FLOATING, 	FLOATING, 	BOOLEAN),
-		    new FunctionSignature(new RATCODEGEN(),
+		    new FunctionSignature(new RationalComparisonOperatorSCG(), 
 					RATIONAL, 	RATIONAL,	BOOLEAN)
 		);
 		
 		new FunctionSignatures(Punctuator.EQUAL,
-			new FunctionSignature(1,	new ArrayType(), 	new ArrayType(), 	BOOLEAN),
+			new FunctionSignature(1,	new ArrayType(), 	new ArrayType(), 	BOOLEAN), 	// Variable type not working
 			new FunctionSignature(1, 	BOOLEAN, 	BOOLEAN, 	BOOLEAN),
 			new FunctionSignature(1, 	CHARACTER, 	CHARACTER, 	BOOLEAN),
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	BOOLEAN),
 		    new FunctionSignature(1,	FLOATING, 	FLOATING, 	BOOLEAN),
-		    new FunctionSignature(new RATCODEGEN(), 	// todo
+		    new FunctionSignature(new RationalComparisonOperatorSCG(), 
 					RATIONAL, 	RATIONAL,	BOOLEAN)
 		);
 		
 		new FunctionSignatures(Punctuator.NOT_EQUAL,
-			new FunctionSignature(1,	new ArrayType(), 	new ArrayType(), 	BOOLEAN),
+			new FunctionSignature(1,	new ArrayType(), 	new ArrayType(), 	BOOLEAN), 	// Variable type not working
 			new FunctionSignature(1,	BOOLEAN, 	BOOLEAN, 	BOOLEAN),
 			new FunctionSignature(1, 	CHARACTER, 	CHARACTER, 	BOOLEAN),
 		    new FunctionSignature(1, 	INTEGER, 	INTEGER, 	BOOLEAN),
 		    new FunctionSignature(1, 	FLOATING, 	FLOATING, 	BOOLEAN),
-		    new FunctionSignature(new RATCODEGEN(),
+		    new FunctionSignature(new RationalComparisonOperatorSCG(), 
 					RATIONAL, 	RATIONAL,	BOOLEAN)
 		);
 		
@@ -228,7 +230,7 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		
 		// Array Operators
 		new FunctionSignatures(Keyword.LENGTH,
-			new FunctionSignature(new ArrayLengthSCG(), 	new ArrayType(), 	INTEGER)
+			new FunctionSignature(new ArrayLengthSCG(), 	new ArrayType(), 	INTEGER)		// Variable type not working
 		);
 		
 		
@@ -240,7 +242,7 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 			new FunctionSignature(1,	INTEGER, 	INTEGER,	INTEGER),
 			new FunctionSignature(1,	FLOATING, 	FLOATING,	FLOATING),
 			new FunctionSignature(1,	RATIONAL, 	RATIONAL,	RATIONAL),
-			new FunctionSignature(1, ALL, ALL, ALL)
+			new FunctionSignature(1,	ANY, 		ANY,		ANY)
 		);
 
 	}

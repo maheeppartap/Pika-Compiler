@@ -5,7 +5,13 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/** This class is a Facade for java.util.logging.
+ * It also retains the number of messages that have been logged.
+ * Optionally, one may configure this logger to throw an exception
+ * when a certain message count is reached.
+ * <p>
+ * Retains hard references to all loggers created.
+ */ 
 
 public class PikaLogger {
 	private static Map<String, PikaLogger> loggers = new HashMap<String, PikaLogger>();
@@ -40,6 +46,9 @@ public class PikaLogger {
 	}
 	public void severe(String message) {
 		log(Level.SEVERE, message);
+	}
+	public static void resetCounter() {
+		numMessages = 0;
 	}
 	private void incrementNumMessages() {
 		numMessages++;

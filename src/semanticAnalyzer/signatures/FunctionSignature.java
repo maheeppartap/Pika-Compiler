@@ -11,11 +11,20 @@ public class FunctionSignature {
 	private Type resultType;
 	private Type[] paramTypes;
 	Object whichVariant;
-
+	
+	
+	///////////////////////////////////////////////////////////////
+	// construction
+	
 	public FunctionSignature(Object whichVariant, Type ...types) {
 		assert(types.length >= 1);
 		storeParamTypes(types);
 		resultType = types[types.length-1];
+		this.whichVariant = whichVariant;
+	}
+	public FunctionSignature(Object whichVariant, List<Type> paramTypes, Type returnType) {
+		this.paramTypes = paramTypes.toArray(new Type[0]);
+		resultType = returnType;
 		this.whichVariant = whichVariant;
 	}
 	private void storeParamTypes(Type[] types) {
@@ -24,7 +33,11 @@ public class FunctionSignature {
 			paramTypes[i] = types[i];
 		}
 	}
-
+	
+	
+	///////////////////////////////////////////////////////////////
+	// accessors
+	
 	public Object getVariant() {
 		return whichVariant;
 	}
@@ -34,11 +47,16 @@ public class FunctionSignature {
 	public Type paramType() {
 		return paramTypes[0];
 	}
+	public Type[] getParamTypes() {
+		return paramTypes;
+	}
 	public boolean isNull() {
 		return false;
 	}
 	
 	
+	///////////////////////////////////////////////////////////////
+	// main query
 
 	public boolean accepts(List<Type> types) {
 		if(types.size() != paramTypes.length) {

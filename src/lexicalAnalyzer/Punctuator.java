@@ -7,6 +7,7 @@ public enum Punctuator implements Lextant {
 	SPACE(";"),
 	SEPARATOR(","),
 	TERMINATOR("."),
+	RETURNS("->"),
 	
 	ADD("+"),
 	SUBTRACT("-"),
@@ -14,7 +15,7 @@ public enum Punctuator implements Lextant {
 	DIVISION("/"),
 	
 	OVER("//"),
-	EO("///"),
+	EXPRESS_OVER("///"),
 	RATIONALIZE("////"),
 	
 	AND("&&"),
@@ -22,12 +23,12 @@ public enum Punctuator implements Lextant {
 	
 	NOT("!"),
 	
-	LESSTHANEQUAL("<="),
+	LESS_OR_EQUAL("<="),
 	LESS("<"),
 	EQUAL("=="),
 	NOT_EQUAL("!="),
 	GREATER(">"),
-	GREATERTHANEQUAL(">="),
+	GREATER_OR_EQUAL(">="),
 	
 	OPEN_BRACE("{"),
 	CLOSE_BRACE("}"),
@@ -36,7 +37,7 @@ public enum Punctuator implements Lextant {
 	OPEN_BRACKET("["),
 	CLOSE_BRACKET("]"),
 	
-	CAST_MID("|"),
+	PIPE("|"),
 	HASH("#"),
 	ASSIGN(":="),
 	
@@ -63,17 +64,17 @@ public enum Punctuator implements Lextant {
 	}
 	
 	public static Lextant[] getMultiplicatives() {
-		Lextant[] multiplicatives = { MULTIPLY, DIVISION, OVER, EO, RATIONALIZE };
+		Lextant[] multiplicatives = { MULTIPLY, DIVISION, OVER, EXPRESS_OVER, RATIONALIZE };
 		return multiplicatives;
 	}
 	
 	public static Lextant[] getRationals() {
-		Lextant[] rationals = { OVER, EO, RATIONALIZE };
+		Lextant[] rationals = { OVER, EXPRESS_OVER, RATIONALIZE };
 		return rationals;
 	}
 	
 	public static Lextant[] getComparators() {
-		Lextant[] comparators = {LESSTHANEQUAL, LESS, EQUAL, NOT_EQUAL, GREATER, GREATERTHANEQUAL};
+		Lextant[] comparators = { LESS_OR_EQUAL, LESS, EQUAL, NOT_EQUAL, GREATER, GREATER_OR_EQUAL };
 		return comparators;
 	}
 	

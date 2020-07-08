@@ -54,9 +54,9 @@ public class BinaryOperatorNode extends OperatorNode {
 	
 	public boolean isComparator() {
 		Lextant operator = getOperator();
-		return (operator == Punctuator.LESSTHANEQUAL || operator == Punctuator.LESS ||
+		return (operator == Punctuator.LESS_OR_EQUAL || operator == Punctuator.LESS ||
 				operator == Punctuator.EQUAL || operator == Punctuator.NOT_EQUAL ||
-				operator == Punctuator.GREATER || operator == Punctuator.GREATERTHANEQUAL);
+				operator == Punctuator.GREATER || operator == Punctuator.GREATER_OR_EQUAL);
 	}
 	
 	public boolean isBooleanOperator() {

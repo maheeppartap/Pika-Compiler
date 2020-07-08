@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NegativeMemoryAllocator implements MemoryAllocator {
+
 	MemoryAccessMethod accessor;
 	final int startingOffset;
 	int currentOffset;

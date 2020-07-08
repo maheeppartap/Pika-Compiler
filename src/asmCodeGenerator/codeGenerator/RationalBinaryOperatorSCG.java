@@ -3,7 +3,6 @@ package asmCodeGenerator.codeGenerator;
 import asmCodeGenerator.codeStorage.*;
 import asmCodeGenerator.runtime.*;
 import lexicalAnalyzer.*;
-import semanticAnalyzer.types.*;
 
 public class RationalBinaryOperatorSCG implements SimpleCodeGenerator {
 	public Punctuator punctuator;
@@ -70,6 +69,10 @@ public class RationalBinaryOperatorSCG implements SimpleCodeGenerator {
 			chunk.add(ASMOpcode.LoadI);
 			chunk.add(ASMOpcode.Multiply);
 		}
+		
+		// Ensure numerator has negative sign
+		RationalNegateSCG scg2 = new RationalNegateSCG();
+		chunk.append(scg2.generate());
 		
 		// Store in temp
 		chunk.append(scg.generate(1));

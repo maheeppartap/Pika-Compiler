@@ -95,7 +95,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	
 	//////////////////////////////////////////////////////////////////////////////
 	// Character and String lexical analysis
-
+	// TASK: Finish character and string lexical analysis
 	private Token scanCharacter(LocatedChar ch) {
 		LocatedChar aChar = input.next();
 		LocatedChar c = input.next();
@@ -177,7 +177,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			appendSubsequentDigits(buffer);
 			c = input.next();
 		}
-		
+		// exponential case
 		if (c.getCharacter() == 'E') {
 			LocatedChar c2 = input.next();
 			if (c2.isDigit() || c2.isSign() && input.peek().isDigit()) {
@@ -222,9 +222,9 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			appendSubsequentCharacters(buffer);
 	
 			String lexeme = buffer.toString();
-			// If identifier exceeds 32 characters,  
+
 			if(lexeme.length() > 32) {
-				varTooLong(lexeme);
+				lexicalErrorWithIdentifier(lexeme);
 				return findNextToken();
 			}
 			
@@ -270,9 +270,9 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
 		log.severe("Lexical error: invalid character " + ch);
 	}
-	private void varTooLong(String lexeme) {
+	private void lexicalErrorWithIdentifier(String lexeme) {
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
-		log.severe("Lexical error: variable name '" + lexeme + "' is greater than 32 characters.");
+		log.severe("Lexical error:" + lexeme + "' is too long!\n");
 	}
 	
 }

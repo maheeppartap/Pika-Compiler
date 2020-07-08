@@ -18,9 +18,11 @@ public class ArrayAllocateSCG implements SimpleCodeGenerator {
 		if (var[0] instanceof Lextant) {
 			ASMCodeChunk chunk = new ASMCodeChunk();
 			Lextant operator = (Lextant)var[0]; 
-
-			// case of clone
+			
+			// If operator is NEW, arraySize on stack
+			// Get arraySize by using cloneNode
 			if (operator == Keyword.CLONE) {
+				// Get cloneNode subtype size
 				chunk.add(ASMOpcode.PushD, RunTime.ARRAY_TEMP_2);
 				chunk.add(ASMOpcode.LoadI);
 				chunk.add(ASMOpcode.PushI, 8);

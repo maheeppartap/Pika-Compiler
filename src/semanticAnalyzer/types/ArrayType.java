@@ -29,9 +29,11 @@ public class ArrayType implements Type {
 	}
 	
 // HELPER FUNCTIONS
-	
-	public boolean equals(Type type2) {
-		assert type2 instanceof ArrayType;
+	@Override
+	public boolean equals(Object type2) {
+		if (!(type2 instanceof ArrayType)) {
+			return false;
+		}
 		
 		Type subtype1 = this.getSubtype();
 		Type subtype2 = ((ArrayType)type2).getSubtype();
@@ -49,10 +51,12 @@ public class ArrayType implements Type {
 			subtype2 = ((TypeLiteral) subtype2).getType();
 		}
 		
-		if (subtype1 == subtype2) {
-			return true;
-		} else {
-			return false;
+		if (subtype1 != null && subtype1 != null) {
+			if (subtype1.equals(subtype2)) {
+				return true;
+			}
 		}
+		
+		return false;
 	}
 }

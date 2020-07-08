@@ -33,7 +33,7 @@ public class TypeVariable implements Type {
 	}
 	
 	public void reset() {
-		this.subtype = PrimitiveType.ALL;
+		this.subtype = PrimitiveType.ANY;
 		this.sizeInBytes = 0;
 	}
 }

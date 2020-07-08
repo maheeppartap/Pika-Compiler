@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
-//import optimizer.Optimizer;
 import asmCodeGenerator.ASMCodeGenerator;
 import asmCodeGenerator.codeStorage.ASMCodeFragment;
 import lexicalAnalyzer.LexicalAnalyzer;
@@ -35,7 +34,7 @@ public class PikaCompiler extends PikaApplication {
 		Scanner scanner         = LexicalAnalyzer.make(filename);
 		ParseNode syntaxTree    = Parser.parse(scanner);
 		ParseNode decoratedTree = SemanticAnalyzer.analyze(syntaxTree);
-
+		
 		generateCodeIfNoErrors(filename, decoratedTree);
 	}
 
@@ -48,7 +47,7 @@ public class PikaCompiler extends PikaApplication {
 			System.exit(0);
 		} 
 		else {
-			generateAndPrintCode(outfile, decoratedTree);
+			generateOptimizeAndPrintCode(outfile, decoratedTree);
 		}
 	}
 
@@ -68,7 +67,7 @@ public class PikaCompiler extends PikaApplication {
 	}
 	
 	// normal code generation and optimization.
-	private static void generateAndPrintCode(String outfile, ParseNode decoratedTree) 
+	private static void generateOptimizeAndPrintCode(String outfile, ParseNode decoratedTree) 
 			throws FileNotFoundException {
 		ASMCodeFragment code = ASMCodeGenerator.generate(decoratedTree);
 		printCodeToFile(outfile, code);

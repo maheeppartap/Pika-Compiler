@@ -80,7 +80,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1593149314683">
+      <file name="/Dummy.txt" timestamp="1594227583033">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -90,6 +90,9 @@
         <mark key="]" line="9" column="0" />
         <mark key="." line="9" column="0" />
         <mark key="^" line="27" column="4" />
+      </file>
+      <file name="/a.dummy" timestamp="1594227547150">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaStandaloneOptimizer.java" timestamp="1594176697655">
         <mark key="[" line="29" column="38" />
@@ -260,11 +263,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">CQkJLy8gSWYgaWRlbnRpZmllciBleGNlZWRzIDMyIGNoYXJhY3RlcnMsICAK</text>
+      <register name="&quot;" type="4">
+        <text>!</text>
       </register>
       <register name="-" type="4">
-        <text>.</text>
+        <text>!</text>
       </register>
       <register name="/" type="4">
         <text>new</text>

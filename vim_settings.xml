@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>CLOSE</entry>
         <entry>^</entry>
         <entry>/^</entry>
         <entry>statement</entry>
@@ -25,9 +24,9 @@
         <entry>new</entry>
         <entry>void</entry>
         <entry>Cannot</entry>
+        <entry>alloc</entry>
       </history-search>
       <history-cmd>
-        <entry>?CLOSE</entry>
         <entry>?^</entry>
         <entry>?/^</entry>
         <entry>?statement</entry>
@@ -47,6 +46,7 @@
         <entry>?new</entry>
         <entry>?void</entry>
         <entry>?Cannot</entry>
+        <entry>?alloc</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -85,14 +85,15 @@
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1594694016856">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1594695700358">
         <mark key="[" line="10" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1594694090818">
-        <mark key="[" line="17" column="12" />
-        <mark key="]" line="9" column="0" />
-        <mark key="." line="9" column="0" />
-        <mark key="^" line="27" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1594696041565">
+        <mark key="'" line="20" column="11" />
+        <mark key="[" line="22" column="4" />
+        <mark key="]" line="17" column="6" />
+        <mark key="." line="17" column="5" />
+        <mark key="^" line="17" column="6" />
       </file>
       <file name="/a.dummy" timestamp="1594227547150">
         <mark key="[" line="0" column="0" />
@@ -107,9 +108,9 @@
         <mark key="]" line="81" column="33" />
         <mark key="." line="81" column="33" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1594693770002">
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1594695378198">
         <mark key="'" line="211" column="20" />
-        <mark key="[" line="12" column="0" />
+        <mark key="[" line="157" column="47" />
         <mark key="]" line="93" column="0" />
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
@@ -122,12 +123,10 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/RationalComparisonOperatorSCG.java" timestamp="1592932188654">
         <mark key="[" line="7" column="13" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/Optimizer.java" timestamp="1592796512283">
-        <mark key="[" line="0" column="0" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1594273393769">
         <mark key="[" line="484" column="8" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1594695191517" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaStandaloneOptimizerBatchVariant.java" timestamp="1594176730103">
         <mark key="[" line="29" column="38" />
         <mark key="]" line="29" column="38" />
@@ -160,7 +159,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="336" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="296" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="274" column="24" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="341" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -260,6 +258,7 @@
       <jump line="19" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
       <jump line="68" column="15" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
       <jump line="211" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
+      <jump line="20" column="11" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
@@ -271,7 +270,7 @@
         <text>var t :=</text>
       </register>
       <register name="/" type="4">
-        <text>Cannot</text>
+        <text>alloc</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
@@ -304,15 +303,15 @@
         <text encoding="base64">ZnVuYyBwYXg8IGZsb2F0IGEsIGZsb2F0IGIgPiAtPiBmbG9hdCB7CmlmIChhIDwgYiApIHsKcmV0dXJuIGEgLgp9CnJldHVybiBiICsgcGF4KGEsIDMqYikgLgp9</text>
       </register>
       <register name=":" type="4">
-        <text>?Cannot</text>
+        <text>?alloc</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>Cannot</last-search>
+      <last-search>alloc</last-search>
       <last-offset />
-      <last-pattern>Cannot</last-pattern>
+      <last-pattern>alloc</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

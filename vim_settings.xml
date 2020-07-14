@@ -5,8 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>atomic</entry>
-        <entry>Terminator</entry>
         <entry>CLOSE</entry>
         <entry>^</entry>
         <entry>/^</entry>
@@ -25,10 +23,10 @@
         <entry>Program</entry>
         <entry>Reset</entry>
         <entry>new</entry>
+        <entry>void</entry>
+        <entry>Cannot</entry>
       </history-search>
       <history-cmd>
-        <entry>?atomic</entry>
-        <entry>?Terminator</entry>
         <entry>?CLOSE</entry>
         <entry>?^</entry>
         <entry>?/^</entry>
@@ -47,6 +45,8 @@
         <entry>?Program</entry>
         <entry>?Reset</entry>
         <entry>?new</entry>
+        <entry>?void</entry>
+        <entry>?Cannot</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -85,8 +85,11 @@
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1594177024269">
-        <mark key="[" line="17" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1594694016856">
+        <mark key="[" line="10" column="4" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Keyword.java" timestamp="1594694090818">
+        <mark key="[" line="17" column="12" />
         <mark key="]" line="9" column="0" />
         <mark key="." line="9" column="0" />
         <mark key="^" line="27" column="4" />
@@ -104,8 +107,8 @@
         <mark key="]" line="81" column="33" />
         <mark key="." line="81" column="33" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1593311483703">
-        <mark key="'" line="85" column="69" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1594693770002">
+        <mark key="'" line="211" column="20" />
         <mark key="[" line="12" column="0" />
         <mark key="]" line="93" column="0" />
         <mark key="." line="93" column="0" />
@@ -135,23 +138,16 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594605728254">
-        <mark key="[" line="4" column="20" />
-        <mark key="]" line="4" column="20" />
-        <mark key="." line="4" column="19" />
-        <mark key="^" line="4" column="20" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594693421977">
+        <mark key="[" line="8" column="4" />
+        <mark key="]" line="8" column="4" />
+        <mark key="." line="8" column="4" />
+        <mark key="^" line="8" column="9" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1594227207714">
         <mark key="[" line="46" column="24" />
         <mark key="]" line="46" column="25" />
         <mark key="." line="46" column="25" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlock.java" timestamp="1592796474537">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/currentTest.pika" timestamp="1594605371653" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/optimizer/BasicBlockFragment.java" timestamp="1592796499091">
-        <mark key="[" line="0" column="0" />
       </file>
       <file name="/fragment.java" timestamp="1593064540572">
         <mark key="[" line="0" column="0" />
@@ -164,7 +160,6 @@
       </file>
     </filemarks>
     <jumps>
-      <jump line="164" column="12" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="336" column="8" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="296" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
       <jump line="274" column="24" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -264,59 +259,60 @@
       <jump line="69" column="18" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
       <jump line="19" column="23" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
       <jump line="68" column="15" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" />
+      <jump line="211" column="20" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
+      <register name="&quot;" type="4">
+        <text>var t :=</text>
       </register>
       <register name="-" type="4">
-        <text>!</text>
+        <text>var t :=</text>
       </register>
       <register name="/" type="4">
-        <text>new</text>
+        <text>Cannot</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
+        <text encoding="base64">ICAgIHByaW50ICJoYnhjanhoIiwgX3RfLCB0Lgo=</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBpID0gKyAxLgo=</text>
+      <register name="2" type="4">
+        <text encoding="base64">dmFyIGkgOj0gMC4KICAgIHdoaWxlKGk8MzApewogICAgICAgIGlmKGkgPT0gMjUpewogICAgICAgICAgICBwcmludCAiYnJlYWtpbmciLgogICAgICAgICAgICBicmVhay4KICAgICAgICB9CiAgICAgICAgaWYoaSA9PSAyKXsKICAgICAgICAgICAgcHJpbnQgImkgaXMgMiIsIF9uXy4KICAgICAgICAgICAgaSA6PSBpICsgMS4KICAgICAgICAgICAgY29udGludWUuCiAgICAgICAgfQogICAgICAgIHByaW50ICJpIGlzOiAiLCBpLCBfbl8uCiAgICAgICAgaSA6PSBpICsgMS4KICAgIH0=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CmZ1bmMgcGF4PGludCBhLCBpbnQgYj4tPmJvb2x7CiAgICAjIGxhbGFsYWxhbGFsCn0KCmV4ZWN7CiAgIAp9</text>
+        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IGEgOj0gMi4KICAgIHByaW50IGEuCgogICAgYSA9IGZ1bmMoKS4KICAgIGZ1bmMyKGEpLgo=</text>
+        <text encoding="base64">ICAgICAgICBpID0gKyAxLgo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ZnVuYyBmaW48IGludCBhLCBpbnQgYiA+IC0+IGludCB7CiAgICByZXR1cm4gcGF4KDUqYSwgYikgLgogICAgICB9CiAgICAgIGZ1bmMgcGF4PCBpbnQgYSwgaW50IGIgPiAtPiBpbnQgewogICAgICBpZiAoYSA8IGIgKSB7CiAgICAgIHJldHVybiBhIC4KICAgICAgfQogICAgICByZXR1cm4gYiArIHBheChhLCAzKmIpIC4KICAgICAgfQogICAgICAKICAgICAgZXhlYyB7CiAgICAgICAgICAgICAgY29uc3QgYSA6PSAxMS4KICAgICAgICAgICAgICBjb25zdCBiIDo9IDE0LgogICAgICAgICAgICAgICBjb25zdCBjIDo9IDE2LgogICAgICAgICAgICAgICBpZiggYSA+IDUpIHsKICAgICAgICAgICAgICAgY29uc3QgbSA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgIGNvbnN0IHBheCA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgY29uc3QgeCA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgIH0=</text>
+        <text encoding="base64">CmZ1bmMgcGF4PGludCBhLCBpbnQgYj4tPmJvb2x7CiAgICAjIGxhbGFsYWxhbGFsCn0KCmV4ZWN7CiAgIAp9</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkJLy8gSWYgaWRlbnRpZmllciBleGNlZWRzIDMyIGNoYXJhY3RlcnMsICAK</text>
+        <text encoding="base64">ICAgIGNvbnN0IGEgOj0gMi4KICAgIHByaW50IGEuCgogICAgYSA9IGZ1bmMoKS4KICAgIGZ1bmMyKGEpLgo=</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ZnVuYyBwYXg8IGZsb2F0IGEsIGZsb2F0IGIgPiAtPiBmbG9hdCB7CmlmIChhIDwgYiApIHsKcmV0dXJuIGEgLgp9CnJldHVybiBiICsgcGF4KGEsIDMqYikgLgp9</text>
+        <text encoding="base64">ZnVuYyBmaW48IGludCBhLCBpbnQgYiA+IC0+IGludCB7CiAgICByZXR1cm4gcGF4KDUqYSwgYikgLgogICAgICB9CiAgICAgIGZ1bmMgcGF4PCBpbnQgYSwgaW50IGIgPiAtPiBpbnQgewogICAgICBpZiAoYSA8IGIgKSB7CiAgICAgIHJldHVybiBhIC4KICAgICAgfQogICAgICByZXR1cm4gYiArIHBheChhLCAzKmIpIC4KICAgICAgfQogICAgICAKICAgICAgZXhlYyB7CiAgICAgICAgICAgICAgY29uc3QgYSA6PSAxMS4KICAgICAgICAgICAgICBjb25zdCBiIDo9IDE0LgogICAgICAgICAgICAgICBjb25zdCBjIDo9IDE2LgogICAgICAgICAgICAgICBpZiggYSA+IDUpIHsKICAgICAgICAgICAgICAgY29uc3QgbSA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgIGNvbnN0IHBheCA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgY29uc3QgeCA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgIH0=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">IIUgLy8gaW4gaGVyZSwgdGhlIGZ1bmN0aW9ucyBjYWxsZWQgcGF4IGlzIHNoYWRvd2VkIGFuZCBtYXkgbm90IGJlIHVzZWQ=</text>
+        <text encoding="base64">CQkJLy8gSWYgaWRlbnRpZmllciBleGNlZWRzIDMyIGNoYXJhY3RlcnMsICAK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">aWYgKGEgPCBiICkgewpyZXR1cm4gYSAuCn0KcmV0dXJuIGIgKyBwYXgoYSwgMypiKSAu</text>
+        <text encoding="base64">ZnVuYyBwYXg8IGZsb2F0IGEsIGZsb2F0IGIgPiAtPiBmbG9hdCB7CmlmIChhIDwgYiApIHsKcmV0dXJuIGEgLgp9CnJldHVybiBiICsgcGF4KGEsIDMqYikgLgp9</text>
       </register>
       <register name=":" type="4">
-        <text>?new</text>
+        <text>?Cannot</text>
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>new</last-search>
+      <last-search>Cannot</last-search>
       <last-offset />
-      <last-pattern>new</last-pattern>
+      <last-pattern>Cannot</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

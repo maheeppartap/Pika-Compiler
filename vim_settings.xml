@@ -151,6 +151,11 @@
         <mark key="]" line="46" column="25" />
         <mark key="." line="46" column="25" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1594773801385">
+        <mark key="[" line="87" column="0" />
+        <mark key="]" line="88" column="26" />
+        <mark key="." line="92" column="23" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/PositiveMemoryAllocator.java" timestamp="1594772205187">
         <mark key="[" line="5" column="14" />
       </file>
@@ -270,16 +275,16 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
+        <text encoding="base64">CQkJCWFzc2VydCBmYWxzZSA6IHR5cGUgKyAiIHVuaW1wbGVtZW50ZWQgaW4gUHJpbnRTdGF0ZW1lbnRHZW5lcmF0b3IiOwoJCQkJcmV0dXJuICIiOwo=</text>
       </register>
       <register name="-" type="4">
-        <text>print 1//3 + 1//-6, _n_.</text>
+        <text>+</text>
       </register>
       <register name="/" type="4">
         <text>alloc</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
+        <text encoding="base64">CQkJCWFzc2VydCBmYWxzZSA6IHR5cGUgKyAiIHVuaW1wbGVtZW50ZWQgaW4gUHJpbnRTdGF0ZW1lbnRHZW5lcmF0b3IiOwoJCQkJcmV0dXJuICIiOwo=</text>
       </register>
       <register name="1" type="2">
         <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>

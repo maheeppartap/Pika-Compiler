@@ -141,10 +141,10 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594772237303">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="4" />
-        <mark key="." line="1" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594775788232">
+        <mark key="[" line="4" column="29" />
+        <mark key="]" line="4" column="4" />
+        <mark key="." line="4" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1594227207714">
         <mark key="[" line="46" column="24" />

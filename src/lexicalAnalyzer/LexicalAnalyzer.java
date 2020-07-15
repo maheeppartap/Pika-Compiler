@@ -31,7 +31,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 
 	
 	//////////////////////////////////////////////////////////////////////////////
-	// Token-finding main dispatch	
+	// Token-finding main dispatch
 
 	@Override
 	protected Token findNextToken() {
@@ -75,10 +75,11 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		}
 		return ch;
 	}
-	
-	
+
 	//////////////////////////////////////////////////////////////////////////////
-	// Comment lexical analysis
+	// Comment lexical analysis //////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////
+
 	private Token scanComment(LocatedChar ch) {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(ch.getCharacter());
@@ -91,8 +92,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		
 		return findNextToken();
 	}
-	
-	
+
 	//////////////////////////////////////////////////////////////////////////////
 	// Character and String lexical analysis
 	// TASK: Finish character and string lexical analysis
@@ -192,7 +192,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		} else {
 			input.pushback(c);
 		}
-		
 		return FloatingToken.make(ch.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {

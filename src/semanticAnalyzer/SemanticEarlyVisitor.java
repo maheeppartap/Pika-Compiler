@@ -126,7 +126,7 @@ class SemanticEarlyVisitor extends ParseNodeVisitor.Default {
 			IdentifierNode identifier = (IdentifierNode) node.child(0);
 
 			Type paramType = getType(node);
-			if (paramType == PrimitiveType.VOID) {
+			if (paramType == PrimitiveType.NULL_RET) {
 				node.setType(PrimitiveType.ERROR);
 				Token token = node.getToken();
 				logError("Parameter cannot be defined as type VOID at " + token.getLocation());

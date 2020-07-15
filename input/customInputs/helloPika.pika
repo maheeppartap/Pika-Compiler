@@ -1,21 +1,4 @@
-func fin< int a, int b > -> int {
-return pax(5*a, b) .
-}
-func pax< int a, int b > -> int {
-if (a < b ) {
-return a .
-}
-return b + pax(a, 3*b) .
-}
-
 exec {
-const a := 11.
-const b := 14.
- const c := 16.
- if( a > 5) {
- const m := pax(a, b).
- const pax := pax(a, b).
+	print 1//3 + 1//-6, _n_.
+}
 
- }
- const x := pax(a, b).
- }

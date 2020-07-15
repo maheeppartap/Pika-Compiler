@@ -84,7 +84,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 			LambdaType type = (LambdaType)node.child(0).getType();
 			Type returnType = type.getReturnType();
 			
-			if (returnType == PrimitiveType.VOID) {
+			if (returnType == PrimitiveType.NULL_RET) {
 				ParseNode parent = node.getParent();
 				while (parent != null && !(parent instanceof CallNode)) {
 					parent = parent.getParent();
@@ -150,12 +150,12 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		
 		// Handle void return
 		if (node.nChildren() == 0) {
-			returnType = PrimitiveType.VOID;
+			returnType = PrimitiveType.NULL_RET;
 		} else {
 			returnType = node.child(0).getType();
 		}
 		
-		if (returnType.equals(lambdaReturnType)) {
+		if (returnType.equals(lambdaReturnType) || returnType.infoString() == "NULL_RET") {
 			node.setType(returnType);
 		} else {
 			node.setType(PrimitiveType.ERROR);
@@ -414,7 +414,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 					subtype = ((ArrayType) subtype).getSubtype();
 				}
 				
-				if (subtype == PrimitiveType.VOID) {
+				if (subtype == PrimitiveType.NULL_RET) {
 					typeCheckError(node, Arrays.asList(node.getType()));
 					return;
 				}

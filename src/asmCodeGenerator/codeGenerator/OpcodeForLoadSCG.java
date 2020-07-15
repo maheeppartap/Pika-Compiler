@@ -33,7 +33,7 @@ public class OpcodeForLoadSCG implements SimpleCodeGenerator {
 		else if(type == PrimitiveType.STRING || type == TypeLiteral.STRING) {
 			chunk.add(ASMOpcode.LoadI);
 		}
-		else if(type == PrimitiveType.VOID || type == TypeLiteral.VOID) {
+		else if(type == PrimitiveType.NULL_RET || type == TypeLiteral.VOID) {
 			
 		}
 		else if(type instanceof ArrayType) {

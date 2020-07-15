@@ -56,7 +56,7 @@ public class OpcodeForStoreFunctionSCG implements SimpleCodeGenerator {
 			chunk.add(ASMOpcode.Exchange);
 			chunk.add(ASMOpcode.StoreI);
 		}
-		else if(type == PrimitiveType.VOID) {
+		else if(type == PrimitiveType.NULL_RET) {
 			
 		}
 		else if(type instanceof ArrayType) {

@@ -353,7 +353,7 @@ public class ASMCodeGenerator {
 			newVoidCode(node);
 			
 			// Get the return value
-			if (node.nChildren() > 0 && node.getType() != PrimitiveType.VOID) {
+			if (node.nChildren() > 0 && node.getType() != PrimitiveType.NULL_RET) {
 				ASMCodeFragment returnValue = removeValueCode(node.child(0));
 				code.append(returnValue);
 			}
@@ -374,7 +374,7 @@ public class ASMCodeGenerator {
 			code.append(lambdaCode);
 			
 			// Remove value if function return isn't VOID
-			if (node.getType() != PrimitiveType.VOID) {
+			if (node.getType() != PrimitiveType.NULL_RET) {
 				code.add(Pop);
 				
 				// If RATIONAL, add a second pop

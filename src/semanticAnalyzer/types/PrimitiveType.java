@@ -8,7 +8,7 @@ public enum PrimitiveType implements Type {
 	INTEGER(4),
 	RATIONAL(8),
 	STRING(4),
-	VOID(0),
+	NULL_RET(0),
 	
 	ERROR(0),			// use as a value when a syntax error has occurred
 	NO_TYPE(0, "");		// use as a value when no type has been assigned.

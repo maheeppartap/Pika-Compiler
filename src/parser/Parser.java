@@ -283,7 +283,7 @@ public class Parser {
 		return ReleaseNode.withChild(releaseToken, identifier);
 	}
 	private boolean startsReleaseStatement(Token token){
-		return token.isLextant(Keyword.RELEASE);
+		return token.isLextant(Keyword.DEALLOC);
 	}
 	
 	///////////////////////////////////////////////////////////

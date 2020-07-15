@@ -85,6 +85,11 @@
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/MemoryAccessMethod.java" timestamp="1594772285200">
+        <mark key="[" line="5" column="12" />
+        <mark key="]" line="21" column="0" />
+        <mark key="." line="21" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1594695700358">
         <mark key="[" line="10" column="4" />
       </file>
@@ -115,13 +120,10 @@
         <mark key="." line="93" column="0" />
         <mark key="^" line="93" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMCodeChunk.java" timestamp="1593062620419">
-        <mark key="[" line="8" column="11" />
-        <mark key="]" line="5" column="0" />
-        <mark key="." line="5" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/RationalComparisonOperatorSCG.java" timestamp="1592932188654">
-        <mark key="[" line="7" column="13" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/MemoryAllocator.java" timestamp="1594772306829">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1594273393769">
         <mark key="[" line="484" column="8" />
@@ -139,11 +141,18 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594771586442" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594772237303">
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="4" />
+        <mark key="." line="1" column="4" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/applications/PikaCompiler.java" timestamp="1594227207714">
         <mark key="[" line="46" column="24" />
         <mark key="]" line="46" column="25" />
         <mark key="." line="46" column="25" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/PositiveMemoryAllocator.java" timestamp="1594772205187">
+        <mark key="[" line="5" column="14" />
       </file>
       <file name="/fragment.java" timestamp="1593064540572">
         <mark key="[" line="0" column="0" />
@@ -261,10 +270,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text>Added better scoping, and functions. Pika 3 is almost done</text>
+        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">Pg==</text>
+        <text>print 1//3 + 1//-6, _n_.</text>
       </register>
       <register name="/" type="4">
         <text>alloc</text>
@@ -273,31 +282,31 @@
         <text encoding="base64">ICAgIHByaW50ICJoZXJlIi4K</text>
       </register>
       <register name="1" type="2">
-        <text>Added better scoping, and functions. Pika 3 is almost done</text>
+        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CgpmdW5jIHgoaW50IGEsIGludCBiKS0+bnVsbHsKICAgIHByaW50ICJzdXAiLgogICAgcmV0dXJuLgp9CgpleGVjewogICAgY2FsbCB4KDIsIDMpLgogICAgcHJpbnQgImhieGNqeGgiLCBfdF8uCn0=</text>
+        <text encoding="base64">CS8vIGJhc2UgaXMgdGhlIGxhYmVsIG9mIHRoZSBtZW1vcnkgaG9sZGluZyBhIHBvaW50ZXIgdG8gdGhlIHN0YXJ0IG9mIHRoZSBtZW1vcnkgYmxvY2suCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIHByaW50ICJoYnhjanhoIiwgX3RfLCB0Lgo=</text>
+        <text encoding="base64">CS8vIG51bGwgb2JqZWN0IHBhdHRlcm4uICBPdmVycmlkZXMgdGhlIHB1YmxpYyBtZXRob2QgdG8gcHV0IGEgemVybyBvbiB0aGUgYWNjdW11bGF0b3Igc3RhY2suCg==</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">dmFyIGkgOj0gMC4KICAgIHdoaWxlKGk8MzApewogICAgICAgIGlmKGkgPT0gMjUpewogICAgICAgICAgICBwcmludCAiYnJlYWtpbmciLgogICAgICAgICAgICBicmVhay4KICAgICAgICB9CiAgICAgICAgaWYoaSA9PSAyKXsKICAgICAgICAgICAgcHJpbnQgImkgaXMgMiIsIF9uXy4KICAgICAgICAgICAgaSA6PSBpICsgMS4KICAgICAgICAgICAgY29udGludWUuCiAgICAgICAgfQogICAgICAgIHByaW50ICJpIGlzOiAiLCBpLCBfbl8uCiAgICAgICAgaSA6PSBpICsgMS4KICAgIH0=</text>
+      <register name="4" type="2">
+        <text>Added better scoping, and functions. Pika 3 is almost done</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
+        <text encoding="base64">CgpmdW5jIHgoaW50IGEsIGludCBiKS0+bnVsbHsKICAgIHByaW50ICJzdXAiLgogICAgcmV0dXJuLgp9CgpleGVjewogICAgY2FsbCB4KDIsIDMpLgogICAgcHJpbnQgImhieGNqeGgiLCBfdF8uCn0=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBpID0gKyAxLgo=</text>
+        <text encoding="base64">ICAgIHByaW50ICJoYnhjanhoIiwgX3RfLCB0Lgo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">CmZ1bmMgcGF4PGludCBhLCBpbnQgYj4tPmJvb2x7CiAgICAjIGxhbGFsYWxhbGFsCn0KCmV4ZWN7CiAgIAp9</text>
+      <register name="7" type="4">
+        <text encoding="base64">dmFyIGkgOj0gMC4KICAgIHdoaWxlKGk8MzApewogICAgICAgIGlmKGkgPT0gMjUpewogICAgICAgICAgICBwcmludCAiYnJlYWtpbmciLgogICAgICAgICAgICBicmVhay4KICAgICAgICB9CiAgICAgICAgaWYoaSA9PSAyKXsKICAgICAgICAgICAgcHJpbnQgImkgaXMgMiIsIF9uXy4KICAgICAgICAgICAgaSA6PSBpICsgMS4KICAgICAgICAgICAgY29udGludWUuCiAgICAgICAgfQogICAgICAgIHByaW50ICJpIGlzOiAiLCBpLCBfbl8uCiAgICAgICAgaSA6PSBpICsgMS4KICAgIH0=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIGNvbnN0IGEgOj0gMi4KICAgIHByaW50IGEuCgogICAgYSA9IGZ1bmMoKS4KICAgIGZ1bmMyKGEpLgo=</text>
+        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ZnVuYyBmaW48IGludCBhLCBpbnQgYiA+IC0+IGludCB7CiAgICByZXR1cm4gcGF4KDUqYSwgYikgLgogICAgICB9CiAgICAgIGZ1bmMgcGF4PCBpbnQgYSwgaW50IGIgPiAtPiBpbnQgewogICAgICBpZiAoYSA8IGIgKSB7CiAgICAgIHJldHVybiBhIC4KICAgICAgfQogICAgICByZXR1cm4gYiArIHBheChhLCAzKmIpIC4KICAgICAgfQogICAgICAKICAgICAgZXhlYyB7CiAgICAgICAgICAgICAgY29uc3QgYSA6PSAxMS4KICAgICAgICAgICAgICBjb25zdCBiIDo9IDE0LgogICAgICAgICAgICAgICBjb25zdCBjIDo9IDE2LgogICAgICAgICAgICAgICBpZiggYSA+IDUpIHsKICAgICAgICAgICAgICAgY29uc3QgbSA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgIGNvbnN0IHBheCA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgY29uc3QgeCA6PSBwYXgoYSwgYikuCiAgICAgICAgICAgICAgIH0=</text>
+        <text encoding="base64">ICAgICAgICBpID0gKyAxLgo=</text>
       </register>
       <register name=":" type="4">
         <text>?alloc</text>

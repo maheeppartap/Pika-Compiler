@@ -531,7 +531,7 @@ public class ASMCodeGenerator {
 		
 		///////////////////////////////////////////////////////////////////////////
 		// if statements
-		public void visitLeave(IfNode node) {
+		public void visitLeave(If_else_statements_node node) {
 			newVoidCode(node);
 			
 			Labeller labeller = new Labeller("if-stmt");
@@ -562,7 +562,7 @@ public class ASMCodeGenerator {
 		
 		///////////////////////////////////////////////////////////////////////////
 		// while statements
-		public void visitEnter(WhileNode node){
+		public void visitEnter(While_loop_Node node){
 			Labeller labeller = new Labeller("while-stmt");
 			String loopLabel  = labeller.newLabel("condition");
 			String bodyLabel  = labeller.newLabel("body");
@@ -570,7 +570,7 @@ public class ASMCodeGenerator {
 			
 			node.setLabels(loopLabel, bodyLabel, joinLabel);
 		}
-		public void visitLeave(WhileNode node) {
+		public void visitLeave(While_loop_Node node) {
 			newVoidCode(node);
 			
 			code.add(Label, node.getLoopLabel());
@@ -594,11 +594,11 @@ public class ASMCodeGenerator {
 			newVoidCode(node);
 			
 			ParseNode pNode = node.getParent();
-			while (!(pNode instanceof WhileNode)) {
+			while (!(pNode instanceof While_loop_Node)) {
 				pNode = pNode.getParent();
 			}
 			
-			WhileNode parent = (WhileNode) pNode;
+			While_loop_Node parent = (While_loop_Node) pNode;
 			
 			if (node.getToken().isLextant(Keyword.CONTINUE)) {
 				code.add(Jump, parent.getLoopLabel());

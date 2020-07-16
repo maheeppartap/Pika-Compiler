@@ -261,14 +261,14 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	///////////////////////////////////////////////////////////////////////////
 	// control strucutures
 	@Override
-	public void visitLeave(IfNode node) {
+	public void visitLeave(If_else_statements_node node) {
 		assert node.nChildren() >= 2;
 		if (node.child(0).getType() != PrimitiveType.BOOLEAN) {
 			typeCheckError(node, Arrays.asList(node.child(0).getType()));
 		}
 	}
 	@Override
-	public void visitLeave(WhileNode node) {
+	public void visitLeave(While_loop_Node node) {
 		assert node.nChildren() >= 2;
 		if (node.child(0).getType() != PrimitiveType.BOOLEAN) {
 			typeCheckError(node, Arrays.asList(node.child(0).getType()));
@@ -554,11 +554,11 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		Token token = node.getToken();
 		
 		// Check promotion
-		if (node instanceof OperatorNode && promoter.promotable((OperatorNode) node)) return;
-		if (node instanceof FunctionInvocationNode && promoter.promotable((FunctionInvocationNode) node)) return;
-		if (node instanceof ArrayNode && promoter.promotable((ArrayNode) node)) return;
-		if (node instanceof IndexNode && promoter.promotable((IndexNode) node)) return;
-		if (node instanceof AssignmentNode && promoter.promotable(node)) return;
+		if (node instanceof OperatorNode && promoter.isItPromotable((OperatorNode) node)) return;
+		if (node instanceof FunctionInvocationNode && promoter.isItPromotable((FunctionInvocationNode) node)) return;
+		if (node instanceof ArrayNode && promoter.isItPromotable((ArrayNode) node)) return;
+		if (node instanceof IndexNode && promoter.isItPromotable((IndexNode) node)) return;
+		if (node instanceof AssignmentNode && promoter.isItPromotable(node)) return;
 		
 		List<String> errorTypes = new ArrayList<String>();
 		operandTypes.forEach((child) -> errorTypes.add(child.infoString()));

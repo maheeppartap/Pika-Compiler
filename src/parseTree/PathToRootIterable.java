@@ -18,7 +18,10 @@ public class PathToRootIterable implements Iterable<ParseNode> {
 		public PathToRootIterator(ParseNode node) {
 			current = node;
 		}
-		
+
+		// just a reminder for next time.
+		// THIS @override TOOK YOU 5 HOURS TO REALIZE IT'S MISSING
+		// I hate java....
 		@Override
 		public boolean hasNext() {
 			return current.parent != null;

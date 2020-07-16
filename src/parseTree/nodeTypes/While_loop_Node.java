@@ -7,21 +7,26 @@ import lexicalAnalyzer.Lextant;
 import tokens.LextantToken;
 import tokens.Token;
 
-public class IfNode extends ParseNode {
-	
-	public IfNode(Token token) {
+public class While_loop_Node extends ParseNode {
+	String loopLabel;
+	String bodyLabel;
+	String joinLabel;
+
+	// unused
+	public While_loop_Node(Token token) {
 		super(token);
-		assert(token.isLextant(Keyword.IF));
+		assert(token.isLextant(Keyword.WHILE));
 	}
-	
-	public IfNode(ParseNode node) {
+
+	// unused
+	public While_loop_Node(ParseNode node) {
 		super(node);
 		initChildren();
 	}
 	
-	public IfNode(Token token, ParseNode condition, ParseNode blockStatement) {
+	public While_loop_Node(Token token, ParseNode condition, ParseNode blockStatement) {
 		super(token);
-		assert(token.isLextant(Keyword.IF));
+		assert(token.isLextant(Keyword.WHILE));
 		
 		this.appendChild(condition);
 		this.appendChild(blockStatement);
@@ -36,16 +41,21 @@ public class IfNode extends ParseNode {
 	}
 	public LextantToken lextantToken() {
 		return (LextantToken)token;
-	}	
+	}
 	
-	
-	////////////////////////////////////////////////////////////
-	// convenience factory
-	
-	public static IfNode withElse(Token token, ParseNode condition, ParseNode blockStatement, ParseNode elseStatement) {
-		IfNode node = new IfNode(token, condition, blockStatement);
-		node.appendChild(elseStatement);
-		return node;
+	public void setLabels(String loop, String body, String join) {
+		this.loopLabel = loop;
+		this.bodyLabel = body;
+		this.joinLabel = join;
+	}
+	public String getLoopLabel() {
+		return this.loopLabel;
+	}
+	public String getBodyLabel() {
+		return this.bodyLabel;
+	}
+	public String getJoinLabel() {
+		return this.joinLabel;
 	}
 	
 	

@@ -354,9 +354,9 @@ public class Parser {
 		if (startsElseStatement(nowReading)) {
 			expect(Keyword.ELSE);
 			ParseNode elseStatement = parseBlockStatement();
-			return IfNode.withElse(ifToken, condition, blockStatement, elseStatement);
+			return If_else_statements_node.withElse(ifToken, condition, blockStatement, elseStatement);
 		} else {
-			ParseNode ifNode = new IfNode(ifToken, condition, blockStatement);	
+			ParseNode ifNode = new If_else_statements_node(ifToken, condition, blockStatement);
 			return ifNode;
 		}
 	}
@@ -385,7 +385,7 @@ public class Parser {
 		
 		ParseNode blockStatement = parseBlockStatement();
 		
-		ParseNode whileNode = new WhileNode(whileToken, condition, blockStatement);	
+		ParseNode whileNode = new While_loop_Node(whileToken, condition, blockStatement);
 		return whileNode;
 	}
 	private boolean startsWhileStatement(Token token) {

@@ -3,15 +3,15 @@ package symbolTable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PositiveMemoryAllocator implements MemoryAllocator {
-	MemoryAccessMethod accessor;
+public class MEMORY_ALLOCATOR_ implements MemoryAllocator {
+	EnterMemoryMethods accessor;
 	String baseAddress;
 	final int startingOffset;	
 	int currentOffset;
 	int maxOffset;
 	List<Integer> bookmarks;
 	
-	public PositiveMemoryAllocator(MemoryAccessMethod accessor, String baseAddress, int startingOffset) {
+	public MEMORY_ALLOCATOR_(EnterMemoryMethods accessor, String baseAddress, int startingOffset) {
 		this.accessor = accessor;
 		this.baseAddress = baseAddress;
 		this.startingOffset = startingOffset;
@@ -19,7 +19,7 @@ public class PositiveMemoryAllocator implements MemoryAllocator {
 		this.maxOffset = startingOffset;
 		this.bookmarks = new ArrayList<Integer>();
 	}
-	public PositiveMemoryAllocator(MemoryAccessMethod accessor, String baseAddress) {
+	public MEMORY_ALLOCATOR_(EnterMemoryMethods accessor, String baseAddress) {
 		this(accessor, baseAddress, 0);
 	}
 

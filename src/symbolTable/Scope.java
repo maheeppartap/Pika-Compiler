@@ -30,20 +30,20 @@ public class Scope {
 	}
 	
 	private static MemoryAllocator programScopeAllocator() {
-		return new PositiveMemoryAllocator(
-				MemoryAccessMethod.DIRECT_ACCESS_BASE, 
+		return new MEMORY_ALLOCATOR_(
+				EnterMemoryMethods.DIRECT_ACCESS_BASE,
 				MemoryLocation.GLOBAL_VARIABLE_BLOCK);
 	}
 	
 	private static MemoryAllocator parameterScopeAllocator() {
 		return new ParamMemoryAlloc(
-				MemoryAccessMethod.INDIRECT_ACCESS_BASE,
+				EnterMemoryMethods.INDIRECT_ACCESS_BASE,
 				MemoryLocation.FRAME_POINTER);
 	}
 	
 	private static MemoryAllocator procedureScopeAllocator() {
 		return new NegativeMemoryAllocator(
-				MemoryAccessMethod.INDIRECT_ACCESS_BASE,
+				EnterMemoryMethods.INDIRECT_ACCESS_BASE,
 				MemoryLocation.FRAME_POINTER);
 	}
 	
@@ -117,7 +117,7 @@ public class Scope {
 		private static NullScope instance = new NullScope();
 
 		private NullScope() {
-			super(new PositiveMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0), null);
+			super(new MEMORY_ALLOCATOR_(EnterMemoryMethods.NULL_ACCESS, "", 0), null);
 		}
 		public String toString() {
 			return "scope: the-null-scope";
@@ -140,7 +140,7 @@ public class Scope {
 		private static NullScope instance = new NullScope();
 
 		private NullScopeNegative() {
-			super(new NegativeMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0), null);
+			super(new NegativeMemoryAllocator(EnterMemoryMethods.NULL_ACCESS, "", 0), null);
 		}
 		public String toString() {
 			return "scope: the-null-scope";

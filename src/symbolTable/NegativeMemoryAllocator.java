@@ -5,14 +5,14 @@ import java.util.List;
 
 public class NegativeMemoryAllocator implements MemoryAllocator {
 
-	MemoryAccessMethod accessor;
+	EnterMemoryMethods accessor;
 	final int startingOffset;
 	int currentOffset;
 	int minOffset;
 	String baseAddress;
 	List<Integer> bookmarks;
 	
-	public NegativeMemoryAllocator(MemoryAccessMethod accessor, String baseAddress, int startingOffset) {
+	public NegativeMemoryAllocator(EnterMemoryMethods accessor, String baseAddress, int startingOffset) {
 		this.accessor = accessor;
 		this.baseAddress = baseAddress;
 		this.startingOffset = startingOffset;
@@ -20,7 +20,7 @@ public class NegativeMemoryAllocator implements MemoryAllocator {
 		this.minOffset = startingOffset;
 		this.bookmarks = new ArrayList<Integer>();
 	}
-	public NegativeMemoryAllocator(MemoryAccessMethod accessor,String baseAddress) {
+	public NegativeMemoryAllocator(EnterMemoryMethods accessor, String baseAddress) {
 		this(accessor, baseAddress, 0);
 	}
 

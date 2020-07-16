@@ -7,24 +7,21 @@ import lexicalAnalyzer.Lextant;
 import tokens.LextantToken;
 import tokens.Token;
 
-public class WhileNode extends ParseNode {
-	String loopLabel;
-	String bodyLabel;
-	String joinLabel;
+public class If_else_statements_node extends ParseNode {
 	
-	public WhileNode(Token token) {
+	public If_else_statements_node(Token token) {
 		super(token);
-		assert(token.isLextant(Keyword.WHILE));
+		assert(token.isLextant(Keyword.IF));
 	}
 	
-	public WhileNode(ParseNode node) {
+	public If_else_statements_node(ParseNode node) {
 		super(node);
 		initChildren();
 	}
 	
-	public WhileNode(Token token, ParseNode condition, ParseNode blockStatement) {
+	public If_else_statements_node(Token token, ParseNode condition, ParseNode blockStatement) {
 		super(token);
-		assert(token.isLextant(Keyword.WHILE));
+		assert(token.isLextant(Keyword.IF));
 		
 		this.appendChild(condition);
 		this.appendChild(blockStatement);
@@ -39,21 +36,16 @@ public class WhileNode extends ParseNode {
 	}
 	public LextantToken lextantToken() {
 		return (LextantToken)token;
-	}
+	}	
 	
-	public void setLabels(String loop, String body, String join) {
-		this.loopLabel = loop;
-		this.bodyLabel = body;
-		this.joinLabel = join;
-	}
-	public String getLoopLabel() {
-		return this.loopLabel;
-	}
-	public String getBodyLabel() {
-		return this.bodyLabel;
-	}
-	public String getJoinLabel() {
-		return this.joinLabel;
+	
+	////////////////////////////////////////////////////////////
+	// convenience factory
+	
+	public static If_else_statements_node withElse(Token token, ParseNode condition, ParseNode blockStatement, ParseNode elseStatement) {
+		If_else_statements_node node = new If_else_statements_node(token, condition, blockStatement);
+		node.appendChild(elseStatement);
+		return node;
 	}
 	
 	

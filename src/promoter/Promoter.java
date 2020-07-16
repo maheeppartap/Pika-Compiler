@@ -17,6 +17,10 @@ import semanticAnalyzer.signatures.*;
 import semanticAnalyzer.types.*;
 import tokens.LextantToken;
 
+
+// todo: add some overloads for all the promotions possible
+// todo: test some more promotions
+
 public class Promoter {
 	LinkedHashMap<ParseNode, List<TypeLiteral>> promotions;
 	boolean debug = false;
@@ -28,11 +32,13 @@ public class Promoter {
 	public void addPromotion(ParseNode node, List<TypeLiteral> castTypes) {
 		promotions.put(node, castTypes);
 	}
+
+	// maybe for the future
 	public void removePromotion(ParseNode node) {
 		promotions.remove(node);
 	}
 	
-	public boolean promotable(OperatorNode node) {
+	public boolean isItPromotable(OperatorNode node) {
 		Lextant operator = operatorFor(node);
 		
 		List<Type> childTypes = new ArrayList<Type>();
@@ -133,7 +139,7 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean promotable(FunctionInvocationNode node) {
+	public boolean isItPromotable(FunctionInvocationNode node) {
 		FunctionSignature signature;
 		
 		if (node.child(0).getType() instanceof LambdaType) {
@@ -220,7 +226,7 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean promotable(ArrayNode node) {
+	public boolean isItPromotable(ArrayNode node) {
 		// Skip promotion on empty arrays and arrays being cloned
 		if (node.isEmpty()) return false;
 		if (node.getToken().isLextant(Keyword.CLONE)) return false;
@@ -300,7 +306,7 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean promotable(IndexNode node) {
+	public boolean isItPromotable(IndexNode node) {
 		if (node.child(0).getType() instanceof ArrayType) {
 			if (node.child(1).getType() == PrimitiveType.CHARACTER) {
 				addPromotion(node.child(1), Arrays.asList(TypeLiteral.INTEGER));
@@ -317,7 +323,7 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean promotable(ParseNode node) {
+	public boolean isItPromotable(ParseNode node) {
 		Lextant operator = operatorFor(node);
 		
 		List<Type> childTypes = new ArrayList<Type>();

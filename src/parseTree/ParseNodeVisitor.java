@@ -45,11 +45,11 @@ public interface ParseNodeVisitor {
 	void visitEnter(ReturnNode node);
 	void visitLeave(ReturnNode node);
 	
-	void visitEnter(IfNode node);
-	void visitLeave(IfNode node);
+	void visitEnter(If_else_statements_node node);
+	void visitLeave(If_else_statements_node node);
 	
-	void visitEnter(WhileNode node);
-	void visitLeave(WhileNode node);
+	void visitEnter(While_loop_Node node);
+	void visitLeave(While_loop_Node node);
 	
 	void visitEnter(ControlNode node);
 	void visitLeave(ControlNode node);
@@ -190,16 +190,16 @@ public interface ParseNodeVisitor {
 		public void visitLeave(ReturnNode node) {
 			defaultVisitLeave(node);
 		}
-		public void visitEnter(IfNode node) {
+		public void visitEnter(If_else_statements_node node) {
 			defaultVisitEnter(node);
 		}
-		public void visitLeave(IfNode node) {
+		public void visitLeave(If_else_statements_node node) {
 			defaultVisitLeave(node);
 		}
-		public void visitEnter(WhileNode node) {
+		public void visitEnter(While_loop_Node node) {
 			defaultVisitEnter(node);
 		}
-		public void visitLeave(WhileNode node) {
+		public void visitLeave(While_loop_Node node) {
 			defaultVisitLeave(node);
 		}
 		public void visitEnter(ControlNode node) {

@@ -80,7 +80,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1594771801106">
+      <file name="/Dummy.txt" timestamp="1594880224257">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -136,11 +136,6 @@
         <mark key="]" line="29" column="38" />
         <mark key="." line="29" column="38" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/ArrayAllocateSCG.java" timestamp="1593062742855">
-        <mark key="[" line="20" column="12" />
-        <mark key="]" line="23" column="0" />
-        <mark key="." line="23" column="0" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1594775788232">
         <mark key="[" line="4" column="29" />
         <mark key="]" line="4" column="4" />
@@ -168,6 +163,7 @@
         <mark key="^" line="33" column="4" />
         <mark key="." line="224" column="0" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/MemoryLocation.java" timestamp="1594881298188" />
     </filemarks>
     <jumps>
       <jump line="296" column="27" filename="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" />
@@ -275,7 +271,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CQkJCWFzc2VydCBmYWxzZSA6IHR5cGUgKyAiIHVuaW1wbGVtZW50ZWQgaW4gUHJpbnRTdGF0ZW1lbnRHZW5lcmF0b3IiOwoJCQkJcmV0dXJuICIiOwo=</text>
+        <text>added lambda params, fixed some bugs related to null returns</text>
       </register>
       <register name="-" type="4">
         <text>+</text>
@@ -287,31 +283,31 @@
         <text encoding="base64">CQkJCWFzc2VydCBmYWxzZSA6IHR5cGUgKyAiIHVuaW1wbGVtZW50ZWQgaW4gUHJpbnRTdGF0ZW1lbnRHZW5lcmF0b3IiOwoJCQkJcmV0dXJuICIiOwo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
+        <text>added lambda params, fixed some bugs related to null returns</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CS8vIGJhc2UgaXMgdGhlIGxhYmVsIG9mIHRoZSBtZW1vcnkgaG9sZGluZyBhIHBvaW50ZXIgdG8gdGhlIHN0YXJ0IG9mIHRoZSBtZW1vcnkgYmxvY2suCg==</text>
+        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CS8vIG51bGwgb2JqZWN0IHBhdHRlcm4uICBPdmVycmlkZXMgdGhlIHB1YmxpYyBtZXRob2QgdG8gcHV0IGEgemVybyBvbiB0aGUgYWNjdW11bGF0b3Igc3RhY2suCg==</text>
+        <text encoding="base64">CS8vIGJhc2UgaXMgdGhlIGxhYmVsIG9mIHRoZSBtZW1vcnkgaG9sZGluZyBhIHBvaW50ZXIgdG8gdGhlIHN0YXJ0IG9mIHRoZSBtZW1vcnkgYmxvY2suCg==</text>
       </register>
       <register name="4" type="2">
-        <text>Added better scoping, and functions. Pika 3 is almost done</text>
+        <text encoding="base64">CS8vIG51bGwgb2JqZWN0IHBhdHRlcm4uICBPdmVycmlkZXMgdGhlIHB1YmxpYyBtZXRob2QgdG8gcHV0IGEgemVybyBvbiB0aGUgYWNjdW11bGF0b3Igc3RhY2suCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CgpmdW5jIHgoaW50IGEsIGludCBiKS0+bnVsbHsKICAgIHByaW50ICJzdXAiLgogICAgcmV0dXJuLgp9CgpleGVjewogICAgY2FsbCB4KDIsIDMpLgogICAgcHJpbnQgImhieGNqeGgiLCBfdF8uCn0=</text>
+        <text>Added better scoping, and functions. Pika 3 is almost done</text>
       </register>
       <register name="6" type="2">
+        <text encoding="base64">CgpmdW5jIHgoaW50IGEsIGludCBiKS0+bnVsbHsKICAgIHByaW50ICJzdXAiLgogICAgcmV0dXJuLgp9CgpleGVjewogICAgY2FsbCB4KDIsIDMpLgogICAgcHJpbnQgImhieGNqeGgiLCBfdF8uCn0=</text>
+      </register>
+      <register name="7" type="2">
         <text encoding="base64">ICAgIHByaW50ICJoYnhjanhoIiwgX3RfLCB0Lgo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">dmFyIGkgOj0gMC4KICAgIHdoaWxlKGk8MzApewogICAgICAgIGlmKGkgPT0gMjUpewogICAgICAgICAgICBwcmludCAiYnJlYWtpbmciLgogICAgICAgICAgICBicmVhay4KICAgICAgICB9CiAgICAgICAgaWYoaSA9PSAyKXsKICAgICAgICAgICAgcHJpbnQgImkgaXMgMiIsIF9uXy4KICAgICAgICAgICAgaSA6PSBpICsgMS4KICAgICAgICAgICAgY29udGludWUuCiAgICAgICAgfQogICAgICAgIHByaW50ICJpIGlzOiAiLCBpLCBfbl8uCiAgICAgICAgaSA6PSBpICsgMS4KICAgIH0=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBpID0gKyAxLgo=</text>
+        <text encoding="base64">ICAgICAgICBpIDo9IGkgKyAxLgo=</text>
       </register>
       <register name=":" type="4">
         <text>?alloc</text>

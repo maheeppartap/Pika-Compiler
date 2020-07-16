@@ -85,12 +85,12 @@ public class PrintStatementGenerator {
 			case CHARACTER:	return RunTime.CHARACTER_PRINT_FORMAT;
 			case STRING:	return RunTime.STRING_PRINT_FORMAT;
 			default:		
-				assert false : "Type " + type + " unimplemented in PrintStatementGenerator.printFormat()";
+				assert false : type + " unimplemented in PrintStatementGenerator";
 				return "";
 			}
 		}
 		
-		assert false : "Type " + type + " unimplemented in PrintStatementGenerator.printFormat()";
+		assert false :  type + " unimplemented in PrintStatementGenerator";
 		return "";
 	}
 }

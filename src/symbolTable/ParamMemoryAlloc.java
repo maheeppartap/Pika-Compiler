@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ParamMemoryAlloc implements MemoryAllocator {
-	MemoryAccessMethod accessor;
+	EnterMemoryMethods accessor;
 	final int startingOffset;
 	int currentOffset;
 	int minOffset;
@@ -12,7 +12,7 @@ public class ParamMemoryAlloc implements MemoryAllocator {
 	List<Integer> bookmarks;
 	List<MemoryLocation> memoryLocations;
 	
-	public ParamMemoryAlloc(MemoryAccessMethod accessor, String baseAddress, int startingOffset) {
+	public ParamMemoryAlloc(EnterMemoryMethods accessor, String baseAddress, int startingOffset) {
 		this.accessor = accessor;
 		this.baseAddress = baseAddress;
 		this.startingOffset = startingOffset;
@@ -21,7 +21,7 @@ public class ParamMemoryAlloc implements MemoryAllocator {
 		this.bookmarks = new ArrayList<Integer>();
 		this.memoryLocations = new ArrayList<MemoryLocation>();
 	}
-	public ParamMemoryAlloc(MemoryAccessMethod accessor, String baseAddress) {
+	public ParamMemoryAlloc(EnterMemoryMethods accessor, String baseAddress) {
 		this(accessor, baseAddress, 0);
 	}
 

@@ -3,8 +3,7 @@ package symbolTable;
 import asmCodeGenerator.codeStorage.ASMCodeFragment;
 import static asmCodeGenerator.codeStorage.ASMOpcode.*;
 
-public enum MemoryAccessMethod {
-	// null object pattern.  Overrides the public method to put a zero on the accumulator stack.
+public enum EnterMemoryMethods {
 	NULL_ACCESS () {
 		@Override
 		public void generateAddress(ASMCodeFragment code, String baseAddress, int offset, String comment) {
@@ -20,7 +19,6 @@ public enum MemoryAccessMethod {
 		}
 	},
 	
-	// base is the label of the memory holding a pointer to the start of the memory block.
 	INDIRECT_ACCESS_BASE() {
 		@Override
 		protected void generateBaseAddress(ASMCodeFragment code, String baseAddress) {

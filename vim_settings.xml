@@ -5,7 +5,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry>^</entry>
         <entry>/^</entry>
         <entry>statement</entry>
         <entry>WHILE</entry>
@@ -25,9 +24,9 @@
         <entry>void</entry>
         <entry>Cannot</entry>
         <entry>alloc</entry>
+        <entry>expect</entry>
       </history-search>
       <history-cmd>
-        <entry>?^</entry>
         <entry>?/^</entry>
         <entry>?statement</entry>
         <entry>?WHILE</entry>
@@ -47,6 +46,7 @@
         <entry>?void</entry>
         <entry>?Cannot</entry>
         <entry>?alloc</entry>
+        <entry>?expect</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -127,11 +127,11 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1594771946290">
         <mark key="[" line="20" column="16" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1595532131500">
-        <mark key="[" line="3" column="24" />
-        <mark key="]" line="3" column="22" />
-        <mark key="." line="3" column="22" />
-        <mark key="^" line="3" column="4" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1595532471438">
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="." line="2" column="0" />
+        <mark key="^" line="2" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1594773801385">
         <mark key="[" line="87" column="0" />
@@ -141,11 +141,14 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/PositiveMemoryAllocator.java" timestamp="1594772205187">
         <mark key="[" line="5" column="14" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1594273539077">
-        <mark key="[" line="94" column="0" />
-        <mark key="]" line="224" column="0" />
-        <mark key="^" line="33" column="4" />
-        <mark key="." line="224" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1595532527387">
+        <mark key="[" line="76" column="0" />
+        <mark key="]" line="76" column="0" />
+        <mark key="^" line="30" column="4" />
+        <mark key="." line="76" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1595532570799">
+        <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -254,43 +257,43 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHZhciBuMSA6PSBbMiwgMywgNF0uCg==</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
       </register>
       <register name="-" type="4">
-        <text>}</text>
+        <text encoding="base64">CQ==</text>
       </register>
       <register name="/" type="4">
-        <text>alloc</text>
+        <text>expect</text>
       </register>
       <register name="0" type="2">
         <text encoding="base64">ICAgIHZhciBuMSA6PSBbMiwgMywgNF0uCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHByaW50IHQuCg==</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ewo=</text>
+      <register name="2" type="4">
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gVG9rZW4tZmluZGluZyBtYWluIGRpc3BhdGNo</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">ICAgIHZhciBuMSA6PSBbMiwgMywgNF0uCiAgICB2YXIgbjIgOj0gWzUsIDYsIDddLg==</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgIHZhciB0IDo9IDQuCg==</text>
+      <register name="4" type="4">
+        <text encoding="base64">CgoJLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vCgkvLyBDaGFyYWN0ZXItY2xhc3NpZmljYXRpb24gcm91dGluZXMgc3BlY2lmaWMgdG8gUGlrYSBzY2FubmluZy4JCg==</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgIHByaW50IHQuCg==</text>
+      <register name="5" type="4">
+        <text encoding="base64">CgkJLy8gSWYgbmV4dCBjaGFyYWN0ZXIgaXMgbm90IGEgZGlnaXQsIHBvdGVudGlhbGx5IGludmFsaWQgbGV4ZW1l</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgIHByaW50IHQuCg==</text>
+        <text encoding="base64">CQkvLyBJZiBuZXh0IGNoYXJhY3RlciBpcyBub3QgYSBwZXJpb2QsIG9yIGlmIG5leHQgY2hhcmFjdGVyIGlzIGEgcGVyaW9kCgkJLy8gYnV0IGlzIG5vdCBmb2xsb3dlZCBieSBhIGRpZ2l0LCByZXR1cm4gSU5URUdFUiwgZXhjZXB0IGlmIGZpcnN0CgkJLy8gY2hhcmFjdGVyIHdhcyBhIC4sIHJldHVybiBGTE9BVA==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIHN0YXRpYyB2YXIgdCA6PSAyLgo=</text>
+        <text encoding="base64">CQoJCgkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCS8vIEludGVnZXIgYW5kIEZsb2F0aW5nIGxleGljYWwgYW5hbHlzaXMJCgk=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">Y29uc3QgdCA6PSAzLgo=</text>
+        <text encoding="base64">CQoJLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vCgkvLyBDaGFyYWN0ZXIgYW5kIFN0cmluZyBsZXhpY2FsIGFuYWx5c2lzCgkvLyBUQVNLOiBGaW5pc2ggY2hhcmFjdGVyIGFuZCBzdHJpbmcgbGV4aWNhbCBhbmFseXNpcw==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CmV4ZWN7CnZhciBuMSA6PSBbMSwgMywgNSwgNywgOSwgMTFdLgp2YXIgbjIgOj0gWzEsIDIsIDMsIDUsIDcsIDExXS4KY29uc3QgbWFrZVBhaXIgOj0gPGludCB4LCBpbnQgeT4gLT4gW2ludF0gewogICAgcmV0dXJuIFt4LCB5XS4KIH0uCnZhciBwYWlyTGlzdCA6PSB6aXAgbjEsIG4yLCBtYWtlUGFpci4K</text>
+        <text encoding="base64">ICAgIHByaW50IHQuCg==</text>
       </register>
       <register name=":" type="4">
         <text>?alloc</text>
@@ -299,9 +302,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search>alloc</last-search>
+      <last-search>expect</last-search>
       <last-offset />
-      <last-pattern>alloc</last-pattern>
+      <last-pattern>expect</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>

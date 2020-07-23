@@ -127,8 +127,8 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalyzer.java" timestamp="1594771946290">
         <mark key="[" line="20" column="16" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1595032107980">
-        <mark key="[" line="4" column="59" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1595353045431">
+        <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
       </file>
@@ -252,11 +252,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">CgpleGVjIHsKICAgIHZhciBhIDo9IGFsbG9jW2NoYXJdKDIwKS4KICAgIHZhciBjIDo9IDIvLzMuCiAgICB2YXIgZCA6PSBbYyB8IGludF0uCiAgICBwcmludCBkLgogICAgfQoK</text>
+      <register name="&quot;" type="4">
+        <text>}</text>
       </register>
       <register name="-" type="4">
-        <text>+</text>
+        <text>}</text>
       </register>
       <register name="/" type="4">
         <text>alloc</text>
@@ -265,31 +265,31 @@
         <text encoding="base64">CQkJCWFzc2VydCBmYWxzZSA6IHR5cGUgKyAiIHVuaW1wbGVtZW50ZWQgaW4gUHJpbnRTdGF0ZW1lbnRHZW5lcmF0b3IiOwoJCQkJcmV0dXJuICIiOwo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CgpleGVjIHsKICAgIHZhciBhIDo9IGFsbG9jW2NoYXJdKDIwKS4KICAgIHZhciBjIDo9IDIvLzMuCiAgICB2YXIgZCA6PSBbYyB8IGludF0uCiAgICBwcmludCBkLgogICAgfQoK</text>
+        <text encoding="base64">CmV4ZWN7CnZhciBuMSA6PSBbMSwgMywgNSwgNywgOSwgMTFdLgp2YXIgbjIgOj0gWzEsIDIsIDMsIDUsIDcsIDExXS4KY29uc3QgbWFrZVBhaXIgOj0gPGludCB4LCBpbnQgeT4gLT4gW2ludF0gewogICAgcmV0dXJuIFt4LCB5XS4KIH0uCnZhciBwYWlyTGlzdCA6PSB6aXAgbjEsIG4yLCBtYWtlUGFpci4K</text>
       </register>
       <register name="2" type="2">
-        <text>fixed some lexical errors, fixed malloc</text>
+        <text encoding="base64">CgpleGVjIHsKICAgIHZhciBhIDo9IGFsbG9jW2NoYXJdKDIwKS4KICAgIHZhciBjIDo9IDIvLzMuCiAgICB2YXIgZCA6PSBbYyB8IGludF0uCiAgICBwcmludCBkLgogICAgfQoK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ZnVuYyBhPGludCBhPi0+dAo=</text>
+        <text>fixed some lexical errors, fixed malloc</text>
       </register>
       <register name="4" type="2">
-        <text>added lambda params, fixed some bugs related to null returns</text>
+        <text encoding="base64">ZnVuYyBhPGludCBhPi0+dAo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
+        <text>added lambda params, fixed some bugs related to null returns</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CS8vIGJhc2UgaXMgdGhlIGxhYmVsIG9mIHRoZSBtZW1vcnkgaG9sZGluZyBhIHBvaW50ZXIgdG8gdGhlIHN0YXJ0IG9mIHRoZSBtZW1vcnkgYmxvY2suCg==</text>
+        <text encoding="base64">Ly8gaG93IGEgc2NvcGUgYWxsb2NhdGVzIG9mZnNldHMgdG8gaXRzIGNvbnN0aXR1ZW50IG1lbW9yeSBibG9ja3MuCg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CS8vIG51bGwgb2JqZWN0IHBhdHRlcm4uICBPdmVycmlkZXMgdGhlIHB1YmxpYyBtZXRob2QgdG8gcHV0IGEgemVybyBvbiB0aGUgYWNjdW11bGF0b3Igc3RhY2suCg==</text>
+        <text encoding="base64">CS8vIGJhc2UgaXMgdGhlIGxhYmVsIG9mIHRoZSBtZW1vcnkgaG9sZGluZyBhIHBvaW50ZXIgdG8gdGhlIHN0YXJ0IG9mIHRoZSBtZW1vcnkgYmxvY2suCg==</text>
       </register>
       <register name="8" type="2">
-        <text>Added better scoping, and functions. Pika 3 is almost done</text>
+        <text encoding="base64">CS8vIG51bGwgb2JqZWN0IHBhdHRlcm4uICBPdmVycmlkZXMgdGhlIHB1YmxpYyBtZXRob2QgdG8gcHV0IGEgemVybyBvbiB0aGUgYWNjdW11bGF0b3Igc3RhY2suCg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CgpmdW5jIHgoaW50IGEsIGludCBiKS0+bnVsbHsKICAgIHByaW50ICJzdXAiLgogICAgcmV0dXJuLgp9CgpleGVjewogICAgY2FsbCB4KDIsIDMpLgogICAgcHJpbnQgImhieGNqeGgiLCBfdF8uCn0=</text>
+        <text>Added better scoping, and functions. Pika 3 is almost done</text>
       </register>
       <register name=":" type="4">
         <text>?alloc</text>

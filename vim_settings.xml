@@ -141,9 +141,9 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/PositiveMemoryAllocator.java" timestamp="1594772205187">
         <mark key="[" line="5" column="14" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1595532527387">
-        <mark key="[" line="76" column="0" />
-        <mark key="]" line="76" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1595562280273">
+        <mark key="[" line="208" column="0" />
+        <mark key="]" line="208" column="4" />
         <mark key="^" line="30" column="4" />
         <mark key="." line="76" column="0" />
       </file>
@@ -257,7 +257,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
+        <text encoding="base64">CQo=</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">CQ==</text>
@@ -266,7 +266,7 @@
         <text>expect</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">ICAgIHZhciBuMSA6PSBbMiwgMywgNF0uCg==</text>
+        <text encoding="base64">CQo=</text>
       </register>
       <register name="1" type="2">
         <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>

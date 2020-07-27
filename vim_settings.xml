@@ -80,6 +80,9 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1594273393769">
+        <mark key="[" line="484" column="8" />
+      </file>
       <file name="/Dummy.txt" timestamp="1595127689022">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
@@ -96,32 +99,25 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1594695700358">
         <mark key="[" line="10" column="4" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1595890750533" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/If_else_statements.java" timestamp="1594941905732">
         <mark key="[" line="9" column="31" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/WhileNode.java" timestamp="1594941921459">
-        <mark key="[" line="9" column="13" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/MemoryAllocator.java" timestamp="1594772306829">
-        <mark key="[" line="3" column="0" />
-        <mark key="]" line="3" column="0" />
-        <mark key="." line="3" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1594273393769">
-        <mark key="[" line="484" column="8" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1595873214908">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/PrintStatementGenerator.java" timestamp="1594773801385">
         <mark key="[" line="87" column="0" />
         <mark key="]" line="88" column="26" />
         <mark key="." line="92" column="23" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/WhileNode.java" timestamp="1594941921459">
+        <mark key="[" line="9" column="13" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/PositiveMemoryAllocator.java" timestamp="1594772205187">
         <mark key="[" line="5" column="14" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/symbolTable/MemoryAllocator.java" timestamp="1594772306829">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
       </file>
       <file name="/fragment.java" timestamp="1595532570799">
         <mark key="[" line="0" column="0" />
@@ -232,11 +228,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ZXhlY3sKCiAgICBjb25zdCBtYWtlUGFpcnMgOj0gPGludCB4LCBpbnQgeT4tPltpbnRdIHsKICAgICAgICByZXR1cm4gW3gsIHldLgogICAgfQoKICAgIHByaW50IG1ha2VQYWlycygyLDMpLgoKfQ==</text>
+      <register name="&quot;" type="4">
+        <text>f</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">CQ==</text>
+        <text>f</text>
       </register>
       <register name="/" type="4">
         <text>expect</text>
@@ -244,32 +240,32 @@
       <register name="0" type="2">
         <text encoding="base64">CQo=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ZXhlY3sKCiAgICBjb25zdCBtYWtlUGFpcnMgOj0gPGludCB4LCBpbnQgeT4tPltpbnRdIHsKICAgICAgICByZXR1cm4gW3gsIHldLgogICAgfQoKICAgIHByaW50IG1ha2VQYWlycygyLDMpLgoKfQ==</text>
+      <register name="1" type="4">
+        <text encoding="base64">dW5jIG1vZCA8aW50IG51bWJlciwgaW50IG1vZHVsdXM+IC0+IGludCB7CglpZihudW1iZXIgPD0gMCkgewoJCXJldHVybiAwLgoJfQoJY29uc3QgZGl2aWRlbmQgOj0gbnVtYmVyIC8gbW9kdWx1cy4KCWNvbnN0IHJlbWFpbmRlciA6PSBudW1iZXIgLSAoZGl2aWRlbmQgKiBtb2R1bHVzKS4KCXJldHVybiByZW1haW5kZXIuCn0KCmZ1bmMgc3lydXAgPGludCBudW1iZXI+IC0+IGludCB7Cgl2YXIgaGFiYW5lcm8gOj0gMC4KCWlmKG1vZChudW1iZXIsIDIpID09IDApIHsKCQloYWJhbmVybyA6PSBudW1iZXIgLyAyLgoJfQoJZWxzZSB7CgkJaGFiYW5lcm8gOj0gMyAqIG51bWJlciArIDEuCgl9CglyZXR1cm4gaGFiYW5lcm8uCn0KCmZ1bmMgc2VxdWVuY2UgPGludCBzdGFydGluZ051bWJlcj4gLT4gbnVsbCB7CglwcmludCBfbl8uCgoJdmFyIG51bSA6PSBzdGFydGluZ051bWJlci4KCXByaW50IG51bSwgX25fLgoJd2hpbGUgKG51bSAhPSAxKSB7CgkJbnVtIDo9IHN5cnVwKG51bSkuCgkJcHJpbnQgbnVtLCBfbl8uCgl9CglwcmludCBudW0sIF9uXy4KCXJldHVybi4KfQoKZXhlYyB7Cgljb25zdCBtaW4gOj0gMTAuCgljb25zdCBtYXggOj0gMTAwLgoKCXZhciBjb3VudCA6PSBtaW4uCgl3aGlsZSAoY291bnQgPCBtYXgpIHsKCQljYWxsIHNlcXVlbmNlKGNvdW50KS4KCQljb3VudCA6PSBjb3VudCArIDEuCgkJaWYoY291bnQgPT0gMTMpIHsKCQkJdmFyIHggOj0gMi4KCQkJaWYoeCA+IDEpIHsKCQkJCXZhciB5IDo9IDQxIC0geC4KCQkJCWlmKHkgPCAxMDApIHsKCQkJCQlicmVhay4KCQkJCX0KCQkJfQoJCX0KCX0KCXByaW50ICJkb25lLiIsIF9uXy4KfQo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQlqa2YK</text>
+        <text>err_lambda_typecheck3.pika</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
+        <text encoding="base64">ZXhlY3sKCiAgICBjb25zdCBtYWtlUGFpcnMgOj0gPGludCB4LCBpbnQgeT4tPltpbnRdIHsKICAgICAgICByZXR1cm4gW3gsIHldLgogICAgfQoKICAgIHByaW50IG1ha2VQYWlycygyLDMpLgoKfQ==</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gVG9rZW4tZmluZGluZyBtYWluIGRpc3BhdGNo</text>
+      <register name="4" type="2">
+        <text encoding="base64">CQlqa2YK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIHZhciBuMSA6PSBbMiwgMywgNF0uCiAgICB2YXIgbjIgOj0gWzUsIDYsIDddLg==</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
       </register>
       <register name="6" type="4">
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gVG9rZW4tZmluZGluZyBtYWluIGRpc3BhdGNo</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgIHZhciBuMSA6PSBbMiwgMywgNF0uCiAgICB2YXIgbjIgOj0gWzUsIDYsIDddLg==</text>
+      </register>
+      <register name="8" type="4">
         <text encoding="base64">CgoJLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vCgkvLyBDaGFyYWN0ZXItY2xhc3NpZmljYXRpb24gcm91dGluZXMgc3BlY2lmaWMgdG8gUGlrYSBzY2FubmluZy4JCg==</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CgkJLy8gSWYgbmV4dCBjaGFyYWN0ZXIgaXMgbm90IGEgZGlnaXQsIHBvdGVudGlhbGx5IGludmFsaWQgbGV4ZW1l</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">CQkvLyBJZiBuZXh0IGNoYXJhY3RlciBpcyBub3QgYSBwZXJpb2QsIG9yIGlmIG5leHQgY2hhcmFjdGVyIGlzIGEgcGVyaW9kCgkJLy8gYnV0IGlzIG5vdCBmb2xsb3dlZCBieSBhIGRpZ2l0LCByZXR1cm4gSU5URUdFUiwgZXhjZXB0IGlmIGZpcnN0CgkJLy8gY2hhcmFjdGVyIHdhcyBhIC4sIHJldHVybiBGTE9BVA==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">CQoJCgkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCS8vIEludGVnZXIgYW5kIEZsb2F0aW5nIGxleGljYWwgYW5hbHlzaXMJCgk=</text>
       </register>
       <register name=":" type="4">
         <text>?alloc</text>

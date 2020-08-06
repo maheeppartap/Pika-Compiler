@@ -10,6 +10,7 @@ public class Scope {
 	private Scope baseScope;
 	private MemoryAllocator allocator;
 	private SymbolTable symbolTable;
+	private int staticCount = 0;
 	
 //////////////////////////////////////////////////////////////////////
 // factories
@@ -30,20 +31,20 @@ public class Scope {
 	}
 	
 	private static MemoryAllocator programScopeAllocator() {
-		return new MEMORY_ALLOCATOR_(
-				EnterMemoryMethods.DIRECT_ACCESS_BASE,
+		return new PositiveMemoryAllocator(
+				MemoryAccessMethod.DIRECT_ACCESS_BASE, 
 				MemoryLocation.GLOBAL_VARIABLE_BLOCK);
 	}
 	
 	private static MemoryAllocator parameterScopeAllocator() {
-		return new ParamMemoryAlloc(
-				EnterMemoryMethods.INDIRECT_ACCESS_BASE,
+		return new ParameterMemoryAllocator(
+				MemoryAccessMethod.INDIRECT_ACCESS_BASE,
 				MemoryLocation.FRAME_POINTER);
 	}
 	
 	private static MemoryAllocator procedureScopeAllocator() {
 		return new NegativeMemoryAllocator(
-				EnterMemoryMethods.INDIRECT_ACCESS_BASE,
+				MemoryAccessMethod.INDIRECT_ACCESS_BASE,
 				MemoryLocation.FRAME_POINTER);
 	}
 	
@@ -94,6 +95,24 @@ public class Scope {
 
 		return binding;
 	}
+	public Binding createStaticGlobalBinding(IdentifierNode identifierNode, Type type) {
+		Token token = identifierNode.getToken();
+		symbolTable.errorIfAlreadyDefined(token);
+
+		staticCount++;
+		String lexeme = "#"+token.getLexeme()+"-"+staticCount;
+		Binding binding = allocateNewBinding(type, token.getLocation(), lexeme);	
+		symbolTable.install(lexeme, binding);
+
+		return binding;
+	}
+	public void createStaticEmptyBinding(IdentifierNode identifierNode, Binding binding) {
+		Token token = identifierNode.getToken();
+		symbolTable.errorIfAlreadyDefined(token);
+		
+		String lexeme = token.getLexeme();	
+		symbolTable.install(lexeme, binding);
+	}
 	private Binding allocateNewBinding(Type type, TextLocation textLocation, String lexeme) {
 		MemoryLocation memoryLocation = allocator.allocate(type.getSize());
 		return new Binding(type, textLocation, memoryLocation, lexeme);
@@ -117,7 +136,7 @@ public class Scope {
 		private static NullScope instance = new NullScope();
 
 		private NullScope() {
-			super(new MEMORY_ALLOCATOR_(EnterMemoryMethods.NULL_ACCESS, "", 0), null);
+			super(new PositiveMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0), null);
 		}
 		public String toString() {
 			return "scope: the-null-scope";
@@ -140,7 +159,7 @@ public class Scope {
 		private static NullScope instance = new NullScope();
 
 		private NullScopeNegative() {
-			super(new NegativeMemoryAllocator(EnterMemoryMethods.NULL_ACCESS, "", 0), null);
+			super(new NegativeMemoryAllocator(MemoryAccessMethod.NULL_ACCESS, "", 0), null);
 		}
 		public String toString() {
 			return "scope: the-null-scope";

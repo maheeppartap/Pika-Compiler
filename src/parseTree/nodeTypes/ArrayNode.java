@@ -13,7 +13,7 @@ public class ArrayNode extends ParseNode {
 	
 	public ArrayNode(Token token) {
 		super(token);
-		assert(token.isLextant(Keyword.ALLOC, Keyword.CLONE));
+		assert(token.isLextant(Keyword.NEW, Keyword.CLONE));
 	}
 	public ArrayNode(ParseNode node) {
 		super(node);

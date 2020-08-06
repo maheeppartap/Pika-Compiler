@@ -6,10 +6,8 @@ import lexicalAnalyzer.Lextant;
 import lexicalAnalyzer.Punctuator;
 import tokens.LextantToken;
 import tokens.Token;
-import semanticAnalyzer.signatures.FunctionSignature;
 
 public class UnaryOperatorNode extends OperatorNode {
-	protected FunctionSignature signature;
 
 	public UnaryOperatorNode(Token token) {
 		super(token);
@@ -31,13 +29,6 @@ public class UnaryOperatorNode extends OperatorNode {
 		return (LextantToken)token;
 	}
 
-	public void setSignature(FunctionSignature signature) {
-		this.signature = signature;
-	}
-	public FunctionSignature getSignature() {
-		return signature;
-	}
-
 	
 	////////////////////////////////////////////////////////////
 	// convenience factory
@@ -54,8 +45,8 @@ public class UnaryOperatorNode extends OperatorNode {
 	public boolean isComparator() {
 		Lextant operator = getOperator();
 		return (operator == Punctuator.LESS_OR_EQUAL || operator == Punctuator.LESS ||
-				operator == Punctuator.EQUAL || operator == Punctuator.NOT_EQUAL ||
-				operator == Punctuator.GREATER || operator == Punctuator.GREATER_OR_EQUAL);
+				operator == Punctuator.EQUAL 		 || operator == Punctuator.NOT_EQUAL ||
+				operator == Punctuator.GREATER 		 || operator == Punctuator.GREATER_OR_EQUAL);
 	}
 	
 	public boolean isBooleanOperator() {

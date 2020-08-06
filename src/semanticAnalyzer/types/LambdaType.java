@@ -12,7 +12,7 @@ public class LambdaType implements Type {
 	private int sizeInBytes = 8;
 	
 	public LambdaType() {
-		returnType = PrimitiveType.NULL_RET;
+		returnType = PrimitiveType.VOID;
 		typeList = new ArrayList<Type>();
 	}
 	public LambdaType(String infoString) {

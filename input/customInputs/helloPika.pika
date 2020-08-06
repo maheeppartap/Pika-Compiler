@@ -1,9 +1,8 @@
 
 
-exec {
-    var a := alloc[char](20).
-    var c := 2//3.
-    var d := [c | int].
-    print d.
-    }
 
+exec {
+ const t := "hey".
+ const y := t + "hey".
+  print y*y.
+}

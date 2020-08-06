@@ -9,7 +9,7 @@ public class SemanticAnalyzer {
 	public static ParseNode analyze(ParseNode ASTree) {
 		SemanticAnalyzer analyzer = new SemanticAnalyzer(ASTree);
 		
-		analyzer.PREPROCESSOR_ACCEPTOR();
+		analyzer.preprocess();
 		analyzer.analyze();
 
 		return ASTree;
@@ -18,8 +18,8 @@ public class SemanticAnalyzer {
 		this.ASTree = ASTree;
 	}
 	
-	public void PREPROCESSOR_ACCEPTOR() {
-		SemanticEarlyVisitor spv = new SemanticEarlyVisitor();
+	public void preprocess() {
+		SemanticPreprocessorVisitor spv = new SemanticPreprocessorVisitor(); 
 		ASTree.accept(spv);
 	}
 	

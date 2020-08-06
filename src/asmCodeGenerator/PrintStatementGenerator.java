@@ -10,9 +10,9 @@ import semanticAnalyzer.types.LambdaType;
 import semanticAnalyzer.types.PrimitiveType;
 import semanticAnalyzer.types.Type;
 import asmCodeGenerator.ASMCodeGenerator.CodeVisitor;
-import asmCodeGenerator.codeGenerator.PrintArraySCG;
-import asmCodeGenerator.codeGenerator.PrintBooleanSCG;
-import asmCodeGenerator.codeGenerator.PrintRationalSCG;
+import asmCodeGenerator.codeGenerator.print.PrintArraySCG;
+import asmCodeGenerator.codeGenerator.print.PrintBooleanSCG;
+import asmCodeGenerator.codeGenerator.print.PrintRationalSCG;
 import asmCodeGenerator.codeStorage.ASMCodeFragment;
 import asmCodeGenerator.codeStorage.ASMOpcode;
 import asmCodeGenerator.runtime.RunTime;
@@ -20,8 +20,7 @@ import asmCodeGenerator.runtime.RunTime;
 public class PrintStatementGenerator {
 	ASMCodeFragment code;
 	ASMCodeGenerator.CodeVisitor visitor;
-	
-	
+		
 	public PrintStatementGenerator(ASMCodeFragment code, CodeVisitor visitor) {
 		super();
 		this.code = code;
@@ -70,7 +69,6 @@ public class PrintStatementGenerator {
 		}
 	}
 
-
 	private static String printFormat(Type type) {
 		if (type instanceof LambdaType) {
 			return RunTime.LAMBDA_PRINT_FORMAT;
@@ -85,12 +83,12 @@ public class PrintStatementGenerator {
 			case CHARACTER:	return RunTime.CHARACTER_PRINT_FORMAT;
 			case STRING:	return RunTime.STRING_PRINT_FORMAT;
 			default:		
-				assert false : type + " unimplemented in PrintStatementGenerator";
+				assert false : "Type " + type + " unimplemented in PrintStatementGenerator.printFormat()";
 				return "";
 			}
 		}
 		
-		assert false :  type + " unimplemented in PrintStatementGenerator";
+		assert false : "Type " + type + " unimplemented in PrintStatementGenerator.printFormat()";
 		return "";
 	}
 }

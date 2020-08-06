@@ -4,7 +4,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import asmCodeGenerator.codeGenerator.*;
+import asmCodeGenerator.codeGenerator.cast.CastIntToCharSCG;
+import asmCodeGenerator.codeGenerator.cast.CastRatToFloatSCG;
+import asmCodeGenerator.codeGenerator.cast.CastToBoolSCG;
+import asmCodeGenerator.codeGenerator.cast.CastToRatSCG;
+import asmCodeGenerator.codeGenerator.rational.RationalBinaryOperatorSCG;
+import asmCodeGenerator.codeGenerator.rational.RationalComparisonOperatorSCG;
+import asmCodeGenerator.codeGenerator.string.CharStringConcatSCG;
+import asmCodeGenerator.codeGenerator.string.StringCharConcatSCG;
+import asmCodeGenerator.codeGenerator.string.StringConcatSCG;
+import asmCodeGenerator.codeGenerator.string.StringLengthSCG;
+import asmCodeGenerator.codeGenerator.string.StringOffsetSCG;
+import asmCodeGenerator.codeGenerator.string.StringRangeOffsetSCG;
 import asmCodeGenerator.codeStorage.ASMOpcode;
 import semanticAnalyzer.types.ArrayType;
 import semanticAnalyzer.types.Type;
@@ -12,7 +23,6 @@ import semanticAnalyzer.types.TypeLiteral;
 import lexicalAnalyzer.Keyword;
 import lexicalAnalyzer.Punctuator;
 import static semanticAnalyzer.types.PrimitiveType.*;
-
 
 public class FunctionSignatures extends ArrayList<FunctionSignature> {
 	private static final long serialVersionUID = -4907792488209670697L;
@@ -87,10 +97,14 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 
 		// Arithmetic Operators
 		new FunctionSignatures(Punctuator.ADD,
-		    new FunctionSignature(ASMOpcode.Add, 		INTEGER, 	INTEGER, 	INTEGER),
-		    new FunctionSignature(ASMOpcode.FAdd, 		FLOATING, 	FLOATING, 	FLOATING),
+		    new FunctionSignature(ASMOpcode.Add, 				INTEGER, 	INTEGER, 	INTEGER),
+		    new FunctionSignature(ASMOpcode.FAdd, 				FLOATING, 	FLOATING, 	FLOATING),
 		    new FunctionSignature(new RationalBinaryOperatorSCG(Punctuator.ADD),
-		    											RATIONAL,	RATIONAL, 	RATIONAL)
+		    													RATIONAL,	RATIONAL, 	RATIONAL),
+		    
+		    new FunctionSignature(new StringConcatSCG(),		STRING, 	STRING, 	STRING),
+		    new FunctionSignature(new StringCharConcatSCG(),	STRING, 	CHARACTER, 	STRING),
+		    new FunctionSignature(new CharStringConcatSCG(),	CHARACTER, 	STRING, 	STRING)
 		);
 		
 		new FunctionSignatures(Punctuator.SUBTRACT,
@@ -214,7 +228,7 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		);
 		
 		
-		// Boolean Operators
+		// Boolean and Unary Operators
 		new FunctionSignatures(Punctuator.AND,
 		    new FunctionSignature(ASMOpcode.And, 	 BOOLEAN, BOOLEAN, BOOLEAN)
 		);
@@ -226,11 +240,14 @@ public class FunctionSignatures extends ArrayList<FunctionSignature> {
 		new FunctionSignatures(Punctuator.NOT,
 			new FunctionSignature(ASMOpcode.BNegate, BOOLEAN, BOOLEAN)
 		);
-		
-		
-		// Array Operators
+
 		new FunctionSignatures(Keyword.LENGTH,
-			new FunctionSignature(new ArrayLengthSCG(), 	new ArrayType(), 	INTEGER)		// Variable type not working
+			new FunctionSignature(new StringLengthSCG(), 		STRING, 	INTEGER)
+		);
+		
+		new FunctionSignatures(Punctuator.OPEN_BRACKET,
+			new FunctionSignature(new StringOffsetSCG(), 		STRING,		INTEGER,				CHARACTER),
+			new FunctionSignature(new StringRangeOffsetSCG(), 	STRING,		INTEGER, 	INTEGER, 	STRING)
 		);
 		
 		

@@ -7,18 +7,18 @@ public class MemoryLocation {
 	public static final String GLOBAL_VARIABLE_BLOCK = RunTime.GLOBAL_MEMORY_BLOCK;
 	public static final String FRAME_POINTER = RunTime.FRAME_POINTER;
 	
-	private EnterMemoryMethods accessor;
+	private MemoryAccessMethod accessor;
 	private String baseAddress;
 	private int offset;
 	
-	public MemoryLocation(EnterMemoryMethods accessor, String baseAddress, int offset) {
+	public MemoryLocation(MemoryAccessMethod accessor, String baseAddress, int offset) {
 		super();
 		this.accessor = accessor;
 		this.baseAddress = baseAddress;
 		this.offset = offset;
 	}
 
-	public EnterMemoryMethods getAccessor() {
+	public MemoryAccessMethod getAccessor() {
 		return accessor;
 	}
 	public String getBaseAddress() {
@@ -53,7 +53,7 @@ public class MemoryLocation {
 		private static NullMemoryLocation instance=null;
 		
 		private NullMemoryLocation() {
-			super(EnterMemoryMethods.NULL_ACCESS, "", NULL_OFFSET);
+			super(MemoryAccessMethod.NULL_ACCESS, "", NULL_OFFSET);
 		}
 		public static NullMemoryLocation getInstance() {
 			if(instance==null)

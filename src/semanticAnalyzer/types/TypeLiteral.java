@@ -11,7 +11,7 @@ public enum TypeLiteral implements Type {
 	RATIONAL(8, PrimitiveType.RATIONAL),
 	ARRAY(8, new ArrayType()),
 	LAMBDA(8, new LambdaType()),
-	VOID(0, PrimitiveType.NULL_RET),
+	VOID(0, PrimitiveType.VOID),
 	
 	ERROR(0, PrimitiveType.ERROR),				// use as a value when a syntax error has occurred
 	NO_TYPE(0, PrimitiveType.NO_TYPE, "");		// use as a value when no type has been assigned.

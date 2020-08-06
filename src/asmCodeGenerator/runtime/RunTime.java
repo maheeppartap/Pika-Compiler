@@ -2,9 +2,9 @@ package asmCodeGenerator.runtime;
 import static asmCodeGenerator.codeStorage.ASMCodeFragment.CodeType.*;
 import static asmCodeGenerator.codeStorage.ASMOpcode.*;
 
-import asmCodeGenerator.codeGenerator.RationalInvertSCG;
-import asmCodeGenerator.codeGenerator.RationalTempToStackSCG;
-import asmCodeGenerator.codeGenerator.RationalStackToTempSCG;
+import asmCodeGenerator.codeGenerator.rational.RationalInvertSCG;
+import asmCodeGenerator.codeGenerator.rational.RationalStackToTempSCG;
+import asmCodeGenerator.codeGenerator.rational.RationalTempToStackSCG;
 import asmCodeGenerator.codeStorage.ASMCodeFragment;
 import asmCodeGenerator.codeStorage.ASMOpcode;
 public class RunTime {
@@ -23,7 +23,7 @@ public class RunTime {
 	public static final String SPACE_PRINT_FORMAT     				= "$print-format-space";
 	public static final String BOOLEAN_TRUE_STRING    				= "$boolean-true-string";
 	public static final String BOOLEAN_FALSE_STRING   				= "$boolean-false-string";
-	public static final String ARRAY_ALREADY_RELEASED				= "$array-released";
+	public static final String ALREADY_RELEASED						= "$already-released";
 	public static final String ARRAY_RECURSE_RELEASED   			= "$array-recurse-released";
 	
 	public static final String RATIONAL_TEMP_NUMERATOR_1	= "$rational-temp-numerator-1";
@@ -34,13 +34,30 @@ public class RunTime {
 	public static final String RELEASE_TEMP_2				= "$release-temp-2";
 	public static final String RELEASE_TEMP_3				= "$release-temp-3";
 	public static final String RELEASE_TEMP_4				= "$release-temp-4";
+	public static final String REDUCE_ARR_LENGTH			= "$reduce-arr-length";
+	public static final String FOR_LOOP_INDEX				= "$for-loop-index";
+	public static final String FOR_LOOP_OFFSET				= "$for-loop-offset";
+	public static final String FOR_LOOP_END_INDEX			= "$for-loop-end-index";
+	public static final String FOR_LOOP_IDENTIFIER			= "$for-loop-identifier";
+	public static final String FOR_LOOP_SEQUENCE			= "$for-loop-sequence";
 	public static final String INDEX_TEMP_1					= "$index-temp-1";
 	public static final String INDEX_TEMP_2					= "$index-temp-2";
+	public static final String INDEX_TEMP_3					= "$index-temp-3";
 	public static final String ARRAY_TEMP_1					= "$array-temp-1";
 	public static final String ARRAY_TEMP_2					= "$array-temp-2";
 	public static final String ARRAY_TEMP_3					= "$array-temp-3";
 	public static final String ARRAY_TEMP_4					= "$array-temp-4";
 	public static final String ARRAY_TEMP_5					= "$array-temp-5";
+	public static final String ARRAY_TEMP_6					= "$array-temp-6";
+	public static final String STRING_TEMP_1				= "$string-temp-1";
+	public static final String STRING_ADDR_1				= "$string-addr-1";
+	public static final String STRING_ADDR_2				= "$string-addr-2";
+	public static final String STRING_SIZE_1				= "$string-size-1";
+	public static final String STRING_SIZE_2				= "$string-size-2";
+	public static final String STRING_OFFSET_1				= "$string-offset-1";
+	public static final String STRING_OFFSET_2				= "$string-offset-2";
+	public static final String STRING_COPY_START			= "$string-copy-start";
+	public static final String STRING_COPY_END				= "$string-copy-end";
 	public static final String PRINT_RATIONAL_TEMP_1		= "$print-rational-temp-1";
 	public static final String PRINT_RATIONAL_TEMP_2 		= "$print-rational-temp-2";
 	public static final String PRINT_RATIONAL_TEMP_3 		= "$print-rational-temp-3";
@@ -63,6 +80,8 @@ public class RunTime {
 	public static final String DIVIDE_BY_ZERO_RUNTIME_ERROR 	= "$$divide-by-zero";
 	public static final String BAD_INDEX_RUNTIME_ERROR 			= "$$bad-index";
 	public static final String FUNCTION_RUNOFF_RUNTIME_ERROR	= "$$function-runoff";
+	public static final String UNEQUAL_LENGTH_RUNTIME_ERROR 	= "$$unequal-length";
+	public static final String FOLD_LENGTH_RUNTIME_ERROR 		= "$$fold-length";
 
 	private ASMCodeFragment environmentASM() {
 		ASMCodeFragment result = new ASMCodeFragment(GENERATES_VOID);
@@ -116,8 +135,8 @@ public class RunTime {
 		
 		frag.add(DLabel, ARRAY_RECURSE_RELEASED);
 		frag.add(DataS, "Array recursively released\n");
-		frag.add(DLabel, ARRAY_ALREADY_RELEASED);
-		frag.add(DataS, "Array already released\n");
+		frag.add(DLabel, ALREADY_RELEASED);
+		frag.add(DataS, "Already released\n");
 		
 		return frag;
 	}
@@ -129,6 +148,8 @@ public class RunTime {
 		divideByZeroError(frag);
 		arrayBadIndexError(frag);
 		functionRunoffError(frag);
+		unequalLengthError(frag);
+		foldLengthError(frag);
 		
 		return frag;
 	}
@@ -158,7 +179,7 @@ public class RunTime {
 		String badIndexValueMessage = "$errors-bad-index";
 		
 		frag.add(DLabel, badIndexValueMessage);
-		frag.add(DataS, "bad index used for array");
+		frag.add(DataS, "bad index");
 		
 		frag.add(Label, BAD_INDEX_RUNTIME_ERROR);
 		frag.add(PushD, badIndexValueMessage);
@@ -174,13 +195,46 @@ public class RunTime {
 		frag.add(PushD, functionRunoffMessage);
 		frag.add(Jump, GENERAL_RUNTIME_ERROR);
 	}
+	private void unequalLengthError(ASMCodeFragment frag) {
+		String unequalLengthMessage = "$errors-function-unequal-length";
+		
+		frag.add(DLabel, unequalLengthMessage);
+		frag.add(DataS, "array arguments are of unequal length");
+		
+		frag.add(Label, UNEQUAL_LENGTH_RUNTIME_ERROR);
+		frag.add(PushD, unequalLengthMessage);
+		frag.add(Jump, GENERAL_RUNTIME_ERROR);
+	}
+	private void foldLengthError(ASMCodeFragment frag) {
+		String zeroLengthMessage = "$errors-fold-zero-length";
+		
+		frag.add(DLabel, zeroLengthMessage);
+		frag.add(DataS, "fold: array length must be >= 1");
+		
+		frag.add(Label, FOLD_LENGTH_RUNTIME_ERROR);
+		frag.add(PushD, zeroLengthMessage);
+		frag.add(Jump, GENERAL_RUNTIME_ERROR);
+	}
 	
 	private ASMCodeFragment temporaryStorage() {
 		ASMCodeFragment frag = new ASMCodeFragment(GENERATES_VOID);
 		
+		frag.add(DLabel, FOR_LOOP_INDEX);
+		frag.add(DataI, 0);
+		frag.add(DLabel, FOR_LOOP_OFFSET);
+		frag.add(DataI, 0);
+		frag.add(DLabel, FOR_LOOP_END_INDEX);
+		frag.add(DataI, 0);
+		frag.add(DLabel, FOR_LOOP_IDENTIFIER);
+		frag.add(DataI, 0);
+		frag.add(DLabel, FOR_LOOP_SEQUENCE);
+		frag.add(DataI, 0);
+		
 		frag.add(DLabel, INDEX_TEMP_1);
 		frag.add(DataI, 0);
 		frag.add(DLabel, INDEX_TEMP_2);
+		frag.add(DataI, 0);
+		frag.add(DLabel, INDEX_TEMP_3);
 		frag.add(DataI, 0);
 		
 		frag.add(DLabel, ARRAY_TEMP_1);
@@ -193,6 +247,27 @@ public class RunTime {
 		frag.add(DataI, 0);
 		frag.add(DLabel, ARRAY_TEMP_5);
 		frag.add(DataI, 0);
+		frag.add(DLabel, ARRAY_TEMP_6);
+		frag.add(DataI, 0);
+		
+		frag.add(DLabel, STRING_TEMP_1);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_ADDR_1);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_ADDR_2);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_SIZE_1);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_SIZE_2);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_OFFSET_1);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_OFFSET_2);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_COPY_START);
+		frag.add(DataI, 0);
+		frag.add(DLabel, STRING_COPY_END);
+		frag.add(DataI, 0);
 		
 		frag.add(DLabel, RELEASE_TEMP_1);
 		frag.add(DataI, 0);
@@ -201,6 +276,9 @@ public class RunTime {
 		frag.add(DLabel, RELEASE_TEMP_3);
 		frag.add(DataI, 0);
 		frag.add(DLabel, RELEASE_TEMP_4);
+		frag.add(DataI, 0);
+		
+		frag.add(DLabel, REDUCE_ARR_LENGTH);
 		frag.add(DataI, 0);
 		
 		frag.add(DLabel, RATIONAL_TEMP_NUMERATOR_1);

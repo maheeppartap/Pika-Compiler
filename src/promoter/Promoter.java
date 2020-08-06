@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import asmCodeGenerator.codeGenerator.array.ArrayOffsetSCG;
 import lexicalAnalyzer.*;
 import parseTree.ParseNode;
 import parseTree.nodeTypes.ArrayNode;
@@ -16,10 +17,6 @@ import parseTree.nodeTypes.OperatorNode;
 import semanticAnalyzer.signatures.*;
 import semanticAnalyzer.types.*;
 import tokens.LextantToken;
-
-
-// todo: add some overloads for all the promotions possible
-// todo: test some more promotions
 
 public class Promoter {
 	LinkedHashMap<ParseNode, List<TypeLiteral>> promotions;
@@ -32,13 +29,12 @@ public class Promoter {
 	public void addPromotion(ParseNode node, List<TypeLiteral> castTypes) {
 		promotions.put(node, castTypes);
 	}
-
-	// maybe for the future
+	// unused
 	public void removePromotion(ParseNode node) {
 		promotions.remove(node);
 	}
 	
-	public boolean isItPromotable(OperatorNode node) {
+	public boolean isPromotable(OperatorNode node) {
 		Lextant operator = operatorFor(node);
 		
 		List<Type> childTypes = new ArrayList<Type>();
@@ -139,7 +135,7 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean isItPromotable(FunctionInvocationNode node) {
+	public boolean isPromotable(FunctionInvocationNode node) {
 		FunctionSignature signature;
 		
 		if (node.child(0).getType() instanceof LambdaType) {
@@ -226,9 +222,8 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean isItPromotable(ArrayNode node) {
-		// Skip promotion on empty arrays and arrays being cloned
-		if (node.isEmpty()) return false;
+	public boolean isPromotable(ArrayNode node) {
+		// Skip promotion on arrays being cloned
 		if (node.getToken().isLextant(Keyword.CLONE)) return false;
 		
 		List<Type> childTypes = new ArrayList<Type>();
@@ -236,6 +231,17 @@ public class Promoter {
 		
 		node.getChildren().forEach((child) -> childTypes.add(child.getType()));
 		node.getChildren().forEach((child) -> castTypes.add(child.getType()));
+		
+		// Attempt to promote index for empty arrays
+		if (node.isEmpty()) {
+			if (childTypes.get(0) == PrimitiveType.CHARACTER) {
+				castTypes.set(0, PrimitiveType.INTEGER);
+				addPromotion(node.child(0), Arrays.asList(TypeLiteral.INTEGER));
+				return true;
+			} else {
+				return false;
+			}
+		}
 		
 		int numType = 0;
 		int totalNum = node.nChildren();
@@ -306,24 +312,56 @@ public class Promoter {
 		
 		return false;
 	}
-	public boolean isItPromotable(IndexNode node) {
-		if (node.child(0).getType() instanceof ArrayType) {
-			if (node.child(1).getType() == PrimitiveType.CHARACTER) {
+	public boolean isPromotable(IndexNode node) {
+		Lextant operator = operatorFor(node);
+		List<Type> childTypes = new ArrayList<Type>();
+		node.getChildren().forEach((child) -> childTypes.add(child.getType()));
+
+		if (childTypes.get(0) instanceof ArrayType) {
+			if (childTypes.get(1) == PrimitiveType.CHARACTER) {
 				addPromotion(node.child(1), Arrays.asList(TypeLiteral.INTEGER));
 				
-				Type t = node.child(0).getType();
-				while (t instanceof ArrayType) {
-					t = ((ArrayType)t).getSubtype(); 
+				Type subtype = ((ArrayType)childTypes.get(0)).getSubtype();
+				if (subtype instanceof TypeLiteral) {
+					subtype = ((TypeLiteral) subtype).getType();
 				}
+
+				FunctionSignature signature = new FunctionSignature(new ArrayOffsetSCG(), new ArrayType(), PrimitiveType.INTEGER, subtype);
 				
-				node.setType(t);
+				node.setType(subtype);
+				node.setIndexType(childTypes.get(0));
+				node.setSignature(signature);
 				return true;
 			}
 		}
 		
+		if (childTypes.get(0) == PrimitiveType.STRING) {
+			FunctionSignature signature = FunctionSignatures.signature(operator, childTypes);
+			
+			for (int i = 1; i < childTypes.size(); i++) {
+				if (childTypes.get(i) == PrimitiveType.CHARACTER) {
+			    	childTypes.set(i, PrimitiveType.INTEGER);
+					signature = FunctionSignatures.signature(operator, childTypes);
+					
+					if (signature.isNull()) {
+						childTypes.set(i, PrimitiveType.CHARACTER);
+					} else {
+						addPromotion(node.child(i), Arrays.asList(TypeLiteral.INTEGER));
+					}
+			    }
+			}
+			
+			if (signature.accepts(childTypes)) {
+				node.setType(signature.resultType());
+				node.setIndexType(childTypes.get(0));
+				node.setSignature(signature);
+				return true;
+			}
+		}
+
 		return false;
 	}
-	public boolean isItPromotable(ParseNode node) {
+	public boolean isPromotable(ParseNode node) {
 		Lextant operator = operatorFor(node);
 		
 		List<Type> childTypes = new ArrayList<Type>();

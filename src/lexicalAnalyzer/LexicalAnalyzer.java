@@ -30,12 +30,11 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	}
 
 	
-	//////////////////////////////////////////////////////////////////////////////
-	// Token-finding main dispatch
 
 	@Override
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
+
 
 		if(ch.getCharacter() == '#') {
 			return scanComment(ch);
@@ -46,7 +45,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		else if(ch.getCharacter() == '"') {
 			return scanString(ch);
 		}
-		else if(isNumber(ch)) {
+		else if(amIaNumber(ch)) {
 			return scanNumber(ch);
 		}
 		else if (ch.isSign()) {
@@ -76,10 +75,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		return ch;
 	}
 
-	//////////////////////////////////////////////////////////////////////////////
-	// Comment lexical analysis //////////////////////////////////////////////////
-	//////////////////////////////////////////////////////////////////////////////
-
 	private Token scanComment(LocatedChar ch) {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(ch.getCharacter());
@@ -92,10 +87,8 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		
 		return findNextToken();
 	}
+	
 
-	//////////////////////////////////////////////////////////////////////////////
-	// Character and String lexical analysis
-	// TASK: Finish character and string lexical analysis
 	private Token scanCharacter(LocatedChar ch) {
 		LocatedChar aChar = input.next();
 		LocatedChar c = input.next();
@@ -123,11 +116,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		
 		return StringToken.make(ch.getLocation(), buffer.toString());
 	}
-	
-	
-	//////////////////////////////////////////////////////////////////////////////
-	// Integer and Floating lexical analysis	
-	
+
 	private Token scanSignedNumber(LocatedChar ch) {
 		LocatedChar next = input.peek();
 		if(next.isDigit() || next.getCharacter() == '.') {
@@ -152,9 +141,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		
 		appendSubsequentDigits(buffer);
 		
-		// If next character is not a period, or if next character is a period
-		// but is not followed by a digit, return INTEGER, except if first
-		// character was a ., return FLOAT
+
 		LocatedChar c = input.next();
 		if (c.getCharacter() != '.' || !(input.peek().isDigit())) {
 			input.pushback(c);
@@ -177,7 +164,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			appendSubsequentDigits(buffer);
 			c = input.next();
 		}
-		// exponential case
+		
 		if (c.getCharacter() == 'E') {
 			LocatedChar c2 = input.next();
 			if (c2.isDigit() || c2.isSign() && input.peek().isDigit()) {
@@ -192,6 +179,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		} else {
 			input.pushback(c);
 		}
+		
 		return FloatingToken.make(ch.getLocation(), buffer.toString());
 	}
 	private void appendSubsequentDigits(StringBuffer buffer) {
@@ -205,7 +193,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		input.pushback(c);
 	}
 	
-	private boolean isNumber(LocatedChar lc) {
+	private boolean amIaNumber(LocatedChar lc) {
 		LocatedChar next = input.peek();
 		return lc.isDigit() || lc.getCharacter() == '.' && next.isDigit();
 	}
@@ -221,12 +209,12 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 			appendSubsequentCharacters(buffer);
 	
 			String lexeme = buffer.toString();
-
+			// If identifier exceeds 32 characters,  
 			if(lexeme.length() > 32) {
 				lexicalErrorWithIdentifier(lexeme);
 				return findNextToken();
 			}
-			
+			if(lexeme.equals("null")) lexeme = "void";	//never-mind this
 			if(Keyword.isAKeyword(lexeme)) {
 				return LextantToken.make(firstChar.getLocation(), lexeme, Keyword.forLexeme(lexeme));
 			}
@@ -267,11 +255,11 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 
 	private void lexicalError(LocatedChar ch) {
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
-		log.severe("Lexical error: invalid character " + ch);
+		log.severe("Lexical error: invalid character" + ch);
 	}
 	private void lexicalErrorWithIdentifier(String lexeme) {
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
-		log.severe("Lexical error:" + lexeme + "' is too long!\n");
+		log.severe( lexeme + " is greater than 32 chars. Please reduce the number of chars");
 	}
 	
 }

@@ -6,33 +6,42 @@ import tokens.Token;
 
 public enum Keyword implements Lextant {
 	EXEC("exec"),
-	
-	BOOL("bool"),
 	TRUE("_true_"),
 	FALSE("_false_"),
 	CHAR("char"),
+	BOOL("bool"),
 	STRING("string"),
-	INT("int"),
 	FLOAT("float"),
 	RATIONAL("rat"),
-	NULL_("null"),
+	NULL("void"),
 	CONST("const"),
+	INT("int"),
+	STATIC("static"),
 	VAR("var"),
-	ALLOC("alloc"),
+	NEW("new"),
 	CLONE("clone"),
 	DEALLOC("dealloc"),
+	ZIP("zip"),
+	REDUCE("reduce"),
 	LENGTH("length"),
+	REVERSE("reverse"),
+	MAP("map"),
+	FOLD("fold"),
 	FUNCTION("func"),
+	WHILE("while"),
 	CALL("call"),
 	RETURN("return"),
 	IF("if"),
 	ELSE("else"),
-	WHILE("while"),
+	FOR("for"),
+	INDEX("index"),
+	ELEMENT("elem"),
+	OF("of"),
 	CONTINUE("continue"),
 	BREAK("break"),
 	PRINT("print"),
-	NEWLINE("_n_"),
 	TAB("_t_"),
+	NEWLINE("_n_"),
 	NULL_KEYWORD("");
 
 	private String lexeme;
@@ -62,7 +71,8 @@ public enum Keyword implements Lextant {
 	}
 	
 	public static Lextant[] getTypeLiteral() {
-		return new Lextant[]{ BOOL, CHAR, STRING, INT, FLOAT, RATIONAL, NULL_};
+		Lextant[] literals = { BOOL, CHAR, STRING, INT, FLOAT, RATIONAL, NULL};
+		return literals;
 	}
 	
 	/*   the following hashtable lookup can replace the serial-search implementation of forLexeme() above. It is faster but less clear. 

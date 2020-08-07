@@ -561,7 +561,6 @@ public class Parser {
 			return syntaxErrorNode("booleanAndExpression");
 		}
 		
-		//fixme
 		ParseNode left = parseComparisonExpression();
 		while(nowReading.isLextant(Punctuator.AND)) {
 			Token booleanToken = nowReading;

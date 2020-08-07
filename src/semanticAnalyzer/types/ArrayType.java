@@ -15,7 +15,6 @@ public class ArrayType implements Type {
 		return sizeInBytes;
 	}
 	
-// ACCESSORS
 	public void setSubtype(Type type) {
 		this.subtype = type;
 		this.infoString = "ARRAY[" + subtype.infoString() + "]";
@@ -28,7 +27,7 @@ public class ArrayType implements Type {
 		return infoString;
 	}
 	
-// HELPER FUNCTIONS
+
 	public static ArrayType withSubtype(Type subtype) {
 		ArrayType arrayT = new ArrayType();
 		arrayT.setSubtype(subtype);
@@ -57,10 +56,8 @@ public class ArrayType implements Type {
 			subtype2 = ((TypeLiteral) subtype2).getType();
 		}
 		
-		if (subtype1 != null && subtype1 != null) {
-			if (subtype1.equals(subtype2)) {
-				return true;
-			}
+		if (subtype1 != null) {
+			return subtype1.equals(subtype2);
 		}
 		
 		return false;

@@ -40,8 +40,8 @@ public interface ParseNodeVisitor {
 	void visitEnter(ReturnNode node);
 	void visitLeave(ReturnNode node);
 	
-	void visitEnter(IfNode node);
-	void visitLeave(IfNode node);
+	void visitEnter(BranchhingNode_if node);
+	void visitLeave(BranchhingNode_if node);
 	void visitEnter(WhileNode node);
 	void visitLeave(WhileNode node);
 	void visitEnter(ForNode node);
@@ -59,8 +59,8 @@ public interface ParseNodeVisitor {
 	void visitLeave(MapOperatorNode node);
 	void visitEnter(ReduceOperatorNode node);
 	void visitLeave(ReduceOperatorNode node);
-	void visitEnter(ZipOperatorNode node);
-	void visitLeave(ZipOperatorNode node);
+	void visitEnter(ZipOpNode node);
+	void visitLeave(ZipOpNode node);
 	void visitEnter(ReverseOperatorNode node);
 	void visitLeave(ReverseOperatorNode node);
 	void visitEnter(UnaryOperatorNode node);
@@ -73,8 +73,8 @@ public interface ParseNodeVisitor {
 	void visitLeave(LambdaNode node);
 	void visitEnter(LambdaParamTypeNode node);
 	void visitLeave(LambdaParamTypeNode node);
-	void visitEnter(LambdaParamNode node);
-	void visitLeave(LambdaParamNode node);
+	void visitEnter(FuncParamNode node);
+	void visitLeave(FuncParamNode node);
 	
 	void visitEnter(PrintStatementNode node);
 	void visitLeave(PrintStatementNode node);
@@ -197,10 +197,10 @@ public interface ParseNodeVisitor {
 			defaultVisitLeave(node);
 		}
 		
-		public void visitEnter(IfNode node) {
+		public void visitEnter(BranchhingNode_if node) {
 			defaultVisitEnter(node);
 		}
-		public void visitLeave(IfNode node) {
+		public void visitLeave(BranchhingNode_if node) {
 			defaultVisitLeave(node);
 		}
 		public void visitEnter(WhileNode node) {
@@ -252,10 +252,10 @@ public interface ParseNodeVisitor {
 		public void visitLeave(ReduceOperatorNode node) {
 			defaultVisitLeave(node);
 		}
-		public void visitEnter(ZipOperatorNode node) {
+		public void visitEnter(ZipOpNode node) {
 			defaultVisitEnter(node);
 		}
-		public void visitLeave(ZipOperatorNode node) {
+		public void visitLeave(ZipOpNode node) {
 			defaultVisitLeave(node);
 		}
 		public void visitEnter(ReverseOperatorNode node) {
@@ -291,10 +291,10 @@ public interface ParseNodeVisitor {
 		public void visitLeave(LambdaParamTypeNode node) {
 			defaultVisitLeave(node);
 		}
-		public void visitEnter(LambdaParamNode node) {
+		public void visitEnter(FuncParamNode node) {
 			defaultVisitEnter(node);
 		}
-		public void visitLeave(LambdaParamNode node) {
+		public void visitLeave(FuncParamNode node) {
 			defaultVisitLeave(node);
 		}
 		

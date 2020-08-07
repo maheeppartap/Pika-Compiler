@@ -21,8 +21,6 @@ public class PrintArraySCG implements SimpleCodeGenerator {
 		Type type = (Type)var[0];
 
 		ASMCodeChunk chunk = new ASMCodeChunk();
-		
-		//chunk.add(ASMOpcode.Label, RunTime.SUB_PRINT_ARRAY);
 
 		Labeller labeller = new Labeller("print-array");
 		String startLabel = labeller.newLabel();
@@ -55,23 +53,19 @@ public class PrintArraySCG implements SimpleCodeGenerator {
 		chunk.add(ASMOpcode.Exchange);
 		chunk.add(ASMOpcode.StoreI);
 		
-		// Offset counter (start after Array record)
 		chunk.add(ASMOpcode.PushD, RunTime.PRINT_TEMP_3);	// 3 = OFFSET FROM BASE
 		chunk.add(ASMOpcode.PushI, 16);
 		chunk.add(ASMOpcode.StoreI);
 		
-		// Print open bracket '['
 		chunk.add(ASMOpcode.PushI, 91);
 		chunk.add(ASMOpcode.PushD, RunTime.CHARACTER_PRINT_FORMAT);
 		chunk.add(ASMOpcode.Printf);
 		
-		// Start printing loop
 			chunk.add(ASMOpcode.Label, loopLabel);
 			chunk.add(ASMOpcode.PushD, RunTime.PRINT_TEMP_1);
 			chunk.add(ASMOpcode.LoadI);
 			chunk.add(ASMOpcode.JumpFalse, joinLabel);
 	
-			// Print value at array[index]
 			chunk.add(ASMOpcode.PushD, RunTime.ARRAY_TEMP_1);
 			chunk.add(ASMOpcode.LoadI);
 			chunk.add(ASMOpcode.PushD, RunTime.PRINT_TEMP_3);
@@ -81,7 +75,6 @@ public class PrintArraySCG implements SimpleCodeGenerator {
 			OpcodeForPrintSCG scg = new OpcodeForPrintSCG(type);
 			chunk.append(scg.generate());
 			
-			// Modify array offset
 			chunk.add(ASMOpcode.PushD, RunTime.PRINT_TEMP_3);
 			chunk.add(ASMOpcode.LoadI);
 			chunk.add(ASMOpcode.PushD, RunTime.PRINT_TEMP_2);

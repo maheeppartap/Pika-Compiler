@@ -18,9 +18,7 @@ public class ControlNode extends ParseNode {
 	}
 	
 	
-	////////////////////////////////////////////////////////////
-	// attributes
-	
+
 	public Lextant getOperator() {
 		return lextantToken().getLextant();
 	}
@@ -29,18 +27,13 @@ public class ControlNode extends ParseNode {
 	}
 
 	
-	////////////////////////////////////////////////////////////
-	// convenience factory
-	
+
 	public static ControlNode withChild(Token token) {
 		ControlNode node = new ControlNode(token);
 		return node;
 	}
 	
-	
-	///////////////////////////////////////////////////////////
-	// boilerplate for visitors
-			
+
 	public void accept(ParseNodeVisitor visitor) {
 		visitor.visitEnter(this);
 		visitChildren(visitor);

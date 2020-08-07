@@ -9,9 +9,8 @@ public enum PrimitiveType implements Type {
 	RATIONAL(8),
 	STRING(4),
 	VOID(0),
-	
-	ERROR(0),			// use as a value when a syntax error has occurred
-	NO_TYPE(0, "");		// use as a value when no type has been assigned.
+	ERROR(0),
+	NO_TYPE(0, "");
 	
 	private int sizeInBytes;
 	private String infoString;

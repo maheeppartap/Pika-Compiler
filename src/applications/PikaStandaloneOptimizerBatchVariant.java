@@ -50,7 +50,7 @@ public class PikaStandaloneOptimizerBatchVariant extends PikaApplication {
 		removeOldASMOFile(outfile);
 	}
 	private static void informUserNoCodeGenerated() {
-		System.err.println("optimizer has errors.  no executable created.");
+		System.err.println("optimizer has errors. No executable created.");
 	}
 	private static void removeOldASMOFile(String filename) {
 		File file = new File(filename);

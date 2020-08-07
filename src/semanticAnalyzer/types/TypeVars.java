@@ -1,16 +1,17 @@
 package semanticAnalyzer.types;
 
-public class TypeVariable implements Type {
+
+public class TypeVars implements Type {
 	private int sizeInBytes;
 	private Type subtype;
 	private String infoString;
 
-	public TypeVariable(Type type) {
+	public TypeVars(Type type) {
 		this.subtype = type;
 		this.sizeInBytes = type.getSize();
 		this.infoString = toString();
 	}
-	public TypeVariable(Type type, String infoString) {
+	public TypeVars(Type type, String infoString) {
 		this.subtype = type;
 		this.sizeInBytes = type.getSize();
 		this.infoString = infoString;

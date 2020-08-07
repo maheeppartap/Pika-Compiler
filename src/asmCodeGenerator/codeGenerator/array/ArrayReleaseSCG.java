@@ -54,6 +54,7 @@ public class ArrayReleaseSCG implements SimpleCodeGenerator {
 		chunk.add(ASMOpcode.BTAnd);
 		chunk.add(ASMOpcode.JumpTrue, joinLabel);
 		
+		// TODO: Check the subtype-is-reference bit (recurse)
 		if (type instanceof ArrayType) {
 			if (((ArrayType) type).getSubtype() instanceof ArrayType) {
 				Type subType = ((ArrayType) type).getSubtype();

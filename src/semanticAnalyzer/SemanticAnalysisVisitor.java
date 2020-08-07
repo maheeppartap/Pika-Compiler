@@ -104,7 +104,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 				}
 				
 				if (parent == null || !(parent instanceof CallNode)) {
-					functionInvocationError(node, "Cannot use VOID function as an expression");
+					functionInvocationError(node, "you were not supposed to do that...");
 					return;
 				}
 			}
@@ -222,16 +222,14 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		}
 		
 		if (tempNode instanceof IdentifierNode) { 
-			// Configure identifier		
 			IdentifierNode target = (IdentifierNode) tempNode;
 			target.setBinding(target.findVariableBinding());
 			target.setType(target.getBinding().getType());
 			
-			// Check for immutability
 			if (target.isMutable() != null) {
 				if (!target.isMutable() && !(node.child(0) instanceof IndexNode)) {
 					String targetName = target.getToken().getLexeme();
-					logError("Cannot assign to variable '" + targetName + "'.");
+					logError("Invalid assignment '" + targetName + "'.");
 					return;
 				}
 			}
@@ -283,7 +281,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	///////////////////////////////////////////////////////////////////////////
 	// control strucutures
 	@Override
-	public void visitLeave(IfNode node) {
+	public void visitLeave(BranchhingNode_if node) {
 		assert node.nChildren() >= 2;
 		if (node.child(0).getType() != PrimitiveType.BOOLEAN) {
 			typeCheckError(node, Arrays.asList(node.child(0).getType()));
@@ -317,8 +315,8 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		while (!(parent instanceof WhileNode || parent instanceof ForNode)) {
 			if (parent.getParent() == null) {
 				Token token = node.getToken();
-				logError("operator " + token.getLexeme() + " only allowed inside the body" +
-						 " of a while loop or for loop, at " + token.getLocation());
+				logError(token.getLexeme() + " is invalid here at " +
+						  token.getLocation());
 				node.setType(PrimitiveType.ERROR);
 				return;
 			}
@@ -492,7 +490,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		typeCheckError(node, Arrays.asList(operandType));
 	}
 	@Override
-	public void visitLeave(ZipOperatorNode node) {
+	public void visitLeave(ZipOpNode node) {
 		assert node.nChildren() == 3;
 		ParseNode c1 = node.child(0);
 		ParseNode c2 = node.child(1);
@@ -564,7 +562,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 				node.setSignature(signature);		
 				node.setType(childTypes.get(1));
 			} else {
-				logError("cannot cast type '" + childTypes.get(0).infoString() + "' to type '" + childTypes.get(1).infoString() + "'");
+				logError("invalid cast: " + childTypes.get(0).infoString() + "' to type '" + childTypes.get(1).infoString() + "'");
 				node.setType(PrimitiveType.ERROR);
 			}
 		} else {
@@ -574,7 +572,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 				node.setSignature(signature);
 				node.setType(signature.resultType());
 			} else {
-				logError("cannot cast type '" + childTypes.get(0).infoString() + "' to type '" + childTypes.get(1).infoString() + "'");
+				logError("invalid cast: " + childTypes.get(0).infoString() + "' to type '" + childTypes.get(1).infoString() + "'");
 				node.setType(PrimitiveType.ERROR);
 			}
 		}
@@ -587,7 +585,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 		
 		Lextant operator = operatorFor(node);
 		
-		if (operator == Keyword.NEW) {
+		if (operator == Keyword.ALLOC) {
 			if (!node.isEmpty()) {				
 				// Check that all values are of same type
 				Type t = childTypes.get(0);
@@ -714,7 +712,7 @@ class SemanticAnalysisVisitor extends ParseNodeVisitor.Default {
 	}
 	private boolean isFunctionParameter(IdentifierNode node) {
 		ParseNode parent = node.getParent();
-		return (parent instanceof LambdaParamNode) && (node == parent.child(0));
+		return (parent instanceof FuncParamNode) && (node == parent.child(0));
 	}
 	private boolean isForIdentifier(IdentifierNode node) {
 		ParseNode parent = node.getParent();

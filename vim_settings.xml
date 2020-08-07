@@ -85,36 +85,10 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/ArrayType.java" timestamp="1596737498640">
-        <mark key="[" line="17" column="0" />
-        <mark key="]" line="17" column="0" />
-        <mark key="." line="17" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/ControlNode.java" timestamp="1596737809372">
-        <mark key="[" line="35" column="0" />
-        <mark key="]" line="35" column="0" />
-        <mark key="." line="35" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596738357775">
-        <mark key="[" line="1249" column="0" />
-        <mark key="]" line="1249" column="0" />
-        <mark key="." line="1249" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/LambdaType.java" timestamp="1596737492062">
-        <mark key="[" line="24" column="0" />
-        <mark key="]" line="24" column="0" />
-        <mark key="." line="24" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1596738027415">
-        <mark key="[" line="2" column="20" />
-        <mark key="]" line="14" column="0" />
-        <mark key="." line="14" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/promoter/Promoter.java" timestamp="1596737774273">
-        <mark key="[" line="35" column="20" />
-        <mark key="]" line="31" column="0" />
-        <mark key="^" line="31" column="23" />
-        <mark key="." line="31" column="0" />
+      <file name="/Dummy.txt" timestamp="1596774513351">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/IfNode.java" timestamp="1596737823927">
         <mark key="[" line="9" column="14" />
@@ -126,6 +100,11 @@
         <mark key="]" line="12" column="24" />
         <mark key="." line="12" column="24" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/ArrayType.java" timestamp="1596737498640">
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="17" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1596737730679">
         <mark key="[" line="106" column="51" />
         <mark key="]" line="106" column="51" />
@@ -134,13 +113,39 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/ZipOperatorNode.java" timestamp="1596737850490">
         <mark key="[" line="10" column="14" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/ControlNode.java" timestamp="1596737809372">
+        <mark key="[" line="35" column="0" />
+        <mark key="]" line="35" column="0" />
+        <mark key="." line="35" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeVariable.java" timestamp="1596737433396">
         <mark key="[" line="3" column="14" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596738357775">
+        <mark key="[" line="1249" column="0" />
+        <mark key="]" line="1249" column="0" />
+        <mark key="." line="1249" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/LambdaType.java" timestamp="1596737492062">
+        <mark key="[" line="24" column="0" />
+        <mark key="]" line="24" column="0" />
+        <mark key="." line="24" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1596774338822">
+        <mark key="[" line="14" column="3" />
+        <mark key="]" line="14" column="4" />
+        <mark key="." line="14" column="4" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1596737997169">
         <mark key="[" line="358" column="23" />
         <mark key="]" line="357" column="0" />
         <mark key="." line="357" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/promoter/Promoter.java" timestamp="1596737774273">
+        <mark key="[" line="35" column="20" />
+        <mark key="]" line="31" column="0" />
+        <mark key="^" line="31" column="23" />
+        <mark key="." line="31" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeLiteral.java" timestamp="1596737449513">
         <mark key="[" line="16" column="48" />
@@ -257,10 +262,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBhcnJheSBub2Rl</text>
+        <text>added more keywords. Implemented reverse and map</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">CS8vIG5lZCB0byBiZSBsZWZ0IHJlY3Vyc2l2ZT8/</text>
+        <text>c</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>
@@ -269,31 +274,31 @@
         <text encoding="base64">IGNvbnN0IHQgOj0gImhleSIuCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBhcnJheSBub2Rl</text>
+        <text>added more keywords. Implemented reverse and map</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQkKCQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBoaWdoIGxldmVsIG9wZXJhdG9ycw==</text>
+        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBhcnJheSBub2Rl</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJLy8gRmluZCBHQ0QK</text>
+        <text encoding="base64">CQkKCQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBoaWdoIGxldmVsIG9wZXJhdG9ycw==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQkJLy8gRW5zdXJlIG51bWVyYXRvciBoYXMgbmVnYXRpdmUgc2lnbgo=</text>
+        <text encoding="base64">CQkJLy8gRmluZCBHQ0QK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQkJCS8vIENoZWNrIGZvciBkaXZpc2lvbiBieSAwLCBpc3N1ZSBSdW50aW1lIGVycm9yCg==</text>
+        <text encoding="base64">CQkJLy8gRW5zdXJlIG51bWVyYXRvciBoYXMgbmVnYXRpdmUgc2lnbgo=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkvL2NodW5rLmFkZChBU01PcGNvZGUuTGFiZWwsIFJ1blRpbWUuU1VCX1BSSU5UX0FSUkFZKTsK</text>
+        <text encoding="base64">CQkJCS8vIENoZWNrIGZvciBkaXZpc2lvbiBieSAwLCBpc3N1ZSBSdW50aW1lIGVycm9yCg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQkvLyBPZmZzZXQgY291bnRlciAoc3RhcnQgYWZ0ZXIgQXJyYXkgcmVjb3JkKQo=</text>
+        <text encoding="base64">CQkvL2NodW5rLmFkZChBU01PcGNvZGUuTGFiZWwsIFJ1blRpbWUuU1VCX1BSSU5UX0FSUkFZKTsK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQkvLyBTdGFydCBwcmludGluZyBsb29wCg==</text>
+        <text encoding="base64">CQkvLyBPZmZzZXQgY291bnRlciAoc3RhcnQgYWZ0ZXIgQXJyYXkgcmVjb3JkKQo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQkvLyBQcmludCBvcGVuIGJyYWNrZXQgJ1snCg==</text>
+        <text encoding="base64">CQkvLyBTdGFydCBwcmludGluZyBsb29wCg==</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import asmCodeGenerator.codeStorage.ASMOpcode;
 import semanticAnalyzer.signatures.FunctionSignature;
 
-public class LambdaType implements Type {	
+public class LambdaType implements Type {
 	private String infoString;
 	private ArrayList<Type> typeList;
 	private Type returnType;
@@ -22,7 +22,7 @@ public class LambdaType implements Type {
 		return sizeInBytes;
 	}
 	
-// ACCESSORS
+
 	
 	public FunctionSignature getSignature() {
 		return new FunctionSignature(ASMOpcode.Nop, typeList, returnType);

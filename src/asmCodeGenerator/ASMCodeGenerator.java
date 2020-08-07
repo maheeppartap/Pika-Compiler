@@ -390,7 +390,7 @@ public class ASMCodeGenerator {
 		}
 		public void visitLeave(LambdaParamTypeNode node) {
 		}
-		public void visitLeave(LambdaParamNode node) {
+		public void visitLeave(FuncParamNode node) {
 		}
 
 		public void visitLeave(CallNode node) {
@@ -591,7 +591,7 @@ public class ASMCodeGenerator {
 		
 		///////////////////////////////////////////////////////////////////////////
 		// if statements
-		public void visitLeave(IfNode node) {
+		public void visitLeave(BranchhingNode_if node) {
 			newVoidCode(node);
 			
 			Labeller labeller = new Labeller("if-stmt");
@@ -1061,7 +1061,6 @@ public class ASMCodeGenerator {
 			if (variant instanceof ASMOpcode) {
 				ASMOpcode opcode = (ASMOpcode) variant;
 				
-				// Check for division by 0, issue Runtime error
 				if (opcode == ASMOpcode.Divide || opcode == ASMOpcode.FDivide) {
 					DivisionByZeroSCG scg = new DivisionByZeroSCG(type);
 					code.addChunk(scg.generate());
@@ -1161,11 +1160,9 @@ public class ASMCodeGenerator {
 			
 			code.append(arg2);
 			
-			// Ensure numerator has negative sign
 			RationalNegateSCG scg = new RationalNegateSCG();
 			code.addChunk(scg.generate());
 			
-			// Find GCD
 			RationalStackToTempSCG scg1 = new RationalStackToTempSCG();
 			code.addChunk(scg1.generate());
 			
@@ -1193,9 +1190,7 @@ public class ASMCodeGenerator {
 				code.add(opcode);
 			}
 		}
-		
-		///////////////////////////////////////////////////////////////////////////
-		// high level operators
+
 		public void visitLeave(FoldOperatorNode node) {
 			newValueCode(node);
 			
@@ -1232,7 +1227,7 @@ public class ASMCodeGenerator {
 			node.getSCG().setLambda(lambdaCode);
 			code.append(node.getSCG().generate());
 		}
-		public void visitLeave(ZipOperatorNode node) {
+		public void visitLeave(ZipOpNode node) {
 			newValueCode(node);
 			
 			ASMCodeFragment array1Code = removeValueCode(node.child(0));
@@ -1253,8 +1248,6 @@ public class ASMCodeGenerator {
 			code.addChunk(node.getSCG().generate());
 		}
 
-		///////////////////////////////////////////////////////////////////////////
-		// array node
 		public void visitLeave(ArrayNode node) {
 			newValueCode(node);
 			
@@ -1267,7 +1260,7 @@ public class ASMCodeGenerator {
 			
 			Lextant operator = node.getOperator();
 			
-			if (operator == Keyword.NEW) {
+			if (operator == Keyword.ALLOC) {
 				ASMCodeChunk subtypeChunk = new ASMCodeChunk();
 				
 				// Push length onto stack

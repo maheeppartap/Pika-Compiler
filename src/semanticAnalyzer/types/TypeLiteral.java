@@ -13,8 +13,8 @@ public enum TypeLiteral implements Type {
 	LAMBDA(8, new LambdaType()),
 	VOID(0, PrimitiveType.VOID),
 	
-	ERROR(0, PrimitiveType.ERROR),				// use as a value when a syntax error has occurred
-	NO_TYPE(0, PrimitiveType.NO_TYPE, "");		// use as a value when no type has been assigned.
+	ERROR(0, PrimitiveType.ERROR),
+	NO_TYPE(0, PrimitiveType.NO_TYPE, "");
 	
 	private int sizeInBytes;
 	private Type type;

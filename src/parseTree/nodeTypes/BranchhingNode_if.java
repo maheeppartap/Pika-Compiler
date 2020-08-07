@@ -7,19 +7,19 @@ import lexicalAnalyzer.Lextant;
 import tokens.LextantToken;
 import tokens.Token;
 
-public class IfNode extends ParseNode {
+public class BranchhingNode_if extends ParseNode {
 	
-	public IfNode(Token token) {
+	public BranchhingNode_if(Token token) {
 		super(token);
 		assert(token.isLextant(Keyword.IF));
 	}
 	
-	public IfNode(ParseNode node) {
+	public BranchhingNode_if(ParseNode node) {
 		super(node);
 		initChildren();
 	}
 	
-	public IfNode(Token token, ParseNode condition, ParseNode blockStatement) {
+	public BranchhingNode_if(Token token, ParseNode condition, ParseNode blockStatement) {
 		super(token);
 		assert(token.isLextant(Keyword.IF));
 		
@@ -28,9 +28,7 @@ public class IfNode extends ParseNode {
 	}
 	
 	
-	////////////////////////////////////////////////////////////
-	// attributes
-	
+
 	public Lextant getDeclarationType() {
 		return lextantToken().getLextant();
 	}
@@ -39,11 +37,9 @@ public class IfNode extends ParseNode {
 	}	
 	
 	
-	////////////////////////////////////////////////////////////
-	// convenience factory
-	
-	public static IfNode withElse(Token token, ParseNode condition, ParseNode blockStatement, ParseNode elseStatement) {
-		IfNode node = new IfNode(token, condition, blockStatement);
+
+	public static BranchhingNode_if withElse(Token token, ParseNode condition, ParseNode blockStatement, ParseNode elseStatement) {
+		BranchhingNode_if node = new BranchhingNode_if(token, condition, blockStatement);
 		node.appendChild(elseStatement);
 		return node;
 	}

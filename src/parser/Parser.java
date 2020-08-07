@@ -190,7 +190,7 @@ public class Parser {
 			return parseReleaseStatement();
 		}
 		if(startsIfStatement(nowReading)) {
-			return parseIfStatement();
+			return ParseBranching_if();
 		}
 		if(startsWhileStatement(nowReading)) {
 			return parseWhileStatement();
@@ -355,9 +355,8 @@ public class Parser {
 	}
 
 
-	///////////////////////////////////////////////////////////
-	// ifStmt -> if (expression) blockStatement (else blockStatement)?
-	private ParseNode parseIfStatement() {
+
+	private ParseNode ParseBranching_if() {
 		if(!startsIfStatement(nowReading)) {
 			return syntaxErrorNode("if-statement");
 		}
@@ -376,9 +375,9 @@ public class Parser {
 		if (startsElseStatement(nowReading)) {
 			expect(Keyword.ELSE);
 			ParseNode elseStatement = parseBlockStatement();
-			return IfNode.withElse(ifToken, condition, blockStatement, elseStatement);
+			return BranchhingNode_if.withElse(ifToken, condition, blockStatement, elseStatement);
 		} else {
-			ParseNode ifNode = new IfNode(ifToken, condition, blockStatement);	
+			ParseNode ifNode = new BranchhingNode_if(ifToken, condition, blockStatement);
 			return ifNode;
 		}
 	}
@@ -389,8 +388,7 @@ public class Parser {
 		return token.isLextant(Keyword.ELSE);
 	}
 	
-	///////////////////////////////////////////////////////////
-	// whileStmt -> while (expression) blockStatement
+
 	private ParseNode parseWhileStatement() {
 		if(!startsWhileStatement(nowReading)) {
 			return syntaxErrorNode("while-statement");
@@ -436,8 +434,7 @@ public class Parser {
 		return token.isLextant(Keyword.FOR);
 	}
 	
-	///////////////////////////////////////////////////////////
-	// controlStmt -> CONTINUE or BREAK.
+
 	private ParseNode parseControlStatement() {
 		if(!startsControlStatement(nowReading)) {
 			return syntaxErrorNode("release");
@@ -454,8 +451,7 @@ public class Parser {
 		return token.isLextant(Keyword.CONTINUE, Keyword.BREAK);
 	}
 	
-	///////////////////////////////////////////////////////////
-	// printStmt -> PRINT printExpressionList .
+
 	private ParseNode parsePrintStatement() {
 		if(!startsPrintStatement(nowReading)) {
 			return syntaxErrorNode("print statement");
@@ -473,8 +469,7 @@ public class Parser {
 		return token.isLextant(Keyword.PRINT);
 	}	
 
-	// This adds the printExpressions it parses to the children of the given parent
-	// printExpressionList -> printExpression* bowtie (,|;)  (note that this is nullable)
+
 	private PrintStatementNode parsePrintExpressionList(PrintStatementNode parent) {
 		while(startsPrintExpression(nowReading) || startsPrintSeparator(nowReading)) {
 			parsePrintExpression(parent);
@@ -482,9 +477,7 @@ public class Parser {
 		}
 		return parent;
 	}
-	
-	// This adds the printExpression it parses to the children of the given parent
-	// printExpression -> (expr | nl)?     (nullable)
+
 	private void parsePrintExpression(PrintStatementNode parent) {
 		if(startsExpression(nowReading)) {
 			ParseNode child = parseExpression();
@@ -506,8 +499,6 @@ public class Parser {
 		return startsExpression(token) || token.isLextant(Keyword.TAB) || token.isLextant(Keyword.NEWLINE);
 	}
 
-	// This adds the printExpression it parses to the children of the given parent
-	// printExpression -> expr? ,? nl? 
 	private void parsePrintSeparator(PrintStatementNode parent) {
 		if(!startsPrintSeparator(nowReading) && !nowReading.isLextant(Punctuator.TERMINATOR)) {
 			ParseNode child = syntaxErrorNode("print separator");
@@ -533,20 +524,8 @@ public class Parser {
 	}
 	
 
-	///////////////////////////////////////////////////////////
-	// expressions
-	// expr                     -> booleanOrExpression
-	// booleanOrExpression      -> booleanAndExpression
-	// booleanAndExpression     -> comparisonExpression
-	// comparisonExpression     -> additiveExpression [> additiveExpression]?
-	// additiveExpression       -> multiplicativeExpression [+ multiplicativeExpression]*  (left-assoc)
-	// multiplicativeExpression -> unaryExpression [MULT unaryExpression]*  (left-assoc)
-	// unaryExpression			-> [MULT atomicExpression]*  (right-assoc)
-	// atomicExpression         -> literal
-	// literal                  -> intNumber | floatNumber | booleanConstant | identifier 
 
-	// expr  -> booleanOrExpression
-	private ParseNode parseExpression() {		
+	private ParseNode parseExpression() {
 		if(!startsExpression(nowReading)) {
 			return syntaxErrorNode("expression");
 		}
@@ -556,13 +535,12 @@ public class Parser {
 		return startsBooleanOrExpression(token);
 	}
 	
-	// booleanOrExpression -> booleanAndExpression
 	private ParseNode parseBooleanOrExpression() {
 		if(!startsBooleanOrExpression(nowReading)) {
 			return syntaxErrorNode("booleanOrExpression");
 		}
 		
-		// ned to be left recursive??
+
 		ParseNode left = parseBooleanAndExpression();
 		while(nowReading.isLextant(Punctuator.OR)) {
 			Token booleanToken = nowReading;
@@ -583,7 +561,7 @@ public class Parser {
 			return syntaxErrorNode("booleanAndExpression");
 		}
 		
-		// ned to be left recursive??
+		//fixme
 		ParseNode left = parseComparisonExpression();
 		while(nowReading.isLextant(Punctuator.AND)) {
 			Token booleanToken = nowReading;
@@ -740,7 +718,7 @@ public class Parser {
 		if (startsZip(nowReading)) {
 			expect(Keyword.ZIP);
 			Token token = previouslyRead;
-			ParseNode zipNode = new ZipOperatorNode(token);
+			ParseNode zipNode = new ZipOpNode(token);
 			
 			for (int i = 0; i < 3; i++) {
 				zipNode.appendChild(parseUnaryExpression());
@@ -806,7 +784,7 @@ public class Parser {
 		}
 		
 		if (startsCastOrArray(nowReading)){
-			if (nowReading.isLextant(Keyword.NEW)) {
+			if (nowReading.isLextant(Keyword.ALLOC)) {
 				return parseArrayExpression();
 			}
 			
@@ -864,7 +842,7 @@ public class Parser {
 		return token.isLextant(Punctuator.OPEN_BRACKET); 
 	}
 	private boolean startsNewArray(Token token) {
-		return token.isLextant(Keyword.NEW); 
+		return token.isLextant(Keyword.ALLOC);
 	}
 	private boolean startsParenthetical(Token token) {
 		return token.isLextant(Punctuator.OPEN_PARENTHESIS); 
@@ -875,9 +853,9 @@ public class Parser {
 	//	   			   -> clone expression
 	//				   -> [expressionList]
 	private ParseNode parseArrayExpression() {
-		expect(Keyword.NEW, Keyword.CLONE);
+		expect(Keyword.ALLOC, Keyword.CLONE);
 		
-		if (previouslyRead.isLextant(Keyword.NEW)) {
+		if (previouslyRead.isLextant(Keyword.ALLOC)) {
 			Token token = previouslyRead;
 			
 			Type type = parseArrayType();
@@ -900,7 +878,7 @@ public class Parser {
 	}
 	private ParseNode parseArrayExpression(ParseNode val) {
 		if (previouslyRead.isLextant(Punctuator.SEPARATOR, Punctuator.CLOSE_BRACKET)) {
-			Token token = Keyword.NEW.prototype();
+			Token token = Keyword.ALLOC.prototype();
 			ArrayNode result = ArrayNode.withChildren(token, val, false);
 
 			if (!previouslyRead.isLextant(Punctuator.CLOSE_BRACKET)) {
@@ -991,7 +969,7 @@ public class Parser {
 				Token token = nowReading;
 				ParseNode identifier = parseIdentifier();
 				
-				LambdaParamNode child = LambdaParamNode.withChildren(token, type, identifier);
+				FuncParamNode child = FuncParamNode.withChildren(token, type, identifier);
 				parent.appendChild(child);
 			} else if(startsCastOrArray(nowReading)) {
 				Token token = nowReading;
@@ -999,7 +977,7 @@ public class Parser {
 				
 				ParseNode identifier = parseIdentifier();
 				
-				LambdaParamNode child = LambdaParamNode.withChildren(token, type, identifier);
+				FuncParamNode child = FuncParamNode.withChildren(token, type, identifier);
 				parent.appendChild(child);
 			} else if(startsLambdaType(nowReading)) {
 				ParseNode lambda = parseLambdaType();
@@ -1008,7 +986,7 @@ public class Parser {
 				ParseNode identifier = parseIdentifier();
 				Type type = lambda.getType();
 				
-				LambdaParamNode child = LambdaParamNode.withChildren(token, type, identifier, lambda);
+				FuncParamNode child = FuncParamNode.withChildren(token, type, identifier, lambda);
 				parent.appendChild(child);
 			} else {
 				parent.appendChild(syntaxErrorNode(Punctuator.GREATER.getLexeme()));

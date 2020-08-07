@@ -1,8 +1,18 @@
 
 
+func x<int t>->null{
+if(t > 3){
+    print "yay".
+}
+else{
+    print "nay".
+}
+    var m := 2.
+    return.
+}
 
 exec {
- const t := "hey".
- const y := t + "hey".
-  print y*y.
+   for elem i of ""{
+    print i.
+   }
 }

@@ -6,33 +6,33 @@ import tokens.Token;
 
 public enum Keyword implements Lextant {
 	EXEC("exec"),
+	BOOL("bool"),
 	TRUE("_true_"),
 	FALSE("_false_"),
 	CHAR("char"),
-	BOOL("bool"),
 	STRING("string"),
+	INT("int"),
 	FLOAT("float"),
 	RATIONAL("rat"),
-	NULL("void"),
-	CONST("const"),
-	INT("int"),
+	VOID("void"),
 	STATIC("static"),
+	CONST("const"),
 	VAR("var"),
-	NEW("new"),
+	ALLOC("alloc"),
 	CLONE("clone"),
 	DEALLOC("dealloc"),
-	ZIP("zip"),
-	REDUCE("reduce"),
 	LENGTH("length"),
 	REVERSE("reverse"),
-	MAP("map"),
 	FOLD("fold"),
+	MAP("map"),
+	REDUCE("reduce"),
+	ZIP("zip"),
 	FUNCTION("func"),
-	WHILE("while"),
 	CALL("call"),
 	RETURN("return"),
 	IF("if"),
 	ELSE("else"),
+	WHILE("while"),
 	FOR("for"),
 	INDEX("index"),
 	ELEMENT("elem"),
@@ -40,8 +40,8 @@ public enum Keyword implements Lextant {
 	CONTINUE("continue"),
 	BREAK("break"),
 	PRINT("print"),
-	TAB("_t_"),
 	NEWLINE("_n_"),
+	TAB("_t_"),
 	NULL_KEYWORD("");
 
 	private String lexeme;
@@ -71,7 +71,7 @@ public enum Keyword implements Lextant {
 	}
 	
 	public static Lextant[] getTypeLiteral() {
-		Lextant[] literals = { BOOL, CHAR, STRING, INT, FLOAT, RATIONAL, NULL};
+		Lextant[] literals = { BOOL, CHAR, STRING, INT, FLOAT, RATIONAL, VOID };
 		return literals;
 	}
 	

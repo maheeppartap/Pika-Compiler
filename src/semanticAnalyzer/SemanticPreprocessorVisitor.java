@@ -126,7 +126,7 @@ class SemanticPreprocessorVisitor extends ParseNodeVisitor.Default {
 		leaveScope(node);
 	}	
 	@Override
-	public void visitLeave(LambdaParamNode node) {
+	public void visitLeave(FuncParamNode node) {
 		if (node.child(0) instanceof IdentifierNode) {
 			IdentifierNode identifier = (IdentifierNode) node.child(0);
 

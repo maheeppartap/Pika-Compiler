@@ -5,13 +5,13 @@ import parseTree.ParseNodeVisitor;
 import semanticAnalyzer.types.*;
 import tokens.Token;
 
-public class LambdaParamNode extends ParseNode {
+public class FuncParamNode extends ParseNode {
 
-	public LambdaParamNode(Token token) {
+	public FuncParamNode(Token token) {
 		super(token);
 	}
 
-	public LambdaParamNode(ParseNode node) {
+	public FuncParamNode(ParseNode node) {
 		super(node);
 	}
 
@@ -19,15 +19,15 @@ public class LambdaParamNode extends ParseNode {
 	////////////////////////////////////////////////////////////
 	// convenience factory
 	
-	public static LambdaParamNode withChildren(Token token, Type type, ParseNode identifier) {
-		LambdaParamNode node = new LambdaParamNode(token);
+	public static FuncParamNode withChildren(Token token, Type type, ParseNode identifier) {
+		FuncParamNode node = new FuncParamNode(token);
 		node.setType(type);
 		node.appendChild(identifier);
 		return node;
 	}
 	
-	public static LambdaParamNode withChildren(Token token, Type type, ParseNode identifier, ParseNode child) {
-		LambdaParamNode node = new LambdaParamNode(token);
+	public static FuncParamNode withChildren(Token token, Type type, ParseNode identifier, ParseNode child) {
+		FuncParamNode node = new FuncParamNode(token);
 		node.setType(type);
 		node.appendChild(identifier);
 		node.appendChild(child);

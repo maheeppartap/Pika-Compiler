@@ -29,7 +29,6 @@ public class Promoter {
 	public void addPromotion(ParseNode node, List<TypeLiteral> castTypes) {
 		promotions.put(node, castTypes);
 	}
-	// unused
 	public void removePromotion(ParseNode node) {
 		promotions.remove(node);
 	}

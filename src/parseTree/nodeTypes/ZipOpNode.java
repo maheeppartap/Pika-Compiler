@@ -8,16 +8,16 @@ import lexicalAnalyzer.Lextant;
 import tokens.LextantToken;
 import tokens.Token;
 
-public class ZipOperatorNode extends OperatorNode {
+public class ZipOpNode extends OperatorNode {
 	ZipOperatorSCG scg;
 
-	public ZipOperatorNode(Token token) {
+	public ZipOpNode(Token token) {
 		super(token);
 		assert(token.isLextant(Keyword.ZIP));
 		this.scg = null;
 	}
 
-	public ZipOperatorNode(ParseNode node) {
+	public ZipOpNode(ParseNode node) {
 		super(node);
 	}
 	

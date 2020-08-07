@@ -8,39 +8,31 @@ public enum Punctuator implements Lextant {
 	SEPARATOR(","),
 	TERMINATOR("."),
 	RETURNS("->"),
-	
 	ADD("+"),
 	SUBTRACT("-"),
 	MULTIPLY("*"),
 	DIVISION("/"),
-	
 	OVER("//"),
 	EXPRESS_OVER("///"),
 	RATIONALIZE("////"),
-	
 	AND("&&"),
 	OR("||"),
-	
 	NOT("!"),
-	
 	LESS_OR_EQUAL("<="),
 	LESS("<"),
 	EQUAL("=="),
 	NOT_EQUAL("!="),
 	GREATER(">"),
 	GREATER_OR_EQUAL(">="),
-	
 	OPEN_BRACE("{"),
 	CLOSE_BRACE("}"),
-	OPEN_PARENTHESIS("("),
-	CLOSE_PARENTHESIS(")"),
+	OPEN_SMALL_BRACKET("("),
+	CLOSE_SMALL_BRACKET(")"),
 	OPEN_BRACKET("["),
 	CLOSE_BRACKET("]"),
-	
 	PIPE("|"),
 	HASH("#"),
 	ASSIGN(":="),
-	
 	NULL_PUNCTUATOR("");
 
 	private String lexeme;
@@ -62,7 +54,11 @@ public enum Punctuator implements Lextant {
 	public static Punctuator forLexeme(String lexeme) {
 		   return lexemeToPunctuator.forLexeme(lexeme);
 	}
-	
+
+	public static Lextant[] ReturnComparators() {
+		Lextant[] comparators = {LESS_OR_EQUAL, LESS, EQUAL, NOT_EQUAL, GREATER, GREATER_OR_EQUAL};
+		return comparators;
+	}
 	public static Lextant[] getMultiplicatives() {
 		Lextant[] multiplicatives = { MULTIPLY, DIVISION, OVER, EXPRESS_OVER, RATIONALIZE };
 		return multiplicatives;
@@ -72,20 +68,6 @@ public enum Punctuator implements Lextant {
 		Lextant[] rationals = { OVER, EXPRESS_OVER, RATIONALIZE };
 		return rationals;
 	}
-	
-	public static Lextant[] getComparators() {
-		Lextant[] comparators = { LESS_OR_EQUAL, LESS, EQUAL, NOT_EQUAL, GREATER, GREATER_OR_EQUAL };
-		return comparators;
-	}
-	
-//	public static Punctuator forLexeme(String lexeme) {
-//	for(Punctuator punctuator: values()) {
-//		if(punctuator.lexeme.equals(lexeme)) {
-//			return punctuator;
-//		}
-//	}
-//	return NULL_PUNCTUATOR;
-//}
 	
 }
 

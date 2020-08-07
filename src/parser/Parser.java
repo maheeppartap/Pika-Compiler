@@ -365,9 +365,9 @@ public class Parser {
 
 		Token ifToken = previouslyRead;
 		
-		expect(Punctuator.OPEN_PARENTHESIS);
+		expect(Punctuator.OPEN_SMALL_BRACKET);
 		ParseNode condition = parseExpression();
-		expect(Punctuator.CLOSE_PARENTHESIS);
+		expect(Punctuator.CLOSE_SMALL_BRACKET);
 		
 		ParseNode blockStatement = parseBlockStatement();
 		
@@ -398,9 +398,9 @@ public class Parser {
 
 		Token whileToken = previouslyRead;
 		
-		expect(Punctuator.OPEN_PARENTHESIS);
+		expect(Punctuator.OPEN_SMALL_BRACKET);
 		ParseNode condition = parseExpression();
-		expect(Punctuator.CLOSE_PARENTHESIS);
+		expect(Punctuator.CLOSE_SMALL_BRACKET);
 		
 		ParseNode blockStatement = parseBlockStatement();
 	
@@ -583,7 +583,7 @@ public class Parser {
 		}
 		
 		ParseNode left = parseAdditiveExpression();
-		while(nowReading.isLextant(Punctuator.getComparators())) {
+		while(nowReading.isLextant(Punctuator.ReturnComparators())) {
 			Token compareToken = nowReading;
 			readToken();
 			ParseNode right = parseAdditiveExpression();
@@ -771,9 +771,9 @@ public class Parser {
 		}
 		
 		if (startsParenthetical(nowReading)) {
-			expect(Punctuator.OPEN_PARENTHESIS);
+			expect(Punctuator.OPEN_SMALL_BRACKET);
 			ParseNode left = parseExpression();
-			expect(Punctuator.CLOSE_PARENTHESIS);
+			expect(Punctuator.CLOSE_SMALL_BRACKET);
 			left = parseIndexOrInvocation(left);
 			return left;
 		}
@@ -845,7 +845,7 @@ public class Parser {
 		return token.isLextant(Keyword.ALLOC);
 	}
 	private boolean startsParenthetical(Token token) {
-		return token.isLextant(Punctuator.OPEN_PARENTHESIS); 
+		return token.isLextant(Punctuator.OPEN_SMALL_BRACKET);
 	}
 
 	///////////////////////////////////////////////////////////
@@ -860,9 +860,9 @@ public class Parser {
 			
 			Type type = parseArrayType();
 			
-			expect(Punctuator.OPEN_PARENTHESIS);
+			expect(Punctuator.OPEN_SMALL_BRACKET);
 			ParseNode size = parseExpression();
-			expect(Punctuator.CLOSE_PARENTHESIS);
+			expect(Punctuator.CLOSE_SMALL_BRACKET);
 			
 			boolean isEmpty = true;
 			return ArrayNode.withChildren(token, type, size, isEmpty);
@@ -1116,9 +1116,9 @@ public class Parser {
 
 	// index and function arguments (terminal)
 	private ParseNode parseIndexOrInvocation(ParseNode node) {
-		while (nowReading.isLextant(Punctuator.OPEN_PARENTHESIS, Punctuator.OPEN_BRACKET)) {
+		while (nowReading.isLextant(Punctuator.OPEN_SMALL_BRACKET, Punctuator.OPEN_BRACKET)) {
 			// Check for function invocation
-			if (nowReading.isLextant(Punctuator.OPEN_PARENTHESIS)) {
+			if (nowReading.isLextant(Punctuator.OPEN_SMALL_BRACKET)) {
 				ParseNode invocation = new FunctionInvocationNode(node);
 				invocation.appendChild(node);
 				node = parseArguments(invocation);
@@ -1149,9 +1149,9 @@ public class Parser {
 		return indexNode;
 	}
 	private ParseNode parseArguments(ParseNode node){
-		expect(Punctuator.OPEN_PARENTHESIS);
+		expect(Punctuator.OPEN_SMALL_BRACKET);
 		
-		while (!nowReading.isLextant(Punctuator.CLOSE_PARENTHESIS)) {
+		while (!nowReading.isLextant(Punctuator.CLOSE_SMALL_BRACKET)) {
 			if (nowReading.isLextant(Punctuator.SEPARATOR)) {
 				readToken();
 			}
@@ -1160,7 +1160,7 @@ public class Parser {
 			node.appendChild(child);
 		}
 		
-		expect(Punctuator.CLOSE_PARENTHESIS);
+		expect(Punctuator.CLOSE_SMALL_BRACKET);
 		return node;
 	}
 	

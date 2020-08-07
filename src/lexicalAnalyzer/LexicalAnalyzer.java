@@ -29,10 +29,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		super(input);
 	}
 
-	
-	//////////////////////////////////////////////////////////////////////////////
-	// Token-finding main dispatch	
-
 	@Override
 	protected Token findNextToken() {
 		LocatedChar ch = nextNonWhitespaceChar();
@@ -77,8 +73,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	}
 	
 	
-	//////////////////////////////////////////////////////////////////////////////
-	// Comment lexical analysis
+
 	private Token scanComment(LocatedChar ch) {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append(ch.getCharacter());
@@ -94,9 +89,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 
 
 	
-	//////////////////////////////////////////////////////////////////////////////
-	// Character and String lexical analysis
-	// TASK: Finish character and string lexical analysis
+
 	private Token scanCharacter(LocatedChar ch) {
 		LocatedChar aChar = input.next();
 		LocatedChar c = input.next();
@@ -126,9 +119,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	}
 	
 	
-	//////////////////////////////////////////////////////////////////////////////
-	// Integer and Floating lexical analysis	
-	
+
 	private Token scanSignedNumber(LocatedChar ch) {
 		LocatedChar next = input.peek();
 		if(next.isDigit() || next.getCharacter() == '.') {
@@ -152,10 +143,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		}
 		
 		appendSubsequentDigits(buffer);
-		
-		// If next character is not a period, or if next character is a period
-		// but is not followed by a digit, return INTEGER, except if first
-		// character was a ., return FLOAT
+
 		LocatedChar c = input.next();
 		if (c.getCharacter() != '.' || !(input.peek().isDigit())) {
 			input.pushback(c);
@@ -171,7 +159,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		}
 		buffer.append(c.getCharacter());
 		
-		// If next character is not a digit, potentially invalid lexeme
 		c = input.next();
 		if (c.isDigit()) {
 			buffer.append(c.getCharacter());
@@ -213,8 +200,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	}
 	
 	
-	//////////////////////////////////////////////////////////////////////////////
-	// Identifier and keyword lexical analysis	
 
 	private Token scanIdentifier(LocatedChar firstChar) {
 		StringBuffer buffer = new StringBuffer();
@@ -252,8 +237,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 
 	
 
-	//////////////////////////////////////////////////////////////////////////////
-	// Character-classification routines specific to Pika scanning.	
 
 	private boolean isPunctuatorStart(LocatedChar lc) {
 		char c = lc.getCharacter();
@@ -264,9 +247,6 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 		return lc == LocatedCharStream.FLAG_END_OF_INPUT;
 	}
 	
-	
-	//////////////////////////////////////////////////////////////////////////////
-	// Error-reporting	
 
 	private void lexicalError(LocatedChar ch) {
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
@@ -274,7 +254,7 @@ public class LexicalAnalyzer extends ScannerImp implements Scanner {
 	}
 	private void lexicalErrorWithIdentifier(String lexeme) {
 		PikaLogger log = PikaLogger.getLogger("compiler.lexicalAnalyzer");
-		log.severe("Lexical error: variable name '" + lexeme + "' is greater than 32 characters.");
+		log.severe( lexeme + "' is greater than 32 characters.");
 	}
 	
 }

@@ -85,15 +85,15 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="/Dummy.txt" timestamp="1596774513351">
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/IfNode.java" timestamp="1596737823927">
         <mark key="[" line="9" column="14" />
         <mark key="]" line="39" column="0" />
         <mark key="." line="39" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMInstruction.java" timestamp="1596775741842">
+        <mark key="[" line="166" column="0" />
+        <mark key="]" line="166" column="0" />
+        <mark key="." line="166" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1596737210550">
         <mark key="[" line="10" column="0" />
@@ -136,16 +136,26 @@
         <mark key="]" line="14" column="4" />
         <mark key="." line="14" column="4" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1596737997169">
-        <mark key="[" line="358" column="23" />
-        <mark key="]" line="357" column="0" />
-        <mark key="." line="357" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1596775745921">
+        <mark key="[" line="563" column="0" />
+        <mark key="]" line="563" column="0" />
+        <mark key="." line="563" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/array/ArrayReleaseSCG.java" timestamp="1596775738004">
+        <mark key="[" line="56" column="0" />
+        <mark key="]" line="56" column="0" />
+        <mark key="." line="56" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/promoter/Promoter.java" timestamp="1596737774273">
         <mark key="[" line="35" column="20" />
         <mark key="]" line="31" column="0" />
         <mark key="^" line="31" column="23" />
         <mark key="." line="31" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1596775577500">
+        <mark key="[" line="30" column="0" />
+        <mark key="]" line="30" column="0" />
+        <mark key="." line="30" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeLiteral.java" timestamp="1596737449513">
         <mark key="[" line="16" column="48" />
@@ -154,6 +164,11 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/LambdaParamNode.java" timestamp="1596737892275">
         <mark key="[" line="7" column="13" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1596775471633">
+        <mark key="]" line="69" column="0" />
+        <mark key="^" line="9" column="4" />
+        <mark key="." line="69" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -262,10 +277,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text>added more keywords. Implemented reverse and map</text>
+        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
       </register>
       <register name="-" type="4">
-        <text>c</text>
+        <text>places</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>
@@ -274,31 +289,38 @@
         <text encoding="base64">IGNvbnN0IHQgOj0gImhleSIuCg==</text>
       </register>
       <register name="1" type="2">
-        <text>added more keywords. Implemented reverse and map</text>
+        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBhcnJheSBub2Rl</text>
+        <text encoding="base64">CQkvL2ZpeG1lCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkKCQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBoaWdoIGxldmVsIG9wZXJhdG9ycw==</text>
+        <text encoding="base64">CQkJLy8gRklYTUU6IEJhZCBmbG9hdCBwcmludGluZwo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQkJLy8gRmluZCBHQ0QK</text>
+        <text encoding="base64">CQkvLyBUT0RPOiBDaGVjayB0aGUgc3VidHlwZS1pcy1yZWZlcmVuY2UgYml0IChyZWN1cnNlKQo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQkJLy8gRW5zdXJlIG51bWVyYXRvciBoYXMgbmVnYXRpdmUgc2lnbgo=</text>
+        <text>fixed bug where for crashes when used elem</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkJCS8vIENoZWNrIGZvciBkaXZpc2lvbiBieSAwLCBpc3N1ZSBSdW50aW1lIGVycm9yCg==</text>
+        <text>//	public static Punctuator forLexeme(String lexeme) {
+//	for(Punctuator punctuator: values()) {
+//		if(punctuator.lexeme.equals(lexeme)) {
+//			return punctuator;
+//		}
+//	}
+//	return NULL_PUNCTUATOR;
+//}</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQkvL2NodW5rLmFkZChBU01PcGNvZGUuTGFiZWwsIFJ1blRpbWUuU1VCX1BSSU5UX0FSUkFZKTsK</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gVG9rZW4tZmluZGluZyBtYWluIGRpc3BhdGNoCQo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">CQkvLyBPZmZzZXQgY291bnRlciAoc3RhcnQgYWZ0ZXIgQXJyYXkgcmVjb3JkKQo=</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CQkvLyBTdGFydCBwcmludGluZyBsb29wCg==</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ2hhcmFjdGVyIGFuZCBTdHJpbmcgbGV4aWNhbCBhbmFseXNpcwoJLy8gVEFTSzogRmluaXNoIGNoYXJhY3RlciBhbmQgc3RyaW5nIGxleGljYWwgYW5hbHlzaXM=</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

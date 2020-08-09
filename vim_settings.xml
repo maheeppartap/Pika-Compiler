@@ -121,10 +121,11 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeVariable.java" timestamp="1596737433396">
         <mark key="[" line="3" column="14" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596738357775">
-        <mark key="[" line="1249" column="0" />
-        <mark key="]" line="1249" column="0" />
-        <mark key="." line="1249" column="0" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596937835536">
+        <mark key="[" line="1073" column="31" />
+        <mark key="]" line="1067" column="16" />
+        <mark key="." line="1067" column="12" />
+        <mark key="^" line="1067" column="16" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/LambdaType.java" timestamp="1596737492062">
         <mark key="[" line="24" column="0" />
@@ -277,7 +278,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
+        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBleHByZXNzaW9ucw==</text>
       </register>
       <register name="-" type="4">
         <text>places</text>
@@ -289,21 +290,24 @@
         <text encoding="base64">IGNvbnN0IHQgOj0gImhleSIuCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
+        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBleHByZXNzaW9ucw==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CQkvL2ZpeG1lCg==</text>
+        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkJLy8gRklYTUU6IEJhZCBmbG9hdCBwcmludGluZwo=</text>
+        <text encoding="base64">CQkvL2ZpeG1lCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CQkvLyBUT0RPOiBDaGVjayB0aGUgc3VidHlwZS1pcy1yZWZlcmVuY2UgYml0IChyZWN1cnNlKQo=</text>
+        <text encoding="base64">CQkJLy8gRklYTUU6IEJhZCBmbG9hdCBwcmludGluZwo=</text>
       </register>
       <register name="5" type="2">
-        <text>fixed bug where for crashes when used elem</text>
+        <text encoding="base64">CQkvLyBUT0RPOiBDaGVjayB0aGUgc3VidHlwZS1pcy1yZWZlcmVuY2UgYml0IChyZWN1cnNlKQo=</text>
       </register>
       <register name="6" type="2">
+        <text>fixed bug where for crashes when used elem</text>
+      </register>
+      <register name="7" type="2">
         <text>//	public static Punctuator forLexeme(String lexeme) {
 //	for(Punctuator punctuator: values()) {
 //		if(punctuator.lexeme.equals(lexeme)) {
@@ -313,14 +317,11 @@
 //	return NULL_PUNCTUATOR;
 //}</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gVG9rZW4tZmluZGluZyBtYWluIGRpc3BhdGNoCQo=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ2hhcmFjdGVyIGFuZCBTdHJpbmcgbGV4aWNhbCBhbmFseXNpcwoJLy8gVEFTSzogRmluaXNoIGNoYXJhY3RlciBhbmQgc3RyaW5nIGxleGljYWwgYW5hbHlzaXM=</text>
+        <text encoding="base64">CS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLwoJLy8gQ29tbWVudCBsZXhpY2FsIGFuYWx5c2lz</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

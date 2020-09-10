@@ -85,8 +85,10 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="/Dummy.txt" timestamp="1599715079699">
+      <file name="/Dummy.txt" timestamp="1599761812580">
         <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/IfNode.java" timestamp="1596737823927">
         <mark key="[" line="9" column="14" />
@@ -102,6 +104,11 @@
         <mark key="[" line="17" column="0" />
         <mark key="]" line="17" column="0" />
         <mark key="." line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/TextUI/TextUI.java" timestamp="1599763030358">
+        <mark key="[" line="17" column="38" />
+        <mark key="]" line="23" column="0" />
+        <mark key="." line="23" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1596737730679">
         <mark key="[" line="106" column="51" />
@@ -122,11 +129,6 @@
         <mark key="." line="1067" column="12" />
         <mark key="^" line="1067" column="16" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/LambdaType.java" timestamp="1596737492062">
-        <mark key="[" line="24" column="0" />
-        <mark key="]" line="24" column="0" />
-        <mark key="." line="24" column="0" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/Coordinator/src/Main.java" timestamp="1599715329739">
         <mark key="[" line="0" column="19" />
       </file>
@@ -134,6 +136,9 @@
         <mark key="[" line="5" column="0" />
         <mark key="]" line="5" column="0" />
         <mark key="." line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/Coordinator/Main.java" timestamp="1599761682082">
+        <mark key="[" line="6" column="19" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1596775745921">
         <mark key="[" line="563" column="0" />
@@ -156,7 +161,7 @@
         <mark key="]" line="30" column="0" />
         <mark key="." line="30" column="0" />
       </file>
-      <file name="/fragment.java" timestamp="1599715475883">
+      <file name="/fragment.java" timestamp="1599762019021">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/LambdaParamNode.java" timestamp="1596737892275">
@@ -274,7 +279,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CQkJCS8vIFJldHJlaXZlIGN1cnJlbnQgYWRkcmVzcyBmcm9tIHN0YWNrCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy9TeXN0ZW0ub3V0LnByaW50bG4oaW5wdXQpOwo=</text>
       </register>
       <register name="-" type="4">
         <text>i</text>
@@ -286,38 +291,31 @@
         <text encoding="base64">IGNvbnN0IHQgOj0gImhleSIuCg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CQkJCS8vIFJldHJlaXZlIGN1cnJlbnQgYWRkcmVzcyBmcm9tIHN0YWNrCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy9TeXN0ZW0ub3V0LnByaW50bG4oaW5wdXQpOwo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">CmZ1bmMgeDxpbnQgdD4tPm51bGx7CmlmKHQgPiAzKXsKICAgIHByaW50ICJ5YXkiLgp9CmVsc2V7CiAgICBwcmludCAibmF5Ii4KfQogICAgdmFyIG0gOj0gMi4KICAgIHJldHVybi4KfQoKZXhlYyB7CiAgIGZvciBlbGVtIGkgb2YgIiJ7CiAgICBwcmludCBpLgogICB9Cn0=</text>
+        <text>Added packages and main</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBleHByZXNzaW9ucw==</text>
+        <text encoding="base64">CQkJCS8vIFJldHJlaXZlIGN1cnJlbnQgYWRkcmVzcyBmcm9tIHN0YWNrCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
+        <text encoding="base64">CmZ1bmMgeDxpbnQgdD4tPm51bGx7CmlmKHQgPiAzKXsKICAgIHByaW50ICJ5YXkiLgp9CmVsc2V7CiAgICBwcmludCAibmF5Ii4KfQogICAgdmFyIG0gOj0gMi4KICAgIHJldHVybi4KfQoKZXhlYyB7CiAgIGZvciBlbGVtIGkgb2YgIiJ7CiAgICBwcmludCBpLgogICB9Cn0=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">CQkvL2ZpeG1lCg==</text>
+        <text encoding="base64">CQkvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8KCQkvLyBleHByZXNzaW9ucw==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">CQkJLy8gRklYTUU6IEJhZCBmbG9hdCBwcmludGluZwo=</text>
+        <text encoding="base64">Zml4ZWQgc3ludGF4IHByb2JsZW0gZm9yIGJyZWFrIGFuZCBjb250aW51ZSBiZWluZyBpbiB3cm9uZyA=</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">CQkvLyBUT0RPOiBDaGVjayB0aGUgc3VidHlwZS1pcy1yZWZlcmVuY2UgYml0IChyZWN1cnNlKQo=</text>
+        <text encoding="base64">CQkvL2ZpeG1lCg==</text>
       </register>
       <register name="8" type="2">
-        <text>fixed bug where for crashes when used elem</text>
+        <text encoding="base64">CQkJLy8gRklYTUU6IEJhZCBmbG9hdCBwcmludGluZwo=</text>
       </register>
       <register name="9" type="2">
-        <text>//	public static Punctuator forLexeme(String lexeme) {
-//	for(Punctuator punctuator: values()) {
-//		if(punctuator.lexeme.equals(lexeme)) {
-//			return punctuator;
-//		}
-//	}
-//	return NULL_PUNCTUATOR;
-//}</text>
+        <text encoding="base64">CQkvLyBUT0RPOiBDaGVjayB0aGUgc3VidHlwZS1pcy1yZWZlcmVuY2UgYml0IChyZWN1cnNlKQo=</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

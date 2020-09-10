@@ -85,8 +85,8 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="/Dummy.txt" timestamp="1599699806593">
-        <mark key="[" line="0" column="0" />
+      <file name="/Dummy.txt" timestamp="1599700744083">
+        <mark key="[" line="0" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/IfNode.java" timestamp="1596737823927">
         <mark key="[" line="9" column="14" />
@@ -97,11 +97,6 @@
         <mark key="[" line="166" column="0" />
         <mark key="]" line="166" column="0" />
         <mark key="." line="166" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/PrimitiveType.java" timestamp="1596737210550">
-        <mark key="[" line="10" column="0" />
-        <mark key="]" line="12" column="24" />
-        <mark key="." line="12" column="24" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/ArrayType.java" timestamp="1596737498640">
         <mark key="[" line="17" column="0" />
@@ -160,6 +155,9 @@
         <mark key="[" line="30" column="0" />
         <mark key="]" line="30" column="0" />
         <mark key="." line="30" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1599700812704">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/types/TypeLiteral.java" timestamp="1596737449513">
         <mark key="[" line="16" column="48" />

@@ -85,7 +85,7 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="/Dummy.txt" timestamp="1599769272294">
+      <file name="/Dummy.txt" timestamp="1599783473838">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -107,6 +107,12 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/ZipOperatorNode.java" timestamp="1596737850490">
         <mark key="[" line="10" column="14" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1599784081017">
+        <mark key="[" line="77" column="7" />
+        <mark key="]" line="77" column="8" />
+        <mark key="." line="77" column="8" />
+        <mark key="^" line="65" column="29" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/ControlNode.java" timestamp="1596737809372">
         <mark key="[" line="35" column="0" />
@@ -140,18 +146,12 @@
         <mark key="]" line="125" column="0" />
         <mark key="." line="125" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/promoter/Promoter.java" timestamp="1596737774273">
-        <mark key="[" line="35" column="20" />
-        <mark key="]" line="31" column="0" />
-        <mark key="^" line="31" column="23" />
-        <mark key="." line="31" column="0" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1596775577500">
         <mark key="[" line="30" column="0" />
         <mark key="]" line="30" column="0" />
         <mark key="." line="30" column="0" />
       </file>
-      <file name="/fragment.java" timestamp="1599769043735">
+      <file name="/fragment.java" timestamp="1599783438099">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/TextUI/Tests/TextUI/TextUITest.java" timestamp="1599769107999">
@@ -271,44 +271,44 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text>added Junit testing, changed root structure to accomodate tests</text>
+      <register name="&quot;" type="4">
+        <text>return false;</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">dm9pZCA=</text>
+        <text>return false;</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">IGNvbnN0IHQgOj0gImhleSIuCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGVycm9yTXNnKCJUaGlzIGFwZXJ0dXJlIGlzIG5vdCBwb3NzaWJsZSB3aXRoIHRoaXMgbGVucyIpOwo=</text>
       </register>
       <register name="1" type="2">
-        <text>added Junit testing, changed root structure to accomodate tests</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlcnJvck1zZygpOwo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICByZXR1cm4gdXNlcl9pbnB1dDsK</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gMDsK</text>
       </register>
       <register name="3" type="2">
-        <text>added some text and some simple error handling to UI</text>
+        <text>added Junit testing, changed root structure to accomodate tests</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4odXNlcl9pbnB1dCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gdXNlcl9pbnB1dDsK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIGlucHV0Owo=</text>
+        <text>added some text and some simple error handling to UI</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIGlucHV0Owo=</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4odXNlcl9pbnB1dCk7Cg==</text>
       </register>
       <register name="7" type="2">
-        <text>refactoring to adhere to requirements</text>
+        <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIGlucHV0Owo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgLy9TeXN0ZW0ub3V0LnByaW50bG4oaW5wdXQpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIGlucHV0Owo=</text>
       </register>
       <register name="9" type="2">
-        <text>Added packages and main</text>
+        <text>refactoring to adhere to requirements</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

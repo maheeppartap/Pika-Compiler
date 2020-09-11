@@ -105,11 +105,6 @@
         <mark key="]" line="54" column="0" />
         <mark key="." line="54" column="0" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/semanticAnalyzer/SemanticAnalysisVisitor.java" timestamp="1596737730679">
-        <mark key="[" line="106" column="51" />
-        <mark key="]" line="106" column="51" />
-        <mark key="." line="106" column="51" />
-      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/ZipOperatorNode.java" timestamp="1596737850490">
         <mark key="[" line="10" column="14" />
       </file>

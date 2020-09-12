@@ -85,7 +85,7 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="/Dummy.txt" timestamp="1599873487332">
+      <file name="/Dummy.txt" timestamp="1599874556501">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -108,8 +108,10 @@
         <mark key="]" line="114" column="27" />
         <mark key="." line="114" column="27" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599873375352">
-        <mark key="[" line="9" column="8" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599874507931">
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="." line="13" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596937835536">
         <mark key="[" line="1073" column="31" />
@@ -154,7 +156,7 @@
         <mark key="]" line="30" column="0" />
         <mark key="." line="30" column="0" />
       </file>
-      <file name="/fragment.java" timestamp="1599873495409">
+      <file name="/fragment.java" timestamp="1599874564069">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/TextUI/Tests/TextUI/TextUITest.java" timestamp="1599769107999">
@@ -274,8 +276,8 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>Canon</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBMZW5zIHRlc3QgPSBuZXcgTGVucygpOwo=</text>
       </register>
       <register name="-" type="4">
         <text>Canon</text>
@@ -286,34 +288,34 @@
       <register name="0" type="2">
         <text encoding="base64">ICAgICAgICBsaXN0T2ZMZW5zLmFkZChuZXcgTGVucygiQ2Fub24iLCAxLjgsIDUwKSk7Cg==</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBMZW5zIHRlc3QgPSBuZXcgTGVucygpOwo=</text>
+      </register>
+      <register name="2" type="4">
         <text encoding="base64">ICAgcHVibGljIExlbnMoU3RyaW5nIG5hbWUsIGRvdWJsZSBNYXhpbXVtX2FwZXJ0dXJlLCBkb3VibGUgRm9jYWxfbGVuZ3RoKXsKICAgICAgICBzZXRNYWtlKG5hbWUpOwogICAgICAgIHNldEZvY2FsX2xlbmd0aChGb2NhbF9sZW5ndGgpOwogICAgICAgIHNldE1heGltdW1fYXBlcnR1cmUoTWF4aW11bV9hcGVydHVyZSk7CiAgICB9</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICBMaXN0PExlbnM+IGxpc3RPZkxlbnMgPSBuZXcgQXJyYXlMaXN0PD4oKTsK</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgIH0K</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICByZXR1cm4gbnVsbDsK</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgIHB1YmxpYyBJdGVyYXRvcjxMZW5zPiBpdGVyYXRvcigpIHsK</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgIEBPdmVycmlkZQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text>/**
  * 
  */</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIHVzZXJfaW5wdXQ7Cg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlcnJvck1zZygpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIHVzZXJfaW5wdXQ7Cg==</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

@@ -135,16 +135,16 @@
         <mark key="]" line="563" column="0" />
         <mark key="." line="563" column="0" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Lens.java" timestamp="1599866382435">
-        <mark key="[" line="37" column="38" />
-        <mark key="]" line="37" column="36" />
-        <mark key="." line="37" column="35" />
-        <mark key="^" line="37" column="36" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Lens.java" timestamp="1599872300828">
+        <mark key="[" line="40" column="0" />
+        <mark key="]" line="40" column="1" />
+        <mark key="." line="40" column="1" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/LensManager.java" timestamp="1599867160849">
-        <mark key="[" line="8" column="46" />
-        <mark key="]" line="10" column="25" />
-        <mark key="." line="8" column="0" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/LensManager.java" timestamp="1599872903895">
+        <mark key="[" line="15" column="5" />
+        <mark key="]" line="13" column="33" />
+        <mark key="." line="13" column="33" />
+        <mark key="^" line="13" column="48" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/array/ArrayReleaseSCG.java" timestamp="1596999474596">
         <mark key="[" line="107" column="41" />
@@ -276,46 +276,46 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBMaXN0PExlbnM+IGxpc3RPZkxlbnMgPSBuZXcgQXJyYXlMaXN0PD4oKTsK</text>
+      <register name="&quot;" type="4">
+        <text>Canon</text>
       </register>
       <register name="-" type="4">
-        <text>{</text>
+        <text>Canon</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">ICAgICAgICAgICBjYXNlIDM6IG1heF9hcGVydHVyZSA9IChsb25nKSA0LjA7Cg==</text>
+        <text encoding="base64">ICAgICAgICBsaXN0T2ZMZW5zLmFkZChuZXcgTGVucygiQ2Fub24iLCAxLjgsIDUwKSk7Cg==</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBMaXN0PExlbnM+IGxpc3RPZkxlbnMgPSBuZXcgQXJyYXlMaXN0PD4oKTsK</text>
+      <register name="1" type="4">
+        <text encoding="base64">ICAgcHVibGljIExlbnMoU3RyaW5nIG5hbWUsIGRvdWJsZSBNYXhpbXVtX2FwZXJ0dXJlLCBkb3VibGUgRm9jYWxfbGVuZ3RoKXsKICAgICAgICBzZXRNYWtlKG5hbWUpOwogICAgICAgIHNldEZvY2FsX2xlbmd0aChGb2NhbF9sZW5ndGgpOwogICAgICAgIHNldE1heGltdW1fYXBlcnR1cmUoTWF4aW11bV9hcGVydHVyZSk7CiAgICB9</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">ICAgICAgICBMaXN0PExlbnM+IGxpc3RPZkxlbnMgPSBuZXcgQXJyYXlMaXN0PD4oKTsK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICByZXR1cm4gbnVsbDsK</text>
+        <text encoding="base64">ICAgIH0K</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIHB1YmxpYyBJdGVyYXRvcjxMZW5zPiBpdGVyYXRvcigpIHsK</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gbnVsbDsK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIEBPdmVycmlkZQo=</text>
+        <text encoding="base64">ICAgIHB1YmxpYyBJdGVyYXRvcjxMZW5zPiBpdGVyYXRvcigpIHsK</text>
       </register>
       <register name="6" type="2">
+        <text encoding="base64">ICAgIEBPdmVycmlkZQo=</text>
+      </register>
+      <register name="7" type="2">
         <text>/**
  * 
  */</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgcmV0dXJuIHVzZXJfaW5wdXQ7Cg==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlcnJvck1zZygpOwo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICByZXR1cm4gMDsK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlcnJvck1zZygpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

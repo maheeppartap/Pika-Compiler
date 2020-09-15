@@ -85,7 +85,7 @@
         <mark key="]" line="23" column="0" />
         <mark key="." line="23" column="0" />
       </file>
-      <file name="/Dummy.txt" timestamp="1600148014925">
+      <file name="/Dummy.txt" timestamp="1600198584930">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -278,8 +278,8 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>;</text>
+      <register name="&quot;" type="2">
+        <text>incorporated model class into UI</text>
       </register>
       <register name="-" type="4">
         <text>;</text>
@@ -291,28 +291,28 @@
         <text encoding="base64">ICAgICAgICBMZW5zTWFuYWdlciB4ID0gbmV3IExlbnNNYW5hZ2VyKCk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYnJlYWs7Cg==</text>
+        <text>incorporated model class into UI</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaW5wdXRfYXAgPSBpbi5uZXh0RG91YmxlKCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgYnJlYWs7Cg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAqLwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgaW5wdXRfYXAgPSBpbi5uZXh0RG91YmxlKCk7Cg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAvKgo=</text>
+        <text encoding="base64">ICAgICAgICAqLwo=</text>
       </register>
       <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAvKgo=</text>
+      </register>
+      <register name="6" type="2">
         <text>Added testing, almost finished Lens class</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">Zm9yKGludCBpID0gMDsgaSA8IGxlbnMubGVuZ3RoT2ZMaXN0KCkgOyBpKyspewogICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oKTsKICAgICAgICB9</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">ICAgQFRlc3QKICAgIHZvaWQgYXRJbmRleCgpIHsKICAgICAgICAKICAgIH0=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>
       </register>
       <register name="9" type="2">
         <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>

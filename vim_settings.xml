@@ -103,11 +103,11 @@
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Coordinator/Main.java" timestamp="1600146591120">
         <mark key="[" line="11" column="8" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600196857151">
-        <mark key="[" line="135" column="21" />
-        <mark key="]" line="135" column="12" />
-        <mark key="." line="135" column="12" />
-        <mark key="^" line="116" column="24" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600197970478">
+        <mark key="[" line="174" column="19" />
+        <mark key="]" line="174" column="20" />
+        <mark key="." line="174" column="20" />
+        <mark key="^" line="178" column="13" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599875974548">
         <mark key="[" line="12" column="0" />
@@ -279,10 +279,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>3</text>
+        <text>throw InvalidInputExcetion;</text>
       </register>
       <register name="-" type="4">
-        <text>3</text>
+        <text>throw InvalidInputExcetion;</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>
@@ -291,31 +291,31 @@
         <text encoding="base64">ICAgICAgICBMZW5zTWFuYWdlciB4ID0gbmV3IExlbnNNYW5hZ2VyKCk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAqLwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgYnJlYWs7Cg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAvKgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgaW5wdXRfYXAgPSBpbi5uZXh0RG91YmxlKCk7Cg==</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAqLwo=</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAvKgo=</text>
+      </register>
+      <register name="5" type="2">
         <text>Added testing, almost finished Lens class</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">Zm9yKGludCBpID0gMDsgaSA8IGxlbnMubGVuZ3RoT2ZMaXN0KCkgOyBpKyspewogICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oKTsKICAgICAgICB9</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">ICAgQFRlc3QKICAgIHZvaWQgYXRJbmRleCgpIHsKICAgICAgICAKICAgIH0=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>
-      </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBMZW5zIHRlc3QgPSBuZXcgTGVucygpOwo=</text>
+        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgcHVibGljIExlbnMoU3RyaW5nIG5hbWUsIGRvdWJsZSBNYXhpbXVtX2FwZXJ0dXJlLCBkb3VibGUgRm9jYWxfbGVuZ3RoKXsKICAgICAgICBzZXRNYWtlKG5hbWUpOwogICAgICAgIHNldEZvY2FsX2xlbmd0aChGb2NhbF9sZW5ndGgpOwogICAgICAgIHNldE1heGltdW1fYXBlcnR1cmUoTWF4aW11bV9hcGVydHVyZSk7CiAgICB9</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

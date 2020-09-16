@@ -80,11 +80,6 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeGenerator/print/PrintArraySCG.java" timestamp="1596738298038">
-        <mark key="[" line="23" column="0" />
-        <mark key="]" line="23" column="0" />
-        <mark key="." line="23" column="0" />
-      </file>
       <file name="/Dummy.txt" timestamp="1600198584930">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
@@ -103,11 +98,11 @@
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Coordinator/Main.java" timestamp="1600146591120">
         <mark key="[" line="11" column="8" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600296743281">
-        <mark key="[" line="187" column="56" />
-        <mark key="]" line="187" column="53" />
-        <mark key="." line="187" column="52" />
-        <mark key="^" line="187" column="53" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600300067403">
+        <mark key="[" line="131" column="189" />
+        <mark key="]" line="131" column="45" />
+        <mark key="." line="131" column="44" />
+        <mark key="^" line="131" column="45" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599875974548">
         <mark key="[" line="12" column="0" />
@@ -124,6 +119,11 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/Coordinator/src/Main.java" timestamp="1599715329739">
         <mark key="[" line="0" column="19" />
       </file>
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/DataCalculator.java" timestamp="1600299021224">
+        <mark key="[" line="5" column="5" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1596953108190">
         <mark key="[" line="5" column="0" />
         <mark key="]" line="5" column="0" />
@@ -131,6 +131,9 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/Coordinator/Main.java" timestamp="1599761682082">
         <mark key="[" line="6" column="19" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/DOFCalculator.java" timestamp="1600298981859">
+        <mark key="[" line="2" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1596775745921">
         <mark key="[" line="563" column="0" />
@@ -163,9 +166,6 @@
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/TextUI/Tests/TextUI/TextUITest.java" timestamp="1599769107999">
         <mark key="[" line="9" column="20" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parseTree/nodeTypes/LambdaParamNode.java" timestamp="1596737892275">
-        <mark key="[" line="7" column="13" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/Punctuator.java" timestamp="1596775471633">
         <mark key="]" line="69" column="0" />
@@ -278,11 +278,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text>user_input.add</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKGFsbF9sZW5zX3R5cGUuZ2V0KGFsbF9sZW5zX3R5cGUuZ2V0KHVzZXJfaW5wdXQuZ2V0KDApKS5nZXRGb2NhbF9sZW5ndGgoKSkpKTsK</text>
       </register>
       <register name="-" type="4">
-        <text>user_input.add</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>
@@ -291,31 +291,31 @@
         <text encoding="base64">ICAgICAgICBMZW5zTWFuYWdlciB4ID0gbmV3IExlbnNNYW5hZ2VyKCk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text>incorporated model class into UI</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKGFsbF9sZW5zX3R5cGUuZ2V0KGFsbF9sZW5zX3R5cGUuZ2V0KHVzZXJfaW5wdXQuZ2V0KDApKS5nZXRGb2NhbF9sZW5ndGgoKSkpKTsK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYnJlYWs7Cg==</text>
+        <text encoding="base64">ICAgICAgICB4LmNhbGN1bGF0ZUh5cGVyRm9jYWxEaXN0YW5jZSgpCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaW5wdXRfYXAgPSBpbi5uZXh0RG91YmxlKCk7Cg==</text>
+        <text encoding="base64">ICAgIERhdGFDYWxjdWxhdG9yKClkZmQ7Cg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAqLwo=</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gcmV0VmFsOwo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAvKgo=</text>
+        <text>incorporated model class into UI</text>
       </register>
       <register name="6" type="2">
-        <text>Added testing, almost finished Lens class</text>
+        <text encoding="base64">ICAgICAgICAgICAgYnJlYWs7Cg==</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">Zm9yKGludCBpID0gMDsgaSA8IGxlbnMubGVuZ3RoT2ZMaXN0KCkgOyBpKyspewogICAgICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oKTsKICAgICAgICB9</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgaW5wdXRfYXAgPSBpbi5uZXh0RG91YmxlKCk7Cg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgQFRlc3QKICAgIHZvaWQgYXRJbmRleCgpIHsKICAgICAgICAKICAgIH0=</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAqLwo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoKG5ldyBMZW5zKCJDYW5vbiIsIDEuOCwgNTApKS5nZXRNYWtlKCksIHguQXRJbmRleCgwKS5nZXRNYWtlKCkpOwo=</text>
+        <text encoding="base64">ICAgICAgICAvKgo=</text>
       </register>
       <register name=":" type="4">
         <text>?identifier</text>

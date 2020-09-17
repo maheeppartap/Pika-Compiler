@@ -75,6 +75,9 @@
       <shortcut-conflict owner="vim">
         <text>ctrl pressed S</text>
       </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
     </shortcut-conflicts>
   </component>
   <component name="VimMarksSettings">
@@ -98,10 +101,10 @@
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Coordinator/Main.java" timestamp="1600146591120">
         <mark key="[" line="11" column="8" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600300067403">
-        <mark key="[" line="131" column="189" />
-        <mark key="]" line="131" column="45" />
-        <mark key="." line="131" column="44" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600303624313">
+        <mark key="[" line="133" column="91" />
+        <mark key="]" line="133" column="92" />
+        <mark key="." line="133" column="78" />
         <mark key="^" line="131" column="45" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599875974548">
@@ -119,10 +122,10 @@
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/Coordinator/src/Main.java" timestamp="1599715329739">
         <mark key="[" line="0" column="19" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/DataCalculator.java" timestamp="1600299021224">
-        <mark key="[" line="5" column="5" />
-        <mark key="]" line="3" column="0" />
-        <mark key="." line="3" column="0" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/DataCalculator.java" timestamp="1600303754056">
+        <mark key="[" line="14" column="90" />
+        <mark key="]" line="5" column="0" />
+        <mark key="." line="5" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1596953108190">
         <mark key="[" line="5" column="0" />
@@ -278,11 +281,11 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKGFsbF9sZW5zX3R5cGUuZ2V0KGFsbF9sZW5zX3R5cGUuZ2V0KHVzZXJfaW5wdXQuZ2V0KDApKS5nZXRGb2NhbF9sZW5ndGgoKSkpKTsK</text>
+      <register name="&quot;" type="4">
+        <text>selected_focal</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IA==</text>
+        <text>selected_focal</text>
       </register>
       <register name="/" type="4">
         <text>identifier</text>

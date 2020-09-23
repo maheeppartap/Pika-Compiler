@@ -83,7 +83,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1600824967653">
+      <file name="/Dummy.txt" timestamp="1600883177494">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -101,17 +101,16 @@
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Coordinator/Main.java" timestamp="1600146591120">
         <mark key="[" line="11" column="8" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/DataCalculatorTest.java" timestamp="1600841294365">
-        <mark key="[" line="22" column="59" />
-        <mark key="]" line="24" column="8" />
-        <mark key="^" line="24" column="8" />
-        <mark key="." line="24" column="7" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/DataCalculatorTest.java" timestamp="1600882978962">
+        <mark key="[" line="50" column="36" />
+        <mark key="]" line="49" column="21" />
+        <mark key="^" line="23" column="8" />
+        <mark key="." line="49" column="21" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600841335083">
-        <mark key="[" line="132" column="109" />
-        <mark key="]" line="129" column="0" />
-        <mark key="." line="129" column="0" />
-        <mark key="^" line="129" column="36" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600841649641">
+        <mark key="[" line="135" column="0" />
+        <mark key="]" line="135" column="0" />
+        <mark key="." line="135" column="0" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599875974548">
         <mark key="[" line="12" column="0" />
@@ -164,11 +163,6 @@
         <mark key="[" line="107" column="41" />
         <mark key="]" line="125" column="0" />
         <mark key="." line="125" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/lexicalAnalyzer/LexicalAnalyzer.java" timestamp="1596775577500">
-        <mark key="[" line="30" column="0" />
-        <mark key="]" line="30" column="0" />
-        <mark key="." line="30" column="0" />
       </file>
       <file name="/fragment.java" timestamp="1600824967679">
         <mark key="[" line="0" column="0" />
@@ -283,7 +277,7 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
+        <text>changed the startUI signature, so fixed the warning</text>
       </register>
       <register name="-" type="4">
         <text>x.calculateHyperFocalDistance()</text>
@@ -295,31 +289,31 @@
         <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoOTkuNzUsIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDkwLCAyLjgsIDAuMDI5KSk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
+        <text>changed the startUI signature, so fixed the warning</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoNDcuODksIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDUwLCAxLjgsIDAuMDI5KSk7Cg==</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImxhbGFsYWxhbGFsYWxhbGFsYWxhOiAiICsgdXNlcl9pbnB1dC5nZXQoMikpOwo=</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAvLyB0b2RvOiBjYWxjdWxhdGUgdGhlIHN0dWZmCg==</text>
+      <register name="3" type="4">
+        <text encoding="base64">U3lzdGVtLm91dC5wcmludGxuKHRlc3RfMik7Cg==</text>
       </register>
       <register name="4" type="2">
-        <text>Added aperture input, changed input file signature</text>
+        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBldHVybiAtMTsK</text>
+        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoNDcuODksIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDUwLCAxLjgsIDAuMDI5KSk7Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIkh5cGVyZm9jYWwgcG9pbnQ6ICIpOwo=</text>
+        <text encoding="base64">ICAgICAgICAvLyB0b2RvOiBjYWxjdWxhdGUgdGhlIHN0dWZmCg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKGFsbF9sZW5zX3R5cGUuZ2V0KGFsbF9sZW5zX3R5cGUuZ2V0KHVzZXJfaW5wdXQuZ2V0KDApKS5nZXRGb2NhbF9sZW5ndGgoKSkpKTsK</text>
+        <text>Added aperture input, changed input file signature</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICB4LmNhbGN1bGF0ZUh5cGVyRm9jYWxEaXN0YW5jZSgpCg==</text>
+        <text encoding="base64">ICAgICAgICBldHVybiAtMTsK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIERhdGFDYWxjdWxhdG9yKClkZmQ7Cg==</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIkh5cGVyZm9jYWwgcG9pbnQ6ICIpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>?has to</text>

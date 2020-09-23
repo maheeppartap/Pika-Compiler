@@ -83,7 +83,7 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1600884355035">
+      <file name="/Dummy.txt" timestamp="1600895635094">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
@@ -98,8 +98,8 @@
         <mark key="]" line="54" column="0" />
         <mark key="." line="54" column="0" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Coordinator/Main.java" timestamp="1600146591120">
-        <mark key="[" line="11" column="8" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Coordinator/Main.java" timestamp="1600895633111">
+        <mark key="[" line="4" column="20" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/DataCalculatorTest.java" timestamp="1600882978962">
         <mark key="[" line="50" column="36" />
@@ -107,7 +107,11 @@
         <mark key="^" line="23" column="8" />
         <mark key="." line="49" column="21" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600895295244" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/TextUI/TextUI.java" timestamp="1600895488715">
+        <mark key="[" line="159" column="68" />
+        <mark key="]" line="159" column="68" />
+        <mark key="." line="159" column="68" />
+      </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Tests/Model/LensManagerTest.java" timestamp="1599875974548">
         <mark key="[" line="12" column="0" />
         <mark key="]" line="12" column="1" />
@@ -124,7 +128,7 @@
         <mark key="[" line="0" column="19" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/DataCalculator.java" timestamp="1600895103223">
-        <mark key="]" line="23" column="5" />
+        <mark key="]" line="28" column="5" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/input/customInputs/helloPika.pika" timestamp="1596953108190">
         <mark key="[" line="5" column="0" />
@@ -142,10 +146,10 @@
         <mark key="]" line="563" column="0" />
         <mark key="." line="563" column="0" />
       </file>
-      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Lens.java" timestamp="1599872300828">
-        <mark key="[" line="40" column="0" />
-        <mark key="]" line="40" column="1" />
-        <mark key="." line="40" column="1" />
+      <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Lens.java" timestamp="1600895558108">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="45" column="1" />
+        <mark key="." line="45" column="1" />
       </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/LensManager.java" timestamp="1600146666373">
         <mark key="[" line="24" column="0" />
@@ -271,10 +275,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="2">
-        <text>changed the startUI signature, so fixed the warning</text>
+        <text>finished adding tests, added tag</text>
       </register>
       <register name="-" type="4">
-        <text>x.calculateHyperFocalDistance()</text>
+        <text>x.calculateDOF(far_focal, near_focal)</text>
       </register>
       <register name="/" type="4">
         <text>has to</text>
@@ -283,31 +287,31 @@
         <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoOTkuNzUsIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDkwLCAyLjgsIDAuMDI5KSk7Cg==</text>
       </register>
       <register name="1" type="2">
-        <text>changed the startUI signature, so fixed the warning</text>
+        <text>finished adding tests, added tag</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImxhbGFsYWxhbGFsYWxhbGFsYWxhOiAiICsgdXNlcl9pbnB1dC5nZXQoMikpOwo=</text>
+      <register name="2" type="4">
+        <text encoding="base64">IGZpbmFsbHkgewoKICAgICAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnQoIlN5bWJvbCBvZiBpbmZpbml0eSBpcyA6ICIgKyBpbmZpbml0eVN5bWJvbCk7CgogICAgICAgICAgICB9</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">U3lzdGVtLm91dC5wcmludGxuKHRlc3RfMik7Cg==</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIC8vZXgucHJpbnRTdGFja1RyYWNlKCk7IC8vcHJpbnQgdGhlIHVuc3VwcG9ydGVkIGVuY29kaW5nIGV4Y2VwdGlvbi4K</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoNDcuODksIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDUwLCAxLjgsIDAuMDI5KSk7Cg==</text>
+        <text>changed the startUI signature, so fixed the warning</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAvLyB0b2RvOiBjYWxjdWxhdGUgdGhlIHN0dWZmCg==</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImxhbGFsYWxhbGFsYWxhbGFsYWxhOiAiICsgdXNlcl9pbnB1dC5nZXQoMikpOwo=</text>
       </register>
-      <register name="7" type="2">
-        <text>Added aperture input, changed input file signature</text>
+      <register name="7" type="4">
+        <text encoding="base64">U3lzdGVtLm91dC5wcmludGxuKHRlc3RfMik7Cg==</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBldHVybiAtMTsK</text>
+        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIkh5cGVyZm9jYWwgcG9pbnQ6ICIpOwo=</text>
+        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoNDcuODksIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDUwLCAxLjgsIDAuMDI5KSk7Cg==</text>
       </register>
       <register name=":" type="4">
         <text>?has to</text>

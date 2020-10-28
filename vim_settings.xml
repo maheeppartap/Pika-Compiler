@@ -114,12 +114,7 @@
         <mark key="." line="12" column="1" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/untitled/src/GradeStatistics.java" timestamp="1603905538983" />
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/untitled/src/GradeStatisticsTest.java" timestamp="1603905544417">
-        <mark key="y" line="18" column="51" />
-        <mark key="[" line="22" column="28" />
-        <mark key="]" line="25" column="55" />
-        <mark key="." line="25" column="55" />
-      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/untitled/src/GradeStatisticsTest.java" timestamp="1603906097760" />
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596937835536">
         <mark key="[" line="1073" column="31" />
         <mark key="]" line="1067" column="16" />
@@ -277,10 +272,10 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="4">
-        <text>s</text>
+        <text>dian</text>
       </register>
       <register name="-" type="4">
-        <text>s</text>
+        <text>dian</text>
       </register>
       <register name="/" type="4">
         <text>has to</text>
@@ -289,31 +284,31 @@
         <text encoding="base64">ICAgIEBvcmcuanVuaXQuanVwaXRlci5hcGkuVGVzdAo=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">cHVibGljIGNsYXNzIG1haW4gewp9Cg==</text>
+        <text encoding="base64">ICAgICAgICBHcmFkZVN0YXRpc3RpY3Mgc3RhdF8yID0gbmV3IEdyYWRlU3RhdGlzdGljcyhteUdyYWRlc180KTsK</text>
       </register>
       <register name="2" type="2">
-        <text>finished adding tests, added tag</text>
+        <text encoding="base64">ICAgICAgCg==</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">IGZpbmFsbHkgewoKICAgICAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnQoIlN5bWJvbCBvZiBpbmZpbml0eSBpcyA6ICIgKyBpbmZpbml0eVN5bWJvbCk7CgogICAgICAgICAgICB9</text>
+      <register name="3" type="2">
+        <text encoding="base64">cHVibGljIGNsYXNzIG1haW4gewp9Cg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIC8vZXgucHJpbnRTdGFja1RyYWNlKCk7IC8vcHJpbnQgdGhlIHVuc3VwcG9ydGVkIGVuY29kaW5nIGV4Y2VwdGlvbi4K</text>
+        <text>finished adding tests, added tag</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICByZXR1cm4gCg==</text>
+      <register name="5" type="4">
+        <text encoding="base64">IGZpbmFsbHkgewoKICAgICAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnQoIlN5bWJvbCBvZiBpbmZpbml0eSBpcyA6ICIgKyBpbmZpbml0eVN5bWJvbCk7CgogICAgICAgICAgICB9</text>
       </register>
       <register name="6" type="2">
-        <text>changed the startUI signature, so fixed the warning</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIC8vZXgucHJpbnRTdGFja1RyYWNlKCk7IC8vcHJpbnQgdGhlIHVuc3VwcG9ydGVkIGVuY29kaW5nIGV4Y2VwdGlvbi4K</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImxhbGFsYWxhbGFsYWxhbGFsYWxhOiAiICsgdXNlcl9pbnB1dC5nZXQoMikpOwo=</text>
+        <text encoding="base64">ICAgICAgICByZXR1cm4gCg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">U3lzdGVtLm91dC5wcmludGxuKHRlc3RfMik7Cg==</text>
+      <register name="8" type="2">
+        <text>changed the startUI signature, so fixed the warning</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
+        <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImxhbGFsYWxhbGFsYWxhbGFsYWxhOiAiICsgdXNlcl9pbnB1dC5nZXQoMikpOwo=</text>
       </register>
       <register name=":" type="4">
         <text>?has to</text>

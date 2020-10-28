@@ -83,15 +83,10 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1600895635094">
+      <file name="/Dummy.txt" timestamp="1603904620667">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/codeStorage/ASMInstruction.java" timestamp="1596775741842">
-        <mark key="[" line="166" column="0" />
-        <mark key="]" line="166" column="0" />
-        <mark key="." line="166" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/TextUI/TextUI.java" timestamp="1599769257829">
         <mark key="[" line="54" column="0" />
@@ -118,6 +113,13 @@
         <mark key="^" line="10" column="19" />
         <mark key="." line="12" column="1" />
       </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/untitled/src/GradeStatistics.java" timestamp="1603905538983" />
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/untitled/src/GradeStatisticsTest.java" timestamp="1603905544417">
+        <mark key="y" line="18" column="51" />
+        <mark key="[" line="22" column="28" />
+        <mark key="]" line="25" column="55" />
+        <mark key="." line="25" column="55" />
+      </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/asmCodeGenerator/ASMCodeGenerator.java" timestamp="1596937835536">
         <mark key="[" line="1073" column="31" />
         <mark key="]" line="1067" column="16" />
@@ -141,11 +143,6 @@
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/DOFCalculator.java" timestamp="1600298981859">
         <mark key="[" line="2" column="13" />
       </file>
-      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379/PikaCompiler/src/parser/Parser.java" timestamp="1596775745921">
-        <mark key="[" line="563" column="0" />
-        <mark key="]" line="563" column="0" />
-        <mark key="." line="563" column="0" />
-      </file>
       <file name="$USER_HOME$/IdeaProjects/cmpt276A1/src/Model/Lens.java" timestamp="1600895558108">
         <mark key="[" line="0" column="0" />
         <mark key="]" line="45" column="1" />
@@ -162,11 +159,16 @@
         <mark key="]" line="125" column="0" />
         <mark key="." line="125" column="0" />
       </file>
-      <file name="/fragment.java" timestamp="1600824967679">
+      <file name="/fragment.java" timestamp="1603904620718">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/cmpt276A1/src/TextUI/Tests/TextUI/TextUITest.java" timestamp="1599769107999">
         <mark key="[" line="9" column="20" />
+      </file>
+      <file name="$USER_HOME$/OneDrive/Desktop/CMPT379-Fall2016-Pika-2/untitled/src/main.java" timestamp="1603904541307">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -274,44 +276,44 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="2">
-        <text>finished adding tests, added tag</text>
+      <register name="&quot;" type="4">
+        <text>s</text>
       </register>
       <register name="-" type="4">
-        <text>x.calculateDOF(far_focal, near_focal)</text>
+        <text>s</text>
       </register>
       <register name="/" type="4">
         <text>has to</text>
       </register>
       <register name="0" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoOTkuNzUsIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDkwLCAyLjgsIDAuMDI5KSk7Cg==</text>
+        <text encoding="base64">ICAgIEBvcmcuanVuaXQuanVwaXRlci5hcGkuVGVzdAo=</text>
       </register>
       <register name="1" type="2">
+        <text encoding="base64">cHVibGljIGNsYXNzIG1haW4gewp9Cg==</text>
+      </register>
+      <register name="2" type="2">
         <text>finished adding tests, added tag</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">IGZpbmFsbHkgewoKICAgICAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnQoIlN5bWJvbCBvZiBpbmZpbml0eSBpcyA6ICIgKyBpbmZpbml0eVN5bWJvbCk7CgogICAgICAgICAgICB9</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIC8vZXgucHJpbnRTdGFja1RyYWNlKCk7IC8vcHJpbnQgdGhlIHVuc3VwcG9ydGVkIGVuY29kaW5nIGV4Y2VwdGlvbi4K</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICByZXR1cm4gCg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text>changed the startUI signature, so fixed the warning</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImxhbGFsYWxhbGFsYWxhbGFsYWxhOiAiICsgdXNlcl9pbnB1dC5nZXQoMikpOwo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">U3lzdGVtLm91dC5wcmludGxuKHRlc3RfMik7Cg==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBhc3NlcnRFcXVhbHMoNDcuODksIHguY2FsY3VsYXRlSHlwZXJGb2NhbERpc3RhbmNlKDUwLCAxLjgsIDAuMDI5KSk7Cg==</text>
+        <text encoding="base64">CiAgICAgICAgYXNzZXJ0RXF1YWxzKDEuMDgsIHguY2FsY3VsYXRlTmVhckRpc3RhbmNlKDEuMSwgdGVzdF8xMTAwMCwgNTApKTs=</text>
       </register>
       <register name=":" type="4">
         <text>?has to</text>
